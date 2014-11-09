@@ -1,0 +1,79 @@
+/* MyX - Stars
+===
+This is new stars icon set.
+```
+<span class="stars__item">
+	<i class="MyX-appbarstar2 stars__item__icon"></i>
+	<i class="MyX-appbarstar2 stars__item__icon"></i>
+	<i class="MyX-appbarstar2 stars__item__icon"></i>
+</span>
+```
+<li class="myx-column">
+	<strong class="col5 stars__title">{{ 'Title?' | translate }}</strong>
+	<span class="col7 stars__item">
+		<i class="MyX-appbarstar2 stars__item__icon"></i>
+		<i class="MyX-appbarstar2 stars__item__icon"></i>
+		<i class="MyX-appbarstar2 stars__item__icon"></i>
+	</span>
+</li>
+```
+*/
+.stars { // new stars set
+	&__item,
+	&__title  {
+		line-height: $default-icon-size;
+		vertical-align: middle;
+		height: 25px;
+		
+		&__icon {
+			font-size: $default-icon-size;
+			color: $color-stars; //color icons defined in the file _variables.scss and _typography.scss
+		}
+	}
+	&__item {
+		margin-left: -7px;
+	}
+}
+
+.stars-item { // old stars set
+    &__title,
+    &__icon {
+        line-height: 30px;
+        vertical-align: middle;
+        height: 25px;
+    }
+    &__icon {
+        font-size: $default-icon-size;
+        margin-left: -7px;
+    }
+	i {
+		color: $color-stars; //color icons defined in the file _variables.scss and _typography.scss
+	}
+}
+
+/* MyX Rating stars
+===
+This is icon star for rating
+```
+<div class="rating" myx-stars stars="3" selected-stars="">
+    <i class="MyX-appbarstar2 rating__icon" myx-fast-click></i>
+	<i class="MyX-appbarstar2 rating__icon" myx-fast-click></i>
+    <i class="MyX-appbarstar2 rating__icon" myx-fast-click></i>
+</div>
+```
+*/
+.rating {
+	font-size: 1.5em;
+
+	i, //old styles
+	&__icon { // new styles
+		font-size: $default-icon-size;
+		margin-right: -2px;
+		margin-left: -5px;
+		color: lighten($gray, 15%);
+
+		&.selected {
+			color: $color-stars; //color icons defined in the file _variables.scss and _typography.scss
+	    }
+	}
+}

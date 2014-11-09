@@ -1,0 +1,57 @@
+@import "../../bower_components/bootstrap-sass/lib/labels";
+.label {
+  border-radius: 0;
+}
+
+/* Square labels
+-----
+```
+<ul class="myx-label-list">
+	<li>
+	    <span class="label label-xl label-darkolivegreen">C</span> <strong>Corrosion</strong>
+	</li>
+	<li>
+	    <span class="label label-xl label-firebrick">S</span> <strong>Scratch</strong>
+	</li>
+	<li>
+	    <span class="label label-xl label-saddlebrown">SC</span> <strong>Stone chip</strong>
+	</li>
+</ul>
+
+<div>
+	<span class="label label-xl label-darkolivegreen">C</span> <strong>Corrosion</strong>
+</div>
+<div>
+    <span class="label label-xl label-saddlebrown">SC</span> <strong>Stone chip</strong>
+</div>
+```
+*/
+
+.myx-label-list {
+	min-height: 32px;
+	
+	span,
+	strong {
+		white-space: nowrap;
+	}
+}
+
+@mixin label-theme($name, $color) {
+  .label-#{$name} {
+    background: $color;
+    border-color: $color;
+  }
+}
+
+@each $val in $themes {
+  $name: nth($val, 1);
+  $color: nth($val, 2);
+  @include label-theme(#{$name}, #{$color});
+}
+
+.label-xl {
+  font-size: 16px;
+  line-height: 25px;
+  height: 32px;
+  width: 32px;
+}

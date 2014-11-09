@@ -1,0 +1,149 @@
+// VARIABLES
+$listItemHeightDefault: 88px !default;
+
+.dashboard-block-wrapper {
+  width: 410px;
+  height: 100%;
+
+  overflow: hidden;
+  float: left;
+}
+
+.db-wrap .dashboard-block-wrapper {
+  position: relative;
+}
+
+.dashboard-block--title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+  .dashboard-block--title--delimiter {
+    text-align: center;
+  }
+}
+
+/* header title icon */
+.title__icon {
+  font-size: 18px;
+  color: gray;
+  line-height: 33px;
+  vertical-align: middle;
+
+  i {
+    font-size: 33px;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.dashboard-list-options {
+  height: 52px;
+}
+
+.dashboard-list-search {
+  padding: 2px 0 2px 6px;
+  margin-bottom: 10px;
+
+  background: lighten($gray, 30%);
+
+  height: 41px;
+
+  transition-property: background, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+
+  .MyX-appbarmagnify2 {
+    margin-top: -6px;
+    color: #fff;
+  font-size: 48px;
+    vertical-align: top;
+    float: right;
+    
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  .form-control {
+    width: 97%;
+    height: auto;
+    padding: 3px 8px;
+    margin: 5px 6px;
+    
+    font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    background: transparent;
+    border: 0 none;
+    border-left: 1px solid #dfdfdf;
+    color: #fff;
+    box-shadow: none;
+
+    &::-webkit-input-placeholder {
+      color: #fff !important;
+      text-overflow: ellipsis;
+    }
+    &:-moz-placeholder {
+      color: #fff !important;
+      text-overflow: ellipsis;
+    }
+    &::-moz-placeholder {
+      color: #fff !important;
+      text-overflow: ellipsis;
+    }
+    /* for the future */
+    &:-ms-input-placeholder {
+      color: #fff !important;
+      text-overflow: ellipsis;
+    }
+
+  }
+
+  &:hover {
+    background: #fff;
+    color: #b4b4b4;
+    border-bottom: solid 1px $color-primary;
+
+    .form-control {
+      background: transparent;
+      color: #b4b4b4;
+      border-left: 1px solid #b4b4b4;
+    }
+    .MyX-appbarmagnify2 {
+      color: $color-primary;
+    }
+  }
+}
+
+.dashboard-block-inner--default {
+  background: #fff;
+  padding: $default-padding;
+  width: 100%;
+}
+
+.dashboard-list-container {
+  background: #fff;
+}
+
+.list-region ul {
+  height: auto;
+  margin: 0;
+  padding: 15px;
+
+  list-style-type: none;
+}
+
+.list-item {
+  height: 165px;
+  padding-bottom: 0;
+}
+
+.scrollable-no-effect .scrollable .list-item:last-child:after {
+  visibility: hidden;
+}
+
+.scrollable-no-effect .scrollable:after, .scrollable-no-effect .scrollable:before {
+  visibility: hidden;
+}

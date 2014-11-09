@@ -1,0 +1,36 @@
+<div id="header--wrap" ng-controller="HeaderCtrl">
+    <h1 class="header--title text-blue-primary">网络监控系统</h1>
+
+    <ul class="header--menu">
+        <li ng-repeat="menus in menuGroups" class="header--menu--item">
+            <span ng-if="!menus.subMenus || !menus.subMenus.length" myx-fast-click ng-click="redirectToPage(menus)">{{ menus.name }}</span>
+            <div ng-if="menus.subMenus && menus.subMenus.length" myx-fast-click
+                 ng-mouseover="menus.isOpen=true"
+                 ng-mouseleave="menus.isOpen=false"
+                 ng-click="menus.isOpen=!menus.isOpen"
+                 ng-init="menus.isOpen = false">{{ menus.name }}
+                <ul ng-show="menus.isOpen" class="header--menu--item__submenu">
+                    <li ng-repeat="subMenu in menus.subMenus" class="header--menu--item__submenu--item" ng-class="{selected: subMenu.selected}" myx-fast-click ng-click="menus.isOpen=!menus.isOpen;redirectToPage(subMenu)">
+                        {{ subMenu.name }}
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+    <div class="header--user pull-right">
+        <div class="header--user__infos">
+            <span class="user__infos--subline">
+                <a myx-fast-click ng-click="changePassword()">修改密码</a>
+            </span>
+            <span class="user__infos--subline">
+                <a myx-fast-click ng-click="logout()">退出系统</a>
+            </span>
+            <span class="user__infos--subline">Admin</span>
+        </div>
+
+        <div class="header--user__picture">
+            <img class="img-circle" src="img/avatar.png">
+        </div>
+    </div>
+</div>

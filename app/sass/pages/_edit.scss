@@ -1,0 +1,293 @@
+$myx-panel-sidebar-bgcolor: $color-primary !default;
+$myx-panel-sidebar-active-bgcolor: darken($myx-panel-sidebar-bgcolor, 5%) !default;
+$myx-panel-sidebar-default-padding: 35px !default;
+
+/* ==========================================================================
+Edit page
+========================================================================== */
+.page-create,
+.page-edit {
+  #content {
+    position: static;
+  }
+  .wagon {
+    position: relative;
+  }
+}
+
+/* @extends */
+.myx-panel {
+  backface-visibility: hidden; //solves the problem of displaying elements in iOS6
+
+  &__table {
+    display: table;
+    height: 100%;
+    table-layout: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__row {
+    display: table-row;
+    height: 100%;
+  }
+  &__cell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: top;
+  }
+}
+
+/*****/
+
+
+/* ==========================================================================
+MyX Panel
+========================================================================== */
+.myx-panel {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  @extend .myx-panel__table;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+/* sidebar */
+.myx-panel__sidebar {
+  @extend .myx-panel__cell;
+  min-width: 265px;
+  width: 265px;
+  background: $myx-panel-sidebar-bgcolor;
+  color: #fff;
+
+  &__title {
+    font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    line-height: 40px;
+    font-size: 34px;
+    margin: 30px 15px 15px 57px;
+  }
+
+  &__nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 18px;
+      padding: 13px 10px 13px 60px;
+      color: #fff;
+    
+      &.active {
+        background: $myx-panel-sidebar-active-bgcolor;
+        @extend .font-bold;
+        > div {
+          @extend .font-bold;
+        }
+      }
+    }
+  }
+  &__btn {
+    font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    padding: 30px 10px 30px 60px;
+    font-size: 16px;
+
+    i {
+      font-size: 28px;
+      vertical-align: sub;
+    }
+    
+    &.disabled {
+      color: $gray;
+      opacity: .5;
+    }
+  }
+}
+
+/* content */
+.myx-panel__content {
+  @extend .myx-panel__cell;
+  width: 100%;
+
+  &__title {
+    @extend .myx-panel__row;
+    height: auto;
+  }
+}
+.myx-panel__current {
+  height: 100%;
+  width: 100%;
+  display: table;
+  padding: $myx-panel-sidebar-default-padding 0 $myx-panel-sidebar-default-padding $myx-panel-sidebar-default-padding;
+  
+  position: relative;
+}
+
+.myx-common-spin-container {
+  @extend .myx-common-spin-container;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.myx-panel__metro {
+  @extend .myx-panel__table;
+  position: relative;
+
+  &__scroll {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    .myx-panel__metro__list {
+      overflow: scroll;
+      height: 100%;
+      position: relative;
+      background: inherit;
+      
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      -ms-scroll-chaining: chained;
+      -ms-scroll-snap-type: proximity;
+      -ms-scroll-snap-points-x: snapList(0%, 100%, 200%, 300%, 400%, 500%);
+      -webkit-overflow-scrolling: touch;
+      
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .myx-panel__metro__scroll .myx-panel__metro__list {
+    width: 105%;
+    height: 105%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+  }
+}
+
+.myx-panel__buttons{
+  position: fixed;
+  right: 0;
+  padding: $default-padding $myx-panel-sidebar-default-padding 0 0;
+}
+
+/* Edit panel size wagon
+===
+One wagon
+```
+<div class="wagon__size-xl">
+    <div class="wagon__item">
+      <!-- content -->
+    </div>
+</div>
+```
+
+Loop wagons
+```
+<div class="wagon__size-m">
+    <div class="wagon__item">
+      <!-- content -->
+    </div>
+</div>
+<div class="wagon__size-m">
+    <div class="wagon__item">
+      <!-- content -->
+    </div>
+</div>
+```
+*/
+.wagon {
+  &__size {
+    &-m {
+      @extend .wagon;
+      width: 370px + $myx-panel-sidebar-default-padding;
+      .wagon__item {
+        width: 370px;
+      }
+    }
+    &-s {
+      @extend .wagon;
+      width: 265px + $myx-panel-sidebar-default-padding;
+      .wagon__item {
+        width: 265px;
+      }
+    }
+  }
+  &__item {
+    height: 100%;
+    padding-right: $myx-panel-sidebar-default-padding;
+  }
+  &__size-xl {
+    @extend .wagon;
+    width: 715px + $edit-default-padding;
+    .wagon__item {
+      width: 715px;
+    }
+  }
+}
+
+/*****/
+
+/* old styles */
+.content {
+    @include clearfix();
+    height: 100%;
+    display: inline-block;
+    white-space: initial;
+    /* overflow-y: scroll; */
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .panel-title {
+    margin-bottom: 15px;
+  }
+  .panel-size-1x {
+    width: $edit-panel-size-1x;
+    margin-right: 35px;
+    float: left;
+  }
+  .panel-size-2x {
+    width: $edit-panel-size-2x;
+    margin-right: 35px;
+    float: left
+  }
+  .panel-size-3x {
+    width: $edit-panel-size-3x;
+    margin-right: 35px;
+    float: left;
+  }
+  .panel-size-4x {
+    width: $edit-panel-size-4x;
+    margin-right: 35px;
+    float: left;
+  }
+
+  .btn-horizontal {
+    display: inline-block;
+    color: $color-primary;
+    
+    i {
+      font-size: 40px;
+    }
+    span {
+      line-height: 40px;
+      vertical-align: top;
+      padding-left: 10px;
+    }
+  }

@@ -1,0 +1,47 @@
+$fz-flying-term-content: 27px !default;
+$fc-flying-term-content: #373737 !default;
+
+.flying-term {
+
+  background: rgba($gray, .9);
+  padding: 0;
+
+  h1 {
+    padding: 0 6%;
+    i {
+      font-size: 32px;
+      color: #fff;
+    }
+  }
+
+  .flying-term--content {
+    margin: 0;
+    height: 0;
+    font-size: $fz-flying-term-content;
+
+    .flying-term__text {
+      .image-preview {
+        width: 600px;
+        height: 450px;
+      }
+    }
+  }
+
+  .flying-term__footer {
+    background: darken($gray, 80%);
+
+    width: 100%;
+    margin: 0;
+    padding: 1% 6%;
+
+    position: fixed;
+      bottom: 0;
+
+    font-size: 27px;
+    color: #fff;
+
+    a {
+      margin-right: 10px;
+    }
+  }
+}

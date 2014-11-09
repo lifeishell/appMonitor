@@ -1,0 +1,50 @@
+.title {
+  background-color: $blue-primary;
+  .myx-select {
+    width: 280px;
+    margin-left: -15px;
+
+    &__selected-value {
+      padding: 0 15px;
+
+      border: none;
+    }
+
+    .dropdown {
+      color: #000;
+      font-size: 15px;
+      top: 40px;
+      width: 370px;
+    }
+
+    .selected {
+      background-color: $blue-primary;
+    }
+  }
+
+  .icon-text {
+    @include fontface();
+  }
+}
+
+.image-gallery {
+  &__item {
+    float: left;
+
+    width: 48%;
+    margin: 0 0 10px 5px;
+
+    border: 3px solid #fff;
+
+    position: relative;
+  }
+
+  &--action {
+    font-size: 27px;
+
+    z-index: 9;
+    position: absolute;
+      top: -15px;
+      right: -10px;
+  }
+}

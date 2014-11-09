@@ -1,0 +1,30 @@
+// Keep the spinner on the same height postion
+.spin-container {
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+    top: 50%;
+    img {
+      width: 75px;
+      height: 75px;
+    }
+}
+.item-content-region .spin-container {
+    margin-top: -75px;
+}
+.list-region .spin-container {
+    margin-top: -170px;
+}
+.edit-panel-title ~ .spin-container {
+    margin-top: -75px;
+    margin-left: $edit-panel-size-1x;
+}
+#login .spin-container {
+  padding-top: 30px;
+}
+.block-has-filter .spin-container {
+    padding-top: 80px;
+}
+.block-has-legend .spin-container {
+    padding-top: 25px;
+}

@@ -1,0 +1,208 @@
+$font-primary: "msyh", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-secondary: "msyhbd", "SegoeUIRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$color-stars: $blue-primary !default;
+
+/* ==========================================================================
+MyX - Fonts
+========================================================================== */
+.font-normal {
+	font-family: $font-primary;
+}
+.font-bold {
+	font-family: $font-secondary !important;
+}
+
+@mixin fontface() {
+  font-family: $font-primary
+
+  strong {
+    font-family: $font-secondary;
+  }
+  span {
+    font-family: $font-primary;
+  }
+}
+/* ==========================================================================
+MyX - Typography
+========================================================================== */
+body * {
+    &:not(i) {
+        font-family: $font-primary;
+        font-weight: 100;
+    }
+
+    a, a:hover, a:active {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}
+
+.link {
+    font-weight: 400;
+    text-decoration: underline;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+MyX - Fonts group
+========================================================================== */
+.item__wrap {
+	//@include clearfix();
+	margin-bottom: $default-padding;
+	color: $gray;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.item__header {
+	background: lighten($gray, 44%);
+}
+.item__info {
+	padding-left: $default-padding;
+
+	&--icon {
+		font-size: 21px;
+		line-height: 20px !important;
+		vertical-align: sub;
+		margin-left: -5px;
+		color: $gray;
+		&:before {
+			color: $gray;
+		}
+	}
+	&--stars {
+		@extend .stars__item__icon;
+		line-height: $default-icon-size; //size is defined in _myx-variables.scss
+		margin-right: -8px;
+		margin-top: -2px;
+		text-align: right;
+	}
+	
+	&__row {
+		color: $gray;
+		font-size: 12px;
+		@include ellipsis();
+		@include fontface();
+		
+		&--headline {
+			font-size: 18px;
+			@extend .item__info__row;
+		}
+		&--subline {
+			font-size: 14px;
+			@extend .item__info__row;
+		}
+	}
+}
+.item__sub {
+	padding: 0 5px 0;
+	background: #fff;
+	
+	li {
+		border-top: solid 5px #fff;
+		color: $gray;
+
+		.item__info__row {
+			color: $gray;
+		}
+		
+		.item__info {
+			padding: 5px 0 5px 15px;
+			min-height: inherit;
+		}
+	}
+}
+
+
+// ----------------------------------------
+
+.bold { font-weight: bold; }
+.primary { background-color: $background-primary;}
+.text-primary { color: $color-primary !important; }
+.text-blue-primary { color: $blue-primary !important; }
+.text-gray { color: $gray !important;}
+.text-white { color: #fff !important; }
+.secondary { background-color: $color-secondary !important;}
+.text-secondary { color: $color-secondary; }
+.text-overdue { color: $red; }
+.item__header { background: lighten($gray, 44%); }
+.emphasis { background-color: $color-emphasis; color: $color-secondary;}
+.pop { background-color: $orange !important; }
+.green { background-color: $green !important; }
+.funk {background-color: $apple !important; color: $color-secondary;}
+.future { background: $green; }
+.today { background: $color-primary; }
+.overdue { background: $red; }
+.uppercase {text-transform:uppercase; }
+.lowercase {text-transform:lowercase; }
+.capitalize {text-transform:capitalize; }
+.break-word { word-wrap: break-word; }
+
+// Font Size
+.text-xxl			{ font-size: 170% } //24px
+.text-xl			{ font-size: 140%; } //20px
+.text-lg			{ font-size: 120%; } //17px
+.text-md			{ font-size: 110%; } //15px
+.text-sm			{ font-size: 85%; } //13px
+
+.lighten {
+    opacity: .8;
+    font-weight: 100;
+}
+
+/* =====================================================
+ Standard widget layout
+
+ https://wiki.mcon-group.com/display/MCONGROUP/Standard+Widgets+layout
+===================================================== */
+$font-size-widget-header: 25px;
+$font-size-item-title: 18px;
+$font-size-item-subtitle: 14px;
+$font-size-item-content: 14px;
+
+/* =====================================================
+ Dashboard sizes (at least for contact)
+
+ https://wiki.mcon-group.com/display/MCONGROUP/Contact+Widget
+===================================================== */
+$font-size-dashboard-title: 20px;
+$font-size-dashboard-subtitle: 14px;
+$font-size-dashboard-content: 12px;
+
+.line-through {	text-decoration: line-through; }
+
+.text-nowrap {
+    display: block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.no-wrap {
+	white-space: nowrap !important;
+}
+.text-normal {
+	white-space: normal;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+strong, b {
+    @extend .font-bold;
+}
+
+// ----------------------------------------
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+.debug-static:before {
+    content: '#';
+    color: red;
+}

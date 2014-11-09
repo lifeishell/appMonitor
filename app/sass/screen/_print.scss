@@ -1,0 +1,221 @@
+/*
+    Printing preview without headers, side panel, bottom bar etc.
+*/
+    
+ .page-print {
+    width:100%; 
+    height:100%;
+
+    #main-display {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #content {
+        float: none;
+        width: 100%;
+    }
+
+    .myx-footer-modal, .myx-modal, #header--wrap, .edit-panel-title, .panel-size-1x {
+        display: none !important;
+    }
+ 
+    .current {
+        display: block !important;
+        width: 100%;
+    }
+
+    .myx-common-dashboard-block-inner {
+        height: 92%;
+
+        border: 1px solid $gray;
+        
+        display: block;
+    }
+
+    .dashboard-block-wrapper {
+        width: 1%;
+
+        display: table-cell;
+        float: none;
+    }
+
+    .enclosure {
+        text-align: center;
+    }
+}
+
+.printing-content {
+    height: 100%;
+}
+
+.printing-navigation {
+    height: 8%;
+    
+    li {
+        display: inline;
+    }
+
+    .MyX-appbararrowleft, .MyX-appbarprintertext {
+        font-size: 30px;
+    }
+}
+
+.print-block {
+    padding: 20px 25px 25px 25px;
+}
+
+
+@media print {
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        background: none;
+
+        font-size: 10px;
+    }
+
+    .enclosure {
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    .myx-table-column {
+        height: auto !important;
+    }
+
+    .myx-content-list__item {
+        font-size: 10px;
+
+        padding: 5px 8px;
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /*
+    Reset to default values.
+    */
+
+    * {
+        overflow: visible !important;
+    }
+
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content:" (" attr(href)")";
+    }
+
+    abbr[title]:after {
+        content:" (" attr(title)")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content:"";
+    }
+
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+        /* h5bp.com/t */
+    }
+
+    tr, img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    /*
+        Styles for print pages.
+    */
+    .page-print {
+        /*
+            Removing headers, left panel, etc...
+        */
+        .myx-footer-modal, .myx-modal, #header--wrap, a, h2, .edit-panel-title, .panel-size-1x, .printing-navigation {
+            display: none !important;
+        }
+
+        /*
+            Removing frame.
+        */
+        .myx-common-dashboard-block-inner {
+            border: none;
+        }
+
+        .list-region {
+            background: transparent;
+        }
+
+        .myx-content-list {
+            .myx-content-list__item {
+                border-bottom: solid 1px lighten($gray, 25%);
+            }
+        }
+
+        .myx-common-dashboard-scrollable .list-region .myx-content-list {
+            padding: 0;
+        }
+
+        .scrollable > div {
+            overflow: visible;
+        }
+
+        .myx-common-dashboard-scrollable {
+            position: relative !important;
+            .list-region {
+                overflow: visible !important;
+            }
+        }
+
+        #main-display {
+            padding: 0px !important;
+        }
+
+        .dashboard-block-wrapper {
+            float: none !important;
+            display: table-cell !important;
+            width: 1% !important;
+            /*? changed from 1%*/
+            height: auto !important;
+            vertical-align: top !important;
+        }
+
+        .myx-content-list .myx-content-list__item {
+            span, strong {
+                overflow: hidden !important;
+            }
+        }
+    }
+}

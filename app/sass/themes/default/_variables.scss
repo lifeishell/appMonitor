@@ -1,0 +1,7 @@
+$bower-components-path: "../bower_components" !default;
+$bootstrap-sass-path: "#{$bower-components-path}/bootstrap-sass" !default;
+$myx-module-style-path: "#{$bower-components-path}/myx-module-style" !default;
+$myx-module-common-path: "#{$bower-components-path}/myx-module-common" !default;
+
+@import "bootstrap-variables";
+@import "fonts";

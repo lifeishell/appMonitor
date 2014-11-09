@@ -1,0 +1,42 @@
+$calendar-task-color: $gray !default;
+$calendar-task-bgcolor: #eee !default;
+
+.test-drive--calendar-block {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 6px; 
+    border: 1px solid #b8b8b8;
+}
+
+.calendar-block {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.calendar-task-panel {
+    padding: 6px 8px 8px 8px;
+    margin-top: 5px;
+    background: $calendar-task-bgcolor;
+    color: $calendar-task-color;
+    .calendar-task-panel__title {
+        font-size: 15px;
+    }
+    .calendar-task-panel__desc {
+        padding-top: 3px;
+        font-size: 15px;
+    }
+}
+
+.calendar-widget-block {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+    
+    .myx-common-dashboard-scrollable .myx-common-list-region {
+        padding: 0;
+    }
+}

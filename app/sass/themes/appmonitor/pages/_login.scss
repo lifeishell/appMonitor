@@ -1,0 +1,8 @@
+.fg-btn--forgot-pw {
+  @extend .login__content__reset-password;
+}
+
+.fg-loginform-submit__waiting {
+      @extend .icon-spin;     //font-awesome
+      @extend .icon-spinner;  //font-awesome
+}

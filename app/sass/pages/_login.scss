@@ -1,0 +1,97 @@
+.view-login {
+    #content, #main-display {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    #header {
+        display: none;
+    }
+
+    body {
+        background-image: url("../img/login.jpg");
+        background-position: 120px top;
+        -ms-background-position-x: left;
+        -ms-background-position-y: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.login {
+    background: linear-gradient(to bottom, #ffffff, $background-primary);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, $background-primary 100%);
+    padding: 10% 40px 40px 40px;
+    height: 100%;
+    display: table-cell;
+
+    h2{
+        font-size: 4em;
+    }
+}
+
+.login__content {
+    margin: auto;
+    width: 328px;
+
+    label {
+        color: $text-primary;
+        font-size: 1.3em;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .form-group > input {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+
+        border-color: #E6E6E6;
+    }
+    .input-group > .form-control {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    .input-group-btn > .btn-info {
+        width: 120px;
+    }
+}
+
+.login__content__form-container {
+    margin-top: 100px;
+}
+
+.login__content__server-config {
+    margin-top: 100px;
+}
+
+.login__content__select-lang {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    select {
+        margin-left: 15px;
+    }
+}
+
+.login__content__reset-password {
+    color: $blue-primary;
+    margin-top: 5px;
+}
+
+/* opposite rule not used unless needed
+@media only screen and (orientation : landscape), (min-width: 940px) {}
+*/
+@media only screen and (orientation : portrait), (max-width: 940px) {
+    .view-login{
+        .current{
+            width: 100%;
+        }
+        #content{
+            width: 100%;
+        }
+    }
+}

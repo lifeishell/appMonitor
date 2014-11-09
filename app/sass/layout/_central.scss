@@ -1,0 +1,55 @@
+/*
+Central layout
+----
+Currently used for wheel inspection in MyService - contains one central area (meant for image)
+and two identic areas above and below with column layout.
+----
+```
+<div class="myx-layout--central">
+	<div class="myx-layout--central__description">
+		<div class="col3 status__left__green status__xl">
+			<strong class="item__info__row--subline text-primary">CHECK</strong>
+			<span class="item__info__row--subline">Front right tire/wheel</span>
+		</div>
+		<div class="col3 pull-right status__left__gray status__xl">
+			<strong class="item__info__row--subline text-primary">CHECK</strong>
+			<span class="item__info__row--subline">Back right tire/wheel</span>
+		</div>
+	</div>
+	
+	<div class="myx-layout--central__image">
+		<img src="./img/static/check-inspection.jpg" alt="" />
+	</div>
+	
+	<div class="myx-layout--central__description">
+		<div class="col3 status__left__red status__xl">
+			<strong class="item__info__row--subline text-primary">CHECK</strong>
+			<span class="item__info__row--subline">Front left tire/wheel</span>
+		</div>
+		<div class="col3 pull-right status__left__gray status__xl">
+			<strong class="item__info__row--subline text-primary">CHECK</strong>
+			<span class="item__info__row--subline">Back left tire/wheel</span>
+		</div>
+	</div>
+</div>
+```
+*/
+.myx-layout--central {
+	position: relative;
+    z-index: z(myx-layout--central);
+}
+
+.myx-layout--central__image {
+	@include clearfix();
+    text-align: center;
+    margin: 0;
+    > img {
+      width: auto;
+      height: auto;
+    }
+}
+
+.myx-layout--central__description {
+	@extend .myx-column;
+	margin: 40px 0;
+}

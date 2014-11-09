@@ -1,0 +1,49 @@
+/*
+Image gallery and Add button
+------
+```
+<div class="myx-gallery">
+	<div class="item__info__row--subline">
+		<strong>Extra Photos</strong>
+	</div>
+	<ul class="myx-table-column">
+		<li class="col3 item__header">
+			<img src="./img/static/Glaciler Silver.png" />
+		</li>
+		<li class="col3 item__header">
+			<img src="./img/static/Imperial Blue Brilliant Effect.png" />
+		</li>
+		<li class="col3 item__header">
+			<img src="./img/static/Glaciler Silver.png" />
+		</li>
+		<li class="col3 item__header">
+			<i class="MyX-appbaradd"></i>
+		</li>
+	</ul>
+</div>
+```
+*/
+
+.myx-gallery {
+	@include clearfix();
+	margin-bottom: 15px;
+	
+	.item__info__row--subline {
+		margin-bottom: 8px;
+	}
+	.item__header {
+		text-align: center;
+		font-size: 30px;
+		border-left: solid 3px #fff;
+		
+		&:first-child {
+			border: 0 none;
+		}
+	}
+	.myx-table-column {
+		.item__header {
+			height: 80px; // fix for min-height in styles table-cell
+			float: none; // fix for vertical align add icon
+		}
+	}
+}

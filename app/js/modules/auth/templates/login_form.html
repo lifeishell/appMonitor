@@ -1,0 +1,15 @@
+<form  ng-controller="LoginFormCtrl as authForm" ng-submit="authForm.login()" name="loginForm" data-js="fg-loginform" novalidate>
+    <div class="fg-form-login-wrap">
+        <div class="fg-form-login-wrap__inner">
+            <div class="form-group">
+                <input type="text" placeholder="用户名" id="fg-login" name="login" ng-model="authForm.credentials.username" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="密码" name="password" id="fg-password" ng-model="authForm.credentials.password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+                <i ng-show="fgAuth.isWaiting" class="fg-loginform-submit__waiting icon-waiting"></i>登 录
+            </button>
+        </div>
+    </div>
+</form>

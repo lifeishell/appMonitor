@@ -1,0 +1,240 @@
+.form-control {
+	box-shadow: inherit;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Form field - type radio
+===
+lorem ipsum
+```
+<div class="label-radio">
+	<input type="radio" name="optionsRadios" value="option1">
+	<input type="radio" name="optionsRadios" value="option1" checked>
+</div>
+```
+*/
+.label-radio input[type="radio"] {
+	background: url("../img/bt-general.png") 0 0 no-repeat;
+	border: none;
+	width: 21px;
+	height: 21px;
+	vertical-align: top;
+	
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.label-radio input[type="radio"]:checked {
+	background: url(../img/bt-general.png) -21px 0 no-repeat;
+}
+.label-radio input[type="radio"]:focus {
+	outline: none;
+}
+
+/* Form field - type checkbox
+===
+
+```
+<div class="label-checkbox">
+	<input type="checkbox" value="" checked>
+	<input type="checkbox" value="">
+</div>
+```
+*/
+.label-checkbox input[type="checkbox"] {
+	background: url(../img/bt-general.png) -84px 0 no-repeat;
+	border: none;
+	width: 21px;
+	height: 21px;
+	vertical-align: sub;
+	
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.label-checkbox input[type="checkbox"]:checked {
+	background: url(../img/bt-general.png) -63px 0 no-repeat;
+}
+.label-checkbox input[type="checkbox"]:focus {
+	outline: none;
+}
+
+
+/* Form field - type checkbox toggle
+===
+
+```
+<div class="checkbox-toggle">
+	<input type="checkbox" value="" checked>
+	<input type="checkbox" value="">
+</div>
+```
+*/
+
+.checkbox-toggle input[type="checkbox"] {
+	background: #fff;
+	border: solid 3px #fff;
+	width: 21px;
+	height: 21px;
+	vertical-align: sub;
+	border-radius: 0;
+	
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.checkbox-toggle input[type="checkbox"]:checked {
+	background: gray;
+}
+.checkbox-toggle input[type="checkbox"]:focus {
+	outline: none;
+}
+
+/* ==========================================================================
+Form field - type select
+========================================================================== */
+.form-control {
+	&.select-option {
+		background: #fff url(../img/bt-general.png) right -29px no-repeat;
+		padding: 6px 37px 6px 12px;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		
+		&:focus {
+			outline: none;
+			
+			box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+		
+		/*
+		 * handle IE selection arrow issue
+		 */
+		&::-ms-expand {
+		    display: none;
+		}
+	}
+}
+/* Indicates that element can't be used by user.
+	
+	<div class="form-group">
+        <a class="btn-horizontal disabled"><i class="MyX-appbarprintertext"></i></a>
+    </div>
+*/
+.form-group .disabled{
+  color: $gray;
+  opacity: .5;
+}
+
+/* Inputs of each type */
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=time],
+input[type=number],
+.form-control.select-option,
+textarea.form-control {
+  border: solid 1px lighten($gray, 22%);
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-control{
+  &.has-error{
+    border: 1px solid red;
+  }
+  &.ng-invalid {
+    border-color: $red;
+  }
+  &[disabled]{
+    background-color: #f0f0f0;
+    // set for ios disable field need opacity 1 to make the text clear
+    -webkit-text-fill-color: transparentize($gray, .01);
+  }
+}
+
+.label-checkbox {
+  label {
+    color: $gray;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .checkbox-inline + .checkbox-inline {
+    margin-left: 0;
+  }
+}
+
+/* Input group addon
+	
+	<div class="input-group">
+		<input type="text" class="form-control" id="inputDate2" placeholder="">
+		<div class="input-group-addon"><i class="icon-myx-common-search"></i></div>
+	</div>
+	
+	<div class="input-group">
+		<input type="text" class="form-control" id="inputDate2" placeholder="">
+		<div class="input-group-addon btn-primary"><i class="icon-myx-common-search"></i></div>
+	</div>
+*/
+.input-group--date {
+  @extend .input-group;
+  input[type=date] {
+    width: 135px;
+    padding: 6px 8px;
+    line-height: 34px;
+  }
+}
+
+.input-group-addon {
+  @extend .input-group-addon;
+  background: #fff;
+  border-color: #b8b8b8;
+  padding: 3px 10px;
+  font-size: 20px;
+  color: $gray;
+
+  &:last-child {
+    position: relative;
+    left: -1px;
+  }
+  &:first-child {
+    position: relative;
+    right: -1px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .label-radio input[type="radio"] {
+    background: none;
+  }
+  .label-radio input[type="radio"]:checked {
+    background: none;
+  }
+  .label-checkbox input[type="checkbox"] {
+    background: none;
+  }
+  .label-checkbox input[type="checkbox"]:checked {
+    background: none;
+  }
+  .checkbox-toggle input[type="checkbox"] {
+    vertical-align: inherit;
+  }
+  .form-control.select-option {
+    background: none;
+  }
+}

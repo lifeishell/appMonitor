@@ -1,0 +1,63 @@
+#header {
+  background-color: $background-primary;
+}
+
+#header--wrap {
+  margin: 0;
+}
+
+.header--title {
+  width: 240px;
+  display: inline-block;
+  color: $color-primary;
+  vertical-align: bottom;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.header--user {
+  display: inline-block;
+  width: 240px;
+  margin-top: 10px;
+  @extend .text-right;
+
+  white-space: nowrap;
+
+  &__infos {
+    color: $white;
+  }
+}
+
+.header--menu {
+  display: inline-block;
+  font-size: 16px;
+  color: $white;
+  white-space: nowrap;
+
+  @extend .text-center;
+
+  &--item {
+    float: left;
+    width: 120px;
+    position: relative;
+
+    &__submenu {
+      width: 120px;
+      background-color: $white;
+      border: 1px solid $gray;
+      position: absolute;
+      left: 40px;
+
+      &--item {
+        padding: 5px 10px;
+        color: $text-primary;
+
+        &:hover {
+          padding: 4px 9px;
+          background-color: $background-secondary;
+          border: 1px solid $color-primary;
+        }
+      }
+    }
+  }
+}

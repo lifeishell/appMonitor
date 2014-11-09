@@ -1,0 +1,31 @@
+$header-height: 100px !default;
+$layout-padding-left: 70px !default;
+
+/******* LAYER LAYOUT *******/
+
+.st-pusher.pusher-has-layer {
+	opacity: .5;
+	filter: blur(10px);
+}
+
+#main-display {
+	padding-top: $header-height;
+	padding-left: $layout-padding-left;
+	
+	overflow-x: scroll;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-ms-scroll-chaining: chained;
+	-ms-scroll-snap-type: proximity;
+	-ms-scroll-snap-points-x: snapList(0%, 100%, 200%, 300%, 400%, 500%);
+	-webkit-overflow-scrolling: touch;
+	
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+#content {
+	position: relative;
+	float: left;
+	min-width:100%;
+}

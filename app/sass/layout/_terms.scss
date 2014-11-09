@@ -1,0 +1,135 @@
+$bg-flying-term: #f3f3f3 !default;
+$fz-flying-term-content: 16px !default;
+$fc-flying-term-content: #373737 !default;
+
+/* Flying overlay
+===
+This element acts as full-screen overlay, which is suitable for terms & conditions pages, help popups and other information which should not otherwise disrupt navigation flow. To use it, modify the following html as you see fit.
+```
+<div class="flying-term">
+    <h1><i class="MyX-appbararrowleft"></i> Terms &amp; Conditions</h1>
+    <div class="flying-term--content">
+        <div class="scrollable">
+            <div class="flying-term__text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Pellentesque sapien. Nulla non lectus sed nisl molestie malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse nisl. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Aenean fermentum risus id tortor. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quisque porta. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec quis nibh at felis congue commodo. Fusce suscipit libero eget elit. Integer malesuada. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Nulla non lectus sed nisl molestie malesuada.</p>
+
+                <h2>Aliquam erat volutpat</h2>
+                <p>Aliquam erat volutpat. Maecenas libero. Aliquam erat volutpat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aliquam id dolor. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Integer pellentesque quam vel velit. Etiam posuere lacus quis dolor. Maecenas sollicitudin. Nullam dapibus fermentum ipsum. Aliquam ante.</p>
+
+                <div class="flying-term__footer">
+                    <div class="flying-term__footer__item pull-left">
+                        <strong class="text-lg ng-scope">Representative Signature</strong>
+                        <div class="signatureparent"><div class="signature"><div class="signature-cover"></div><button class="btn btn-primary button-initialize"><i class="MyX-appbaredit2"></i> Sign</button><span class="button-clear">Clear</span></div><button class="btn btn-primary pull-left button-reset"><i class="MyX-appbarundo2"></i> Reset</button><button class="btn btn-primary pull-right button-confirm"><i class="MyX-appbarcheck2"></i> Confirm</button></div>
+                    </div>
+                    <div class="flying-term__footer__item pull-right">
+                        <strong class="text-lg ng-scope">Client Signature</strong>
+                        <div class="signatureparent"><div class="signature"><div class="signature-cover"></div><button class="btn btn-primary button-initialize"><i class="MyX-appbaredit2"></i> Sign</button><span class="button-clear">Clear</span></div><button class="btn btn-primary pull-left button-reset"><i class="MyX-appbarundo2"></i> Reset</button><button class="btn btn-primary pull-right button-confirm"><i class="MyX-appbarcheck2"></i> Confirm</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
+.flying-term {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: $bg-flying-term;
+	padding: 4%;
+    z-index: z(myx-overlay);
+		
+	h1 {
+		display: table-row;
+		font-size: 46px;
+		
+		> i {
+			color: $gray;
+			display: inline-block;
+			font-size: 30px;
+			padding-right: 8px
+		}
+	}
+
+	&--content {
+		position: relative;
+		height: 90%;
+		margin: 2% auto 0;
+		display: table;
+		width: 89%;
+		font-size: $fz-flying-term-content;
+
+		p {
+			font-size: $fz-flying-term-content;
+			color: $fc-flying-term-content;
+		}
+	}
+	
+	.flying-term__text {
+		height: 100%;
+		padding: 10px 0 20px;
+	}
+	.flying-term__footer {
+		@include clearfix();
+		margin: 30px 0 10px;
+		
+		.flying-term__footer__item {
+			width: 40%;
+		}
+	}
+	.myx-content-list__item {
+		padding: 0;
+		margin-bottom: 30px;
+		border-bottom: 0 none;
+		font-size: $fz-flying-term-content;
+		color: $fc-flying-term-content;
+
+        // add bottom margin to last item
+		&:last-child {
+			margin-bottom: 200px;
+		}
+        // remove margin set above from nested lists
+        .myx-content-list__item:last-child{
+            margin-bottom: 30px;
+        }
+		
+		strong {
+			font-family: $font-secondary;
+		}
+		&--title {
+			font-family: $font-secondary;
+			padding: 0;
+			margin-bottom: 15px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	.scrollable {
+		padding-bottom: 10%;
+		
+		&:before {
+			background: linear-gradient(rgba(243,243,243,1) 0%, rgba(243, 243, 243, 0) 100%);
+		}
+		&:after {
+			background: linear-gradient(rgba(243,243,243,0) 0%, rgba(243, 243, 243, 1) 100%);
+			bottom: 0;
+		}
+	}
+	.signatureparent {
+		background: transparent;
+	}
+}
+
+.link-terms {
+    @extend .text-primary;
+    @extend .text-lg;
+
+    word-break: break-all;
+
+    display: block;
+    padding-top: 15px;
+}

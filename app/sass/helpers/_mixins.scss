@@ -1,0 +1,34 @@
+@mixin ellipsis() {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin fontface() {
+	font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	strong {
+		font-family: "Segoe UI", "SegoeUIRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	span {
+		font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+}
+
+/* Background image
+===
+Mixin to use a background image primarily for SVG
+```
+.login__content__logo{
+	@include background-image("#{$myx-module-style-path}/assets/lincoln/myservice/lincoln-myservice.svg", 250px, 94px);
+}
+```
+*/
+@mixin background-image($image, $width, $height) {
+    background-image: url($image);
+    background-size: $width $height;
+    width:  $width;
+	height: $height;
+	display: block;
+}

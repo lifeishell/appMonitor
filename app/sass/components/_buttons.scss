@@ -1,0 +1,93 @@
+$font-buttons: $font-primary !default;
+
+@import "../../bower_components/bootstrap-sass/lib/buttons";
+
+.btn{
+  font-family: $font-buttons;
+}
+
+/*
+Invert Buttons
+------
+	<button class="btn btn-primary__invert">A/C Blows Cold</button>
+*/
+
+.btn-primary__invert {
+	@extend .btn-primary;
+	border-color: $btn-primary-bg;
+	color: $btn-primary-bg;
+	background: #fff;
+	
+	&:hover,
+	&:focus {
+		color: $btn-primary-border;
+		border-color: $btn-primary-border;
+		background: #fff;
+		text-decoration: none;
+	}
+}
+
+
+/*
+Activity actions - Size
+------
+	<i class="MyX-appbaradd btn-action"></i>
+	<i class="MyX-appbarpageedit2 btn-action text-primary"></i>
+*/
+.btn-action {
+	font-size: 38px;
+	color: $gray;
+}
+
+ 
+/*
+Activity actions - Min. size 215px and Text align: left
+------
+	<i class="MyX-appbaradd btn-action myx-button--activity"></i>
+	<i class="MyX-appbarpageedit2 btn-action text-primary myx-button--activity"></i>
+*/
+ 
+.myx-button--activity { 
+	text-align: left;
+    min-width: 215px;
+    margin-right: 5px;
+}
+
+/*
+Item Button Group
+------
+<li class="myx-content-list__item myx-column item__button__group">
+	<button class="btn btn-primary__invert myx-button--activity">Lights ext/int</button>
+	<button class="btn btn-primary__invert myx-button--activity">Transmission</button>
+	<button class="btn btn-primary__invert myx-button--activity">Exhaust</button>
+	<button class="btn btn-primary__invert myx-button--activity">Belts + levels</button>
+	<button class="btn btn-primary__invert myx-button--activity">Engine oil/ top up pack</button>
+	<button class="btn btn-primary__invert myx-button--activity">Engine</button>
+	<button class="btn btn-primary__invert myx-button--activity">Break fluid</button>
+</li>
+*/
+
+.item__button__group {
+	white-space: normal !important;
+	text-overflow: inherit !important;
+
+	.btn {
+		margin-bottom: 3px;
+		margin-top: 3px;
+	}
+}
+
+/*
+Default button styles + right margin
+------
+<button class="btn btn-default">Exhaust</button>
+<button class="btn btn-primary">Transmission</button>
+*/
+.btn {
+	margin-right: 6px;
+	padding: $padding-base-vertical $padding-base-horizontal*2;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}

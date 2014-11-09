@@ -1,0 +1,132 @@
+$status-color:
+        ('green',green)
+        ('yellow',yellow)
+        ('red',red)
+        ('gray',gray) !default;
+
+// local variables - not meant to be updated
+$status-direction:
+        ('left')
+        ('right') !default;
+
+/*
+Status dot icon
+------
+Inline left/right status icon -- Color GREEN / YELLOW / RED
+
+class="status__left__green"
+class="status__left__yellow"
+class="status__left__red"
+class="status__left__gray"
+
+class="status__right__green"
+class="status__right__yellow"
+class="status__right__red"
+class="status__right__gray"
+```
+<div class="item__wrap radio label-checkbox">
+	<label>
+		<input type="checkbox" class="status__left__yellow"> Check me out
+	</label>
+</div>
+
+<div class="item__wrap radio label-radio">
+	<label>
+		<input type="radio" class="status__right__green">
+	</label>
+</div>
+
+<div class="item__wrap">
+	<p class="status__left__red">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+
+<div class="status__left__red status__xl">
+	<strong class="item__info__row--subline text-primary">CHECK</strong>
+	<span class="item__info__row--subline">Front left tire/wheel</span>
+</div>
+```
+*/
+
+.status__dot {
+	position: relative;
+	
+	&:after {
+		@extend .img-circle;
+		content: '';
+		display: block;
+		line-height: 21px;
+		height: 21px;
+		width: 21px;
+		position: absolute;
+		top: 0;
+		z-index: z(status-dot-circle);
+	}
+	
+	&__right {
+		margin-right: 35px !important;
+		&:after {
+			right: -30px;
+		}
+		
+		&.status__xl {
+			margin-right: 50px !important;
+				
+			&:after {
+				width: 28px;
+				height: 28px;
+				top: 5px;
+				right: -43px;
+			}
+		}
+	}
+	&__left {
+		margin-left: 35px !important;
+		&:after {
+			left: -30px;
+		}
+		
+		&.status__xl {
+			margin-left: 50px !important;
+				
+			&:after {
+				width: 28px;
+				height: 28px;
+				top: 5px;
+				left: -43px;
+			}
+		}
+	}
+}
+
+.status__xl {
+	&:before {
+		@extend .img-circle; //for 50% border radius
+		content: ''; //because it's they main property for before/after
+		display: block;
+		height: 38px;
+		width: 38px;
+		position: absolute;
+		left: -48px; //positioning under class :after
+		z-index: z(status-dot-circle-round); //positioning under class :after
+		border: solid 1px lighten($gray, 30%); //1px border enveloping element :after
+	}
+}
+
+@mixin status-theme($direction, $colorName, $colorValue) {
+	.status__#{$direction}__#{$colorName} {
+		@extend .status__dot;
+		@extend .status__dot__#{$direction};
+		
+		&:after {
+			@extend .status__dot__#{$colorName};
+		}
+	}
+	.status__dot__#{$colorName} {
+		background: $colorValue;
+	}
+}
+@each $color in $status-color {
+	@each $direction in $status-direction {
+	  @include status-theme($direction, nth($color,1), nth($color,2));
+	}
+}

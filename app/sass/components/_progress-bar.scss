@@ -1,0 +1,33 @@
+$myx-progress-line-bgcolor: rgba(37,160,219, .85) !default;
+$myx-progress-line-bgimage: rgba(255,255,255,.55) !default;
+
+/* MyX - Progress bar
+===
+This is a simple progress bar which allows displaying current task/process state. It currently only supports determinate processes.
+```
+<div class="myx-progress-bar">
+    <div class="myx-progress-line" style="width: 30%;"></div>
+</div>
+```
+*/
+.myx-progress-bar {
+    clear: both;
+    height: 10px;
+    
+    background-image: linear-gradient(45deg, transparent 50%, $myx-progress-line-bgimage 50%, $myx-progress-line-bgimage 55%, transparent 55%, transparent 75%, $myx-progress-line-bgimage 75%, $myx-progress-line-bgimage 80%, transparent 80%, transparent);
+    background-color: lighten($gray, 30%);
+    background-size: 20px 20px;
+    
+    z-index: z(myx-progress-bar);
+    position: relative;
+
+    .myx-progress-line {
+        height: 100%;
+        background-color: $myx-progress-line-bgcolor;
+
+        z-index: z(myx-progress-line);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

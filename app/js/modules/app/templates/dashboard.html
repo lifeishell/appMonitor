@@ -1,0 +1,10 @@
+<div class="metro">
+  <ul>
+	  <li ng-repeat="section in activeSections" ng-class="{'is-select': activeSection.id === section.id}">
+		  <span ng-click="changeSection(section)">{{ section.name }}</span>
+		  <span ng-click="closeSection(section)"><i class="MyX-appbarclose"></i></span>
+	  </li>
+  </ul>
+</div>
+<div loading-icon ng-show="showLoading()"></div>
+<div ng-include="activeSection.templateUrl" ng-class="section.cssClass" ng-show="!showLoading()" /></div>

@@ -1,0 +1,81 @@
+$myx-select-selected-bgcolor: $color-primary !default;
+//was #FF9C00 !default;
+$myx-select-invalid-bordercolor: #d9534f !default;
+$myx-select-disabled-bgcolor: #b8b8b8 !default;
+
+/* MyX Select
+===
+This is a select dropdown which is meant as a replacement for common browser-dependent select component. Use it like this:
+```
+<div class="myx-select">
+    <div myx-fast-click class="myx-select__selected-value">Sample text</div>
+    <ul class="dropdown">
+        <li myx-fast-click class="disabled">Option 1 (disabled)</li>
+        <li myx-fast-click class="selected">Option 2 (selected)</li>
+        <li myx-fast-click>Option 3 (normal)</li>
+    </ul>
+</div>
+```
+To show invalid state, add class "invalid"
+```
+<div class="myx-select">
+    <div myx-fast-click class="myx-select__selected-value invalid">Sample text</div>
+</div>
+```
+*/
+.myx-select {
+  position: relative;
+  z-index: z(myx-select);
+
+  &__selected-value {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    border: 1px solid #b8b8b8;
+    position: relative;
+  }
+
+  .dropdown {
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 151px;
+    padding: 0px !important;
+    border: 1px solid #b8b8b8;
+    position: absolute;
+    top: 36px;
+    z-index: z(myx-select-dropdown);
+    background-color: white;
+  }
+
+  .dropdown li {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px !important;
+    border-bottom: 1px solid #b8b8b8;
+  }
+
+  .selected {
+    background-color: $myx-select-selected-bgcolor;
+    color: white;
+  }
+
+  .invalid {
+    border-color: $myx-select-invalid-bordercolor;
+  }
+
+  .disabled {
+    background-color: $myx-select-disabled-bgcolor;
+  }
+
+  .label {
+    margin-left: -$padding-base-horizontal;
+    display: inline-block;
+    margin-top: -8px;
+    padding: 5px 5px;
+    height: 37px;
+    width: 38px;
+    margin-right: 5px;
+  }
+}

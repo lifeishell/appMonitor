@@ -1,0 +1,50 @@
+.booking-detail-edit {
+  .myx-tabs {
+    .myx-tabs__item {
+      padding: 15px;
+    }
+  }
+}
+
+.bookings {
+  .vehicle, .customer {
+    overflow: hidden;
+  }
+
+  .period-select {
+    background: #fff url(../img/bt-general.png) 20px -28px no-repeat;
+    padding: 6px 10px;
+    border: 1px solid #fff;
+    width: 120px;
+    height: 34px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    option, optgroup {
+      text-align: center;
+      color: $gray;
+    }
+
+    &:focus {
+      outline: none;
+
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .bookings .period-select {
+    background: none;
+    width: 120px;
+  }
+  .bookings .period-select option, .bookings .period-select optgroup {
+    text-align: left;
+    padding-left: 5px;
+  }
+}

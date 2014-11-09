@@ -1,0 +1,102 @@
+/* MyX - Modal
+===
+The modal element is triggered by using a shared service called DialogService. It can be used for showing modal windows with structure and design as shown below (excluding the min-height):
+```
+<div class="myx-modal" style="min-height: 250px;">
+    <div class="myx-modal--wrap">
+        <div class="myx-modal__body">
+            <h2>Modal title</h2>
+            <p>Model description</p>
+        </div>
+        <div class="myx-modal__footer">
+            <button class="btn btn-primary">Next</button>
+            <button class="btn btn-default">Cancel</button>
+        </div>
+    </div>
+</div>
+```
+To add elements inside the component, use it like this (excluding the min-height):
+
+TODO: fix radios display in docs
+```
+<div class="myx-modal" style="min-height: 300px;">
+    <div class="myx-modal--wrap">
+        <div class="myx-modal__body">
+            <h2>Modal title</h2>
+            <p>Model description</p>
+            <div ng-show="radioButtons" class="">
+                <label class="label-radio">
+                    <input type="radio" name="radio">Very Positive
+                </label>
+                <label class="label-radio">
+                    <input type="radio" name="radio">Positive
+                </label>
+                <label class="label-radio">
+                    <input type="radio" name="radio">Neutral
+                </label>
+                <label class="label-radio">
+                    <input type="radio" name="radio">Negative
+                </label>
+            </div>
+        </div>
+        <div class="myx-modal__footer">
+            <button class="btn btn-primary">Next</button>
+            <button class="btn btn-default">Cancel</button>
+        </div>
+    </div>
+</div>
+```
+*/
+.myx-modal {
+    overflow: auto;
+    overflow-y: scroll;
+
+    background: rgba(#000, .4);
+    
+    z-index: z(myx-modal);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    .myx-modal--wrap {
+        margin-top: -100px;
+        min-height: 200px;
+
+        background: #fff;
+        background-clip: padding-box;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        
+        .myx-modal__body {
+            color: $gray;
+            position: relative;
+            padding: 20px 0;
+            max-width: 700px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .myx-modal__footer {
+            text-align: right;
+            padding: 0 0 20px;
+            margin: 0 auto;
+            max-width: 700px;
+            width: 90%;
+        }
+        .btn {
+            padding: 6px 30px;
+            margin-left: 20px;
+        }
+
+        label {
+            padding: 15px;
+        }
+        input[type="radio"] {
+            margin: -1px 7px;
+        }
+    }
+}

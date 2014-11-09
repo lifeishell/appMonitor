@@ -1,0 +1,77 @@
+.list-yammer-container {
+	padding-top: 0 !important;
+}
+
+.list-item--yammer {
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+
+    .item-sender {
+        display: block;
+
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .item-message {
+        display: block;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .item-options {
+        display: inline-block;
+
+        font-size: 12px;
+        color: gray;
+    }
+
+    .item-group {
+      color: #25a0db;
+    }
+
+    .item-name {
+      color: #ff9933;
+    }
+
+}
+
+.login-yammer {
+  width: 100%;
+  padding-top: 40%;
+  color: gray;
+}
+
+
+.login-yammer_legend {
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+
+.login-yammer_button {
+  width: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: #25a0db;
+  color: white;
+  box-shadow: 1px 1px 1px darkgray;
+  display: block;
+}
+
+
+.yammer-action {
+  float: right;
+  font-weight: bold;
+  color: gray;
+}
+
+.new-message {
+  background: #eee;
+}

@@ -1,0 +1,154 @@
+$widget-item-height: 50px !default;
+$widget-item-padding: 10px !default;
+$layer-padding: 50px !default;
+
+/* ==========================================================================
+MyX - Widgets
+========================================================================== */
+
+/* LANDSCAPE */
+@media screen and (orientation:landscape) {
+    .widgets-list-wrapper {
+        width: 70% !important;
+    }
+    .widget-details-wrapper {
+        width: 30% !important;
+    }
+    .active-widgets-list-wrapper, .inactive-widgets-list-wrapper {
+        width: 49%;
+
+        float: left;
+    }
+    .active-widgets-list-wrapper {
+        margin-right: 2%;
+    }
+}
+
+.sort-layer,.sort-layer-inner {
+    height: 100%;
+}
+
+.sort-layer {
+    overflow: hidden;
+    position: absolute; 
+    z-index: z(sort-layer) !important;
+    width: 100%;
+}
+
+.sort-layer-inner {
+    padding: $layer-padding;
+    padding-top: 100px;
+}
+
+.sort-layer-options {
+    width: 100px;
+    margin-left: -50px;
+    padding: 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    
+    background: lightgray;
+}
+
+/******* WIDGET LIST *******/
+.widgets-list-wrapper {
+    height: 100%;
+    width: 40%;
+    padding: 0 $layer-padding + px;
+
+    float: left;
+
+    border-right: 2px solid #dedede;
+}
+
+.widgets-list {
+    @include clearfix();
+
+    height: auto;
+    min-height: 100px;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.widget, .sortable-placeholder {
+    height: $widget-item-height;
+    padding: $widget-item-padding;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 10px + $widget-item-height;
+    }
+
+    line-height: $widget-item-height - ($widget-item-padding * 2);
+}
+
+.widget {
+    color: #fff;
+    background: $color-primary;
+}
+
+.widgets-inactive .widget {
+    background: $gray;    
+}
+
+.widgets-inactive .removeWidget {
+    display: none;
+}
+
+.sortable-placeholder {
+    background: lightgoldenrodyellow;
+    border: 3px dotted $color-primary;
+}
+
+.widgets-inactive .sortable-placeholder {
+    background: #dedede;
+    border: 3px dotted $gray;
+}
+
+/******* WIDGET DETAILS *******/
+
+.widget-details-wrapper {
+    height: 100%;
+    width: 60%;
+    padding-left: $layer-padding;
+
+    float: left; 
+}
+
+.widget-details {
+    height: 50%;
+}
+
+.widget-details--infos {  
+    border-bottom: 2px solid #dedede;
+}
+
+.widget-details-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.widget-details-inner--config {
+    padding-top: 20px;
+}
+
+.widget-picture {
+    width: 100px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    float: left;
+}
+
+.widget-infos {
+    width: 50%;
+
+    float: left;
+}
+
+.widget-name {
+    color: $color-primary;
+}

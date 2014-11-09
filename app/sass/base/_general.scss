@@ -1,0 +1,135 @@
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content,
+.st-content-inner,
+.app-container,
+#main-display,
+#content {
+    height: 100%;
+}
+
+.input-clear {
+    // remove IOS default style on inputs date
+    -webkit-appearance: none;
+}
+
+body {
+  background: linear-gradient(#fff, #d9d9d9);
+
+  * {
+    a, a:hover, a:active {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    [myx-fast-click] {
+      cursor: pointer;
+    }
+  }
+}
+
+img {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul{
+  list-style-type: disc;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+
+  &:not(.labelled){
+    list-style-type: none;
+  }
+}
+
+// ----------------------------------------
+.page--title {
+    display: table-row;
+    position: relative;
+    height: 72px;
+    &__name {
+        position: absolute;
+        font-size: 48px;
+        margin: 0 0 20px;
+        
+        i {
+            font-size: 36px;
+        }
+    }
+}
+
+// ----------------------------------------
+
+.metro {
+    display: table-row;
+}
+
+.wagon {
+    display: table-cell;
+    height: 100%;
+    vertical-align: top;
+}
+.block-1x {
+    margin-right: 33px;
+}
+
+.myx-btn {
+    display: inline-block;
+
+    margin-left: 20px;
+    margin-top: 20px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    i {
+        font-size: 40px;
+    }
+}
+
+.btn-horizontal {
+    @extend .myx-btn;
+
+    span {
+        padding-left: 10px;
+        line-height: 40px;
+
+        vertical-align: top;
+    }
+}
+
+.btn-vertical {
+    @extend .btn;
+
+    &:hover,
+    &:focus {
+      color: inherit !important;
+    }
+
+    span {
+        display: block;
+		    padding-top: 5px;
+        text-align: center;
+    }
+
+    i {
+	    font-size: 40px;
+    }
+}

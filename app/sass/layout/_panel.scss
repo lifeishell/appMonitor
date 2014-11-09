@@ -1,0 +1,650 @@
+$panel-width: 485px;
+$timeline-width: 65px;
+$panel-whitout-timeline: 425px;
+/* ==========================================================================
+Page edit
+========================================================================== */
+.page-create,
+.page-edit {
+	#main-display {
+		padding: 0;
+		 
+		#content {
+			position: static;
+		}
+	}
+}
+.fullheight{
+    height: 100%;
+}
+
+.form {
+  .field-Telephone, .field-PreferredEmail, .field-Product, .field-PriceWoVat {
+    width: 50%;
+    float: left;
+    padding-right: 7px;
+  }
+
+  .field-Trimline, .field-EngineTransmission, .field-Interior, .field-Wheels, .field-UnitPrice, .field-Discount, .field-SubTotal, .field-Tax, .field-ExteriorColor {
+    width: 50%;
+    float: left;
+    padding-right: 7px;
+  }
+
+  .bbf-datetime {
+    .day {
+      width: 20%;
+      float: left;
+      padding-right: 7px;
+    }
+
+    .month {
+      width: 50%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 7px;
+
+    }
+
+    .year {
+      width: 30%;
+      float: left;
+      padding-left: 7px;
+    }
+
+    .hour {
+      width: 50%;
+      float: left;
+      padding-right: 7px;
+      padding-top: 15px;
+    }
+
+    .min {
+      width: 50%;
+      float: left;
+      padding-left: 7px;
+      padding-top: 15px;
+    }
+
+    .bbf-time-container {
+      pa-top: 15px;
+    }
+  }
+}
+
+.st-pusher {
+  height: 100%;
+  position: relative;
+  left: 0;
+  z-index: z(st-pusher);
+
+  -webkit-transition: -webkit-transform 0.8s;
+  -ms-transition: -webkit-transform 0.8s;
+}
+
+.st-menu-open .st-pusher {
+  -webkit-transform: translate3d($panel-whitout-timeline, 0, 0);
+  -ms-transform: translate3d($panel-whitout-timeline, 0, 0);
+}
+
+.view-contact {
+  .st-menu {
+    .st-menu-timeline {
+      visibility: visible;
+    }
+    .st-menu-content {
+      left: $timeline-width;
+
+      -ms-overflow-style: none;
+      *::-webkit-scrollbar {
+        display: none;
+      }
+
+      &.st-menu-content-step-2 {
+        left: $timeline-width + $panel-whitout-timeline;
+        background: lighten($color-primary, 10%);
+        padding: 0;
+      }
+      &.st-menu-content-step-3 {
+        left: $timeline-width + $panel-whitout-timeline + $panel-whitout-timeline;
+        background: lighten($color-primary, 20%);
+        padding: 0;
+      }
+    }
+  }
+  .st-menu-open .st-pusher {
+    -webkit-transform: translate3d($panel-width, 0, 0);
+    -ms-transform: translate3d($panel-width, 0, 0);
+  }
+}
+
+.cancel {
+  padding-top: 20px;
+}
+
+.iconSave {
+  span {
+    margin-right: 10px;
+  }
+}
+
+.pull-left h3 {
+  margin-top: 7px;
+
+  .iconCancel {
+    font-size: 60px;
+  }
+}
+
+.pull-right .icon-save {
+  font-size: 30px;
+}
+
+.form-actions {
+  padding: 20px;
+  height: 77px;
+
+  background: orange;
+  box-shadow: 0 -1px 15px rgba(233, 116, 0, .4);
+  
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  i {
+    font-size: 35px;
+  }
+  .icon-text {
+    font-size: 25px;
+    line-height: 38px;
+  }
+}
+
+/* ST Menu - Insurance */
+.insurace-detail {
+	width: 330px;
+	margin-right: 35px;
+	float: left;
+
+    .text-lg {
+        font-size: 130%;
+    }
+    .bottom-line {
+        border-color: $color-primary;
+    }
+
+    .vehicle-insurace-title {
+        color: $color-primary;
+        display: block;
+
+        &.bottom-line {
+            border-color: $color-primary;
+            margin: 0 0 10px;
+        }
+    }
+
+    .bottom-line {
+        border-bottom: solid 1px $gray;
+        margin: 0 0 5px;
+        padding: 0 0 5px;
+    }
+
+    ul {
+        padding: 0;
+
+        > li {
+            @include clearfix();
+            height: auto;
+
+            .vehicle-insurace-item {
+                @include clearfix();
+
+                .vehicle-insurace-item-title {
+                    &.pull-left {
+                        width: 65%;
+                    }
+                    &.pull-right {
+                        width: 35%;
+                    }
+                    span {
+                        color: $gray;
+                    }
+                    strong {
+                        display: block;
+                    }
+                }
+            }
+            .vehicle-incurance-type-head-wrap {
+                @include clearfix();
+
+                .vehicle-incurance-type-head {
+                    width: 48.5%;
+                    margin: 15px 0 25px;
+                    line-height: 80px;
+                    position: relative;
+                    background: darken($gray, 35%);
+
+                    > span {
+                        text-align: center;
+                        font-size: 18px;
+                        position: relative;
+                        color: #fff;
+                        vertical-align: middle;
+                        display: inline-block;
+                        width: 100%;
+                        line-height: 22px;
+                    }
+
+                    ul {
+                        display: none;
+                        visibility: hidden;
+                    }
+
+                    &.open {
+                        background: $color-primary;
+
+                        &:after {
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 13px 10px 0 10px;
+                            border-color: #fff transparent transparent transparent;
+                            content: " ";
+                            position: absolute;
+                            bottom: -13px;
+                            left: 50%;
+                            margin-left: -10px;
+                        }
+
+                        ul {
+                            display: block;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+            .vehicle-incurance-type-item {
+                .vehicle-incurance-duration {
+                    font-size: 110%;
+                    margin-bottom: 15px;
+
+                    strong {
+                        margin-bottom: 5px;
+                        display: block;
+                    }
+
+                    label {
+                        margin-right: 60px;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+            .vehicle-insurace-item-list {
+                ul {
+                    margin: 10px 0 5px 0px;
+                }
+                li {
+                    display: list-item;
+                    list-style: none;
+
+                    &:after,
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+            .vehicle-insurace-item-price {
+                font-size: 120%;
+                color: black;
+            }
+            .vehicle-insurace-date {
+                color: $color-primary;
+            }
+            .vehicle-insurace-item-price-total {
+                font-size: 130%;
+                color: black;
+
+                .pull-right {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+/* Financing */
+.financing-detail {
+	width: 330px;
+	margin-right: 35px;
+	float: left;
+	
+    .bottom-line {
+        border-color: lighten($color-primary, 40%);
+    }
+
+    .vehicle-financing-title {
+        color: $color-primary;
+        display: block;
+    }
+    .vehicle-financing-price {
+        margin-bottom: 30px;
+        font-size: 130%;
+    }
+
+    .bottom-line {
+        border-bottom: solid 1px $gray;
+        margin: 0 0 5px;
+        padding: 0 0 5px;
+    }
+
+    ul {
+        padding: 0;
+
+        > li {
+            @include clearfix();
+            height: auto;
+
+            .vehicle-financing-type-head-wrap {
+                @include clearfix();
+
+                .vehicle-financing-type-head {
+                    width: 48.5%;
+                    line-height: 80px;
+                    position: relative;
+                    background: darken($gray, 35%);
+
+                    > span {
+                        text-align: center;
+                        font-size: 18px;
+                        color: #fff;
+                        position: relative;
+                        vertical-align: middle;
+                        display: inline-block;
+                        width: 100%;
+                        line-height: 22px;
+                    }
+
+                    ul {
+                        display: none;
+                        visibility: hidden;
+                    }
+                    &.open {
+                        background: $color-primary;
+
+                        &:after {
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 13px 10px 0 10px;
+                            border-color: #fff transparent transparent transparent;
+                            content: " ";
+                            position: absolute;
+                            bottom: -13px;
+                            left: 50%;
+                            margin-left: -10px;
+                        }
+
+                        ul {
+                            display: block;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+            .vehicle-financing-type-item {
+                display: none;
+                visibility: hidden;
+
+                &.open {
+                    display: block;
+                    visibility: visible;
+                }
+
+            }
+            .vehicle-financing-item-select {
+                font-size: 120%;
+                margin-top: 25px;
+
+                .form-control {
+                    margin: 5px 0 10px;
+                }
+            }
+            .vehicle-financing-item-price {
+                font-size: 120%;
+                color: $gray;
+
+            }
+
+        }
+    }
+}
+
+/* Test Drive Form */
+
+.field-date, .field-time {
+  display: inline-block;
+  width: 49%;
+
+  input {
+    width: 100%;
+  }
+}
+
+.field-date {
+  margin-right: 5px;
+}
+
+.field-lasts {
+  input {
+    margin-right: 5px;
+  }
+}
+
+.inputs-wrapper {
+  width: 50%;
+}
+
+.inputs-wrapper--left {
+  float: left;
+}
+
+.inputs-wrapper--right {
+  float: right;
+}
+
+/* ==========================================================================
+Contact page - widget Vehicle History
+========================================================================== */
+.vehicle-vehiclehistory-panel {
+	.vehicle-vehiclehistory-item {
+		margin-bottom: 15px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		.vehicle-vehiclehistory-head {
+			line-height: 57px;
+			vertical-align: middle;
+			color: $gray;
+			overflow: hidden;
+			background: lighten($gray, 44%);
+			border-left: solid 4px lighten($gray, 44%);
+			&.open {
+				border-color: $color-primary;
+			}
+
+			.activity-actions {
+				font-size: 34px;
+				padding-right: 15px;
+				padding-top: 6px;
+				span {
+					vertical-align: middle;
+				}
+			}
+			.vehicle-vehiclehistory-head-name {
+				
+				.vehicle-vehiclehistory-head-icon {
+					font-size: 32px;
+					min-width: 55px;
+					vertical-align: middle;
+					display: block;
+					float: left;
+					text-align: center;
+					img {
+						vertical-align: middle;
+						width: auto;
+					}
+					i {
+						font-size: 57px;
+						vertical-align: middle;
+					}
+				}
+				.vehicle-vehiclehistory-head-name-img {
+					width: 133px;
+					float: left;
+				}
+				.vehicle-vehiclehistory-head-name-text {
+					display: inline-block;
+					vertical-align: middle;
+					line-height: 12px;
+					padding: 10px 0 0 15px;
+					
+					strong {
+						font-weight: bold;
+						display: block;
+					}
+				}
+			}
+		}
+		.vehicle-vehiclehistory-content {
+			padding: 10px 0;
+			font-size: 120%;
+			
+			.vehicle-vehiclehistory-content-list {
+				@include clearfix();
+				padding: 15px 8px;
+				border-bottom: solid 1px lighten($gray, 25%);
+				
+				&:last-child {
+					border-bottom: 0 none;
+				}
+				span {
+					width: 55%;
+					float: left;
+					padding-right: 10px;
+					font-weight: bold;
+				}
+				strong {
+					float: left;
+					width: 45%;
+					color: $gray;
+				}
+			}
+		}
+	}
+}
+
+
+/* Company detail, create and edit */
+.edit-panel {
+  .label-radio {
+    input[type="radio"] {
+      border: 2px solid #bababa;
+      border-radius: 15px;
+      margin: 0 7px 0 0;
+      cursor: pointer;
+      background: none;
+    }
+
+    input[type="radio"] + input[type="radio"] {
+      margin-left: 7px;
+    }
+
+    input[type="radio"]:disabled {
+      background: #c7c7c7;
+      border-color: #bababa;
+      cursor: default;
+    }
+
+    input[type="radio"]:checked:after {
+      content: "";
+      display: block;
+      width: 11px;
+      height: 11px;
+      background: $gray;
+      border-radius: 10px;
+      margin: 3px 0 0 3px;
+    }
+
+    label {
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    label + label {
+      margin-left: 7px;
+    }
+  }
+
+  .label-radio.long-label {
+    input[type="radio"] {
+      margin-top: 2px;
+    }
+    label {
+      width: 89%
+    }
+  }
+}
+
+/* MyX PopOver Info Box - All Panels */
+.myx-popover {
+  > .show-box {
+    display: none;
+
+    background-color: #666;
+    border: solid 1px #000;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+
+    position: absolute;
+      top: -33px;
+      width: 280px;
+  }
+}
+
+.myx-popover.open {
+  > span {
+    color: $gray;
+  }
+}
+
+/* MyX Google Map - All Panels */
+.myx-map {
+  display: block;
+  width: 265px;
+  height: 185px;
+  
+  > .map-canvas {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ==========================================================================
+MyX - Take photo
+========================================================================== */
+.take-photo {
+	background: lighten($gray, 22%);
+	line-height: 160px;
+	color: #fff;
+	text-align: center;
+	
+	i {
+		font-size: 40px;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,7442 @@
+@font-face {
+	font-family: 'MyX-Project';
+	src: url('#{$myx-module-style-path}/fonts/MyX-Project.eot');
+}
+@font-face {
+	font-family: 'MyX-Project';
+    src: url('#{$myx-module-style-path}/fonts/MyX-Project.ttf') format('truetype'),url('#{$myx-module-style-path}/fonts/MyX-Project.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+
+[class^="MyX-"], [class*=" MyX-"] {
+	font-family: 'MyX-Project';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.MyX-forward:before {
+	content: "\efa7";
+}
+.MyX-back:before {
+	content: "\efa8";
+}
+.MyX-appbarcalendar-x:before {
+	content: "\efa5";
+}
+.MyX-appbarcalendar-x2:before {
+	content: "\efa6";
+}
+.MyX-appbarsetdefault:before {
+	content: "\e600";
+}
+.MyX-appbarsetdefault2:before {
+	content: "\e601";
+}
+.MyX-appbarzune:before {
+	content: "\e602";
+}
+.MyX-appbaryoutube:before {
+	content: "\e603";
+}
+.MyX-appbaryoutubeplay:before {
+	content: "\e604";
+}
+.MyX-appbarxbox:before {
+	content: "\e605";
+}
+.MyX-appbarwindowsphone:before {
+	content: "\e606";
+}
+.MyX-appbarwindow:before {
+	content: "\e607";
+}
+.MyX-appbarwindowsimple:before {
+	content: "\e608";
+}
+.MyX-appbarwindowrestore:before {
+	content: "\e609";
+}
+.MyX-appbarwindowminimize:before {
+	content: "\e60a";
+}
+.MyX-appbarwindowmaximize:before {
+	content: "\e60b";
+}
+.MyX-appbarwindowclosed:before {
+	content: "\e60c";
+}
+.MyX-appbarwindowcasement:before {
+	content: "\e60d";
+}
+.MyX-appbarwindowcasementclosed:before {
+	content: "\e60e";
+}
+.MyX-appbarwebcam:before {
+	content: "\e60f";
+}
+.MyX-appbarweatherthunder:before {
+	content: "\e610";
+}
+.MyX-appbarweathersymbol:before {
+	content: "\e611";
+}
+.MyX-appbarweathersun:before {
+	content: "\e612";
+}
+.MyX-appbarweathersunset:before {
+	content: "\e613";
+}
+.MyX-appbarweathersunrise:before {
+	content: "\e614";
+}
+.MyX-appbarweatherstation:before {
+	content: "\e615";
+}
+.MyX-appbarweathersnow:before {
+	content: "\e616";
+}
+.MyX-appbarweatherrain:before {
+	content: "\e617";
+}
+.MyX-appbarweatherovercast:before {
+	content: "\e618";
+}
+.MyX-appbarweatherchance:before {
+	content: "\e619";
+}
+.MyX-appbarwaterdroplet:before {
+	content: "\e61a";
+}
+.MyX-appbarwaterdropletreflection:before {
+	content: "\e61b";
+}
+.MyX-appbarwaterdropletalert:before {
+	content: "\e61c";
+}
+.MyX-appbarwarning:before {
+	content: "\e61d";
+}
+.MyX-appbarwarningcircle:before {
+	content: "\e61e";
+}
+.MyX-appbarvisualstudio:before {
+	content: "\e61f";
+}
+.MyX-appbarvisualstudionews:before {
+	content: "\e620";
+}
+.MyX-appbarvip:before {
+	content: "\e621";
+}
+.MyX-appbarviplowercase:before {
+	content: "\e622";
+}
+.MyX-appbarvideo:before {
+	content: "\e623";
+}
+.MyX-appbarvideostandarddefinition:before {
+	content: "\e624";
+}
+.MyX-appbarvideosend:before {
+	content: "\e625";
+}
+.MyX-appbarvideohighdefinition:before {
+	content: "\e626";
+}
+.MyX-appbarvideogallery:before {
+	content: "\e627";
+}
+.MyX-appbarvectorstar:before {
+	content: "\e628";
+}
+.MyX-appbarvectorrectangle:before {
+	content: "\e629";
+}
+.MyX-appbarvectorpolygon:before {
+	content: "\e62a";
+}
+.MyX-appbarvectorpen:before {
+	content: "\e62b";
+}
+.MyX-appbarvectorpenminus:before {
+	content: "\e62c";
+}
+.MyX-appbarvectorpenconvert:before {
+	content: "\e62d";
+}
+.MyX-appbarvectorpenadd:before {
+	content: "\e62e";
+}
+.MyX-appbarvectorline:before {
+	content: "\e62f";
+}
+.MyX-appbarvectorlinespline:before {
+	content: "\e630";
+}
+.MyX-appbarvectorlinecurve:before {
+	content: "\e631";
+}
+.MyX-appbarvectorgroup:before {
+	content: "\e632";
+}
+.MyX-appbarvectorgroupremoved:before {
+	content: "\e633";
+}
+.MyX-appbarvectorcircle:before {
+	content: "\e634";
+}
+.MyX-appbarusertie:before {
+	content: "\e635";
+}
+.MyX-appbaruser:before {
+	content: "\e636";
+}
+.MyX-appbaruserminus:before {
+	content: "\e637";
+}
+.MyX-appbaruserdelete:before {
+	content: "\e638";
+}
+.MyX-appbaruseradd:before {
+	content: "\e639";
+}
+.MyX-appbarusb:before {
+	content: "\e63a";
+}
+.MyX-appbarusbdrive:before {
+	content: "\e63b";
+}
+.MyX-appbarupload:before {
+	content: "\e63c";
+}
+.MyX-appbarunlock:before {
+	content: "\e63d";
+}
+.MyX-appbarunlockkeyhole:before {
+	content: "\e63e";
+}
+.MyX-appbarundo:before {
+	content: "\e63f";
+}
+.MyX-appbarundopoint:before {
+	content: "\e640";
+}
+.MyX-appbarundocurve:before {
+	content: "\e641";
+}
+.MyX-appbartypenull:before {
+	content: "\e642";
+}
+.MyX-appbartypeboolean:before {
+	content: "\e643";
+}
+.MyX-appbartypebit:before {
+	content: "\e644";
+}
+.MyX-appbartvsyfy:before {
+	content: "\e645";
+}
+.MyX-appbartv:before {
+	content: "\e646";
+}
+.MyX-appbartvremote:before {
+	content: "\e647";
+}
+.MyX-appbartvnews:before {
+	content: "\e648";
+}
+.MyX-appbartux:before {
+	content: "\e649";
+}
+.MyX-appbartruck:before {
+	content: "\e64a";
+}
+.MyX-appbartrophy:before {
+	content: "\e64b";
+}
+.MyX-appbartree:before {
+	content: "\e64c";
+}
+.MyX-appbartreepine:before {
+	content: "\e64d";
+}
+.MyX-appbartreeleafthree:before {
+	content: "\e64e";
+}
+.MyX-appbartreeleaf:before {
+	content: "\e64f";
+}
+.MyX-appbartrash:before {
+	content: "\e650";
+}
+.MyX-appbartransithazard:before {
+	content: "\e651";
+}
+.MyX-appbartransitdistanceto:before {
+	content: "\e652";
+}
+.MyX-appbartransitdistancefrom:before {
+	content: "\e653";
+}
+.MyX-appbartransitdepart:before {
+	content: "\e654";
+}
+.MyX-appbartransitconstruction:before {
+	content: "\e655";
+}
+.MyX-appbartransitconnection:before {
+	content: "\e656";
+}
+.MyX-appbartransitconnectiondeparture:before {
+	content: "\e657";
+}
+.MyX-appbartransitcongestion:before {
+	content: "\e658";
+}
+.MyX-appbartransitcar:before {
+	content: "\e659";
+}
+.MyX-appbartransitcaraccident:before {
+	content: "\e65a";
+}
+.MyX-appbartransitbus:before {
+	content: "\e65b";
+}
+.MyX-appbartransitarrive:before {
+	content: "\e65c";
+}
+.MyX-appbartransformrotateright:before {
+	content: "\e65d";
+}
+.MyX-appbartransformrotateleft:before {
+	content: "\e65e";
+}
+.MyX-appbartransformrotatecounterclockwise:before {
+	content: "\e65f";
+}
+.MyX-appbartransformrotateclockwise:before {
+	content: "\e660";
+}
+.MyX-appbartransformflipvertical:before {
+	content: "\e661";
+}
+.MyX-appbartransformfliphorizontal:before {
+	content: "\e662";
+}
+.MyX-appbartraintunnel:before {
+	content: "\e663";
+}
+.MyX-appbartraintrack:before {
+	content: "\e664";
+}
+.MyX-appbartrain:before {
+	content: "\e665";
+}
+.MyX-appbartower:before {
+	content: "\e666";
+}
+.MyX-appbartournamentbracketup:before {
+	content: "\e667";
+}
+.MyX-appbartournamentbracket:before {
+	content: "\e668";
+}
+.MyX-appbartournamentbracketright:before {
+	content: "\e669";
+}
+.MyX-appbartournamentbracketleft:before {
+	content: "\e66a";
+}
+.MyX-appbartournamentbracketdown:before {
+	content: "\e66b";
+}
+.MyX-appbartools:before {
+	content: "\e66c";
+}
+.MyX-appbartimer:before {
+	content: "\e66d";
+}
+.MyX-appbartimerstop:before {
+	content: "\e66e";
+}
+.MyX-appbartimerrewind:before {
+	content: "\e66f";
+}
+.MyX-appbartimerrecord:before {
+	content: "\e670";
+}
+.MyX-appbartimerplay:before {
+	content: "\e671";
+}
+.MyX-appbartimerpause:before {
+	content: "\e672";
+}
+.MyX-appbartimerforward:before {
+	content: "\e673";
+}
+.MyX-appbartimercheck:before {
+	content: "\e674";
+}
+.MyX-appbartimeralert:before {
+	content: "\e675";
+}
+.MyX-appbartimer5:before {
+	content: "\e676";
+}
+.MyX-appbartimer4:before {
+	content: "\e677";
+}
+.MyX-appbartimer3:before {
+	content: "\e678";
+}
+.MyX-appbartimer2:before {
+	content: "\e679";
+}
+.MyX-appbartimer1:before {
+	content: "\e67a";
+}
+.MyX-appbartilessixteen:before {
+	content: "\e67b";
+}
+.MyX-appbartilesplus:before {
+	content: "\e67c";
+}
+.MyX-appbartilesnine:before {
+	content: "\e67d";
+}
+.MyX-appbartilesminus:before {
+	content: "\e67e";
+}
+.MyX-appbartilesfour:before {
+	content: "\e67f";
+}
+.MyX-appbarticket:before {
+	content: "\e680";
+}
+.MyX-appbarthumbsup:before {
+	content: "\e681";
+}
+.MyX-appbarthumbsdown:before {
+	content: "\e682";
+}
+.MyX-appbarthumbupminus:before {
+	content: "\e683";
+}
+.MyX-appbarthumbupdelete:before {
+	content: "\e684";
+}
+.MyX-appbarthumbupadd:before {
+	content: "\e685";
+}
+.MyX-appbarthermometer:before {
+	content: "\e686";
+}
+.MyX-appbarthermometersigns:before {
+	content: "\e687";
+}
+.MyX-appbarthermometerkelvin:before {
+	content: "\e688";
+}
+.MyX-appbarthermometerhoneywell:before {
+	content: "\e689";
+}
+.MyX-appbarthermometerfahrenheit:before {
+	content: "\e68a";
+}
+.MyX-appbarthermometerdigital:before {
+	content: "\e68b";
+}
+.MyX-appbarthermometercelcius:before {
+	content: "\e68c";
+}
+.MyX-appbartextunderline:before {
+	content: "\e68d";
+}
+.MyX-appbartextstrikethrough:before {
+	content: "\e68e";
+}
+.MyX-appbartextsizeup:before {
+	content: "\e68f";
+}
+.MyX-appbartextsize:before {
+	content: "\e690";
+}
+.MyX-appbartextsizeplus:before {
+	content: "\e691";
+}
+.MyX-appbartextsizeminus:before {
+	content: "\e692";
+}
+.MyX-appbartextsizedown:before {
+	content: "\e693";
+}
+.MyX-appbartextserif:before {
+	content: "\e694";
+}
+.MyX-appbartextscript:before {
+	content: "\e695";
+}
+.MyX-appbartextsans:before {
+	content: "\e696";
+}
+.MyX-appbartextoverline:before {
+	content: "\e697";
+}
+.MyX-appbartextitalic:before {
+	content: "\e698";
+}
+.MyX-appbartextbold:before {
+	content: "\e699";
+}
+.MyX-appbartextalignright:before {
+	content: "\e69a";
+}
+.MyX-appbartextalignleft:before {
+	content: "\e69b";
+}
+.MyX-appbartextalignjustify:before {
+	content: "\e69c";
+}
+.MyX-appbartextaligncenter:before {
+	content: "\e69d";
+}
+.MyX-appbartestdrive:before {
+	content: "\e69e";
+}
+.MyX-appbarteam:before {
+	content: "\e69f";
+}
+.MyX-appbartardis:before {
+	content: "\e6a0";
+}
+.MyX-appbartag:before {
+	content: "\e6a1";
+}
+.MyX-appbartaglabel:before {
+	content: "\e6a2";
+}
+.MyX-appbartabletwindows:before {
+	content: "\e6a3";
+}
+.MyX-appbartableunselect:before {
+	content: "\e6a4";
+}
+.MyX-appbartable:before {
+	content: "\e6a5";
+}
+.MyX-appbartableselect:before {
+	content: "\e6a6";
+}
+.MyX-appbartabledelete:before {
+	content: "\e6a7";
+}
+.MyX-appbartableadd:before {
+	content: "\e6a8";
+}
+.MyX-appbarsymbolbracket:before {
+	content: "\e6a9";
+}
+.MyX-appbarsymbolbraces:before {
+	content: "\e6aa";
+}
+.MyX-appbarswitchoff:before {
+	content: "\e6ab";
+}
+.MyX-appbarsuitcase:before {
+	content: "\e6ac";
+}
+.MyX-appbarstream:before {
+	content: "\e6ad";
+}
+.MyX-appbarstore:before {
+	content: "\e6ae";
+}
+.MyX-appbarstop:before {
+	content: "\e6af";
+}
+.MyX-appbarstocking:before {
+	content: "\e6b0";
+}
+.MyX-appbarstockup:before {
+	content: "\e6b1";
+}
+.MyX-appbarstock:before {
+	content: "\e6b2";
+}
+.MyX-appbarstockdown:before {
+	content: "\e6b3";
+}
+.MyX-appbarsteam:before {
+	content: "\e6b4";
+}
+.MyX-appbarstarwarssith:before {
+	content: "\e6b5";
+}
+.MyX-appbarstarwarsrebel:before {
+	content: "\e6b6";
+}
+.MyX-appbarstarwarsjedi:before {
+	content: "\e6b7";
+}
+.MyX-appbarstar:before {
+	content: "\e6b8";
+}
+.MyX-appbarstarremove:before {
+	content: "\e6b9";
+}
+.MyX-appbarstarminus:before {
+	content: "\e6ba";
+}
+.MyX-appbarstarinvincible:before {
+	content: "\e6bb";
+}
+.MyX-appbarstardelete:before {
+	content: "\e6bc";
+}
+.MyX-appbarstaradd:before {
+	content: "\e6bd";
+}
+.MyX-appbarstamp:before {
+	content: "\e6be";
+}
+.MyX-appbarstampempty:before {
+	content: "\e6bf";
+}
+.MyX-appbarstampat:before {
+	content: "\e6c0";
+}
+.MyX-appbarstairsup:before {
+	content: "\e6c1";
+}
+.MyX-appbarstairsupreflecthorizontal:before {
+	content: "\e6c2";
+}
+.MyX-appbarstairsdown:before {
+	content: "\e6c3";
+}
+.MyX-appbarstairsdownreflecthorizontal:before {
+	content: "\e6c4";
+}
+.MyX-appbarsportfootball:before {
+	content: "\e6c5";
+}
+.MyX-appbarspeakerphone:before {
+	content: "\e6c6";
+}
+.MyX-appbarsourcepull:before {
+	content: "\e6c7";
+}
+.MyX-appbarsourcefork:before {
+	content: "\e6c8";
+}
+.MyX-appbarsoundstereo:before {
+	content: "\e6c9";
+}
+.MyX-appbarsoundstereostack:before {
+	content: "\e6ca";
+}
+.MyX-appbarsoundmute:before {
+	content: "\e6cb";
+}
+.MyX-appbarsoundleftright:before {
+	content: "\e6cc";
+}
+.MyX-appbarsound3:before {
+	content: "\e6cd";
+}
+.MyX-appbarsound2:before {
+	content: "\e6ce";
+}
+.MyX-appbarsound1:before {
+	content: "\e6cf";
+}
+.MyX-appbarsound0:before {
+	content: "\e6d0";
+}
+.MyX-appbarsort:before {
+	content: "\e6d1";
+}
+.MyX-appbarsortnumeric:before {
+	content: "\e6d2";
+}
+.MyX-appbarsortnumericdescending:before {
+	content: "\e6d3";
+}
+.MyX-appbarsortnumericascending:before {
+	content: "\e6d4";
+}
+.MyX-appbarsortalphabetical:before {
+	content: "\e6d5";
+}
+.MyX-appbarsortalphabeticaldescending:before {
+	content: "\e6d6";
+}
+.MyX-appbarsortalphabeticalascending:before {
+	content: "\e6d7";
+}
+.MyX-appbarsocialzappos:before {
+	content: "\e6d8";
+}
+.MyX-appbarsocialyelp:before {
+	content: "\e6d9";
+}
+.MyX-appbarsocialycombinator:before {
+	content: "\e6da";
+}
+.MyX-appbarsocialyahoo:before {
+	content: "\e6db";
+}
+.MyX-appbarsocialxing:before {
+	content: "\e6dc";
+}
+.MyX-appbarsocialwordpressvariant:before {
+	content: "\e6dd";
+}
+.MyX-appbarsocialwordpress:before {
+	content: "\e6de";
+}
+.MyX-appbarsocialwikipedia:before {
+	content: "\e6df";
+}
+.MyX-appbarsocialvimeo:before {
+	content: "\e6e0";
+}
+.MyX-appbarsocialuservoice:before {
+	content: "\e6e1";
+}
+.MyX-appbarsocialtwitter:before {
+	content: "\e6e2";
+}
+.MyX-appbarsocialtwitterretweet:before {
+	content: "\e6e3";
+}
+.MyX-appbarsocialtwitterhashtag:before {
+	content: "\e6e4";
+}
+.MyX-appbarsocialtumblr:before {
+	content: "\e6e5";
+}
+.MyX-appbarsocialtrello:before {
+	content: "\e6e6";
+}
+.MyX-appbarsocialtheverge:before {
+	content: "\e6e7";
+}
+.MyX-appbarsocialstackoverflow:before {
+	content: "\e6e8";
+}
+.MyX-appbarsocialspotify:before {
+	content: "\e6e9";
+}
+.MyX-appbarsocialsoundcloud:before {
+	content: "\e6ea";
+}
+.MyX-appbarsocialslashdot:before {
+	content: "\e6eb";
+}
+.MyX-appbarsocialskype:before {
+	content: "\e6ec";
+}
+.MyX-appbarsocialsharethis:before {
+	content: "\e6ed";
+}
+.MyX-appbarsocialreddit:before {
+	content: "\e6ee";
+}
+.MyX-appbarsocialrdio:before {
+	content: "\e6ef";
+}
+.MyX-appbarsocialplaystation:before {
+	content: "\e6f0";
+}
+.MyX-appbarsocialpinterest:before {
+	content: "\e6f1";
+}
+.MyX-appbarsocialpicasa:before {
+	content: "\e6f2";
+}
+.MyX-appbarsocialopenid:before {
+	content: "\e6f3";
+}
+.MyX-appbarsocialnuget:before {
+	content: "\e6f4";
+}
+.MyX-appbarsocialmicrosoft:before {
+	content: "\e6f5";
+}
+.MyX-appbarsociallinkedinvariant:before {
+	content: "\e6f6";
+}
+.MyX-appbarsociallinkedin:before {
+	content: "\e6f7";
+}
+.MyX-appbarsocialline:before {
+	content: "\e6f8";
+}
+.MyX-appbarsociallastfm:before {
+	content: "\e6f9";
+}
+.MyX-appbarsocialkickstarter:before {
+	content: "\e6fa";
+}
+.MyX-appbarsocialjira:before {
+	content: "\e6fb";
+}
+.MyX-appbarsocialindiegogo:before {
+	content: "\e6fc";
+}
+.MyX-appbarsocialgrooveshark:before {
+	content: "\e6fd";
+}
+.MyX-appbarsocialgithub:before {
+	content: "\e6fe";
+}
+.MyX-appbarsocialgithuboctocat:before {
+	content: "\e6ff";
+}
+.MyX-appbarsocialgithuboctocatsolid:before {
+	content: "\e700";
+}
+.MyX-appbarsocialgdgt:before {
+	content: "\e701";
+}
+.MyX-appbarsocialfoursquare:before {
+	content: "\e702";
+}
+.MyX-appbarsocialfacebookvariant:before {
+	content: "\e703";
+}
+.MyX-appbarsocialfacebook:before {
+	content: "\e704";
+}
+.MyX-appbarsocialfacebookheart:before {
+	content: "\e705";
+}
+.MyX-appbarsocialfacebookheartbreak:before {
+	content: "\e706";
+}
+.MyX-appbarsocialevernote:before {
+	content: "\e707";
+}
+.MyX-appbarsocialetsy:before {
+	content: "\e708";
+}
+.MyX-appbarsocialengadget:before {
+	content: "\e709";
+}
+.MyX-appbarsocialdrupal:before {
+	content: "\e70a";
+}
+.MyX-appbarsocialdropboxupload:before {
+	content: "\e70b";
+}
+.MyX-appbarsocialdropbox:before {
+	content: "\e70c";
+}
+.MyX-appbarsocialdropboxdownload:before {
+	content: "\e70d";
+}
+.MyX-appbarsocialdribbble:before {
+	content: "\e70e";
+}
+.MyX-appbarsocialdisqus:before {
+	content: "\e70f";
+}
+.MyX-appbarsocialdiggvariant:before {
+	content: "\e710";
+}
+.MyX-appbarsocialdigg:before {
+	content: "\e711";
+}
+.MyX-appbarsocialdeviantart:before {
+	content: "\e712";
+}
+.MyX-appbarsocialdelicious:before {
+	content: "\e713";
+}
+.MyX-appbarsocialcoding4fun:before {
+	content: "\e714";
+}
+.MyX-appbarsocialcloudapp:before {
+	content: "\e715";
+}
+.MyX-appbarsocialblogger:before {
+	content: "\e716";
+}
+.MyX-appbarsocialbehance:before {
+	content: "\e717";
+}
+.MyX-appbarsocialbebo:before {
+	content: "\e718";
+}
+.MyX-appbarsocialbasecamp:before {
+	content: "\e719";
+}
+.MyX-appbarsocialbaidu:before {
+	content: "\e71a";
+}
+.MyX-appbarsocialaws:before {
+	content: "\e71b";
+}
+.MyX-appbarsocialarto:before {
+	content: "\e71c";
+}
+.MyX-appbarsocialartcom:before {
+	content: "\e71d";
+}
+.MyX-appbarsocialappnet:before {
+	content: "\e71e";
+}
+.MyX-appbarsocialapple:before {
+	content: "\e71f";
+}
+.MyX-appbarsocialapplemobileme:before {
+	content: "\e720";
+}
+.MyX-appbarsocialappleappstore:before {
+	content: "\e721";
+}
+.MyX-appbarsocialamazon:before {
+	content: "\e722";
+}
+.MyX-appbarsocialamazonappstore:before {
+	content: "\e723";
+}
+.MyX-appbarsocialaimvariant:before {
+	content: "\e724";
+}
+.MyX-appbarsocialaim:before {
+	content: "\e725";
+}
+.MyX-appbarsnowman:before {
+	content: "\e726";
+}
+.MyX-appbarsnowflake:before {
+	content: "\e727";
+}
+.MyX-appbarsmileywhat:before {
+	content: "\e728";
+}
+.MyX-appbarsmileytounge:before {
+	content: "\e729";
+}
+.MyX-appbarsmileysquint:before {
+	content: "\e72a";
+}
+.MyX-appbarsmileykiki:before {
+	content: "\e72b";
+}
+.MyX-appbarsmileyhappy:before {
+	content: "\e72c";
+}
+.MyX-appbarsmileygrumpy:before {
+	content: "\e72d";
+}
+.MyX-appbarsmileygrin:before {
+	content: "\e72e";
+}
+.MyX-appbarsmileyglasses:before {
+	content: "\e72f";
+}
+.MyX-appbarsmileyfrown:before {
+	content: "\e730";
+}
+.MyX-appbarsmileycry:before {
+	content: "\e731";
+}
+.MyX-appbarsmileyangry:before {
+	content: "\e732";
+}
+.MyX-appbarslice:before {
+	content: "\e733";
+}
+.MyX-appbarsleep:before {
+	content: "\e734";
+}
+.MyX-appbarskydriveupload:before {
+	content: "\e735";
+}
+.MyX-appbarskydrive:before {
+	content: "\e736";
+}
+.MyX-appbarskydrivedownload:before {
+	content: "\e737";
+}
+.MyX-appbarsimcard:before {
+	content: "\e738";
+}
+.MyX-appbarsimcardmicro:before {
+	content: "\e739";
+}
+.MyX-appbarsignstop:before {
+	content: "\e73a";
+}
+.MyX-appbarsignparking:before {
+	content: "\e73b";
+}
+.MyX-appbarsigninterstate:before {
+	content: "\e73c";
+}
+.MyX-appbarsigninterstate95:before {
+	content: "\e73d";
+}
+.MyX-appbarsigninterstate94:before {
+	content: "\e73e";
+}
+.MyX-appbarsigninterstate75:before {
+	content: "\e73f";
+}
+.MyX-appbarsigncaution:before {
+	content: "\e740";
+}
+.MyX-appbarsidebarrightexpand:before {
+	content: "\e741";
+}
+.MyX-appbarsidebarrightcollapse:before {
+	content: "\e742";
+}
+.MyX-appbarsidebarleftexpand:before {
+	content: "\e743";
+}
+.MyX-appbarsidebarleftcollapse:before {
+	content: "\e744";
+}
+.MyX-appbarshuffle:before {
+	content: "\e745";
+}
+.MyX-appbarshotglass:before {
+	content: "\e746";
+}
+.MyX-appbarshopping:before {
+	content: "\e747";
+}
+.MyX-appbarshield:before {
+	content: "\e748";
+}
+.MyX-appbarshieldalert:before {
+	content: "\e749";
+}
+.MyX-appbarshare:before {
+	content: "\e74a";
+}
+.MyX-appbarshareopen:before {
+	content: "\e74b";
+}
+.MyX-appbarsettings:before {
+	content: "\e74c";
+}
+.MyX-appbarserver:before {
+	content: "\e74d";
+}
+.MyX-appbarsectionexpand:before {
+	content: "\e74e";
+}
+.MyX-appbarsectionexpandall:before {
+	content: "\e74f";
+}
+.MyX-appbarsectioncollapse:before {
+	content: "\e750";
+}
+.MyX-appbarsectioncollapseall:before {
+	content: "\e751";
+}
+.MyX-appbarsd:before {
+	content: "\e752";
+}
+.MyX-appbarsdmicro:before {
+	content: "\e753";
+}
+.MyX-appbarscrabblez:before {
+	content: "\e754";
+}
+.MyX-appbarscrabbley:before {
+	content: "\e755";
+}
+.MyX-appbarscrabblex:before {
+	content: "\e756";
+}
+.MyX-appbarscrabblew:before {
+	content: "\e757";
+}
+.MyX-appbarscrabblev:before {
+	content: "\e758";
+}
+.MyX-appbarscrabbleu:before {
+	content: "\e759";
+}
+.MyX-appbarscrabblet:before {
+	content: "\e75a";
+}
+.MyX-appbarscrabbles:before {
+	content: "\e75b";
+}
+.MyX-appbarscrabbler:before {
+	content: "\e75c";
+}
+.MyX-appbarscrabbleq:before {
+	content: "\e75d";
+}
+.MyX-appbarscrabblep:before {
+	content: "\e75e";
+}
+.MyX-appbarscrabbleo:before {
+	content: "\e75f";
+}
+.MyX-appbarscrabblen:before {
+	content: "\e760";
+}
+.MyX-appbarscrabblem:before {
+	content: "\e761";
+}
+.MyX-appbarscrabblel:before {
+	content: "\e762";
+}
+.MyX-appbarscrabblek:before {
+	content: "\e763";
+}
+.MyX-appbarscrabblej:before {
+	content: "\e764";
+}
+.MyX-appbarscrabblei:before {
+	content: "\e765";
+}
+.MyX-appbarscrabbleh:before {
+	content: "\e766";
+}
+.MyX-appbarscrabbleg:before {
+	content: "\e767";
+}
+.MyX-appbarscrabblef:before {
+	content: "\e768";
+}
+.MyX-appbarscrabblee:before {
+	content: "\e769";
+}
+.MyX-appbarscrabbled:before {
+	content: "\e76a";
+}
+.MyX-appbarscrabblec:before {
+	content: "\e76b";
+}
+.MyX-appbarscrabbleb:before {
+	content: "\e76c";
+}
+.MyX-appbarscrabblea:before {
+	content: "\e76d";
+}
+.MyX-appbarscissor:before {
+	content: "\e76e";
+}
+.MyX-appbarscaleunbalanced:before {
+	content: "\e76f";
+}
+.MyX-appbarscale:before {
+	content: "\e770";
+}
+.MyX-appbarsave:before {
+	content: "\e771";
+}
+.MyX-appbarsailboat:before {
+	content: "\e772";
+}
+.MyX-appbarruler:before {
+	content: "\e773";
+}
+.MyX-appbarrss:before {
+	content: "\e774";
+}
+.MyX-appbarrocket:before {
+	content: "\e775";
+}
+.MyX-appbarrocketrotated45:before {
+	content: "\e776";
+}
+.MyX-appbarring:before {
+	content: "\e777";
+}
+.MyX-appbarribbonwave:before {
+	content: "\e778";
+}
+.MyX-appbarribbon:before {
+	content: "\e779";
+}
+.MyX-appbarreturn:before {
+	content: "\e77a";
+}
+.MyX-appbarresource:before {
+	content: "\e77b";
+}
+.MyX-appbarresourcegroup:before {
+	content: "\e77c";
+}
+.MyX-appbarreset:before {
+	content: "\e77d";
+}
+.MyX-appbarreplypeople:before {
+	content: "\e77e";
+}
+.MyX-appbarreplyemail:before {
+	content: "\e77f";
+}
+.MyX-appbarreplycalendar:before {
+	content: "\e780";
+}
+.MyX-appbarrepeat:before {
+	content: "\e781";
+}
+.MyX-appbarreligionjudaism:before {
+	content: "\e782";
+}
+.MyX-appbarreligionislamic:before {
+	content: "\e783";
+}
+.MyX-appbarreligionchristianity:before {
+	content: "\e784";
+}
+.MyX-appbarrefresh:before {
+	content: "\e785";
+}
+.MyX-appbarrefreshcounterclockwiseup:before {
+	content: "\e786";
+}
+.MyX-appbarrefreshcounterclockwisedown:before {
+	content: "\e787";
+}
+.MyX-appbarrefreshclockwiseup:before {
+	content: "\e788";
+}
+.MyX-appbarrefreshclockwisedown:before {
+	content: "\e789";
+}
+.MyX-appbarredo:before {
+	content: "\e78a";
+}
+.MyX-appbarredopoint:before {
+	content: "\e78b";
+}
+.MyX-appbarredocurve:before {
+	content: "\e78c";
+}
+.MyX-appbarradioactive:before {
+	content: "\e78d";
+}
+.MyX-appbarradar:before {
+	content: "\e78e";
+}
+.MyX-appbarradarscreen:before {
+	content: "\e78f";
+}
+.MyX-appbarquoteright:before {
+	content: "\e790";
+}
+.MyX-appbarquoteleft:before {
+	content: "\e791";
+}
+.MyX-appbarquill:before {
+	content: "\e792";
+}
+.MyX-appbarquestion:before {
+	content: "\e793";
+}
+.MyX-appbarqr:before {
+	content: "\e794";
+}
+.MyX-appbarpuzzle:before {
+	content: "\e795";
+}
+.MyX-appbarpuzzleround:before {
+	content: "\e796";
+}
+.MyX-appbarprotractor:before {
+	content: "\e797";
+}
+.MyX-appbarprojector:before {
+	content: "\e798";
+}
+.MyX-appbarprojectorscreen:before {
+	content: "\e799";
+}
+.MyX-appbarprogress:before {
+	content: "\e79a";
+}
+.MyX-appbarprintertext:before {
+	content: "\e79b";
+}
+.MyX-appbarprinter:before {
+	content: "\e79c";
+}
+.MyX-appbarprinterblank:before {
+	content: "\e79d";
+}
+.MyX-appbarpresent:before {
+	content: "\e79e";
+}
+.MyX-appbarpower:before {
+	content: "\e79f";
+}
+.MyX-appbarpotion:before {
+	content: "\e7a0";
+}
+.MyX-appbarpokeball:before {
+	content: "\e7a1";
+}
+.MyX-appbarplant:before {
+	content: "\e7a2";
+}
+.MyX-appbarplane:before {
+	content: "\e7a3";
+}
+.MyX-appbarplanerotated135:before {
+	content: "\e7a4";
+}
+.MyX-appbarplanerotated45:before {
+	content: "\e7a5";
+}
+.MyX-appbarplaces:before {
+	content: "\e7a6";
+}
+.MyX-appbarpin:before {
+	content: "\e7a7";
+}
+.MyX-appbarpinremove:before {
+	content: "\e7a8";
+}
+.MyX-appbarpie:before {
+	content: "\e7a9";
+}
+.MyX-appbarpiequarter:before {
+	content: "\e7aa";
+}
+.MyX-appbarphonevoicemail:before {
+	content: "\e7ab";
+}
+.MyX-appbarphone:before {
+	content: "\e7ac";
+}
+.MyX-appbarphonehangup:before {
+	content: "\e7ad";
+}
+.MyX-appbarpercentoff:before {
+	content: "\e7ae";
+}
+.MyX-appbarpeopleup:before {
+	content: "\e7af";
+}
+.MyX-appbarpeople:before {
+	content: "\e7b0";
+}
+.MyX-appbarpeoplestatus:before {
+	content: "\e7b1";
+}
+.MyX-appbarpeoplesensorvariant:before {
+	content: "\e7b2";
+}
+.MyX-appbarpeoplesensor:before {
+	content: "\e7b3";
+}
+.MyX-appbarpeopleright:before {
+	content: "\e7b4";
+}
+.MyX-appbarpeopleprofile:before {
+	content: "\e7b5";
+}
+.MyX-appbarpeoplemultiple:before {
+	content: "\e7b6";
+}
+.MyX-appbarpeoplemultiplemagnify:before {
+	content: "\e7b7";
+}
+.MyX-appbarpeoplemagnify:before {
+	content: "\e7b8";
+}
+.MyX-appbarpeopleleft:before {
+	content: "\e7b9";
+}
+.MyX-appbarpeopledown:before {
+	content: "\e7ba";
+}
+.MyX-appbarpeoplecheckbox:before {
+	content: "\e7bb";
+}
+.MyX-appbarpeoplearrowright:before {
+	content: "\e7bc";
+}
+.MyX-appbarpeoplearrowleft:before {
+	content: "\e7bd";
+}
+.MyX-appbarpaypal:before {
+	content: "\e7be";
+}
+.MyX-appbarpaw:before {
+	content: "\e7bf";
+}
+.MyX-appbarpaperclip:before {
+	content: "\e7c0";
+}
+.MyX-appbarpapercliprotated:before {
+	content: "\e7c1";
+}
+.MyX-appbarpaper:before {
+	content: "\e7c2";
+}
+.MyX-appbarpalmtreevariant:before {
+	content: "\e7c3";
+}
+.MyX-appbarpalmtree:before {
+	content: "\e7c4";
+}
+.MyX-appbarpagexml:before {
+	content: "\e7c5";
+}
+.MyX-appbarpageword:before {
+	content: "\e7c6";
+}
+.MyX-appbarpageupload:before {
+	content: "\e7c7";
+}
+.MyX-appbarpagetext:before {
+	content: "\e7c8";
+}
+.MyX-appbarpage:before {
+	content: "\e7c9";
+}
+.MyX-appbarpagesolid:before {
+	content: "\e7ca";
+}
+.MyX-appbarpagesolidmove:before {
+	content: "\e7cb";
+}
+.MyX-appbarpagesolidcross:before {
+	content: "\e7cc";
+}
+.MyX-appbarpagesolidadd:before {
+	content: "\e7cd";
+}
+.MyX-appbarpagesmall:before {
+	content: "\e7ce";
+}
+.MyX-appbarpageselect:before {
+	content: "\e7cf";
+}
+.MyX-appbarpagesearch:before {
+	content: "\e7d0";
+}
+.MyX-appbarpagequestion:before {
+	content: "\e7d1";
+}
+.MyX-appbarpagepowerpoint:before {
+	content: "\e7d2";
+}
+.MyX-appbarpagepng:before {
+	content: "\e7d3";
+}
+.MyX-appbarpagepdf:before {
+	content: "\e7d4";
+}
+.MyX-appbarpageonenote:before {
+	content: "\e7d5";
+}
+.MyX-appbarpagenew:before {
+	content: "\e7d6";
+}
+.MyX-appbarpagemusic:before {
+	content: "\e7d7";
+}
+.MyX-appbarpagemultiple:before {
+	content: "\e7d8";
+}
+.MyX-appbarpageminus:before {
+	content: "\e7d9";
+}
+.MyX-appbarpagelocation:before {
+	content: "\e7da";
+}
+.MyX-appbarpagelocationadd:before {
+	content: "\e7db";
+}
+.MyX-appbarpagejpg:before {
+	content: "\e7dc";
+}
+.MyX-appbarpageimage:before {
+	content: "\e7dd";
+}
+.MyX-appbarpagehidden:before {
+	content: "\e7de";
+}
+.MyX-appbarpageheartbreak:before {
+	content: "\e7df";
+}
+.MyX-appbarpageheart:before {
+	content: "\e7e0";
+}
+.MyX-appbarpagefilepdftag:before {
+	content: "\e7e1";
+}
+.MyX-appbarpagefilepdf:before {
+	content: "\e7e2";
+}
+.MyX-appbarpagefilegiftag:before {
+	content: "\e7e3";
+}
+.MyX-appbarpagefilegif:before {
+	content: "\e7e4";
+}
+.MyX-appbarpageexcel:before {
+	content: "\e7e5";
+}
+.MyX-appbarpageedit:before {
+	content: "\e7e6";
+}
+.MyX-appbarpageduplicate:before {
+	content: "\e7e7";
+}
+.MyX-appbarpagedownload:before {
+	content: "\e7e8";
+}
+.MyX-appbarpagedelete:before {
+	content: "\e7e9";
+}
+.MyX-appbarpagecross:before {
+	content: "\e7ea";
+}
+.MyX-appbarpagecornertext:before {
+	content: "\e7eb";
+}
+.MyX-appbarpagecornertextbreak:before {
+	content: "\e7ec";
+}
+.MyX-appbarpagecorner:before {
+	content: "\e7ed";
+}
+.MyX-appbarpagecornergrid:before {
+	content: "\e7ee";
+}
+.MyX-appbarpagecornerfoldedtext:before {
+	content: "\e7ef";
+}
+.MyX-appbarpagecornerfolded:before {
+	content: "\e7f0";
+}
+.MyX-appbarpagecornerfoldedgrid:before {
+	content: "\e7f1";
+}
+.MyX-appbarpagecornercells:before {
+	content: "\e7f2";
+}
+.MyX-appbarpagecornerbreak:before {
+	content: "\e7f3";
+}
+.MyX-appbarpagecornerbookmark:before {
+	content: "\e7f4";
+}
+.MyX-appbarpagecopy:before {
+	content: "\e7f5";
+}
+.MyX-appbarpagecode:before {
+	content: "\e7f6";
+}
+.MyX-appbarpagecheck:before {
+	content: "\e7f7";
+}
+.MyX-appbarpagebreak:before {
+	content: "\e7f8";
+}
+.MyX-appbarpagebold:before {
+	content: "\e7f9";
+}
+.MyX-appbarpagearrow:before {
+	content: "\e7fa";
+}
+.MyX-appbarpageadd:before {
+	content: "\e7fb";
+}
+.MyX-appbarpage9:before {
+	content: "\e7fc";
+}
+.MyX-appbarpage8:before {
+	content: "\e7fd";
+}
+.MyX-appbarpage7:before {
+	content: "\e7fe";
+}
+.MyX-appbarpage6:before {
+	content: "\e7ff";
+}
+.MyX-appbarpage5:before {
+	content: "\e800";
+}
+.MyX-appbarpage4:before {
+	content: "\e801";
+}
+.MyX-appbarpage3:before {
+	content: "\e802";
+}
+.MyX-appbarpage2:before {
+	content: "\e803";
+}
+.MyX-appbarpage1:before {
+	content: "\e804";
+}
+.MyX-appbarpage0:before {
+	content: "\e805";
+}
+.MyX-appbaroutlet:before {
+	content: "\e806";
+}
+.MyX-appbarosx86:before {
+	content: "\e807";
+}
+.MyX-appbarosx64:before {
+	content: "\e808";
+}
+.MyX-appbaroswindowsphone:before {
+	content: "\e809";
+}
+.MyX-appbaroswindowsphoneround:before {
+	content: "\e80a";
+}
+.MyX-appbaroswindows:before {
+	content: "\e80b";
+}
+.MyX-appbaroswindowsrt:before {
+	content: "\e80c";
+}
+.MyX-appbaroswindows8:before {
+	content: "\e80d";
+}
+.MyX-appbarosubuntu:before {
+	content: "\e80e";
+}
+.MyX-appbarosios:before {
+	content: "\e80f";
+}
+.MyX-appbarosgnome:before {
+	content: "\e810";
+}
+.MyX-appbaroschromium:before {
+	content: "\e811";
+}
+.MyX-appbarosblackberry:before {
+	content: "\e812";
+}
+.MyX-appbarosarm:before {
+	content: "\e813";
+}
+.MyX-appbarosandroid:before {
+	content: "\e814";
+}
+.MyX-appbarornamentvariant:before {
+	content: "\e815";
+}
+.MyX-appbarornament:before {
+	content: "\e816";
+}
+.MyX-appbaropacity:before {
+	content: "\e817";
+}
+.MyX-appbarofficeword:before {
+	content: "\e818";
+}
+.MyX-appbarofficevisio:before {
+	content: "\e819";
+}
+.MyX-appbaroffice:before {
+	content: "\e81a";
+}
+.MyX-appbarofficesharepoint:before {
+	content: "\e81b";
+}
+.MyX-appbarofficepublisher:before {
+	content: "\e81c";
+}
+.MyX-appbarofficeproject:before {
+	content: "\e81d";
+}
+.MyX-appbarofficepowerpoint:before {
+	content: "\e81e";
+}
+.MyX-appbarofficeoutlook:before {
+	content: "\e81f";
+}
+.MyX-appbarofficeonenote:before {
+	content: "\e820";
+}
+.MyX-appbarofficelync:before {
+	content: "\e821";
+}
+.MyX-appbarofficeinfopath:before {
+	content: "\e822";
+}
+.MyX-appbarofficeexcel:before {
+	content: "\e823";
+}
+.MyX-appbarofficeaccess:before {
+	content: "\e824";
+}
+.MyX-appbaroffice365:before {
+	content: "\e825";
+}
+.MyX-appbarnyan:before {
+	content: "\e826";
+}
+.MyX-appbarnotification:before {
+	content: "\e827";
+}
+.MyX-appbarnotificationstar:before {
+	content: "\e828";
+}
+.MyX-appbarnotificationmultiple:before {
+	content: "\e829";
+}
+.MyX-appbarnotificationabove:before {
+	content: "\e82a";
+}
+.MyX-appbarnotificationabovemultiple:before {
+	content: "\e82b";
+}
+.MyX-appbarnoentry:before {
+	content: "\e82c";
+}
+.MyX-appbarnfc:before {
+	content: "\e82d";
+}
+.MyX-appbarnewspaper:before {
+	content: "\e82e";
+}
+.MyX-appbarnewspapercreate:before {
+	content: "\e82f";
+}
+.MyX-appbarnewwindow:before {
+	content: "\e830";
+}
+.MyX-appbarnew:before {
+	content: "\e831";
+}
+.MyX-appbarnetwork:before {
+	content: "\e832";
+}
+.MyX-appbarnetworkserver:before {
+	content: "\e833";
+}
+.MyX-appbarnetworkserverdisconnect:before {
+	content: "\e834";
+}
+.MyX-appbarnetworkserverconnecting:before {
+	content: "\e835";
+}
+.MyX-appbarnetworkport:before {
+	content: "\e836";
+}
+.MyX-appbarnetworkportdisconnect:before {
+	content: "\e837";
+}
+.MyX-appbarnetworkhome:before {
+	content: "\e838";
+}
+.MyX-appbarnetworkhomedisconnect:before {
+	content: "\e839";
+}
+.MyX-appbarnetworkdisconnect:before {
+	content: "\e83a";
+}
+.MyX-appbarnavigateprevious:before {
+	content: "\e83b";
+}
+.MyX-appbarnavigatenext:before {
+	content: "\e83c";
+}
+.MyX-appbarmusicwifi:before {
+	content: "\e83d";
+}
+.MyX-appbarmusic:before {
+	content: "\e83e";
+}
+.MyX-appbarmusicselect:before {
+	content: "\e83f";
+}
+.MyX-appbarmusiclive:before {
+	content: "\e840";
+}
+.MyX-appbarmovieclapper:before {
+	content: "\e841";
+}
+.MyX-appbarmovieclappersolid:before {
+	content: "\e842";
+}
+.MyX-appbarmovieclappersolidselect:before {
+	content: "\e843";
+}
+.MyX-appbarmovieclapperselect:before {
+	content: "\e844";
+}
+.MyX-appbarmoonwaxinggibbous:before {
+	content: "\e845";
+}
+.MyX-appbarmoonwaxingcrescent:before {
+	content: "\e846";
+}
+.MyX-appbarmoonwaninggibbous:before {
+	content: "\e847";
+}
+.MyX-appbarmoonwaningcrescent:before {
+	content: "\e848";
+}
+.MyX-appbarmoonthirdquarter:before {
+	content: "\e849";
+}
+.MyX-appbarmoon:before {
+	content: "\e84a";
+}
+.MyX-appbarmoonsleep:before {
+	content: "\e84b";
+}
+.MyX-appbarmoonnew:before {
+	content: "\e84c";
+}
+.MyX-appbarmoonfull:before {
+	content: "\e84d";
+}
+.MyX-appbarmoonfirstquarter:before {
+	content: "\e84e";
+}
+.MyX-appbarmono:before {
+	content: "\e84f";
+}
+.MyX-appbarmonitorto:before {
+	content: "\e850";
+}
+.MyX-appbarmonitor:before {
+	content: "\e851";
+}
+.MyX-appbarmonitorplay:before {
+	content: "\e852";
+}
+.MyX-appbarmonitorminus:before {
+	content: "\e853";
+}
+.MyX-appbarmonitoridentify:before {
+	content: "\e854";
+}
+.MyX-appbarmonitorfilm:before {
+	content: "\e855";
+}
+.MyX-appbarmonitordelete:before {
+	content: "\e856";
+}
+.MyX-appbarmonitoradd:before {
+	content: "\e857";
+}
+.MyX-appbarmoney:before {
+	content: "\e858";
+}
+.MyX-appbarminus:before {
+	content: "\e859";
+}
+.MyX-appbarminecraftcivcraft:before {
+	content: "\e85a";
+}
+.MyX-appbarmicrosofttag:before {
+	content: "\e85b";
+}
+.MyX-appbarmicrophone:before {
+	content: "\e85c";
+}
+.MyX-appbarmicrophonegoogle:before {
+	content: "\e85d";
+}
+.MyX-appbarmessage:before {
+	content: "\e85e";
+}
+.MyX-appbarmessagesmiley:before {
+	content: "\e85f";
+}
+.MyX-appbarmessagesend:before {
+	content: "\e860";
+}
+.MyX-appbarmessageprofanity:before {
+	content: "\e861";
+}
+.MyX-appbarmedicalpulse:before {
+	content: "\e862";
+}
+.MyX-appbarmedicalpill:before {
+	content: "\e863";
+}
+.MyX-appbarmedicalpillbroken:before {
+	content: "\e864";
+}
+.MyX-appbarmeasuremile:before {
+	content: "\e865";
+}
+.MyX-appbarmeasuremeter:before {
+	content: "\e866";
+}
+.MyX-appbarmeasurekilometer:before {
+	content: "\e867";
+}
+.MyX-appbarmeasureinch:before {
+	content: "\e868";
+}
+.MyX-appbarmeasurefoot:before {
+	content: "\e869";
+}
+.MyX-appbarmeasurefarenheit:before {
+	content: "\e86a";
+}
+.MyX-appbarmeasurecentimeter:before {
+	content: "\e86b";
+}
+.MyX-appbarmeasurecelcius:before {
+	content: "\e86c";
+}
+.MyX-appbarmarvelshieldvariant:before {
+	content: "\e86d";
+}
+.MyX-appbarmarvelshield:before {
+	content: "\e86e";
+}
+.MyX-appbarmarvelironman:before {
+	content: "\e86f";
+}
+.MyX-appbarmarvelironmanmask:before {
+	content: "\e870";
+}
+.MyX-appbarmarvelcaptainamerica:before {
+	content: "\e871";
+}
+.MyX-appbarmarvelavengers:before {
+	content: "\e872";
+}
+.MyX-appbarmartini:before {
+	content: "\e873";
+}
+.MyX-appbarmarkup:before {
+	content: "\e874";
+}
+.MyX-appbarmarketplace:before {
+	content: "\e875";
+}
+.MyX-appbarmarketplaceold:before {
+	content: "\e876";
+}
+.MyX-appbarmaptreasure:before {
+	content: "\e877";
+}
+.MyX-appbarmap:before {
+	content: "\e878";
+}
+.MyX-appbarmapsatellite:before {
+	content: "\e879";
+}
+.MyX-appbarmaplocation:before {
+	content: "\e87a";
+}
+.MyX-appbarmaplocationadd:before {
+	content: "\e87b";
+}
+.MyX-appbarmapgps:before {
+	content: "\e87c";
+}
+.MyX-appbarmapfolds:before {
+	content: "\e87d";
+}
+.MyX-appbarmapaerial:before {
+	content: "\e87e";
+}
+.MyX-appbarmapaerialhighway:before {
+	content: "\e87f";
+}
+.MyX-appbarmanwalk:before {
+	content: "\e880";
+}
+.MyX-appbarmansuitcase:before {
+	content: "\e881";
+}
+.MyX-appbarmansuitcaserun:before {
+	content: "\e882";
+}
+.MyX-appbarmansuitcasefast:before {
+	content: "\e883";
+}
+.MyX-appbarmansensor:before {
+	content: "\e884";
+}
+.MyX-appbarmagnify:before {
+	content: "\e885";
+}
+.MyX-appbarmagnifyminus:before {
+	content: "\e886";
+}
+.MyX-appbarmagnifyforward:before {
+	content: "\e887";
+}
+.MyX-appbarmagnifybrowse:before {
+	content: "\e888";
+}
+.MyX-appbarmagnifyback:before {
+	content: "\e889";
+}
+.MyX-appbarmagnifyarrowup:before {
+	content: "\e88a";
+}
+.MyX-appbarmagnifyarrowdown:before {
+	content: "\e88b";
+}
+.MyX-appbarmagnifyadd:before {
+	content: "\e88c";
+}
+.MyX-appbarloop:before {
+	content: "\e88d";
+}
+.MyX-appbarlogicor:before {
+	content: "\e88e";
+}
+.MyX-appbarlogicoradd:before {
+	content: "\e88f";
+}
+.MyX-appbarlogicand:before {
+	content: "\e890";
+}
+.MyX-appbarlogicandadd:before {
+	content: "\e891";
+}
+.MyX-appbarlock:before {
+	content: "\e892";
+}
+.MyX-appbarlocation:before {
+	content: "\e893";
+}
+.MyX-appbarlocationround:before {
+	content: "\e894";
+}
+.MyX-appbarlocationminus:before {
+	content: "\e895";
+}
+.MyX-appbarlocationfoursquare:before {
+	content: "\e896";
+}
+.MyX-appbarlocationdelete:before {
+	content: "\e897";
+}
+.MyX-appbarlocationcircle:before {
+	content: "\e898";
+}
+.MyX-appbarlocationcheckin:before {
+	content: "\e899";
+}
+.MyX-appbarlocationadd:before {
+	content: "\e89a";
+}
+.MyX-appbarlisttwo:before {
+	content: "\e89b";
+}
+.MyX-appbarlist:before {
+	content: "\e89c";
+}
+.MyX-appbarliststar:before {
+	content: "\e89d";
+}
+.MyX-appbarlistselect:before {
+	content: "\e89e";
+}
+.MyX-appbarlistreorderup:before {
+	content: "\e89f";
+}
+.MyX-appbarlistreorder:before {
+	content: "\e8a0";
+}
+.MyX-appbarlistreorderdown:before {
+	content: "\e8a1";
+}
+.MyX-appbarlistone:before {
+	content: "\e8a2";
+}
+.MyX-appbarlistmerge:before {
+	content: "\e8a3";
+}
+.MyX-appbarlisthidden:before {
+	content: "\e8a4";
+}
+.MyX-appbarlistgear:before {
+	content: "\e8a5";
+}
+.MyX-appbarlistdelete:before {
+	content: "\e8a6";
+}
+.MyX-appbarlistdeleteinline:before {
+	content: "\e8a7";
+}
+.MyX-appbarlistcreate:before {
+	content: "\e8a8";
+}
+.MyX-appbarlistcheck:before {
+	content: "\e8a9";
+}
+.MyX-appbarlistadd:before {
+	content: "\e8aa";
+}
+.MyX-appbarlistaddbelow:before {
+	content: "\e8ab";
+}
+.MyX-appbarlistaddabove:before {
+	content: "\e8ac";
+}
+.MyX-appbarlinkedin:before {
+	content: "\e8ad";
+}
+.MyX-appbarlink:before {
+	content: "\e8ae";
+}
+.MyX-appbarlineshorizontal4:before {
+	content: "\e8af";
+}
+.MyX-appbarlightning:before {
+	content: "\e8b0";
+}
+.MyX-appbarlightbulb:before {
+	content: "\e8b1";
+}
+.MyX-appbarlightbulbhue:before {
+	content: "\e8b2";
+}
+.MyX-appbarlightbulbhueon:before {
+	content: "\e8b3";
+}
+.MyX-appbarlightbulbcoil:before {
+	content: "\e8b4";
+}
+.MyX-appbarlifesaver:before {
+	content: "\e8b5";
+}
+.MyX-appbarleaderboard:before {
+	content: "\e8b6";
+}
+.MyX-appbarlayout:before {
+	content: "\e8b7";
+}
+.MyX-appbarlayoutsidebar:before {
+	content: "\e8b8";
+}
+.MyX-appbarlayoutheader:before {
+	content: "\e8b9";
+}
+.MyX-appbarlayoutexpandrightvariant:before {
+	content: "\e8ba";
+}
+.MyX-appbarlayoutexpandright:before {
+	content: "\e8bb";
+}
+.MyX-appbarlayoutexpandleftvariant:before {
+	content: "\e8bc";
+}
+.MyX-appbarlayoutexpandleft:before {
+	content: "\e8bd";
+}
+.MyX-appbarlayoutcollapserightvariant:before {
+	content: "\e8be";
+}
+.MyX-appbarlayoutcollapseright:before {
+	content: "\e8bf";
+}
+.MyX-appbarlayoutcollapseleftvariant:before {
+	content: "\e8c0";
+}
+.MyX-appbarlayoutcollapseleft:before {
+	content: "\e8c1";
+}
+.MyX-appbarlayoutbody:before {
+	content: "\e8c2";
+}
+.MyX-appbarlayerup:before {
+	content: "\e8c3";
+}
+.MyX-appbarlayerthick:before {
+	content: "\e8c4";
+}
+.MyX-appbarlayer:before {
+	content: "\e8c5";
+}
+.MyX-appbarlayerperspectiveup:before {
+	content: "\e8c6";
+}
+.MyX-appbarlayerminus:before {
+	content: "\e8c7";
+}
+.MyX-appbarlayerdown:before {
+	content: "\e8c8";
+}
+.MyX-appbarlayerdelete:before {
+	content: "\e8c9";
+}
+.MyX-appbarlayerarrangesolidsendtoback:before {
+	content: "\e8ca";
+}
+.MyX-appbarlayerarrangesolidsendbackward:before {
+	content: "\e8cb";
+}
+.MyX-appbarlayerarrangesolidbringtofront:before {
+	content: "\e8cc";
+}
+.MyX-appbarlayerarrangesolidbringforward:before {
+	content: "\e8cd";
+}
+.MyX-appbarlayerarrangesendtoback:before {
+	content: "\e8ce";
+}
+.MyX-appbarlayerarrangesendbackward:before {
+	content: "\e8cf";
+}
+.MyX-appbarlayerarrangebringtofront:before {
+	content: "\e8d0";
+}
+.MyX-appbarlayerarrangebringforward:before {
+	content: "\e8d1";
+}
+.MyX-appbarlayeradd:before {
+	content: "\e8d2";
+}
+.MyX-appbarlavalamp:before {
+	content: "\e8d3";
+}
+.MyX-appbarlaptop:before {
+	content: "\e8d4";
+}
+.MyX-appbarlanguagepythontext:before {
+	content: "\e8d5";
+}
+.MyX-appbarlanguagepython:before {
+	content: "\e8d6";
+}
+.MyX-appbarlanguagejavatext:before {
+	content: "\e8d7";
+}
+.MyX-appbarlanguagejava:before {
+	content: "\e8d8";
+}
+.MyX-appbarlanguagecsharp:before {
+	content: "\e8d9";
+}
+.MyX-appbarlampvariant:before {
+	content: "\e8da";
+}
+.MyX-appbarlamp:before {
+	content: "\e8db";
+}
+.MyX-appbarlampdeskvariant:before {
+	content: "\e8dc";
+}
+.MyX-appbarlampdesk:before {
+	content: "\e8dd";
+}
+.MyX-appbarkey:before {
+	content: "\e8de";
+}
+.MyX-appbarkeyold:before {
+	content: "\e8df";
+}
+.MyX-appbarjournal:before {
+	content: "\e8e0";
+}
+.MyX-appbariphone:before {
+	content: "\e8e1";
+}
+.MyX-appbarinterfacetextbox:before {
+	content: "\e8e2";
+}
+.MyX-appbarinterfacepassword:before {
+	content: "\e8e3";
+}
+.MyX-appbarinterfacelist:before {
+	content: "\e8e4";
+}
+.MyX-appbarinterfacedropdown:before {
+	content: "\e8e5";
+}
+.MyX-appbarinterfacebutton:before {
+	content: "\e8e6";
+}
+.MyX-appbarinput:before {
+	content: "\e8e7";
+}
+.MyX-appbarinputquestion:before {
+	content: "\e8e8";
+}
+.MyX-appbarinputpen:before {
+	content: "\e8e9";
+}
+.MyX-appbarinputpendown:before {
+	content: "\e8ea";
+}
+.MyX-appbarinputkeyboard:before {
+	content: "\e8eb";
+}
+.MyX-appbarinputkeyboarddown:before {
+	content: "\e8ec";
+}
+.MyX-appbarinputdown:before {
+	content: "\e8ed";
+}
+.MyX-appbarinformation:before {
+	content: "\e8ee";
+}
+.MyX-appbarinformationcircle:before {
+	content: "\e8ef";
+}
+.MyX-appbarinfinite:before {
+	content: "\e8f0";
+}
+.MyX-appbarinbox:before {
+	content: "\e8f1";
+}
+.MyX-appbarinboxout:before {
+	content: "\e8f2";
+}
+.MyX-appbarinboxin:before {
+	content: "\e8f3";
+}
+.MyX-appbarimage:before {
+	content: "\e8f4";
+}
+.MyX-appbarimagesunset:before {
+	content: "\e8f5";
+}
+.MyX-appbarimagesports:before {
+	content: "\e8f6";
+}
+.MyX-appbarimagesnow:before {
+	content: "\e8f7";
+}
+.MyX-appbarimageselect:before {
+	content: "\e8f8";
+}
+.MyX-appbarimageredeye:before {
+	content: "\e8f9";
+}
+.MyX-appbarimageportrait:before {
+	content: "\e8fa";
+}
+.MyX-appbarimagenight:before {
+	content: "\e8fb";
+}
+.MyX-appbarimagenightportrait:before {
+	content: "\e8fc";
+}
+.MyX-appbarimagenightperson:before {
+	content: "\e8fd";
+}
+.MyX-appbarimagenightlandscape:before {
+	content: "\e8fe";
+}
+.MyX-appbarimagemultiple:before {
+	content: "\e8ff";
+}
+.MyX-appbarimagemacro:before {
+	content: "\e900";
+}
+.MyX-appbarimagelandscape:before {
+	content: "\e901";
+}
+.MyX-appbarimagehdr:before {
+	content: "\e902";
+}
+.MyX-appbarimagegallery:before {
+	content: "\e903";
+}
+.MyX-appbarimagefocus:before {
+	content: "\e904";
+}
+.MyX-appbarimageexport:before {
+	content: "\e905";
+}
+.MyX-appbarimagebroken:before {
+	content: "\e906";
+}
+.MyX-appbarimagebeach:before {
+	content: "\e907";
+}
+.MyX-appbarimagebacklight:before {
+	content: "\e908";
+}
+.MyX-appbarimageants:before {
+	content: "\e909";
+}
+.MyX-appbarie:before {
+	content: "\e90a";
+}
+.MyX-appbaricecreambar:before {
+	content: "\e90b";
+}
+.MyX-appbarhourglass:before {
+	content: "\e90c";
+}
+.MyX-appbarhomevariant:before {
+	content: "\e90d";
+}
+.MyX-appbarhomevariantleave:before {
+	content: "\e90e";
+}
+.MyX-appbarhomevariantenter:before {
+	content: "\e90f";
+}
+.MyX-appbarhome:before {
+	content: "\e910";
+}
+.MyX-appbarhomequestion:before {
+	content: "\e911";
+}
+.MyX-appbarhomepeople:before {
+	content: "\e912";
+}
+.MyX-appbarhomepeoplenone:before {
+	content: "\e913";
+}
+.MyX-appbarhomelocationround:before {
+	content: "\e914";
+}
+.MyX-appbarhomelocationpin:before {
+	content: "\e915";
+}
+.MyX-appbarhomegps:before {
+	content: "\e916";
+}
+.MyX-appbarhomegarage:before {
+	content: "\e917";
+}
+.MyX-appbarhomegarageopen:before {
+	content: "\e918";
+}
+.MyX-appbarhomegaragearrowopen:before {
+	content: "\e919";
+}
+.MyX-appbarhomegaragearrowclose:before {
+	content: "\e91a";
+}
+.MyX-appbarhomeempty:before {
+	content: "\e91b";
+}
+.MyX-appbarheart:before {
+	content: "\e91c";
+}
+.MyX-appbarheartoutline:before {
+	content: "\e91d";
+}
+.MyX-appbarheartcross:before {
+	content: "\e91e";
+}
+.MyX-appbarheartbreak:before {
+	content: "\e91f";
+}
+.MyX-appbarhatsanta:before {
+	content: "\e920";
+}
+.MyX-appbarhardwaremouse:before {
+	content: "\e921";
+}
+.MyX-appbarhardwareheadset:before {
+	content: "\e922";
+}
+.MyX-appbarhardwareheadphones:before {
+	content: "\e923";
+}
+.MyX-appbarhardwareheadphonesbluetooth:before {
+	content: "\e924";
+}
+.MyX-appbarhardwarecpu:before {
+	content: "\e925";
+}
+.MyX-appbarhandicap:before {
+	content: "\e926";
+}
+.MyX-appbarhandicapout:before {
+	content: "\e927";
+}
+.MyX-appbarhandicapin:before {
+	content: "\e928";
+}
+.MyX-appbargroup:before {
+	content: "\e929";
+}
+.MyX-appbargroupminus:before {
+	content: "\e92a";
+}
+.MyX-appbargroupdelete:before {
+	content: "\e92b";
+}
+.MyX-appbargroupadd:before {
+	content: "\e92c";
+}
+.MyX-appbargrid:before {
+	content: "\e92d";
+}
+.MyX-appbargreeksigmauppercase:before {
+	content: "\e92e";
+}
+.MyX-appbargreeksigmalowercase:before {
+	content: "\e92f";
+}
+.MyX-appbargraphlineup:before {
+	content: "\e930";
+}
+.MyX-appbargraphline:before {
+	content: "\e931";
+}
+.MyX-appbargraphlinedown:before {
+	content: "\e932";
+}
+.MyX-appbargraphhistogram:before {
+	content: "\e933";
+}
+.MyX-appbargraphhistogramdescription:before {
+	content: "\e934";
+}
+.MyX-appbargraphboxplot:before {
+	content: "\e935";
+}
+.MyX-appbargraphbar:before {
+	content: "\e936";
+}
+.MyX-appbargradef:before {
+	content: "\e937";
+}
+.MyX-appbargradee:before {
+	content: "\e938";
+}
+.MyX-appbargraded:before {
+	content: "\e939";
+}
+.MyX-appbargradedplus:before {
+	content: "\e93a";
+}
+.MyX-appbargradedminus:before {
+	content: "\e93b";
+}
+.MyX-appbargradec:before {
+	content: "\e93c";
+}
+.MyX-appbargradecplus:before {
+	content: "\e93d";
+}
+.MyX-appbargradecminus:before {
+	content: "\e93e";
+}
+.MyX-appbargradeb:before {
+	content: "\e93f";
+}
+.MyX-appbargradebplus:before {
+	content: "\e940";
+}
+.MyX-appbargradebminus:before {
+	content: "\e941";
+}
+.MyX-appbargradea:before {
+	content: "\e942";
+}
+.MyX-appbargradeaplus:before {
+	content: "\e943";
+}
+.MyX-appbargradeaminus:before {
+	content: "\e944";
+}
+.MyX-appbargoogleplus:before {
+	content: "\e945";
+}
+.MyX-appbargoogle:before {
+	content: "\e946";
+}
+.MyX-appbarglobewire:before {
+	content: "\e947";
+}
+.MyX-appbarglobe:before {
+	content: "\e948";
+}
+.MyX-appbargift:before {
+	content: "\e949";
+}
+.MyX-appbargendermale:before {
+	content: "\e94a";
+}
+.MyX-appbargenderfemale:before {
+	content: "\e94b";
+}
+.MyX-appbargenderboth:before {
+	content: "\e94c";
+}
+.MyX-appbargauge100:before {
+	content: "\e94d";
+}
+.MyX-appbargauge75:before {
+	content: "\e94e";
+}
+.MyX-appbargauge50:before {
+	content: "\e94f";
+}
+.MyX-appbargauge25:before {
+	content: "\e950";
+}
+.MyX-appbargauge0:before {
+	content: "\e951";
+}
+.MyX-appbargas:before {
+	content: "\e952";
+}
+.MyX-appbarfuturamafry:before {
+	content: "\e953";
+}
+.MyX-appbarfuturamabender:before {
+	content: "\e954";
+}
+.MyX-appbarfullscreen:before {
+	content: "\e955";
+}
+.MyX-appbarfullscreenbox:before {
+	content: "\e956";
+}
+.MyX-appbarframeworknet:before {
+	content: "\e957";
+}
+.MyX-appbarforsale:before {
+	content: "\e958";
+}
+.MyX-appbarforrst:before {
+	content: "\e959";
+}
+.MyX-appbarformeditable:before {
+	content: "\e95a";
+}
+.MyX-appbarformbasic:before {
+	content: "\e95b";
+}
+.MyX-appbarforklift:before {
+	content: "\e95c";
+}
+.MyX-appbarforkliftload:before {
+	content: "\e95d";
+}
+.MyX-appbarfoot:before {
+	content: "\e95e";
+}
+.MyX-appbarfood:before {
+	content: "\e95f";
+}
+.MyX-appbarfoodsilverware:before {
+	content: "\e960";
+}
+.MyX-appbarfoodsilverwarecross:before {
+	content: "\e961";
+}
+.MyX-appbarfoodapple:before {
+	content: "\e962";
+}
+.MyX-appbarfolder:before {
+	content: "\e963";
+}
+.MyX-appbarfolderstar:before {
+	content: "\e964";
+}
+.MyX-appbarfolderpuzzle:before {
+	content: "\e965";
+}
+.MyX-appbarfolderpeople:before {
+	content: "\e966";
+}
+.MyX-appbarfolderopen:before {
+	content: "\e967";
+}
+.MyX-appbarfolderlock:before {
+	content: "\e968";
+}
+.MyX-appbarfolderellipsis:before {
+	content: "\e969";
+}
+.MyX-appbarflagwavy:before {
+	content: "\e96a";
+}
+.MyX-appbarflagtexas:before {
+	content: "\e96b";
+}
+.MyX-appbarflag:before {
+	content: "\e96c";
+}
+.MyX-appbarflagbear:before {
+	content: "\e96d";
+}
+.MyX-appbarfingerprint:before {
+	content: "\e96e";
+}
+.MyX-appbarfinder:before {
+	content: "\e96f";
+}
+.MyX-appbarfilter:before {
+	content: "\e970";
+}
+.MyX-appbarfilteralphabetical:before {
+	content: "\e971";
+}
+.MyX-appbarfilm:before {
+	content: "\e972";
+}
+.MyX-appbarfilmselect:before {
+	content: "\e973";
+}
+.MyX-appbarfilmlive:before {
+	content: "\e974";
+}
+.MyX-appbarferry:before {
+	content: "\e975";
+}
+.MyX-appbarfanbox:before {
+	content: "\e976";
+}
+.MyX-appbarfacebookdisconnect:before {
+	content: "\e977";
+}
+.MyX-appbarfacebookconnect:before {
+	content: "\e978";
+}
+.MyX-appbareye:before {
+	content: "\e979";
+}
+.MyX-appbareyehide:before {
+	content: "\e97a";
+}
+.MyX-appbaremailyahoo:before {
+	content: "\e97b";
+}
+.MyX-appbaremail:before {
+	content: "\e97c";
+}
+.MyX-appbaremailoutlook:before {
+	content: "\e97d";
+}
+.MyX-appbaremailminimal:before {
+	content: "\e97e";
+}
+.MyX-appbaremailhardedge:before {
+	content: "\e97f";
+}
+.MyX-appbaremailgmail:before {
+	content: "\e980";
+}
+.MyX-appbarelevatorup:before {
+	content: "\e981";
+}
+.MyX-appbarelevatordown:before {
+	content: "\e982";
+}
+.MyX-appbaredit:before {
+	content: "\e983";
+}
+.MyX-appbareditminus:before {
+	content: "\e984";
+}
+.MyX-appbareditbox:before {
+	content: "\e985";
+}
+.MyX-appbareditadd:before {
+	content: "\e986";
+}
+.MyX-appbardropper:before {
+	content: "\e987";
+}
+.MyX-appbardrawpixelgrid:before {
+	content: "\e988";
+}
+.MyX-appbardrawpixelfillgrid:before {
+	content: "\e989";
+}
+.MyX-appbardrawpencil:before {
+	content: "\e98a";
+}
+.MyX-appbardrawpencilreflection:before {
+	content: "\e98b";
+}
+.MyX-appbardrawpen:before {
+	content: "\e98c";
+}
+.MyX-appbardrawpenreflection:before {
+	content: "\e98d";
+}
+.MyX-appbardrawpenminus:before {
+	content: "\e98e";
+}
+.MyX-appbardrawpenadd:before {
+	content: "\e98f";
+}
+.MyX-appbardrawpaintbrush:before {
+	content: "\e990";
+}
+.MyX-appbardrawmarker:before {
+	content: "\e991";
+}
+.MyX-appbardrawmarkerreflection:before {
+	content: "\e992";
+}
+.MyX-appbardrawbutton:before {
+	content: "\e993";
+}
+.MyX-appbardrawbrush:before {
+	content: "\e994";
+}
+.MyX-appbardrawbrushreflection:before {
+	content: "\e995";
+}
+.MyX-appbardraftingcenterline:before {
+	content: "\e996";
+}
+.MyX-appbardownload:before {
+	content: "\e997";
+}
+.MyX-appbardoorlockopen:before {
+	content: "\e998";
+}
+.MyX-appbardoorlockclosed:before {
+	content: "\e999";
+}
+.MyX-appbardoorleave:before {
+	content: "\e99a";
+}
+.MyX-appbardoorenter:before {
+	content: "\e99b";
+}
+.MyX-appbardnd:before {
+	content: "\e99c";
+}
+.MyX-appbardisk:before {
+	content: "\e99d";
+}
+.MyX-appbardiskdownload:before {
+	content: "\e99e";
+}
+.MyX-appbardisconnect:before {
+	content: "\e99f";
+}
+.MyX-appbardirections:before {
+	content: "\e9a0";
+}
+.MyX-appbardimensionlinewidth:before {
+	content: "\e9a1";
+}
+.MyX-appbardimensionlinewidthshort:before {
+	content: "\e9a2";
+}
+.MyX-appbardimensionlineheight:before {
+	content: "\e9a3";
+}
+.MyX-appbardimensionlineheightshort:before {
+	content: "\e9a4";
+}
+.MyX-appbardimensionboxwidth:before {
+	content: "\e9a5";
+}
+.MyX-appbardimensionboxheight:before {
+	content: "\e9a6";
+}
+.MyX-appbardimensionarrowlinewidththick:before {
+	content: "\e9a7";
+}
+.MyX-appbardimensionarrowlinewidth:before {
+	content: "\e9a8";
+}
+.MyX-appbardimensionarrowlinewidthshort:before {
+	content: "\e9a9";
+}
+.MyX-appbardimensionarrowlineheightthick:before {
+	content: "\e9aa";
+}
+.MyX-appbardimensionarrowlineheight:before {
+	content: "\e9ab";
+}
+.MyX-appbardimensionarrowlineheightshort:before {
+	content: "\e9ac";
+}
+.MyX-appbardimensionarrowboxwidth:before {
+	content: "\e9ad";
+}
+.MyX-appbardimensionarrowboxheight:before {
+	content: "\e9ae";
+}
+.MyX-appbardial:before {
+	content: "\e9af";
+}
+.MyX-appbardiagram:before {
+	content: "\e9b0";
+}
+.MyX-appbardevcenter:before {
+	content: "\e9b1";
+}
+.MyX-appbardelete:before {
+	content: "\e9b2";
+}
+.MyX-appbardeeplink:before {
+	content: "\e9b3";
+}
+.MyX-appbardeeplinkround:before {
+	content: "\e9b4";
+}
+.MyX-appbardebugstop:before {
+	content: "\e9b5";
+}
+.MyX-appbardebugstepover:before {
+	content: "\e9b6";
+}
+.MyX-appbardebugstepout:before {
+	content: "\e9b7";
+}
+.MyX-appbardebugstepinto:before {
+	content: "\e9b8";
+}
+.MyX-appbardebugrestart:before {
+	content: "\e9b9";
+}
+.MyX-appbardatabase:before {
+	content: "\e9ba";
+}
+.MyX-appbardatabasesql:before {
+	content: "\e9bb";
+}
+.MyX-appbardatabasemysql:before {
+	content: "\e9bc";
+}
+.MyX-appbarcustomerservice:before {
+	content: "\e9bd";
+}
+.MyX-appbarcusorpointer:before {
+	content: "\e9be";
+}
+.MyX-appbarcursormove:before {
+	content: "\e9bf";
+}
+.MyX-appbarcursorinformation:before {
+	content: "\e9c0";
+}
+.MyX-appbarcursorhand:before {
+	content: "\e9c1";
+}
+.MyX-appbarcursordefaulttransformhorizontal:before {
+	content: "\e9c2";
+}
+.MyX-appbarcursordefault:before {
+	content: "\e9c3";
+}
+.MyX-appbarcursordefaultoutline:before {
+	content: "\e9c4";
+}
+.MyX-appbarcurrencyyen:before {
+	content: "\e9c5";
+}
+.MyX-appbarcurrencyrupee:before {
+	content: "\e9c6";
+}
+.MyX-appbarcurrencyrubles:before {
+	content: "\e9c7";
+}
+.MyX-appbarcurrencypound:before {
+	content: "\e9c8";
+}
+.MyX-appbarcurrencygrivna:before {
+	content: "\e9c9";
+}
+.MyX-appbarcurrencyeuro:before {
+	content: "\e9ca";
+}
+.MyX-appbarcurrencydollar:before {
+	content: "\e9cb";
+}
+.MyX-appbarcurrencydollarfree:before {
+	content: "\e9cc";
+}
+.MyX-appbarcurrencycent:before {
+	content: "\e9cd";
+}
+.MyX-appbarcupcake:before {
+	content: "\e9ce";
+}
+.MyX-appbarcup:before {
+	content: "\e9cf";
+}
+.MyX-appbarcuppaper:before {
+	content: "\e9d0";
+}
+.MyX-appbarcuphalf:before {
+	content: "\e9d1";
+}
+.MyX-appbarcupfull:before {
+	content: "\e9d2";
+}
+.MyX-appbarcupempty:before {
+	content: "\e9d3";
+}
+.MyX-appbarcrown:before {
+	content: "\e9d4";
+}
+.MyX-appbarcrosshair:before {
+	content: "\e9d5";
+}
+.MyX-appbarcrop:before {
+	content: "\e9d6";
+}
+.MyX-appbarcreditcard:before {
+	content: "\e9d7";
+}
+.MyX-appbarcreativecommons:before {
+	content: "\e9d8";
+}
+.MyX-appbarcoupon:before {
+	content: "\e9d9";
+}
+.MyX-appbarcorner:before {
+	content: "\e9da";
+}
+.MyX-appbarcopyright:before {
+	content: "\e9db";
+}
+.MyX-appbarcontrollerxbox:before {
+	content: "\e9dc";
+}
+.MyX-appbarcontrollersnes:before {
+	content: "\e9dd";
+}
+.MyX-appbarcontrolstop:before {
+	content: "\e9de";
+}
+.MyX-appbarcontrolrewindvariant:before {
+	content: "\e9df";
+}
+.MyX-appbarcontrolrewind:before {
+	content: "\e9e0";
+}
+.MyX-appbarcontrolresume:before {
+	content: "\e9e1";
+}
+.MyX-appbarcontrolplay:before {
+	content: "\e9e2";
+}
+.MyX-appbarcontrolplaylive:before {
+	content: "\e9e3";
+}
+.MyX-appbarcontrolpause:before {
+	content: "\e9e4";
+}
+.MyX-appbarcontrolguide:before {
+	content: "\e9e5";
+}
+.MyX-appbarcontrolfastforwardvariant:before {
+	content: "\e9e6";
+}
+.MyX-appbarcontrolfastforward:before {
+	content: "\e9e7";
+}
+.MyX-appbarcontroleject:before {
+	content: "\e9e8";
+}
+.MyX-appbarcontrast:before {
+	content: "\e9e9";
+}
+.MyX-appbarconsole:before {
+	content: "\e9ea";
+}
+.MyX-appbarconnectionwifivariant:before {
+	content: "\e9eb";
+}
+.MyX-appbarconnectionwifi:before {
+	content: "\e9ec";
+}
+.MyX-appbarconnectionqualityverylow:before {
+	content: "\e9ed";
+}
+.MyX-appbarconnectionqualityveryhigh:before {
+	content: "\e9ee";
+}
+.MyX-appbarconnectionqualitymedium:before {
+	content: "\e9ef";
+}
+.MyX-appbarconnectionqualitylow:before {
+	content: "\e9f0";
+}
+.MyX-appbarconnectionqualityhigh:before {
+	content: "\e9f1";
+}
+.MyX-appbarconnectionqualityextremelylow:before {
+	content: "\e9f2";
+}
+.MyX-appbarconnectionev:before {
+	content: "\e9f3";
+}
+.MyX-appbarconnectionbluetooth:before {
+	content: "\e9f4";
+}
+.MyX-appbarconnection4g:before {
+	content: "\e9f5";
+}
+.MyX-appbarconnection3g:before {
+	content: "\e9f6";
+}
+.MyX-appbarconnection1x:before {
+	content: "\e9f7";
+}
+.MyX-appbarconnect:before {
+	content: "\e9f8";
+}
+.MyX-appbarconfirmyesno:before {
+	content: "\e9f9";
+}
+.MyX-appbarcone:before {
+	content: "\e9fa";
+}
+.MyX-appbarconediagonal:before {
+	content: "\e9fb";
+}
+.MyX-appbarcompanioncube:before {
+	content: "\e9fc";
+}
+.MyX-appbarcolumntwo:before {
+	content: "\e9fd";
+}
+.MyX-appbarcolumnthree:before {
+	content: "\e9fe";
+}
+.MyX-appbarcolumnone:before {
+	content: "\e9ff";
+}
+.MyX-appbarcogs:before {
+	content: "\ea00";
+}
+.MyX-appbarcog:before {
+	content: "\ea01";
+}
+.MyX-appbarcodexml:before {
+	content: "\ea02";
+}
+.MyX-appbarcloudirc:before {
+	content: "\ea03";
+}
+.MyX-appbarcloudupload:before {
+	content: "\ea04";
+}
+.MyX-appbarcloud:before {
+	content: "\ea05";
+}
+.MyX-appbarcloudplay:before {
+	content: "\ea06";
+}
+.MyX-appbarcloudpause:before {
+	content: "\ea07";
+}
+.MyX-appbarclouddownload:before {
+	content: "\ea08";
+}
+.MyX-appbarclouddelete:before {
+	content: "\ea09";
+}
+.MyX-appbarcloudadd:before {
+	content: "\ea0a";
+}
+.MyX-appbarclothestie:before {
+	content: "\ea0b";
+}
+.MyX-appbarclothesshirt:before {
+	content: "\ea0c";
+}
+.MyX-appbarclosedcaption:before {
+	content: "\ea0d";
+}
+.MyX-appbarclosedcaptionoff:before {
+	content: "\ea0e";
+}
+.MyX-appbarclose:before {
+	content: "\ea0f";
+}
+.MyX-appbarclock:before {
+	content: "\ea10";
+}
+.MyX-appbarclipboardvarianttext:before {
+	content: "\ea11";
+}
+.MyX-appbarclipboardvariant:before {
+	content: "\ea12";
+}
+.MyX-appbarclipboardvariantedit:before {
+	content: "\ea13";
+}
+.MyX-appbarclipboard:before {
+	content: "\ea14";
+}
+.MyX-appbarclipboardpaste:before {
+	content: "\ea15";
+}
+.MyX-appbarclipboardpaper:before {
+	content: "\ea16";
+}
+.MyX-appbarclipboardpapercheck:before {
+	content: "\ea17";
+}
+.MyX-appbarclear:before {
+	content: "\ea18";
+}
+.MyX-appbarclearreflecthorizontal:before {
+	content: "\ea19";
+}
+.MyX-appbarclearinverse:before {
+	content: "\ea1a";
+}
+.MyX-appbarclearinversereflecthorizontal:before {
+	content: "\ea1b";
+}
+.MyX-appbarclean:before {
+	content: "\ea1c";
+}
+.MyX-appbarcity:before {
+	content: "\ea1d";
+}
+.MyX-appbarcityseattle:before {
+	content: "\ea1e";
+}
+.MyX-appbarcitysanfrancisco:before {
+	content: "\ea1f";
+}
+.MyX-appbarcitychicago:before {
+	content: "\ea20";
+}
+.MyX-appbarcirclegrowth:before {
+	content: "\ea21";
+}
+.MyX-appbarcircledecline:before {
+	content: "\ea22";
+}
+.MyX-appbarchurch:before {
+	content: "\ea23";
+}
+.MyX-appbarchromakey:before {
+	content: "\ea24";
+}
+.MyX-appbarchevronup:before {
+	content: "\ea25";
+}
+.MyX-appbarchevronright:before {
+	content: "\ea26";
+}
+.MyX-appbarchevronleft:before {
+	content: "\ea27";
+}
+.MyX-appbarchevrondown:before {
+	content: "\ea28";
+}
+.MyX-appbarchessrook:before {
+	content: "\ea29";
+}
+.MyX-appbarchessqueen:before {
+	content: "\ea2a";
+}
+.MyX-appbarchesspawn:before {
+	content: "\ea2b";
+}
+.MyX-appbarchessking:before {
+	content: "\ea2c";
+}
+.MyX-appbarchesshorse:before {
+	content: "\ea2d";
+}
+.MyX-appbarchessbishop:before {
+	content: "\ea2e";
+}
+.MyX-appbarcheckmarkuncrossed:before {
+	content: "\ea2f";
+}
+.MyX-appbarcheckmarkthickunchecked:before {
+	content: "\ea30";
+}
+.MyX-appbarcheckmarkthick:before {
+	content: "\ea31";
+}
+.MyX-appbarcheckmark:before {
+	content: "\ea32";
+}
+.MyX-appbarcheckmarkpenciltop:before {
+	content: "\ea33";
+}
+.MyX-appbarcheckmarkpencil:before {
+	content: "\ea34";
+}
+.MyX-appbarcheckmarkcross:before {
+	content: "\ea35";
+}
+.MyX-appbarcheck:before {
+	content: "\ea36";
+}
+.MyX-appbarchat:before {
+	content: "\ea37";
+}
+.MyX-appbarcenterline:before {
+	content: "\ea38";
+}
+.MyX-appbarcellup:before {
+	content: "\ea39";
+}
+.MyX-appbarcellrowdelete:before {
+	content: "\ea3a";
+}
+.MyX-appbarcellmerge:before {
+	content: "\ea3b";
+}
+.MyX-appbarcellinsertbelow:before {
+	content: "\ea3c";
+}
+.MyX-appbarcellinsertabove:before {
+	content: "\ea3d";
+}
+.MyX-appbarcellfunction:before {
+	content: "\ea3e";
+}
+.MyX-appbarcelldown:before {
+	content: "\ea3f";
+}
+.MyX-appbarcellcolumndelete:before {
+	content: "\ea40";
+}
+.MyX-appbarcellalign:before {
+	content: "\ea41";
+}
+.MyX-appbarcd:before {
+	content: "\ea42";
+}
+.MyX-appbarcdeject:before {
+	content: "\ea43";
+}
+.MyX-appbarcart:before {
+	content: "\ea44";
+}
+.MyX-appbarcardsspade:before {
+	content: "\ea45";
+}
+.MyX-appbarcardsheart:before {
+	content: "\ea46";
+}
+.MyX-appbarcardsdiamond:before {
+	content: "\ea47";
+}
+.MyX-appbarcardsclub:before {
+	content: "\ea48";
+}
+.MyX-appbarcard:before {
+	content: "\ea49";
+}
+.MyX-appbarcard9:before {
+	content: "\ea4a";
+}
+.MyX-appbarcard8:before {
+	content: "\ea4b";
+}
+.MyX-appbarcard7:before {
+	content: "\ea4c";
+}
+.MyX-appbarcard6:before {
+	content: "\ea4d";
+}
+.MyX-appbarcard5:before {
+	content: "\ea4e";
+}
+.MyX-appbarcard4:before {
+	content: "\ea4f";
+}
+.MyX-appbarcard3:before {
+	content: "\ea50";
+}
+.MyX-appbarcard2:before {
+	content: "\ea51";
+}
+.MyX-appbarcard1:before {
+	content: "\ea52";
+}
+.MyX-appbarcandycane:before {
+	content: "\ea53";
+}
+.MyX-appbarcandle:before {
+	content: "\ea54";
+}
+.MyX-appbarcancel:before {
+	content: "\ea55";
+}
+.MyX-appbarcameraswitch:before {
+	content: "\ea56";
+}
+.MyX-appbarcameraswitchinvert:before {
+	content: "\ea57";
+}
+.MyX-appbarcamera:before {
+	content: "\ea58";
+}
+.MyX-appbarcamerasend:before {
+	content: "\ea59";
+}
+.MyX-appbarcameraflash:before {
+	content: "\ea5a";
+}
+.MyX-appbarcameraflashselected:before {
+	content: "\ea5b";
+}
+.MyX-appbarcameraflashoff:before {
+	content: "\ea5c";
+}
+.MyX-appbarcameraflashoffselected:before {
+	content: "\ea5d";
+}
+.MyX-appbarcameraflashauto:before {
+	content: "\ea5e";
+}
+.MyX-appbarcameraflashautoselected:before {
+	content: "\ea5f";
+}
+.MyX-appbarcameraauto:before {
+	content: "\ea60";
+}
+.MyX-appbarcalendaryear:before {
+	content: "\ea61";
+}
+.MyX-appbarcalendarweek:before {
+	content: "\ea62";
+}
+.MyX-appbarcalendartomorrow:before {
+	content: "\ea63";
+}
+.MyX-appbarcalendar:before {
+	content: "\ea64";
+}
+.MyX-appbarcalendarrange:before {
+	content: "\ea65";
+}
+.MyX-appbarcalendarmonth:before {
+	content: "\ea66";
+}
+.MyX-appbarcalendarfuture:before {
+	content: "\ea67";
+}
+.MyX-appbarcalendardollar:before {
+	content: "\ea68";
+}
+.MyX-appbarcalendarday:before {
+	content: "\ea69";
+}
+.MyX-appbarcalendar31:before {
+	content: "\ea6a";
+}
+.MyX-appbarcalendar14:before {
+	content: "\ea6b";
+}
+.MyX-appbarcalculator:before {
+	content: "\ea6c";
+}
+.MyX-appbarcabinetvariant:before {
+	content: "\ea6d";
+}
+.MyX-appbarcabinet:before {
+	content: "\ea6e";
+}
+.MyX-appbarcabinetout:before {
+	content: "\ea6f";
+}
+.MyX-appbarcabinetin:before {
+	content: "\ea70";
+}
+.MyX-appbarcabinetfilesvariant:before {
+	content: "\ea71";
+}
+.MyX-appbarcabinetfiles:before {
+	content: "\ea72";
+}
+.MyX-appbarbug:before {
+	content: "\ea73";
+}
+.MyX-appbarbugremove:before {
+	content: "\ea74";
+}
+.MyX-appbarbrowserwire:before {
+	content: "\ea75";
+}
+.MyX-appbarbrowser:before {
+	content: "\ea76";
+}
+.MyX-appbarbrowserie:before {
+	content: "\ea77";
+}
+.MyX-appbarbrowserchrome:before {
+	content: "\ea78";
+}
+.MyX-appbarboxunfolded:before {
+	content: "\ea79";
+}
+.MyX-appbarbox:before {
+	content: "\ea7a";
+}
+.MyX-appbarboxlayered:before {
+	content: "\ea7b";
+}
+.MyX-appbarbordervertical:before {
+	content: "\ea7c";
+}
+.MyX-appbarbordertop:before {
+	content: "\ea7d";
+}
+.MyX-appbarborderright:before {
+	content: "\ea7e";
+}
+.MyX-appbarborderoutside:before {
+	content: "\ea7f";
+}
+.MyX-appbarbordernone:before {
+	content: "\ea80";
+}
+.MyX-appbarborderleft:before {
+	content: "\ea81";
+}
+.MyX-appbarborderinner:before {
+	content: "\ea82";
+}
+.MyX-appbarborderhorizontal:before {
+	content: "\ea83";
+}
+.MyX-appbarborderbottom:before {
+	content: "\ea84";
+}
+.MyX-appbarborderall:before {
+	content: "\ea85";
+}
+.MyX-appbarbook:before {
+	content: "\ea86";
+}
+.MyX-appbarbookside:before {
+	content: "\ea87";
+}
+.MyX-appbarbookperspective:before {
+	content: "\ea88";
+}
+.MyX-appbarbookperspectivehelp:before {
+	content: "\ea89";
+}
+.MyX-appbarbookopentext:before {
+	content: "\ea8a";
+}
+.MyX-appbarbookopentextimage:before {
+	content: "\ea8b";
+}
+.MyX-appbarbookopen:before {
+	content: "\ea8c";
+}
+.MyX-appbarbookopeninformation:before {
+	content: "\ea8d";
+}
+.MyX-appbarbooklist:before {
+	content: "\ea8e";
+}
+.MyX-appbarbookhardcoveropenwriting:before {
+	content: "\ea8f";
+}
+.MyX-appbarbookhardcoveropen:before {
+	content: "\ea90";
+}
+.MyX-appbarbookcontact:before {
+	content: "\ea91";
+}
+.MyX-appbarbing:before {
+	content: "\ea92";
+}
+.MyX-appbarbilling:before {
+	content: "\ea93";
+}
+.MyX-appbarbillboard:before {
+	content: "\ea94";
+}
+.MyX-appbarbike:before {
+	content: "\ea95";
+}
+.MyX-appbarbikeparking:before {
+	content: "\ea96";
+}
+.MyX-appbarbeer:before {
+	content: "\ea97";
+}
+.MyX-appbarbeerguinness:before {
+	content: "\ea98";
+}
+.MyX-appbarbed:before {
+	content: "\ea99";
+}
+.MyX-appbarbatterycharging:before {
+	content: "\ea9a";
+}
+.MyX-appbarbattery3:before {
+	content: "\ea9b";
+}
+.MyX-appbarbattery2:before {
+	content: "\ea9c";
+}
+.MyX-appbarbattery1:before {
+	content: "\ea9d";
+}
+.MyX-appbarbattery0:before {
+	content: "\ea9e";
+}
+.MyX-appbarbath:before {
+	content: "\ea9f";
+}
+.MyX-appbarbase:before {
+	content: "\eaa0";
+}
+.MyX-appbarbaseselect:before {
+	content: "\eaa1";
+}
+.MyX-appbarbarcode:before {
+	content: "\eaa2";
+}
+.MyX-appbarbaby:before {
+	content: "\eaa3";
+}
+.MyX-appbaraxisthree:before {
+	content: "\eaa4";
+}
+.MyX-appbarat:before {
+	content: "\eaa5";
+}
+.MyX-appbararrowup:before {
+	content: "\eaa6";
+}
+.MyX-appbararrowupdown:before {
+	content: "\eaa7";
+}
+.MyX-appbararrowright:before {
+	content: "\eaa8";
+}
+.MyX-appbararrowrightleft:before {
+	content: "\eaa9";
+}
+.MyX-appbararrowleft:before {
+	content: "\eaaa";
+}
+.MyX-appbararrowleftright:before {
+	content: "\eaab";
+}
+.MyX-appbararrowexpand:before {
+	content: "\eaac";
+}
+.MyX-appbararrowdownup:before {
+	content: "\eaad";
+}
+.MyX-appbararrowdown:before {
+	content: "\eaae";
+}
+.MyX-appbararrowcornerupright:before {
+	content: "\eaaf";
+}
+.MyX-appbararrowcollapsed:before {
+	content: "\eab0";
+}
+.MyX-appbararchive:before {
+	content: "\eab1";
+}
+.MyX-appbararcadebutton:before {
+	content: "\eab2";
+}
+.MyX-appbarapp:before {
+	content: "\eab3";
+}
+.MyX-appbarappremove:before {
+	content: "\eab4";
+}
+.MyX-appbarappplus:before {
+	content: "\eab5";
+}
+.MyX-appbarappminus:before {
+	content: "\eab6";
+}
+.MyX-appbarappfavorite:before {
+	content: "\eab7";
+}
+.MyX-appbaranchor:before {
+	content: "\eab8";
+}
+.MyX-appbaralignright:before {
+	content: "\eab9";
+}
+.MyX-appbaralignleft:before {
+	content: "\eaba";
+}
+.MyX-appbaralignjustify:before {
+	content: "\eabb";
+}
+.MyX-appbaraligncenter:before {
+	content: "\eabc";
+}
+.MyX-appbaralien:before {
+	content: "\eabd";
+}
+.MyX-appbaralert:before {
+	content: "\eabe";
+}
+.MyX-appbaradobespeedgrade:before {
+	content: "\eabf";
+}
+.MyX-appbaradobepremierpro:before {
+	content: "\eac0";
+}
+.MyX-appbaradobeprelude:before {
+	content: "\eac1";
+}
+.MyX-appbaradobephotoshop:before {
+	content: "\eac2";
+}
+.MyX-appbaradobelightroom:before {
+	content: "\eac3";
+}
+.MyX-appbaradobeindesign:before {
+	content: "\eac4";
+}
+.MyX-appbaradobeillustrator:before {
+	content: "\eac5";
+}
+.MyX-appbaradobeflashbuilder:before {
+	content: "\eac6";
+}
+.MyX-appbaradobeflash:before {
+	content: "\eac7";
+}
+.MyX-appbaradobefireworks:before {
+	content: "\eac8";
+}
+.MyX-appbaradobeencore:before {
+	content: "\eac9";
+}
+.MyX-appbaradobedreamweaver:before {
+	content: "\eaca";
+}
+.MyX-appbaradobebridge:before {
+	content: "\eacb";
+}
+.MyX-appbaradobeaudition:before {
+	content: "\eacc";
+}
+.MyX-appbaradobeaftereffects:before {
+	content: "\eacd";
+}
+.MyX-appbaradobeacrobat:before {
+	content: "\eace";
+}
+.MyX-appbaradd:before {
+	content: "\eacf";
+}
+.MyX-appbaracorn:before {
+	content: "\ead0";
+}
+.MyX-appbarzune2:before {
+	content: "\ead1";
+}
+.MyX-appbaryoutube2:before {
+	content: "\ead2";
+}
+.MyX-appbaryoutubeplay2:before {
+	content: "\ead3";
+}
+.MyX-appbarxbox2:before {
+	content: "\ead4";
+}
+.MyX-appbarwindowsphone2:before {
+	content: "\ead5";
+}
+.MyX-appbarwindow2:before {
+	content: "\ead6";
+}
+.MyX-appbarwindowsimple2:before {
+	content: "\ead7";
+}
+.MyX-appbarwindowrestore2:before {
+	content: "\ead8";
+}
+.MyX-appbarwindowminimize2:before {
+	content: "\ead9";
+}
+.MyX-appbarwindowmaximize2:before {
+	content: "\eada";
+}
+.MyX-appbarwindowclosed2:before {
+	content: "\eadb";
+}
+.MyX-appbarwindowcasement2:before {
+	content: "\eadc";
+}
+.MyX-appbarwindowcasementclosed2:before {
+	content: "\eadd";
+}
+.MyX-appbarweibo:before {
+	content: "\eade";
+}
+.MyX-appbarwechat:before {
+	content: "\eadf";
+}
+.MyX-appbarwebcam2:before {
+	content: "\eae0";
+}
+.MyX-appbarweatherthunder2:before {
+	content: "\eae1";
+}
+.MyX-appbarweathersymbol2:before {
+	content: "\eae2";
+}
+.MyX-appbarweathersun2:before {
+	content: "\eae3";
+}
+.MyX-appbarweathersunset2:before {
+	content: "\eae4";
+}
+.MyX-appbarweathersunrise2:before {
+	content: "\eae5";
+}
+.MyX-appbarweatherstation2:before {
+	content: "\eae6";
+}
+.MyX-appbarweathersnow2:before {
+	content: "\eae7";
+}
+.MyX-appbarweatherrain2:before {
+	content: "\eae8";
+}
+.MyX-appbarweatherovercast2:before {
+	content: "\eae9";
+}
+.MyX-appbarweatherchance2:before {
+	content: "\eaea";
+}
+.MyX-appbarwaterdroplet2:before {
+	content: "\eaeb";
+}
+.MyX-appbarwaterdropletreflection2:before {
+	content: "\eaec";
+}
+.MyX-appbarwaterdropletalert2:before {
+	content: "\eaed";
+}
+.MyX-appbarwarning2:before {
+	content: "\eaee";
+}
+.MyX-appbarwarningcircle2:before {
+	content: "\eaef";
+}
+.MyX-appbarvisualstudio2:before {
+	content: "\eaf0";
+}
+.MyX-appbarvisualstudionews2:before {
+	content: "\eaf1";
+}
+.MyX-appbarvip2:before {
+	content: "\eaf2";
+}
+.MyX-appbarviplowercase2:before {
+	content: "\eaf3";
+}
+.MyX-appbarvideo2:before {
+	content: "\eaf4";
+}
+.MyX-appbarvideostandarddefinition2:before {
+	content: "\eaf5";
+}
+.MyX-appbarvideosend2:before {
+	content: "\eaf6";
+}
+.MyX-appbarvideohighdefinition2:before {
+	content: "\eaf7";
+}
+.MyX-appbarvideogallery2:before {
+	content: "\eaf8";
+}
+.MyX-appbarvectorstar2:before {
+	content: "\eaf9";
+}
+.MyX-appbarvectorrectangle2:before {
+	content: "\eafa";
+}
+.MyX-appbarvectorpolygon2:before {
+	content: "\eafb";
+}
+.MyX-appbarvectorpen2:before {
+	content: "\eafc";
+}
+.MyX-appbarvectorpenminus2:before {
+	content: "\eafd";
+}
+.MyX-appbarvectorpenconvert2:before {
+	content: "\eafe";
+}
+.MyX-appbarvectorpenadd2:before {
+	content: "\eaff";
+}
+.MyX-appbarvectorline2:before {
+	content: "\eb00";
+}
+.MyX-appbarvectorlinespline2:before {
+	content: "\eb01";
+}
+.MyX-appbarvectorlinecurve2:before {
+	content: "\eb02";
+}
+.MyX-appbarvectorgroup2:before {
+	content: "\eb03";
+}
+.MyX-appbarvectorgroupremoved2:before {
+	content: "\eb04";
+}
+.MyX-appbarvectorcircle2:before {
+	content: "\eb05";
+}
+.MyX-appbarusertie2:before {
+	content: "\eb06";
+}
+.MyX-appbaruser2:before {
+	content: "\eb07";
+}
+.MyX-appbaruserminus2:before {
+	content: "\eb08";
+}
+.MyX-appbaruserdelete2:before {
+	content: "\eb09";
+}
+.MyX-appbaruseradd2:before {
+	content: "\eb0a";
+}
+.MyX-appbarusb2:before {
+	content: "\eb0b";
+}
+.MyX-appbarusbdrive2:before {
+	content: "\eb0c";
+}
+.MyX-appbarupload2:before {
+	content: "\eb0d";
+}
+.MyX-appbarunlock2:before {
+	content: "\eb0e";
+}
+.MyX-appbarunlockkeyhole2:before {
+	content: "\eb0f";
+}
+.MyX-appbarundo2:before {
+	content: "\eb10";
+}
+.MyX-appbarundopoint2:before {
+	content: "\eb11";
+}
+.MyX-appbarundocurve2:before {
+	content: "\eb12";
+}
+.MyX-appbartypenull2:before {
+	content: "\eb13";
+}
+.MyX-appbartypeboolean2:before {
+	content: "\eb14";
+}
+.MyX-appbartypebit2:before {
+	content: "\eb15";
+}
+.MyX-appbartvsyfy2:before {
+	content: "\eb16";
+}
+.MyX-appbartv2:before {
+	content: "\eb17";
+}
+.MyX-appbartvremote2:before {
+	content: "\eb18";
+}
+.MyX-appbartvnews2:before {
+	content: "\eb19";
+}
+.MyX-appbartux2:before {
+	content: "\eb1a";
+}
+.MyX-appbartruck2:before {
+	content: "\eb1b";
+}
+.MyX-appbartrophy2:before {
+	content: "\eb1c";
+}
+.MyX-appbartree2:before {
+	content: "\eb1d";
+}
+.MyX-appbartreepine2:before {
+	content: "\eb1e";
+}
+.MyX-appbartreeleafthree2:before {
+	content: "\eb1f";
+}
+.MyX-appbartreeleaf2:before {
+	content: "\eb20";
+}
+.MyX-appbartrash2:before {
+	content: "\eb21";
+}
+.MyX-appbartransithazard2:before {
+	content: "\eb22";
+}
+.MyX-appbartransitdistanceto2:before {
+	content: "\eb23";
+}
+.MyX-appbartransitdistancefrom2:before {
+	content: "\eb24";
+}
+.MyX-appbartransitdepart2:before {
+	content: "\eb25";
+}
+.MyX-appbartransitconstruction2:before {
+	content: "\eb26";
+}
+.MyX-appbartransitconnection2:before {
+	content: "\eb27";
+}
+.MyX-appbartransitconnectiondeparture2:before {
+	content: "\eb28";
+}
+.MyX-appbartransitcongestion2:before {
+	content: "\eb29";
+}
+.MyX-appbartransitcar2:before {
+	content: "\eb2a";
+}
+.MyX-appbartransitcaraccident2:before {
+	content: "\eb2b";
+}
+.MyX-appbartransitbus2:before {
+	content: "\eb2c";
+}
+.MyX-appbartransitarrive2:before {
+	content: "\eb2d";
+}
+.MyX-appbartransformrotateright2:before {
+	content: "\eb2e";
+}
+.MyX-appbartransformrotateleft2:before {
+	content: "\eb2f";
+}
+.MyX-appbartransformrotatecounterclockwise2:before {
+	content: "\eb30";
+}
+.MyX-appbartransformrotateclockwise2:before {
+	content: "\eb31";
+}
+.MyX-appbartransformflipvertical2:before {
+	content: "\eb32";
+}
+.MyX-appbartransformfliphorizontal2:before {
+	content: "\eb33";
+}
+.MyX-appbartraintunnel2:before {
+	content: "\eb34";
+}
+.MyX-appbartraintrack2:before {
+	content: "\eb35";
+}
+.MyX-appbartrain2:before {
+	content: "\eb36";
+}
+.MyX-appbartower2:before {
+	content: "\eb37";
+}
+.MyX-appbartournamentbracketup2:before {
+	content: "\eb38";
+}
+.MyX-appbartournamentbracket2:before {
+	content: "\eb39";
+}
+.MyX-appbartournamentbracketright2:before {
+	content: "\eb3a";
+}
+.MyX-appbartournamentbracketleft2:before {
+	content: "\eb3b";
+}
+.MyX-appbartournamentbracketdown2:before {
+	content: "\eb3c";
+}
+.MyX-appbartools2:before {
+	content: "\eb3d";
+}
+.MyX-appbartimer6:before {
+	content: "\eb3e";
+}
+.MyX-appbartimerstop2:before {
+	content: "\eb3f";
+}
+.MyX-appbartimerrewind2:before {
+	content: "\eb40";
+}
+.MyX-appbartimerrecord2:before {
+	content: "\eb41";
+}
+.MyX-appbartimerplay2:before {
+	content: "\eb42";
+}
+.MyX-appbartimerpause2:before {
+	content: "\eb43";
+}
+.MyX-appbartimerforward2:before {
+	content: "\eb44";
+}
+.MyX-appbartimercheck2:before {
+	content: "\eb45";
+}
+.MyX-appbartimeralert2:before {
+	content: "\eb46";
+}
+.MyX-appbartimer52:before {
+	content: "\eb47";
+}
+.MyX-appbartimer42:before {
+	content: "\eb48";
+}
+.MyX-appbartimer32:before {
+	content: "\eb49";
+}
+.MyX-appbartimer22:before {
+	content: "\eb4a";
+}
+.MyX-appbartimer12:before {
+	content: "\eb4b";
+}
+.MyX-appbartilessixteen2:before {
+	content: "\eb4c";
+}
+.MyX-appbartilesplus2:before {
+	content: "\eb4d";
+}
+.MyX-appbartilesnine2:before {
+	content: "\eb4e";
+}
+.MyX-appbartilesminus2:before {
+	content: "\eb4f";
+}
+.MyX-appbartilesfour2:before {
+	content: "\eb50";
+}
+.MyX-appbarticket2:before {
+	content: "\eb51";
+}
+.MyX-appbarthumbsup2:before {
+	content: "\eb52";
+}
+.MyX-appbarthumbsdown2:before {
+	content: "\eb53";
+}
+.MyX-appbarthumbupminus2:before {
+	content: "\eb54";
+}
+.MyX-appbarthumbupdelete2:before {
+	content: "\eb55";
+}
+.MyX-appbarthumbupadd2:before {
+	content: "\eb56";
+}
+.MyX-appbarthermometer2:before {
+	content: "\eb57";
+}
+.MyX-appbarthermometersigns2:before {
+	content: "\eb58";
+}
+.MyX-appbarthermometerkelvin2:before {
+	content: "\eb59";
+}
+.MyX-appbarthermometerhoneywell2:before {
+	content: "\eb5a";
+}
+.MyX-appbarthermometerfahrenheit2:before {
+	content: "\eb5b";
+}
+.MyX-appbarthermometerdigital2:before {
+	content: "\eb5c";
+}
+.MyX-appbarthermometercelcius2:before {
+	content: "\eb5d";
+}
+.MyX-appbartextunderline2:before {
+	content: "\eb5e";
+}
+.MyX-appbartextstrikethrough2:before {
+	content: "\eb5f";
+}
+.MyX-appbartextsizeup2:before {
+	content: "\eb60";
+}
+.MyX-appbartextsize2:before {
+	content: "\eb61";
+}
+.MyX-appbartextsizeplus2:before {
+	content: "\eb62";
+}
+.MyX-appbartextsizeminus2:before {
+	content: "\eb63";
+}
+.MyX-appbartextsizedown2:before {
+	content: "\eb64";
+}
+.MyX-appbartextserif2:before {
+	content: "\eb65";
+}
+.MyX-appbartextscript2:before {
+	content: "\eb66";
+}
+.MyX-appbartextsans2:before {
+	content: "\eb67";
+}
+.MyX-appbartextoverline2:before {
+	content: "\eb68";
+}
+.MyX-appbartextitalic2:before {
+	content: "\eb69";
+}
+.MyX-appbartextbold2:before {
+	content: "\eb6a";
+}
+.MyX-appbartextalignright2:before {
+	content: "\eb6b";
+}
+.MyX-appbartextalignleft2:before {
+	content: "\eb6c";
+}
+.MyX-appbartextalignjustify2:before {
+	content: "\eb6d";
+}
+.MyX-appbartextaligncenter2:before {
+	content: "\eb6e";
+}
+.MyX-appbartestdrive2:before {
+	content: "\eb6f";
+}
+.MyX-appbartencentweibo:before {
+	content: "\eb70";
+}
+.MyX-appbarteam2:before {
+	content: "\eb71";
+}
+.MyX-appbartardis2:before {
+	content: "\eb72";
+}
+.MyX-appbartag2:before {
+	content: "\eb73";
+}
+.MyX-appbartaglabel2:before {
+	content: "\eb74";
+}
+.MyX-appbartabletwindows2:before {
+	content: "\eb75";
+}
+.MyX-appbartableunselect2:before {
+	content: "\eb76";
+}
+.MyX-appbartable2:before {
+	content: "\eb77";
+}
+.MyX-appbartableselect2:before {
+	content: "\eb78";
+}
+.MyX-appbartabledelete2:before {
+	content: "\eb79";
+}
+.MyX-appbartableadd2:before {
+	content: "\eb7a";
+}
+.MyX-appbarsymbolbracket2:before {
+	content: "\eb7b";
+}
+.MyX-appbarsymbolbraces2:before {
+	content: "\eb7c";
+}
+.MyX-appbarswitchoff2:before {
+	content: "\eb7d";
+}
+.MyX-appbarsuitcase2:before {
+	content: "\eb7e";
+}
+.MyX-appbarstream2:before {
+	content: "\eb7f";
+}
+.MyX-appbarstore2:before {
+	content: "\eb80";
+}
+.MyX-appbarstop2:before {
+	content: "\eb81";
+}
+.MyX-appbarstocking2:before {
+	content: "\eb82";
+}
+.MyX-appbarstockup2:before {
+	content: "\eb83";
+}
+.MyX-appbarstock2:before {
+	content: "\eb84";
+}
+.MyX-appbarstockdown2:before {
+	content: "\eb85";
+}
+.MyX-appbarsteam2:before {
+	content: "\eb86";
+}
+.MyX-appbarstarwarssith2:before {
+	content: "\eb87";
+}
+.MyX-appbarstarwarsrebel2:before {
+	content: "\eb88";
+}
+.MyX-appbarstarwarsjedi2:before {
+	content: "\eb89";
+}
+.MyX-appbarstar2:before {
+	content: "\eb8a";
+}
+.MyX-appbarstarremove2:before {
+	content: "\eb8b";
+}
+.MyX-appbarstarminus2:before {
+	content: "\eb8c";
+}
+.MyX-appbarstarinvincible2:before {
+	content: "\eb8d";
+}
+.MyX-appbarstardelete2:before {
+	content: "\eb8e";
+}
+.MyX-appbarstaradd2:before {
+	content: "\eb8f";
+}
+.MyX-appbarstamp2:before {
+	content: "\eb90";
+}
+.MyX-appbarstampempty2:before {
+	content: "\eb91";
+}
+.MyX-appbarstampat2:before {
+	content: "\eb92";
+}
+.MyX-appbarstairsup2:before {
+	content: "\eb93";
+}
+.MyX-appbarstairsupreflecthorizontal2:before {
+	content: "\eb94";
+}
+.MyX-appbarstairsdown2:before {
+	content: "\eb95";
+}
+.MyX-appbarstairsdownreflecthorizontal2:before {
+	content: "\eb96";
+}
+.MyX-appbarsportfootball2:before {
+	content: "\eb97";
+}
+.MyX-appbarspeakerphone2:before {
+	content: "\eb98";
+}
+.MyX-appbarsourcepull2:before {
+	content: "\eb99";
+}
+.MyX-appbarsourcefork2:before {
+	content: "\eb9a";
+}
+.MyX-appbarsoundstereo2:before {
+	content: "\eb9b";
+}
+.MyX-appbarsoundstereostack2:before {
+	content: "\eb9c";
+}
+.MyX-appbarsoundmute2:before {
+	content: "\eb9d";
+}
+.MyX-appbarsoundleftright2:before {
+	content: "\eb9e";
+}
+.MyX-appbarsound32:before {
+	content: "\eb9f";
+}
+.MyX-appbarsound22:before {
+	content: "\eba0";
+}
+.MyX-appbarsound12:before {
+	content: "\eba1";
+}
+.MyX-appbarsound02:before {
+	content: "\eba2";
+}
+.MyX-appbarsort2:before {
+	content: "\eba3";
+}
+.MyX-appbarsortnumeric2:before {
+	content: "\eba4";
+}
+.MyX-appbarsortnumericdescending2:before {
+	content: "\eba5";
+}
+.MyX-appbarsortnumericascending2:before {
+	content: "\eba6";
+}
+.MyX-appbarsortalphabetical2:before {
+	content: "\eba7";
+}
+.MyX-appbarsortalphabeticaldescending2:before {
+	content: "\eba8";
+}
+.MyX-appbarsortalphabeticalascending2:before {
+	content: "\eba9";
+}
+.MyX-appbarsocialzappos2:before {
+	content: "\ebaa";
+}
+.MyX-appbarsocialyelp2:before {
+	content: "\ebab";
+}
+.MyX-appbarsocialycombinator2:before {
+	content: "\ebac";
+}
+.MyX-appbarsocialyahoo2:before {
+	content: "\ebad";
+}
+.MyX-appbarsocialxing2:before {
+	content: "\ebae";
+}
+.MyX-appbarsocialwordpressvariant2:before {
+	content: "\ebaf";
+}
+.MyX-appbarsocialwordpress2:before {
+	content: "\ebb0";
+}
+.MyX-appbarsocialwikipedia2:before {
+	content: "\ebb1";
+}
+.MyX-appbarsocialvimeo2:before {
+	content: "\ebb2";
+}
+.MyX-appbarsocialuservoice2:before {
+	content: "\ebb3";
+}
+.MyX-appbarsocialtwitter2:before {
+	content: "\ebb4";
+}
+.MyX-appbarsocialtwitterretweet2:before {
+	content: "\ebb5";
+}
+.MyX-appbarsocialtwitterhashtag2:before {
+	content: "\ebb6";
+}
+.MyX-appbarsocialtumblr2:before {
+	content: "\ebb7";
+}
+.MyX-appbarsocialtrello2:before {
+	content: "\ebb8";
+}
+.MyX-appbarsocialtheverge2:before {
+	content: "\ebb9";
+}
+.MyX-appbarsocialstackoverflow2:before {
+	content: "\ebba";
+}
+.MyX-appbarsocialspotify2:before {
+	content: "\ebbb";
+}
+.MyX-appbarsocialsoundcloud2:before {
+	content: "\ebbc";
+}
+.MyX-appbarsocialslashdot2:before {
+	content: "\ebbd";
+}
+.MyX-appbarsocialskype2:before {
+	content: "\ebbe";
+}
+.MyX-appbarsocialsharethis2:before {
+	content: "\ebbf";
+}
+.MyX-appbarsocialreddit2:before {
+	content: "\ebc0";
+}
+.MyX-appbarsocialrdio2:before {
+	content: "\ebc1";
+}
+.MyX-appbarsocialplaystation2:before {
+	content: "\ebc2";
+}
+.MyX-appbarsocialpinterest2:before {
+	content: "\ebc3";
+}
+.MyX-appbarsocialpicasa2:before {
+	content: "\ebc4";
+}
+.MyX-appbarsocialopenid2:before {
+	content: "\ebc5";
+}
+.MyX-appbarsocialnuget2:before {
+	content: "\ebc6";
+}
+.MyX-appbarsocialmicrosoft2:before {
+	content: "\ebc7";
+}
+.MyX-appbarsociallinkedinvariant2:before {
+	content: "\ebc8";
+}
+.MyX-appbarsociallinkedin2:before {
+	content: "\ebc9";
+}
+.MyX-appbarsocialline2:before {
+	content: "\ebca";
+}
+.MyX-appbarsociallastfm2:before {
+	content: "\ebcb";
+}
+.MyX-appbarsocialkickstarter2:before {
+	content: "\ebcc";
+}
+.MyX-appbarsocialjira2:before {
+	content: "\ebcd";
+}
+.MyX-appbarsocialindiegogo2:before {
+	content: "\ebce";
+}
+.MyX-appbarsocialgrooveshark2:before {
+	content: "\ebcf";
+}
+.MyX-appbarsocialgithub2:before {
+	content: "\ebd0";
+}
+.MyX-appbarsocialgithuboctocat2:before {
+	content: "\ebd1";
+}
+.MyX-appbarsocialgithuboctocatsolid2:before {
+	content: "\ebd2";
+}
+.MyX-appbarsocialgdgt2:before {
+	content: "\ebd3";
+}
+.MyX-appbarsocialfoursquare2:before {
+	content: "\ebd4";
+}
+.MyX-appbarsocialfacebookvariant2:before {
+	content: "\ebd5";
+}
+.MyX-appbarsocialfacebook2:before {
+	content: "\ebd6";
+}
+.MyX-appbarsocialfacebookheart2:before {
+	content: "\ebd7";
+}
+.MyX-appbarsocialfacebookheartbreak2:before {
+	content: "\ebd8";
+}
+.MyX-appbarsocialevernote2:before {
+	content: "\ebd9";
+}
+.MyX-appbarsocialetsy2:before {
+	content: "\ebda";
+}
+.MyX-appbarsocialengadget2:before {
+	content: "\ebdb";
+}
+.MyX-appbarsocialdrupal2:before {
+	content: "\ebdc";
+}
+.MyX-appbarsocialdropboxupload2:before {
+	content: "\ebdd";
+}
+.MyX-appbarsocialdropbox2:before {
+	content: "\ebde";
+}
+.MyX-appbarsocialdropboxdownload2:before {
+	content: "\ebdf";
+}
+.MyX-appbarsocialdribbble2:before {
+	content: "\ebe0";
+}
+.MyX-appbarsocialdisqus2:before {
+	content: "\ebe1";
+}
+.MyX-appbarsocialdiggvariant2:before {
+	content: "\ebe2";
+}
+.MyX-appbarsocialdigg2:before {
+	content: "\ebe3";
+}
+.MyX-appbarsocialdeviantart2:before {
+	content: "\ebe4";
+}
+.MyX-appbarsocialdelicious2:before {
+	content: "\ebe5";
+}
+.MyX-appbarsocialcoding4fun2:before {
+	content: "\ebe6";
+}
+.MyX-appbarsocialcloudapp2:before {
+	content: "\ebe7";
+}
+.MyX-appbarsocialblogger2:before {
+	content: "\ebe8";
+}
+.MyX-appbarsocialbehance2:before {
+	content: "\ebe9";
+}
+.MyX-appbarsocialbebo2:before {
+	content: "\ebea";
+}
+.MyX-appbarsocialbasecamp2:before {
+	content: "\ebeb";
+}
+.MyX-appbarsocialbaidu2:before {
+	content: "\ebec";
+}
+.MyX-appbarsocialaws2:before {
+	content: "\ebed";
+}
+.MyX-appbarsocialarto2:before {
+	content: "\ebee";
+}
+.MyX-appbarsocialartcom2:before {
+	content: "\ebef";
+}
+.MyX-appbarsocialappnet2:before {
+	content: "\ebf0";
+}
+.MyX-appbarsocialapple2:before {
+	content: "\ebf1";
+}
+.MyX-appbarsocialapplemobileme2:before {
+	content: "\ebf2";
+}
+.MyX-appbarsocialappleappstore2:before {
+	content: "\ebf3";
+}
+.MyX-appbarsocialamazon2:before {
+	content: "\ebf4";
+}
+.MyX-appbarsocialamazonappstore2:before {
+	content: "\ebf5";
+}
+.MyX-appbarsocialaimvariant2:before {
+	content: "\ebf6";
+}
+.MyX-appbarsocialaim2:before {
+	content: "\ebf7";
+}
+.MyX-appbarsnowman2:before {
+	content: "\ebf8";
+}
+.MyX-appbarsnowflake2:before {
+	content: "\ebf9";
+}
+.MyX-appbarsmileywhat2:before {
+	content: "\ebfa";
+}
+.MyX-appbarsmileytounge2:before {
+	content: "\ebfb";
+}
+.MyX-appbarsmileysquint2:before {
+	content: "\ebfc";
+}
+.MyX-appbarsmileykiki2:before {
+	content: "\ebfd";
+}
+.MyX-appbarsmileyhappy2:before {
+	content: "\ebfe";
+}
+.MyX-appbarsmileygrumpy2:before {
+	content: "\ebff";
+}
+.MyX-appbarsmileygrin2:before {
+	content: "\ec00";
+}
+.MyX-appbarsmileyglasses2:before {
+	content: "\ec01";
+}
+.MyX-appbarsmileyfrown2:before {
+	content: "\ec02";
+}
+.MyX-appbarsmileycry2:before {
+	content: "\ec03";
+}
+.MyX-appbarsmileyangry2:before {
+	content: "\ec04";
+}
+.MyX-appbarslice2:before {
+	content: "\ec05";
+}
+.MyX-appbarsleep2:before {
+	content: "\ec06";
+}
+.MyX-appbarskydriveupload2:before {
+	content: "\ec07";
+}
+.MyX-appbarskydrive2:before {
+	content: "\ec08";
+}
+.MyX-appbarskydrivedownload2:before {
+	content: "\ec09";
+}
+.MyX-appbarsimcard2:before {
+	content: "\ec0a";
+}
+.MyX-appbarsimcardmicro2:before {
+	content: "\ec0b";
+}
+.MyX-appbarsignstop2:before {
+	content: "\ec0c";
+}
+.MyX-appbarsignparking2:before {
+	content: "\ec0d";
+}
+.MyX-appbarsigninterstate2:before {
+	content: "\ec0e";
+}
+.MyX-appbarsigninterstate952:before {
+	content: "\ec0f";
+}
+.MyX-appbarsigninterstate942:before {
+	content: "\ec10";
+}
+.MyX-appbarsigninterstate752:before {
+	content: "\ec11";
+}
+.MyX-appbarsigncaution2:before {
+	content: "\ec12";
+}
+.MyX-appbarsidebarrightexpand2:before {
+	content: "\ec13";
+}
+.MyX-appbarsidebarrightcollapse2:before {
+	content: "\ec14";
+}
+.MyX-appbarsidebarleftexpand2:before {
+	content: "\ec15";
+}
+.MyX-appbarsidebarleftcollapse2:before {
+	content: "\ec16";
+}
+.MyX-appbarshuffle2:before {
+	content: "\ec17";
+}
+.MyX-appbarshotglass2:before {
+	content: "\ec18";
+}
+.MyX-appbarshopping2:before {
+	content: "\ec19";
+}
+.MyX-appbarshield2:before {
+	content: "\ec1a";
+}
+.MyX-appbarshieldalert2:before {
+	content: "\ec1b";
+}
+.MyX-appbarshare2:before {
+	content: "\ec1c";
+}
+.MyX-appbarshareopen2:before {
+	content: "\ec1d";
+}
+.MyX-appbarsettings2:before {
+	content: "\ec1e";
+}
+.MyX-appbarserver2:before {
+	content: "\ec1f";
+}
+.MyX-appbarsectionexpand2:before {
+	content: "\ec20";
+}
+.MyX-appbarsectionexpandall2:before {
+	content: "\ec21";
+}
+.MyX-appbarsectioncollapse2:before {
+	content: "\ec22";
+}
+.MyX-appbarsectioncollapseall2:before {
+	content: "\ec23";
+}
+.MyX-appbarsd2:before {
+	content: "\ec24";
+}
+.MyX-appbarsdmicro2:before {
+	content: "\ec25";
+}
+.MyX-appbarscrabblez2:before {
+	content: "\ec26";
+}
+.MyX-appbarscrabbley2:before {
+	content: "\ec27";
+}
+.MyX-appbarscrabblex2:before {
+	content: "\ec28";
+}
+.MyX-appbarscrabblew2:before {
+	content: "\ec29";
+}
+.MyX-appbarscrabblev2:before {
+	content: "\ec2a";
+}
+.MyX-appbarscrabbleu2:before {
+	content: "\ec2b";
+}
+.MyX-appbarscrabblet2:before {
+	content: "\ec2c";
+}
+.MyX-appbarscrabbles2:before {
+	content: "\ec2d";
+}
+.MyX-appbarscrabbler2:before {
+	content: "\ec2e";
+}
+.MyX-appbarscrabbleq2:before {
+	content: "\ec2f";
+}
+.MyX-appbarscrabblep2:before {
+	content: "\ec30";
+}
+.MyX-appbarscrabbleo2:before {
+	content: "\ec31";
+}
+.MyX-appbarscrabblen2:before {
+	content: "\ec32";
+}
+.MyX-appbarscrabblem2:before {
+	content: "\ec33";
+}
+.MyX-appbarscrabblel2:before {
+	content: "\ec34";
+}
+.MyX-appbarscrabblek2:before {
+	content: "\ec35";
+}
+.MyX-appbarscrabblej2:before {
+	content: "\ec36";
+}
+.MyX-appbarscrabblei2:before {
+	content: "\ec37";
+}
+.MyX-appbarscrabbleh2:before {
+	content: "\ec38";
+}
+.MyX-appbarscrabbleg2:before {
+	content: "\ec39";
+}
+.MyX-appbarscrabblef2:before {
+	content: "\ec3a";
+}
+.MyX-appbarscrabblee2:before {
+	content: "\ec3b";
+}
+.MyX-appbarscrabbled2:before {
+	content: "\ec3c";
+}
+.MyX-appbarscrabblec2:before {
+	content: "\ec3d";
+}
+.MyX-appbarscrabbleb2:before {
+	content: "\ec3e";
+}
+.MyX-appbarscrabblea2:before {
+	content: "\ec3f";
+}
+.MyX-appbarscissor2:before {
+	content: "\ec40";
+}
+.MyX-appbarscaleunbalanced2:before {
+	content: "\ec41";
+}
+.MyX-appbarscale2:before {
+	content: "\ec42";
+}
+.MyX-appbarsave2:before {
+	content: "\ec43";
+}
+.MyX-appbarsailboat2:before {
+	content: "\ec44";
+}
+.MyX-appbarruler2:before {
+	content: "\ec45";
+}
+.MyX-appbarrss2:before {
+	content: "\ec46";
+}
+.MyX-appbarrocket2:before {
+	content: "\ec47";
+}
+.MyX-appbarrocketrotated452:before {
+	content: "\ec48";
+}
+.MyX-appbarring2:before {
+	content: "\ec49";
+}
+.MyX-appbarribbonwave2:before {
+	content: "\ec4a";
+}
+.MyX-appbarribbon2:before {
+	content: "\ec4b";
+}
+.MyX-appbarreturn2:before {
+	content: "\ec4c";
+}
+.MyX-appbarresource2:before {
+	content: "\ec4d";
+}
+.MyX-appbarresourcegroup2:before {
+	content: "\ec4e";
+}
+.MyX-appbarreset2:before {
+	content: "\ec4f";
+}
+.MyX-appbarreplypeople2:before {
+	content: "\ec50";
+}
+.MyX-appbarreplyemail2:before {
+	content: "\ec51";
+}
+.MyX-appbarreplycalendar2:before {
+	content: "\ec52";
+}
+.MyX-appbarrepeat2:before {
+	content: "\ec53";
+}
+.MyX-appbarreligionjudaism2:before {
+	content: "\ec54";
+}
+.MyX-appbarreligionislamic2:before {
+	content: "\ec55";
+}
+.MyX-appbarreligionchristianity2:before {
+	content: "\ec56";
+}
+.MyX-appbarrefresh2:before {
+	content: "\ec57";
+}
+.MyX-appbarrefreshcounterclockwiseup2:before {
+	content: "\ec58";
+}
+.MyX-appbarrefreshcounterclockwisedown2:before {
+	content: "\ec59";
+}
+.MyX-appbarrefreshclockwiseup2:before {
+	content: "\ec5a";
+}
+.MyX-appbarrefreshclockwisedown2:before {
+	content: "\ec5b";
+}
+.MyX-appbarredo2:before {
+	content: "\ec5c";
+}
+.MyX-appbarredopoint2:before {
+	content: "\ec5d";
+}
+.MyX-appbarredocurve2:before {
+	content: "\ec5e";
+}
+.MyX-appbarradioactive2:before {
+	content: "\ec5f";
+}
+.MyX-appbarradar2:before {
+	content: "\ec60";
+}
+.MyX-appbarradarscreen2:before {
+	content: "\ec61";
+}
+.MyX-appbarqzone:before {
+	content: "\ec62";
+}
+.MyX-appbarquoteright2:before {
+	content: "\ec63";
+}
+.MyX-appbarquoteleft2:before {
+	content: "\ec64";
+}
+.MyX-appbarquill2:before {
+	content: "\ec65";
+}
+.MyX-appbarquestion2:before {
+	content: "\ec66";
+}
+.MyX-appbarqr2:before {
+	content: "\ec67";
+}
+.MyX-appbarpuzzle2:before {
+	content: "\ec68";
+}
+.MyX-appbarpuzzleround2:before {
+	content: "\ec69";
+}
+.MyX-appbarprotractor2:before {
+	content: "\ec6a";
+}
+.MyX-appbarprojector2:before {
+	content: "\ec6b";
+}
+.MyX-appbarprojectorscreen2:before {
+	content: "\ec6c";
+}
+.MyX-appbarprogress2:before {
+	content: "\ec6d";
+}
+.MyX-appbarprintertext2:before {
+	content: "\ec6e";
+}
+.MyX-appbarprinter2:before {
+	content: "\ec6f";
+}
+.MyX-appbarprinterblank2:before {
+	content: "\ec70";
+}
+.MyX-appbarpresent2:before {
+	content: "\ec71";
+}
+.MyX-appbarpower2:before {
+	content: "\ec72";
+}
+.MyX-appbarpotion2:before {
+	content: "\ec73";
+}
+.MyX-appbarpokeball2:before {
+	content: "\ec74";
+}
+.MyX-appbarplant2:before {
+	content: "\ec75";
+}
+.MyX-appbarplane2:before {
+	content: "\ec76";
+}
+.MyX-appbarplanerotated1352:before {
+	content: "\ec77";
+}
+.MyX-appbarplanerotated452:before {
+	content: "\ec78";
+}
+.MyX-appbarplaces2:before {
+	content: "\ec79";
+}
+.MyX-appbarpin2:before {
+	content: "\ec7a";
+}
+.MyX-appbarpinremove2:before {
+	content: "\ec7b";
+}
+.MyX-appbarpie2:before {
+	content: "\ec7c";
+}
+.MyX-appbarpiequarter2:before {
+	content: "\ec7d";
+}
+.MyX-appbarphonevoicemail2:before {
+	content: "\ec7e";
+}
+.MyX-appbarphone2:before {
+	content: "\ec7f";
+}
+.MyX-appbarphonehangup2:before {
+	content: "\ec80";
+}
+.MyX-appbarpercentoff2:before {
+	content: "\ec81";
+}
+.MyX-appbarpeopleup2:before {
+	content: "\ec82";
+}
+.MyX-appbarpeople2:before {
+	content: "\ec83";
+}
+.MyX-appbarpeoplestatus2:before {
+	content: "\ec84";
+}
+.MyX-appbarpeoplesensorvariant2:before {
+	content: "\ec85";
+}
+.MyX-appbarpeoplesensor2:before {
+	content: "\ec86";
+}
+.MyX-appbarpeopleright2:before {
+	content: "\ec87";
+}
+.MyX-appbarpeopleprofile2:before {
+	content: "\ec88";
+}
+.MyX-appbarpeoplemultiple2:before {
+	content: "\ec89";
+}
+.MyX-appbarpeoplemultiplemagnify2:before {
+	content: "\ec8a";
+}
+.MyX-appbarpeoplemagnify2:before {
+	content: "\ec8b";
+}
+.MyX-appbarpeopleleft2:before {
+	content: "\ec8c";
+}
+.MyX-appbarpeopledown2:before {
+	content: "\ec8d";
+}
+.MyX-appbarpeoplecheckbox2:before {
+	content: "\ec8e";
+}
+.MyX-appbarpeoplearrowright2:before {
+	content: "\ec8f";
+}
+.MyX-appbarpeoplearrowleft2:before {
+	content: "\ec90";
+}
+.MyX-appbarpaypal2:before {
+	content: "\ec91";
+}
+.MyX-appbarpaw2:before {
+	content: "\ec92";
+}
+.MyX-appbarpaperclip2:before {
+	content: "\ec93";
+}
+.MyX-appbarpapercliprotated2:before {
+	content: "\ec94";
+}
+.MyX-appbarpaper2:before {
+	content: "\ec95";
+}
+.MyX-appbarpalmtreevariant2:before {
+	content: "\ec96";
+}
+.MyX-appbarpalmtree2:before {
+	content: "\ec97";
+}
+.MyX-appbarpagexml2:before {
+	content: "\ec98";
+}
+.MyX-appbarpageword2:before {
+	content: "\ec99";
+}
+.MyX-appbarpageupload2:before {
+	content: "\ec9a";
+}
+.MyX-appbarpagetext2:before {
+	content: "\ec9b";
+}
+.MyX-appbarpage10:before {
+	content: "\ec9c";
+}
+.MyX-appbarpagesolid2:before {
+	content: "\ec9d";
+}
+.MyX-appbarpagesolidmove2:before {
+	content: "\ec9e";
+}
+.MyX-appbarpagesolidcross2:before {
+	content: "\ec9f";
+}
+.MyX-appbarpagesolidadd2:before {
+	content: "\eca0";
+}
+.MyX-appbarpagesmall2:before {
+	content: "\eca1";
+}
+.MyX-appbarpageselect2:before {
+	content: "\eca2";
+}
+.MyX-appbarpagesearch2:before {
+	content: "\eca3";
+}
+.MyX-appbarpagequestion2:before {
+	content: "\eca4";
+}
+.MyX-appbarpagepowerpoint2:before {
+	content: "\eca5";
+}
+.MyX-appbarpagepng2:before {
+	content: "\eca6";
+}
+.MyX-appbarpagepdf2:before {
+	content: "\eca7";
+}
+.MyX-appbarpageonenote2:before {
+	content: "\eca8";
+}
+.MyX-appbarpagenew2:before {
+	content: "\eca9";
+}
+.MyX-appbarpagemusic2:before {
+	content: "\ecaa";
+}
+.MyX-appbarpagemultiple2:before {
+	content: "\ecab";
+}
+.MyX-appbarpageminus2:before {
+	content: "\ecac";
+}
+.MyX-appbarpagelocation2:before {
+	content: "\ecad";
+}
+.MyX-appbarpagelocationadd2:before {
+	content: "\ecae";
+}
+.MyX-appbarpagejpg2:before {
+	content: "\ecaf";
+}
+.MyX-appbarpageimage2:before {
+	content: "\ecb0";
+}
+.MyX-appbarpagehidden2:before {
+	content: "\ecb1";
+}
+.MyX-appbarpageheartbreak2:before {
+	content: "\ecb2";
+}
+.MyX-appbarpageheart2:before {
+	content: "\ecb3";
+}
+.MyX-appbarpagefilepdftag2:before {
+	content: "\ecb4";
+}
+.MyX-appbarpagefilepdf2:before {
+	content: "\ecb5";
+}
+.MyX-appbarpagefilegiftag2:before {
+	content: "\ecb6";
+}
+.MyX-appbarpagefilegif2:before {
+	content: "\ecb7";
+}
+.MyX-appbarpageexcel2:before {
+	content: "\ecb8";
+}
+.MyX-appbarpageedit2:before {
+	content: "\ecb9";
+}
+.MyX-appbarpageduplicate2:before {
+	content: "\ecba";
+}
+.MyX-appbarpagedownload2:before {
+	content: "\ecbb";
+}
+.MyX-appbarpagedelete2:before {
+	content: "\ecbc";
+}
+.MyX-appbarpagecross2:before {
+	content: "\ecbd";
+}
+.MyX-appbarpagecornertext2:before {
+	content: "\ecbe";
+}
+.MyX-appbarpagecornertextbreak2:before {
+	content: "\ecbf";
+}
+.MyX-appbarpagecorner2:before {
+	content: "\ecc0";
+}
+.MyX-appbarpagecornergrid2:before {
+	content: "\ecc1";
+}
+.MyX-appbarpagecornerfoldedtext2:before {
+	content: "\ecc2";
+}
+.MyX-appbarpagecornerfolded2:before {
+	content: "\ecc3";
+}
+.MyX-appbarpagecornerfoldedgrid2:before {
+	content: "\ecc4";
+}
+.MyX-appbarpagecornercells2:before {
+	content: "\ecc5";
+}
+.MyX-appbarpagecornerbreak2:before {
+	content: "\ecc6";
+}
+.MyX-appbarpagecornerbookmark2:before {
+	content: "\ecc7";
+}
+.MyX-appbarpagecopy2:before {
+	content: "\ecc8";
+}
+.MyX-appbarpagecode2:before {
+	content: "\ecc9";
+}
+.MyX-appbarpagecheck2:before {
+	content: "\ecca";
+}
+.MyX-appbarpagebreak2:before {
+	content: "\eccb";
+}
+.MyX-appbarpagebold2:before {
+	content: "\eccc";
+}
+.MyX-appbarpagearrow2:before {
+	content: "\eccd";
+}
+.MyX-appbarpageadd2:before {
+	content: "\ecce";
+}
+.MyX-appbarpage92:before {
+	content: "\eccf";
+}
+.MyX-appbarpage82:before {
+	content: "\ecd0";
+}
+.MyX-appbarpage72:before {
+	content: "\ecd1";
+}
+.MyX-appbarpage62:before {
+	content: "\ecd2";
+}
+.MyX-appbarpage52:before {
+	content: "\ecd3";
+}
+.MyX-appbarpage42:before {
+	content: "\ecd4";
+}
+.MyX-appbarpage32:before {
+	content: "\ecd5";
+}
+.MyX-appbarpage22:before {
+	content: "\ecd6";
+}
+.MyX-appbarpage12:before {
+	content: "\ecd7";
+}
+.MyX-appbarpage02:before {
+	content: "\ecd8";
+}
+.MyX-appbaroutlet2:before {
+	content: "\ecd9";
+}
+.MyX-appbarosx862:before {
+	content: "\ecda";
+}
+.MyX-appbarosx642:before {
+	content: "\ecdb";
+}
+.MyX-appbaroswindowsphone2:before {
+	content: "\ecdc";
+}
+.MyX-appbaroswindowsphoneround2:before {
+	content: "\ecdd";
+}
+.MyX-appbaroswindows2:before {
+	content: "\ecde";
+}
+.MyX-appbaroswindowsrt2:before {
+	content: "\ecdf";
+}
+.MyX-appbaroswindows82:before {
+	content: "\ece0";
+}
+.MyX-appbarosubuntu2:before {
+	content: "\ece1";
+}
+.MyX-appbarosios2:before {
+	content: "\ece2";
+}
+.MyX-appbarosgnome2:before {
+	content: "\ece3";
+}
+.MyX-appbaroschromium2:before {
+	content: "\ece4";
+}
+.MyX-appbarosblackberry2:before {
+	content: "\ece5";
+}
+.MyX-appbarosarm2:before {
+	content: "\ece6";
+}
+.MyX-appbarosandroid2:before {
+	content: "\ece7";
+}
+.MyX-appbarornamentvariant2:before {
+	content: "\ece8";
+}
+.MyX-appbarornament2:before {
+	content: "\ece9";
+}
+.MyX-appbaropacity2:before {
+	content: "\ecea";
+}
+.MyX-appbarofficeword2:before {
+	content: "\eceb";
+}
+.MyX-appbarofficevisio2:before {
+	content: "\ecec";
+}
+.MyX-appbaroffice2:before {
+	content: "\eced";
+}
+.MyX-appbarofficesharepoint2:before {
+	content: "\ecee";
+}
+.MyX-appbarofficepublisher2:before {
+	content: "\ecef";
+}
+.MyX-appbarofficeproject2:before {
+	content: "\ecf0";
+}
+.MyX-appbarofficepowerpoint2:before {
+	content: "\ecf1";
+}
+.MyX-appbarofficeoutlook2:before {
+	content: "\ecf2";
+}
+.MyX-appbarofficeonenote2:before {
+	content: "\ecf3";
+}
+.MyX-appbarofficelync2:before {
+	content: "\ecf4";
+}
+.MyX-appbarofficeinfopath2:before {
+	content: "\ecf5";
+}
+.MyX-appbarofficeexcel2:before {
+	content: "\ecf6";
+}
+.MyX-appbarofficeaccess2:before {
+	content: "\ecf7";
+}
+.MyX-appbaroffice3652:before {
+	content: "\ecf8";
+}
+.MyX-appbarnyan2:before {
+	content: "\ecf9";
+}
+.MyX-appbarnotification2:before {
+	content: "\ecfa";
+}
+.MyX-appbarnotificationstar2:before {
+	content: "\ecfb";
+}
+.MyX-appbarnotificationmultiple2:before {
+	content: "\ecfc";
+}
+.MyX-appbarnotificationabove2:before {
+	content: "\ecfd";
+}
+.MyX-appbarnotificationabovemultiple2:before {
+	content: "\ecfe";
+}
+.MyX-appbarnoentry2:before {
+	content: "\ecff";
+}
+.MyX-appbarnfc2:before {
+	content: "\ed00";
+}
+.MyX-appbarnewspaper2:before {
+	content: "\ed01";
+}
+.MyX-appbarnewspapercreate2:before {
+	content: "\ed02";
+}
+.MyX-appbarnewwindow2:before {
+	content: "\ed03";
+}
+.MyX-appbarnew2:before {
+	content: "\ed04";
+}
+.MyX-appbarnetworkworld:before {
+	content: "\ed05";
+}
+.MyX-appbarnetwork2:before {
+	content: "\ed06";
+}
+.MyX-appbarnetworkserver2:before {
+	content: "\ed07";
+}
+.MyX-appbarnetworkserverdisconnect2:before {
+	content: "\ed08";
+}
+.MyX-appbarnetworkserverconnecting2:before {
+	content: "\ed09";
+}
+.MyX-appbarnetworkport2:before {
+	content: "\ed0a";
+}
+.MyX-appbarnetworkportdisconnect2:before {
+	content: "\ed0b";
+}
+.MyX-appbarnetworkhome2:before {
+	content: "\ed0c";
+}
+.MyX-appbarnetworkhomedisconnect2:before {
+	content: "\ed0d";
+}
+.MyX-appbarnetworkdisconnect2:before {
+	content: "\ed0e";
+}
+.MyX-appbarnavigateprevious2:before {
+	content: "\ed0f";
+}
+.MyX-appbarnavigatenext2:before {
+	content: "\ed10";
+}
+.MyX-appbarmusicwifi2:before {
+	content: "\ed11";
+}
+.MyX-appbarmusic2:before {
+	content: "\ed12";
+}
+.MyX-appbarmusicselect2:before {
+	content: "\ed13";
+}
+.MyX-appbarmusiclive2:before {
+	content: "\ed14";
+}
+.MyX-appbarmovieclapper2:before {
+	content: "\ed15";
+}
+.MyX-appbarmovieclappersolid2:before {
+	content: "\ed16";
+}
+.MyX-appbarmovieclappersolidselect2:before {
+	content: "\ed17";
+}
+.MyX-appbarmovieclapperselect2:before {
+	content: "\ed18";
+}
+.MyX-appbarmoonwaxinggibbous2:before {
+	content: "\ed19";
+}
+.MyX-appbarmoonwaxingcrescent2:before {
+	content: "\ed1a";
+}
+.MyX-appbarmoonwaninggibbous2:before {
+	content: "\ed1b";
+}
+.MyX-appbarmoonwaningcrescent2:before {
+	content: "\ed1c";
+}
+.MyX-appbarmoonthirdquarter2:before {
+	content: "\ed1d";
+}
+.MyX-appbarmoon2:before {
+	content: "\ed1e";
+}
+.MyX-appbarmoonsleep2:before {
+	content: "\ed1f";
+}
+.MyX-appbarmoonnew2:before {
+	content: "\ed20";
+}
+.MyX-appbarmoonfull2:before {
+	content: "\ed21";
+}
+.MyX-appbarmoonfirstquarter2:before {
+	content: "\ed22";
+}
+.MyX-appbarmono2:before {
+	content: "\ed23";
+}
+.MyX-appbarmonitorto2:before {
+	content: "\ed24";
+}
+.MyX-appbarmonitor2:before {
+	content: "\ed25";
+}
+.MyX-appbarmonitorplay2:before {
+	content: "\ed26";
+}
+.MyX-appbarmonitorminus2:before {
+	content: "\ed27";
+}
+.MyX-appbarmonitoridentify2:before {
+	content: "\ed28";
+}
+.MyX-appbarmonitorfilm2:before {
+	content: "\ed29";
+}
+.MyX-appbarmonitordelete2:before {
+	content: "\ed2a";
+}
+.MyX-appbarmonitoradd2:before {
+	content: "\ed2b";
+}
+.MyX-appbarmoney2:before {
+	content: "\ed2c";
+}
+.MyX-appbarminus2:before {
+	content: "\ed2d";
+}
+.MyX-appbarminecraftcivcraft2:before {
+	content: "\ed2e";
+}
+.MyX-appbarmicrosofttag2:before {
+	content: "\ed2f";
+}
+.MyX-appbarmicrophone2:before {
+	content: "\ed30";
+}
+.MyX-appbarmicrophonegoogle2:before {
+	content: "\ed31";
+}
+.MyX-appbarmessage2:before {
+	content: "\ed32";
+}
+.MyX-appbarmessagesmiley2:before {
+	content: "\ed33";
+}
+.MyX-appbarmessagesend2:before {
+	content: "\ed34";
+}
+.MyX-appbarmessageprofanity2:before {
+	content: "\ed35";
+}
+.MyX-appbarmedicalpulse2:before {
+	content: "\ed36";
+}
+.MyX-appbarmedicalpill2:before {
+	content: "\ed37";
+}
+.MyX-appbarmedicalpillbroken2:before {
+	content: "\ed38";
+}
+.MyX-appbarmeasuremile2:before {
+	content: "\ed39";
+}
+.MyX-appbarmeasuremeter2:before {
+	content: "\ed3a";
+}
+.MyX-appbarmeasurekilometer2:before {
+	content: "\ed3b";
+}
+.MyX-appbarmeasureinch2:before {
+	content: "\ed3c";
+}
+.MyX-appbarmeasurefoot2:before {
+	content: "\ed3d";
+}
+.MyX-appbarmeasurefarenheit2:before {
+	content: "\ed3e";
+}
+.MyX-appbarmeasurecentimeter2:before {
+	content: "\ed3f";
+}
+.MyX-appbarmeasurecelcius2:before {
+	content: "\ed40";
+}
+.MyX-appbarmarvelshieldvariant2:before {
+	content: "\ed41";
+}
+.MyX-appbarmarvelshield2:before {
+	content: "\ed42";
+}
+.MyX-appbarmarvelironman2:before {
+	content: "\ed43";
+}
+.MyX-appbarmarvelironmanmask2:before {
+	content: "\ed44";
+}
+.MyX-appbarmarvelcaptainamerica2:before {
+	content: "\ed45";
+}
+.MyX-appbarmarvelavengers2:before {
+	content: "\ed46";
+}
+.MyX-appbarmartini2:before {
+	content: "\ed47";
+}
+.MyX-appbarmarkup2:before {
+	content: "\ed48";
+}
+.MyX-appbarmarketplace2:before {
+	content: "\ed49";
+}
+.MyX-appbarmarketplaceold2:before {
+	content: "\ed4a";
+}
+.MyX-appbarmaptreasure2:before {
+	content: "\ed4b";
+}
+.MyX-appbarmap2:before {
+	content: "\ed4c";
+}
+.MyX-appbarmapsatellite2:before {
+	content: "\ed4d";
+}
+.MyX-appbarmaplocation2:before {
+	content: "\ed4e";
+}
+.MyX-appbarmaplocationadd2:before {
+	content: "\ed4f";
+}
+.MyX-appbarmapgps2:before {
+	content: "\ed50";
+}
+.MyX-appbarmapfolds2:before {
+	content: "\ed51";
+}
+.MyX-appbarmapaerial2:before {
+	content: "\ed52";
+}
+.MyX-appbarmapaerialhighway2:before {
+	content: "\ed53";
+}
+.MyX-appbarmanwalk2:before {
+	content: "\ed54";
+}
+.MyX-appbarmansuitcase2:before {
+	content: "\ed55";
+}
+.MyX-appbarmansuitcaserun2:before {
+	content: "\ed56";
+}
+.MyX-appbarmansuitcasefast2:before {
+	content: "\ed57";
+}
+.MyX-appbarmansensor2:before {
+	content: "\ed58";
+}
+.MyX-appbarmagnify2:before {
+	content: "\ed59";
+}
+.MyX-appbarmagnifyminus2:before {
+	content: "\ed5a";
+}
+.MyX-appbarmagnifyforward2:before {
+	content: "\ed5b";
+}
+.MyX-appbarmagnifybrowse2:before {
+	content: "\ed5c";
+}
+.MyX-appbarmagnifyback2:before {
+	content: "\ed5d";
+}
+.MyX-appbarmagnifyarrowup2:before {
+	content: "\ed5e";
+}
+.MyX-appbarmagnifyarrowdown2:before {
+	content: "\ed5f";
+}
+.MyX-appbarmagnifyadd2:before {
+	content: "\ed60";
+}
+.MyX-appbarloop2:before {
+	content: "\ed61";
+}
+.MyX-appbarlogicor2:before {
+	content: "\ed62";
+}
+.MyX-appbarlogicoradd2:before {
+	content: "\ed63";
+}
+.MyX-appbarlogicand2:before {
+	content: "\ed64";
+}
+.MyX-appbarlogicandadd2:before {
+	content: "\ed65";
+}
+.MyX-appbarlock2:before {
+	content: "\ed66";
+}
+.MyX-appbarlocation2:before {
+	content: "\ed67";
+}
+.MyX-appbarlocationround2:before {
+	content: "\ed68";
+}
+.MyX-appbarlocationminus2:before {
+	content: "\ed69";
+}
+.MyX-appbarlocationfoursquare2:before {
+	content: "\ed6a";
+}
+.MyX-appbarlocationdelete2:before {
+	content: "\ed6b";
+}
+.MyX-appbarlocationcircle2:before {
+	content: "\ed6c";
+}
+.MyX-appbarlocationcheckin2:before {
+	content: "\ed6d";
+}
+.MyX-appbarlocationadd2:before {
+	content: "\ed6e";
+}
+.MyX-appbarlisttwo2:before {
+	content: "\ed6f";
+}
+.MyX-appbarlist2:before {
+	content: "\ed70";
+}
+.MyX-appbarliststar2:before {
+	content: "\ed71";
+}
+.MyX-appbarlistselect2:before {
+	content: "\ed72";
+}
+.MyX-appbarlistreorderup2:before {
+	content: "\ed73";
+}
+.MyX-appbarlistreorder2:before {
+	content: "\ed74";
+}
+.MyX-appbarlistreorderdown2:before {
+	content: "\ed75";
+}
+.MyX-appbarlistone2:before {
+	content: "\ed76";
+}
+.MyX-appbarlistmerge2:before {
+	content: "\ed77";
+}
+.MyX-appbarlisthidden2:before {
+	content: "\ed78";
+}
+.MyX-appbarlistgear2:before {
+	content: "\ed79";
+}
+.MyX-appbarlistdelete2:before {
+	content: "\ed7a";
+}
+.MyX-appbarlistdeleteinline2:before {
+	content: "\ed7b";
+}
+.MyX-appbarlistcreate2:before {
+	content: "\ed7c";
+}
+.MyX-appbarlistcheck2:before {
+	content: "\ed7d";
+}
+.MyX-appbarlistadd2:before {
+	content: "\ed7e";
+}
+.MyX-appbarlistaddbelow2:before {
+	content: "\ed7f";
+}
+.MyX-appbarlistaddabove2:before {
+	content: "\ed80";
+}
+.MyX-appbarlinkedin2:before {
+	content: "\ed81";
+}
+.MyX-appbarlink2:before {
+	content: "\ed82";
+}
+.MyX-appbarlineshorizontal42:before {
+	content: "\ed83";
+}
+.MyX-appbarlightning2:before {
+	content: "\ed84";
+}
+.MyX-appbarlightbulb2:before {
+	content: "\ed85";
+}
+.MyX-appbarlightbulbhue2:before {
+	content: "\ed86";
+}
+.MyX-appbarlightbulbhueon2:before {
+	content: "\ed87";
+}
+.MyX-appbarlightbulbcoil2:before {
+	content: "\ed88";
+}
+.MyX-appbarlifesaver2:before {
+	content: "\ed89";
+}
+.MyX-appbarleaderboard2:before {
+	content: "\ed8a";
+}
+.MyX-appbarlayout2:before {
+	content: "\ed8b";
+}
+.MyX-appbarlayoutsidebar2:before {
+	content: "\ed8c";
+}
+.MyX-appbarlayoutheader2:before {
+	content: "\ed8d";
+}
+.MyX-appbarlayoutexpandrightvariant2:before {
+	content: "\ed8e";
+}
+.MyX-appbarlayoutexpandright2:before {
+	content: "\ed8f";
+}
+.MyX-appbarlayoutexpandleftvariant2:before {
+	content: "\ed90";
+}
+.MyX-appbarlayoutexpandleft2:before {
+	content: "\ed91";
+}
+.MyX-appbarlayoutcollapserightvariant2:before {
+	content: "\ed92";
+}
+.MyX-appbarlayoutcollapseright2:before {
+	content: "\ed93";
+}
+.MyX-appbarlayoutcollapseleftvariant2:before {
+	content: "\ed94";
+}
+.MyX-appbarlayoutcollapseleft2:before {
+	content: "\ed95";
+}
+.MyX-appbarlayoutbody2:before {
+	content: "\ed96";
+}
+.MyX-appbarlayerup2:before {
+	content: "\ed97";
+}
+.MyX-appbarlayerthick2:before {
+	content: "\ed98";
+}
+.MyX-appbarlayer2:before {
+	content: "\ed99";
+}
+.MyX-appbarlayerperspectiveup2:before {
+	content: "\ed9a";
+}
+.MyX-appbarlayerminus2:before {
+	content: "\ed9b";
+}
+.MyX-appbarlayerdown2:before {
+	content: "\ed9c";
+}
+.MyX-appbarlayerdelete2:before {
+	content: "\ed9d";
+}
+.MyX-appbarlayerarrangesolidsendtoback2:before {
+	content: "\ed9e";
+}
+.MyX-appbarlayerarrangesolidsendbackward2:before {
+	content: "\ed9f";
+}
+.MyX-appbarlayerarrangesolidbringtofront2:before {
+	content: "\eda0";
+}
+.MyX-appbarlayerarrangesolidbringforward2:before {
+	content: "\eda1";
+}
+.MyX-appbarlayerarrangesendtoback2:before {
+	content: "\eda2";
+}
+.MyX-appbarlayerarrangesendbackward2:before {
+	content: "\eda3";
+}
+.MyX-appbarlayerarrangebringtofront2:before {
+	content: "\eda4";
+}
+.MyX-appbarlayerarrangebringforward2:before {
+	content: "\eda5";
+}
+.MyX-appbarlayeradd2:before {
+	content: "\eda6";
+}
+.MyX-appbarlavalamp2:before {
+	content: "\eda7";
+}
+.MyX-appbarlaptop2:before {
+	content: "\eda8";
+}
+.MyX-appbarlanguagepythontext2:before {
+	content: "\eda9";
+}
+.MyX-appbarlanguagepython2:before {
+	content: "\edaa";
+}
+.MyX-appbarlanguagejavatext2:before {
+	content: "\edab";
+}
+.MyX-appbarlanguagejava2:before {
+	content: "\edac";
+}
+.MyX-appbarlanguagecsharp2:before {
+	content: "\edad";
+}
+.MyX-appbarlampvariant2:before {
+	content: "\edae";
+}
+.MyX-appbarlamp2:before {
+	content: "\edaf";
+}
+.MyX-appbarlampdeskvariant2:before {
+	content: "\edb0";
+}
+.MyX-appbarlampdesk2:before {
+	content: "\edb1";
+}
+.MyX-appbarkey2:before {
+	content: "\edb2";
+}
+.MyX-appbarkeyold2:before {
+	content: "\edb3";
+}
+.MyX-appbarjournal2:before {
+	content: "\edb4";
+}
+.MyX-appbariphone2:before {
+	content: "\edb5";
+}
+.MyX-appbarinterfacetextbox2:before {
+	content: "\edb6";
+}
+.MyX-appbarinterfacepassword2:before {
+	content: "\edb7";
+}
+.MyX-appbarinterfacelist2:before {
+	content: "\edb8";
+}
+.MyX-appbarinterfacedropdown2:before {
+	content: "\edb9";
+}
+.MyX-appbarinterfacebutton2:before {
+	content: "\edba";
+}
+.MyX-appbarinput2:before {
+	content: "\edbb";
+}
+.MyX-appbarinputquestion2:before {
+	content: "\edbc";
+}
+.MyX-appbarinputpen2:before {
+	content: "\edbd";
+}
+.MyX-appbarinputpendown2:before {
+	content: "\edbe";
+}
+.MyX-appbarinputkeyboard2:before {
+	content: "\edbf";
+}
+.MyX-appbarinputkeyboarddown2:before {
+	content: "\edc0";
+}
+.MyX-appbarinputdown2:before {
+	content: "\edc1";
+}
+.MyX-appbarinformation2:before {
+	content: "\edc2";
+}
+.MyX-appbarinformationcircle2:before {
+	content: "\edc3";
+}
+.MyX-appbarinfinite2:before {
+	content: "\edc4";
+}
+.MyX-appbarinbox2:before {
+	content: "\edc5";
+}
+.MyX-appbarinboxout2:before {
+	content: "\edc6";
+}
+.MyX-appbarinboxin2:before {
+	content: "\edc7";
+}
+.MyX-appbarimage2:before {
+	content: "\edc8";
+}
+.MyX-appbarimagesunset2:before {
+	content: "\edc9";
+}
+.MyX-appbarimagesports2:before {
+	content: "\edca";
+}
+.MyX-appbarimagesnow2:before {
+	content: "\edcb";
+}
+.MyX-appbarimageselect2:before {
+	content: "\edcc";
+}
+.MyX-appbarimageredeye2:before {
+	content: "\edcd";
+}
+.MyX-appbarimageportrait2:before {
+	content: "\edce";
+}
+.MyX-appbarimagenight2:before {
+	content: "\edcf";
+}
+.MyX-appbarimagenightportrait2:before {
+	content: "\edd0";
+}
+.MyX-appbarimagenightperson2:before {
+	content: "\edd1";
+}
+.MyX-appbarimagenightlandscape2:before {
+	content: "\edd2";
+}
+.MyX-appbarimagemultiple2:before {
+	content: "\edd3";
+}
+.MyX-appbarimagemacro2:before {
+	content: "\edd4";
+}
+.MyX-appbarimagelandscape2:before {
+	content: "\edd5";
+}
+.MyX-appbarimagehdr2:before {
+	content: "\edd6";
+}
+.MyX-appbarimagegallery2:before {
+	content: "\edd7";
+}
+.MyX-appbarimagefocus2:before {
+	content: "\edd8";
+}
+.MyX-appbarimageexport2:before {
+	content: "\edd9";
+}
+.MyX-appbarimagebroken2:before {
+	content: "\edda";
+}
+.MyX-appbarimagebeach2:before {
+	content: "\eddb";
+}
+.MyX-appbarimagebacklight2:before {
+	content: "\eddc";
+}
+.MyX-appbarimageants2:before {
+	content: "\eddd";
+}
+.MyX-appbarie2:before {
+	content: "\edde";
+}
+.MyX-appbaricecreambar2:before {
+	content: "\eddf";
+}
+.MyX-appbarhourglass2:before {
+	content: "\ede0";
+}
+.MyX-appbarhomevariant2:before {
+	content: "\ede1";
+}
+.MyX-appbarhomevariantleave2:before {
+	content: "\ede2";
+}
+.MyX-appbarhomevariantenter2:before {
+	content: "\ede3";
+}
+.MyX-appbarhome2:before {
+	content: "\ede4";
+}
+.MyX-appbarhomequestion2:before {
+	content: "\ede5";
+}
+.MyX-appbarhomepeople2:before {
+	content: "\ede6";
+}
+.MyX-appbarhomepeoplenone2:before {
+	content: "\ede7";
+}
+.MyX-appbarhomelocationround2:before {
+	content: "\ede8";
+}
+.MyX-appbarhomelocationpin2:before {
+	content: "\ede9";
+}
+.MyX-appbarhomegps2:before {
+	content: "\edea";
+}
+.MyX-appbarhomegarage2:before {
+	content: "\edeb";
+}
+.MyX-appbarhomegarageopen2:before {
+	content: "\edec";
+}
+.MyX-appbarhomegaragearrowopen2:before {
+	content: "\eded";
+}
+.MyX-appbarhomegaragearrowclose2:before {
+	content: "\edee";
+}
+.MyX-appbarhomeempty2:before {
+	content: "\edef";
+}
+.MyX-appbarheart2:before {
+	content: "\edf0";
+}
+.MyX-appbarheartoutline2:before {
+	content: "\edf1";
+}
+.MyX-appbarheartcross2:before {
+	content: "\edf2";
+}
+.MyX-appbarheartbreak2:before {
+	content: "\edf3";
+}
+.MyX-appbarhatsanta2:before {
+	content: "\edf4";
+}
+.MyX-appbarhardwaremouse2:before {
+	content: "\edf5";
+}
+.MyX-appbarhardwareheadset2:before {
+	content: "\edf6";
+}
+.MyX-appbarhardwareheadphones2:before {
+	content: "\edf7";
+}
+.MyX-appbarhardwareheadphonesbluetooth2:before {
+	content: "\edf8";
+}
+.MyX-appbarhardwarecpu2:before {
+	content: "\edf9";
+}
+.MyX-appbarhandicap2:before {
+	content: "\edfa";
+}
+.MyX-appbarhandicapout2:before {
+	content: "\edfb";
+}
+.MyX-appbarhandicapin2:before {
+	content: "\edfc";
+}
+.MyX-appbargroup2:before {
+	content: "\edfd";
+}
+.MyX-appbargroupminus2:before {
+	content: "\edfe";
+}
+.MyX-appbargroupdelete2:before {
+	content: "\edff";
+}
+.MyX-appbargroupadd2:before {
+	content: "\ee00";
+}
+.MyX-appbargrid2:before {
+	content: "\ee01";
+}
+.MyX-appbargreeksigmauppercase2:before {
+	content: "\ee02";
+}
+.MyX-appbargreeksigmalowercase2:before {
+	content: "\ee03";
+}
+.MyX-appbargraphlineup2:before {
+	content: "\ee04";
+}
+.MyX-appbargraphline2:before {
+	content: "\ee05";
+}
+.MyX-appbargraphlinedown2:before {
+	content: "\ee06";
+}
+.MyX-appbargraphhistogram2:before {
+	content: "\ee07";
+}
+.MyX-appbargraphhistogramdescription2:before {
+	content: "\ee08";
+}
+.MyX-appbargraphboxplot2:before {
+	content: "\ee09";
+}
+.MyX-appbargraphbar2:before {
+	content: "\ee0a";
+}
+.MyX-appbargradef2:before {
+	content: "\ee0b";
+}
+.MyX-appbargradee2:before {
+	content: "\ee0c";
+}
+.MyX-appbargraded2:before {
+	content: "\ee0d";
+}
+.MyX-appbargradedplus2:before {
+	content: "\ee0e";
+}
+.MyX-appbargradedminus2:before {
+	content: "\ee0f";
+}
+.MyX-appbargradec2:before {
+	content: "\ee10";
+}
+.MyX-appbargradecplus2:before {
+	content: "\ee11";
+}
+.MyX-appbargradecminus2:before {
+	content: "\ee12";
+}
+.MyX-appbargradeb2:before {
+	content: "\ee13";
+}
+.MyX-appbargradebplus2:before {
+	content: "\ee14";
+}
+.MyX-appbargradebminus2:before {
+	content: "\ee15";
+}
+.MyX-appbargradea2:before {
+	content: "\ee16";
+}
+.MyX-appbargradeaplus2:before {
+	content: "\ee17";
+}
+.MyX-appbargradeaminus2:before {
+	content: "\ee18";
+}
+.MyX-appbargoogleplus2:before {
+	content: "\ee19";
+}
+.MyX-appbargoogle2:before {
+	content: "\ee1a";
+}
+.MyX-appbarglobewire2:before {
+	content: "\ee1b";
+}
+.MyX-appbarglobe2:before {
+	content: "\ee1c";
+}
+.MyX-appbargift2:before {
+	content: "\ee1d";
+}
+.MyX-appbargendermale2:before {
+	content: "\ee1e";
+}
+.MyX-appbargenderfemale2:before {
+	content: "\ee1f";
+}
+.MyX-appbargenderboth2:before {
+	content: "\ee20";
+}
+.MyX-appbargauge1002:before {
+	content: "\ee21";
+}
+.MyX-appbargauge752:before {
+	content: "\ee22";
+}
+.MyX-appbargauge502:before {
+	content: "\ee23";
+}
+.MyX-appbargauge252:before {
+	content: "\ee24";
+}
+.MyX-appbargauge02:before {
+	content: "\ee25";
+}
+.MyX-appbargas2:before {
+	content: "\ee26";
+}
+.MyX-appbarfuturamafry2:before {
+	content: "\ee27";
+}
+.MyX-appbarfuturamabender2:before {
+	content: "\ee28";
+}
+.MyX-appbarfullscreen2:before {
+	content: "\ee29";
+}
+.MyX-appbarfullscreenbox2:before {
+	content: "\ee2a";
+}
+.MyX-appbarframeworknet2:before {
+	content: "\ee2b";
+}
+.MyX-appbarforsale2:before {
+	content: "\ee2c";
+}
+.MyX-appbarforrst2:before {
+	content: "\ee2d";
+}
+.MyX-appbarformeditable2:before {
+	content: "\ee2e";
+}
+.MyX-appbarformbasic2:before {
+	content: "\ee2f";
+}
+.MyX-appbarforklift2:before {
+	content: "\ee30";
+}
+.MyX-appbarforkliftload2:before {
+	content: "\ee31";
+}
+.MyX-appbarfoot2:before {
+	content: "\ee32";
+}
+.MyX-appbarfood2:before {
+	content: "\ee33";
+}
+.MyX-appbarfoodsilverware2:before {
+	content: "\ee34";
+}
+.MyX-appbarfoodsilverwarecross2:before {
+	content: "\ee35";
+}
+.MyX-appbarfoodapple2:before {
+	content: "\ee36";
+}
+.MyX-appbarfolder2:before {
+	content: "\ee37";
+}
+.MyX-appbarfolderstar2:before {
+	content: "\ee38";
+}
+.MyX-appbarfolderpuzzle2:before {
+	content: "\ee39";
+}
+.MyX-appbarfolderpeople2:before {
+	content: "\ee3a";
+}
+.MyX-appbarfolderopen2:before {
+	content: "\ee3b";
+}
+.MyX-appbarfolderlock2:before {
+	content: "\ee3c";
+}
+.MyX-appbarfolderellipsis2:before {
+	content: "\ee3d";
+}
+.MyX-appbarflagwavy2:before {
+	content: "\ee3e";
+}
+.MyX-appbarflagtexas2:before {
+	content: "\ee3f";
+}
+.MyX-appbarflag2:before {
+	content: "\ee40";
+}
+.MyX-appbarflagbear2:before {
+	content: "\ee41";
+}
+.MyX-appbarfingerprint2:before {
+	content: "\ee42";
+}
+.MyX-appbarfinder2:before {
+	content: "\ee43";
+}
+.MyX-appbarfilter2:before {
+	content: "\ee44";
+}
+.MyX-appbarfilteralphabetical2:before {
+	content: "\ee45";
+}
+.MyX-appbarfilm2:before {
+	content: "\ee46";
+}
+.MyX-appbarfilmselect2:before {
+	content: "\ee47";
+}
+.MyX-appbarfilmlive2:before {
+	content: "\ee48";
+}
+.MyX-appbarferry2:before {
+	content: "\ee49";
+}
+.MyX-appbarfanbox2:before {
+	content: "\ee4a";
+}
+.MyX-appbarfacebookdisconnect2:before {
+	content: "\ee4b";
+}
+.MyX-appbarfacebookconnect2:before {
+	content: "\ee4c";
+}
+.MyX-appbareye2:before {
+	content: "\ee4d";
+}
+.MyX-appbareyehide2:before {
+	content: "\ee4e";
+}
+.MyX-appbaremailyahoo2:before {
+	content: "\ee4f";
+}
+.MyX-appbaremail2:before {
+	content: "\ee50";
+}
+.MyX-appbaremailoutlook2:before {
+	content: "\ee51";
+}
+.MyX-appbaremailminimal2:before {
+	content: "\ee52";
+}
+.MyX-appbaremailhardedge2:before {
+	content: "\ee53";
+}
+.MyX-appbaremailgmail2:before {
+	content: "\ee54";
+}
+.MyX-appbarelevatorup2:before {
+	content: "\ee55";
+}
+.MyX-appbarelevatordown2:before {
+	content: "\ee56";
+}
+.MyX-appbaredit2:before {
+	content: "\ee57";
+}
+.MyX-appbareditminus2:before {
+	content: "\ee58";
+}
+.MyX-appbareditbox2:before {
+	content: "\ee59";
+}
+.MyX-appbareditadd2:before {
+	content: "\ee5a";
+}
+.MyX-appbardropper2:before {
+	content: "\ee5b";
+}
+.MyX-appbardrawpixelgrid2:before {
+	content: "\ee5c";
+}
+.MyX-appbardrawpixelfillgrid2:before {
+	content: "\ee5d";
+}
+.MyX-appbardrawpencil2:before {
+	content: "\ee5e";
+}
+.MyX-appbardrawpencilreflection2:before {
+	content: "\ee5f";
+}
+.MyX-appbardrawpen2:before {
+	content: "\ee60";
+}
+.MyX-appbardrawpenreflection2:before {
+	content: "\ee61";
+}
+.MyX-appbardrawpenminus2:before {
+	content: "\ee62";
+}
+.MyX-appbardrawpenadd2:before {
+	content: "\ee63";
+}
+.MyX-appbardrawpaintbrush2:before {
+	content: "\ee64";
+}
+.MyX-appbardrawmarker2:before {
+	content: "\ee65";
+}
+.MyX-appbardrawmarkerreflection2:before {
+	content: "\ee66";
+}
+.MyX-appbardrawbutton2:before {
+	content: "\ee67";
+}
+.MyX-appbardrawbrush2:before {
+	content: "\ee68";
+}
+.MyX-appbardrawbrushreflection2:before {
+	content: "\ee69";
+}
+.MyX-appbardraftingcenterline2:before {
+	content: "\ee6a";
+}
+.MyX-appbardownload2:before {
+	content: "\ee6b";
+}
+.MyX-appbardoorlockopen2:before {
+	content: "\ee6c";
+}
+.MyX-appbardoorlockclosed2:before {
+	content: "\ee6d";
+}
+.MyX-appbardoorleave2:before {
+	content: "\ee6e";
+}
+.MyX-appbardoorenter2:before {
+	content: "\ee6f";
+}
+.MyX-appbardnd2:before {
+	content: "\ee70";
+}
+.MyX-appbardisk2:before {
+	content: "\ee71";
+}
+.MyX-appbardiskdownload2:before {
+	content: "\ee72";
+}
+.MyX-appbardisconnect2:before {
+	content: "\ee73";
+}
+.MyX-appbardirections2:before {
+	content: "\ee74";
+}
+.MyX-appbardimensionlinewidth2:before {
+	content: "\ee75";
+}
+.MyX-appbardimensionlinewidthshort2:before {
+	content: "\ee76";
+}
+.MyX-appbardimensionlineheight2:before {
+	content: "\ee77";
+}
+.MyX-appbardimensionlineheightshort2:before {
+	content: "\ee78";
+}
+.MyX-appbardimensionboxwidth2:before {
+	content: "\ee79";
+}
+.MyX-appbardimensionboxheight2:before {
+	content: "\ee7a";
+}
+.MyX-appbardimensionarrowlinewidththick2:before {
+	content: "\ee7b";
+}
+.MyX-appbardimensionarrowlinewidth2:before {
+	content: "\ee7c";
+}
+.MyX-appbardimensionarrowlinewidthshort2:before {
+	content: "\ee7d";
+}
+.MyX-appbardimensionarrowlineheightthick2:before {
+	content: "\ee7e";
+}
+.MyX-appbardimensionarrowlineheight2:before {
+	content: "\ee7f";
+}
+.MyX-appbardimensionarrowlineheightshort2:before {
+	content: "\ee80";
+}
+.MyX-appbardimensionarrowboxwidth2:before {
+	content: "\ee81";
+}
+.MyX-appbardimensionarrowboxheight2:before {
+	content: "\ee82";
+}
+.MyX-appbardial2:before {
+	content: "\ee83";
+}
+.MyX-appbardiagram2:before {
+	content: "\ee84";
+}
+.MyX-appbardevcenter2:before {
+	content: "\ee85";
+}
+.MyX-appbardelete2:before {
+	content: "\ee86";
+}
+.MyX-appbardeeplink2:before {
+	content: "\ee87";
+}
+.MyX-appbardeeplinkround2:before {
+	content: "\ee88";
+}
+.MyX-appbardebugstop2:before {
+	content: "\ee89";
+}
+.MyX-appbardebugstepover2:before {
+	content: "\ee8a";
+}
+.MyX-appbardebugstepout2:before {
+	content: "\ee8b";
+}
+.MyX-appbardebugstepinto2:before {
+	content: "\ee8c";
+}
+.MyX-appbardebugrestart2:before {
+	content: "\ee8d";
+}
+.MyX-appbardatabase2:before {
+	content: "\ee8e";
+}
+.MyX-appbardatabasesql2:before {
+	content: "\ee8f";
+}
+.MyX-appbardatabasemysql2:before {
+	content: "\ee90";
+}
+.MyX-appbarcustomerservice2:before {
+	content: "\ee91";
+}
+.MyX-appbarcusorpointer2:before {
+	content: "\ee92";
+}
+.MyX-appbarcursormove2:before {
+	content: "\ee93";
+}
+.MyX-appbarcursorinformation2:before {
+	content: "\ee94";
+}
+.MyX-appbarcursorhand2:before {
+	content: "\ee95";
+}
+.MyX-appbarcursordefaulttransformhorizontal2:before {
+	content: "\ee96";
+}
+.MyX-appbarcursordefault2:before {
+	content: "\ee97";
+}
+.MyX-appbarcursordefaultoutline2:before {
+	content: "\ee98";
+}
+.MyX-appbarcurrencyyen2:before {
+	content: "\ee99";
+}
+.MyX-appbarcurrencyrupee2:before {
+	content: "\ee9a";
+}
+.MyX-appbarcurrencyrubles2:before {
+	content: "\ee9b";
+}
+.MyX-appbarcurrencypound2:before {
+	content: "\ee9c";
+}
+.MyX-appbarcurrencygrivna2:before {
+	content: "\ee9d";
+}
+.MyX-appbarcurrencyeuro2:before {
+	content: "\ee9e";
+}
+.MyX-appbarcurrencydollar2:before {
+	content: "\ee9f";
+}
+.MyX-appbarcurrencydollarfree2:before {
+	content: "\eea0";
+}
+.MyX-appbarcurrencycent2:before {
+	content: "\eea1";
+}
+.MyX-appbarcupcake2:before {
+	content: "\eea2";
+}
+.MyX-appbarcup2:before {
+	content: "\eea3";
+}
+.MyX-appbarcuppaper2:before {
+	content: "\eea4";
+}
+.MyX-appbarcuphalf2:before {
+	content: "\eea5";
+}
+.MyX-appbarcupfull2:before {
+	content: "\eea6";
+}
+.MyX-appbarcupempty2:before {
+	content: "\eea7";
+}
+.MyX-appbarcrown2:before {
+	content: "\eea8";
+}
+.MyX-appbarcrosshair2:before {
+	content: "\eea9";
+}
+.MyX-appbarcrop2:before {
+	content: "\eeaa";
+}
+.MyX-appbarcreditcard2:before {
+	content: "\eeab";
+}
+.MyX-appbarcreativecommons2:before {
+	content: "\eeac";
+}
+.MyX-appbarcoupon2:before {
+	content: "\eead";
+}
+.MyX-appbarcorner2:before {
+	content: "\eeae";
+}
+.MyX-appbarcopyright2:before {
+	content: "\eeaf";
+}
+.MyX-appbarcontrollerxbox2:before {
+	content: "\eeb0";
+}
+.MyX-appbarcontrollersnes2:before {
+	content: "\eeb1";
+}
+.MyX-appbarcontrolstop2:before {
+	content: "\eeb2";
+}
+.MyX-appbarcontrolrewindvariant2:before {
+	content: "\eeb3";
+}
+.MyX-appbarcontrolrewind2:before {
+	content: "\eeb4";
+}
+.MyX-appbarcontrolresume2:before {
+	content: "\eeb5";
+}
+.MyX-appbarcontrolplay2:before {
+	content: "\eeb6";
+}
+.MyX-appbarcontrolplaylive2:before {
+	content: "\eeb7";
+}
+.MyX-appbarcontrolpause2:before {
+	content: "\eeb8";
+}
+.MyX-appbarcontrolguide2:before {
+	content: "\eeb9";
+}
+.MyX-appbarcontrolfastforwardvariant2:before {
+	content: "\eeba";
+}
+.MyX-appbarcontrolfastforward2:before {
+	content: "\eebb";
+}
+.MyX-appbarcontroleject2:before {
+	content: "\eebc";
+}
+.MyX-appbarcontrast2:before {
+	content: "\eebd";
+}
+.MyX-appbarconsole2:before {
+	content: "\eebe";
+}
+.MyX-appbarconnectionwifivariant2:before {
+	content: "\eebf";
+}
+.MyX-appbarconnectionwifi2:before {
+	content: "\eec0";
+}
+.MyX-appbarconnectionqualityverylow2:before {
+	content: "\eec1";
+}
+.MyX-appbarconnectionqualityveryhigh2:before {
+	content: "\eec2";
+}
+.MyX-appbarconnectionqualitymedium2:before {
+	content: "\eec3";
+}
+.MyX-appbarconnectionqualitylow2:before {
+	content: "\eec4";
+}
+.MyX-appbarconnectionqualityhigh2:before {
+	content: "\eec5";
+}
+.MyX-appbarconnectionqualityextremelylow2:before {
+	content: "\eec6";
+}
+.MyX-appbarconnectionev2:before {
+	content: "\eec7";
+}
+.MyX-appbarconnectionbluetooth2:before {
+	content: "\eec8";
+}
+.MyX-appbarconnection4g2:before {
+	content: "\eec9";
+}
+.MyX-appbarconnection3g2:before {
+	content: "\eeca";
+}
+.MyX-appbarconnection1x2:before {
+	content: "\eecb";
+}
+.MyX-appbarconnect2:before {
+	content: "\eecc";
+}
+.MyX-appbarconfirmyesno2:before {
+	content: "\eecd";
+}
+.MyX-appbarcone2:before {
+	content: "\eece";
+}
+.MyX-appbarconediagonal2:before {
+	content: "\eecf";
+}
+.MyX-appbarcompanioncube2:before {
+	content: "\eed0";
+}
+.MyX-appbarcolumntwo2:before {
+	content: "\eed1";
+}
+.MyX-appbarcolumnthree2:before {
+	content: "\eed2";
+}
+.MyX-appbarcolumnone2:before {
+	content: "\eed3";
+}
+.MyX-appbarcogs2:before {
+	content: "\eed4";
+}
+.MyX-appbarcog2:before {
+	content: "\eed5";
+}
+.MyX-appbarcodexml2:before {
+	content: "\eed6";
+}
+.MyX-appbarcloudirc2:before {
+	content: "\eed7";
+}
+.MyX-appbarcloudupload2:before {
+	content: "\eed8";
+}
+.MyX-appbarcloud2:before {
+	content: "\eed9";
+}
+.MyX-appbarcloudplay2:before {
+	content: "\eeda";
+}
+.MyX-appbarcloudpause2:before {
+	content: "\eedb";
+}
+.MyX-appbarclouddownload2:before {
+	content: "\eedc";
+}
+.MyX-appbarclouddelete2:before {
+	content: "\eedd";
+}
+.MyX-appbarcloudadd2:before {
+	content: "\eede";
+}
+.MyX-appbarclothestie2:before {
+	content: "\eedf";
+}
+.MyX-appbarclothesshirt2:before {
+	content: "\eee0";
+}
+.MyX-appbarclosedcaption2:before {
+	content: "\eee1";
+}
+.MyX-appbarclosedcaptionoff2:before {
+	content: "\eee2";
+}
+.MyX-appbarclose2:before {
+	content: "\eee3";
+}
+.MyX-appbarclock2:before {
+	content: "\eee4";
+}
+.MyX-appbarclipboardvarianttext2:before {
+	content: "\eee5";
+}
+.MyX-appbarclipboardvariant2:before {
+	content: "\eee6";
+}
+.MyX-appbarclipboardvariantedit2:before {
+	content: "\eee7";
+}
+.MyX-appbarclipboard2:before {
+	content: "\eee8";
+}
+.MyX-appbarclipboardpaste2:before {
+	content: "\eee9";
+}
+.MyX-appbarclipboardpaper2:before {
+	content: "\eeea";
+}
+.MyX-appbarclipboardpapercheck2:before {
+	content: "\eeeb";
+}
+.MyX-appbarclear2:before {
+	content: "\eeec";
+}
+.MyX-appbarclearreflecthorizontal2:before {
+	content: "\eeed";
+}
+.MyX-appbarclearinverse2:before {
+	content: "\eeee";
+}
+.MyX-appbarclearinversereflecthorizontal2:before {
+	content: "\eeef";
+}
+.MyX-appbarclean2:before {
+	content: "\eef0";
+}
+.MyX-appbarcity2:before {
+	content: "\eef1";
+}
+.MyX-appbarcityseattle2:before {
+	content: "\eef2";
+}
+.MyX-appbarcitysanfrancisco2:before {
+	content: "\eef3";
+}
+.MyX-appbarcitychicago2:before {
+	content: "\eef4";
+}
+.MyX-appbarcirclegrowth2:before {
+	content: "\eef5";
+}
+.MyX-appbarcircledecline2:before {
+	content: "\eef6";
+}
+.MyX-appbarchurch2:before {
+	content: "\eef7";
+}
+.MyX-appbarchromakey2:before {
+	content: "\eef8";
+}
+.MyX-appbarchevronup2:before {
+	content: "\eef9";
+}
+.MyX-appbarchevronright2:before {
+	content: "\eefa";
+}
+.MyX-appbarchevronleft2:before {
+	content: "\eefb";
+}
+.MyX-appbarchevrondown2:before {
+	content: "\eefc";
+}
+.MyX-appbarchessrook2:before {
+	content: "\eefd";
+}
+.MyX-appbarchessqueen2:before {
+	content: "\eefe";
+}
+.MyX-appbarchesspawn2:before {
+	content: "\eeff";
+}
+.MyX-appbarchessking2:before {
+	content: "\ef00";
+}
+.MyX-appbarchesshorse2:before {
+	content: "\ef01";
+}
+.MyX-appbarchessbishop2:before {
+	content: "\ef02";
+}
+.MyX-appbarcheckmarkuncrossed2:before {
+	content: "\ef03";
+}
+.MyX-appbarcheckmarkthickunchecked2:before {
+	content: "\ef04";
+}
+.MyX-appbarcheckmarkthick2:before {
+	content: "\ef05";
+}
+.MyX-appbarcheckmark2:before {
+	content: "\ef06";
+}
+.MyX-appbarcheckmarkpenciltop2:before {
+	content: "\ef07";
+}
+.MyX-appbarcheckmarkpencil2:before {
+	content: "\ef08";
+}
+.MyX-appbarcheckmarkcross2:before {
+	content: "\ef09";
+}
+.MyX-appbarcheck2:before {
+	content: "\ef0a";
+}
+.MyX-appbarchat2:before {
+	content: "\ef0b";
+}
+.MyX-appbarcenterline2:before {
+	content: "\ef0c";
+}
+.MyX-appbarcellup2:before {
+	content: "\ef0d";
+}
+.MyX-appbarcellrowdelete2:before {
+	content: "\ef0e";
+}
+.MyX-appbarcellmerge2:before {
+	content: "\ef0f";
+}
+.MyX-appbarcellinsertbelow2:before {
+	content: "\ef10";
+}
+.MyX-appbarcellinsertabove2:before {
+	content: "\ef11";
+}
+.MyX-appbarcellfunction2:before {
+	content: "\ef12";
+}
+.MyX-appbarcelldown2:before {
+	content: "\ef13";
+}
+.MyX-appbarcellcolumndelete2:before {
+	content: "\ef14";
+}
+.MyX-appbarcellalign2:before {
+	content: "\ef15";
+}
+.MyX-appbarcd2:before {
+	content: "\ef16";
+}
+.MyX-appbarcdeject2:before {
+	content: "\ef17";
+}
+.MyX-appbarcart2:before {
+	content: "\ef18";
+}
+.MyX-appbarcardsspade2:before {
+	content: "\ef19";
+}
+.MyX-appbarcardsheart2:before {
+	content: "\ef1a";
+}
+.MyX-appbarcardsdiamond2:before {
+	content: "\ef1b";
+}
+.MyX-appbarcardsclub2:before {
+	content: "\ef1c";
+}
+.MyX-appbarcard10:before {
+	content: "\ef1d";
+}
+.MyX-appbarcard92:before {
+	content: "\ef1e";
+}
+.MyX-appbarcard82:before {
+	content: "\ef1f";
+}
+.MyX-appbarcard72:before {
+	content: "\ef20";
+}
+.MyX-appbarcard62:before {
+	content: "\ef21";
+}
+.MyX-appbarcard52:before {
+	content: "\ef22";
+}
+.MyX-appbarcard42:before {
+	content: "\ef23";
+}
+.MyX-appbarcard32:before {
+	content: "\ef24";
+}
+.MyX-appbarcard22:before {
+	content: "\ef25";
+}
+.MyX-appbarcard12:before {
+	content: "\ef26";
+}
+.MyX-appbarcandycane2:before {
+	content: "\ef27";
+}
+.MyX-appbarcandle2:before {
+	content: "\ef28";
+}
+.MyX-appbarcancel2:before {
+	content: "\ef29";
+}
+.MyX-appbarcameraswitch2:before {
+	content: "\ef2a";
+}
+.MyX-appbarcameraswitchinvert2:before {
+	content: "\ef2b";
+}
+.MyX-appbarcamera2:before {
+	content: "\ef2c";
+}
+.MyX-appbarcamerasend2:before {
+	content: "\ef2d";
+}
+.MyX-appbarcameraflash2:before {
+	content: "\ef2e";
+}
+.MyX-appbarcameraflashselected2:before {
+	content: "\ef2f";
+}
+.MyX-appbarcameraflashoff2:before {
+	content: "\ef30";
+}
+.MyX-appbarcameraflashoffselected2:before {
+	content: "\ef31";
+}
+.MyX-appbarcameraflashauto2:before {
+	content: "\ef32";
+}
+.MyX-appbarcameraflashautoselected2:before {
+	content: "\ef33";
+}
+.MyX-appbarcameraauto2:before {
+	content: "\ef34";
+}
+.MyX-appbarcalendaryear2:before {
+	content: "\ef35";
+}
+.MyX-appbarcalendarweek2:before {
+	content: "\ef36";
+}
+.MyX-appbarcalendartomorrow2:before {
+	content: "\ef37";
+}
+.MyX-appbarcalendar2:before {
+	content: "\ef38";
+}
+.MyX-appbarcalendarrange2:before {
+	content: "\ef39";
+}
+.MyX-appbarcalendarmonth2:before {
+	content: "\ef3a";
+}
+.MyX-appbarcalendarfuture2:before {
+	content: "\ef3b";
+}
+.MyX-appbarcalendardollar2:before {
+	content: "\ef3c";
+}
+.MyX-appbarcalendarday2:before {
+	content: "\ef3d";
+}
+.MyX-appbarcalendar312:before {
+	content: "\ef3e";
+}
+.MyX-appbarcalendar142:before {
+	content: "\ef3f";
+}
+.MyX-appbarcalculator2:before {
+	content: "\ef40";
+}
+.MyX-appbarcabinetvariant2:before {
+	content: "\ef41";
+}
+.MyX-appbarcabinet2:before {
+	content: "\ef42";
+}
+.MyX-appbarcabinetout2:before {
+	content: "\ef43";
+}
+.MyX-appbarcabinetin2:before {
+	content: "\ef44";
+}
+.MyX-appbarcabinetfilesvariant2:before {
+	content: "\ef45";
+}
+.MyX-appbarcabinetfiles2:before {
+	content: "\ef46";
+}
+.MyX-appbarbug2:before {
+	content: "\ef47";
+}
+.MyX-appbarbugremove2:before {
+	content: "\ef48";
+}
+.MyX-appbarbrowserwire2:before {
+	content: "\ef49";
+}
+.MyX-appbarbrowser2:before {
+	content: "\ef4a";
+}
+.MyX-appbarbrowserie2:before {
+	content: "\ef4b";
+}
+.MyX-appbarbrowserchrome2:before {
+	content: "\ef4c";
+}
+.MyX-appbarboxunfolded2:before {
+	content: "\ef4d";
+}
+.MyX-appbarbox2:before {
+	content: "\ef4e";
+}
+.MyX-appbarboxlayered2:before {
+	content: "\ef4f";
+}
+.MyX-appbarbordervertical2:before {
+	content: "\ef50";
+}
+.MyX-appbarbordertop2:before {
+	content: "\ef51";
+}
+.MyX-appbarborderright2:before {
+	content: "\ef52";
+}
+.MyX-appbarborderoutside2:before {
+	content: "\ef53";
+}
+.MyX-appbarbordernone2:before {
+	content: "\ef54";
+}
+.MyX-appbarborderleft2:before {
+	content: "\ef55";
+}
+.MyX-appbarborderinner2:before {
+	content: "\ef56";
+}
+.MyX-appbarborderhorizontal2:before {
+	content: "\ef57";
+}
+.MyX-appbarborderbottom2:before {
+	content: "\ef58";
+}
+.MyX-appbarborderall2:before {
+	content: "\ef59";
+}
+.MyX-appbarbook2:before {
+	content: "\ef5a";
+}
+.MyX-appbarbookside2:before {
+	content: "\ef5b";
+}
+.MyX-appbarbookperspective2:before {
+	content: "\ef5c";
+}
+.MyX-appbarbookperspectivehelp2:before {
+	content: "\ef5d";
+}
+.MyX-appbarbookopentext2:before {
+	content: "\ef5e";
+}
+.MyX-appbarbookopentextimage2:before {
+	content: "\ef5f";
+}
+.MyX-appbarbookopen2:before {
+	content: "\ef60";
+}
+.MyX-appbarbookopeninformation2:before {
+	content: "\ef61";
+}
+.MyX-appbarbooklist2:before {
+	content: "\ef62";
+}
+.MyX-appbarbookhardcoveropenwriting2:before {
+	content: "\ef63";
+}
+.MyX-appbarbookhardcoveropen2:before {
+	content: "\ef64";
+}
+.MyX-appbarbookcontact2:before {
+	content: "\ef65";
+}
+.MyX-appbarbing2:before {
+	content: "\ef66";
+}
+.MyX-appbarbilling2:before {
+	content: "\ef67";
+}
+.MyX-appbarbillboard2:before {
+	content: "\ef68";
+}
+.MyX-appbarbike2:before {
+	content: "\ef69";
+}
+.MyX-appbarbikeparking2:before {
+	content: "\ef6a";
+}
+.MyX-appbarbeer2:before {
+	content: "\ef6b";
+}
+.MyX-appbarbeerguinness2:before {
+	content: "\ef6c";
+}
+.MyX-appbarbed2:before {
+	content: "\ef6d";
+}
+.MyX-appbarbatterycharging2:before {
+	content: "\ef6e";
+}
+.MyX-appbarbattery32:before {
+	content: "\ef6f";
+}
+.MyX-appbarbattery22:before {
+	content: "\ef70";
+}
+.MyX-appbarbattery12:before {
+	content: "\ef71";
+}
+.MyX-appbarbattery02:before {
+	content: "\ef72";
+}
+.MyX-appbarbath2:before {
+	content: "\ef73";
+}
+.MyX-appbarbase2:before {
+	content: "\ef74";
+}
+.MyX-appbarbaseselect2:before {
+	content: "\ef75";
+}
+.MyX-appbarbarcode2:before {
+	content: "\ef76";
+}
+.MyX-appbarbaby2:before {
+	content: "\ef77";
+}
+.MyX-appbaraxisthree2:before {
+	content: "\ef78";
+}
+.MyX-appbarat2:before {
+	content: "\ef79";
+}
+.MyX-appbararrowup2:before {
+	content: "\ef7a";
+}
+.MyX-appbararrowupdown2:before {
+	content: "\ef7b";
+}
+.MyX-appbararrowright2:before {
+	content: "\ef7c";
+}
+.MyX-appbararrowrightleft2:before {
+	content: "\ef7d";
+}
+.MyX-appbararrowleft2:before {
+	content: "\ef7e";
+}
+.MyX-appbararrowleftright2:before {
+	content: "\ef7f";
+}
+.MyX-appbararrowexpand2:before {
+	content: "\ef80";
+}
+.MyX-appbararrowdownup2:before {
+	content: "\ef81";
+}
+.MyX-appbararrowdown2:before {
+	content: "\ef82";
+}
+.MyX-appbararrowcornerupright2:before {
+	content: "\ef83";
+}
+.MyX-appbararrowcollapsed2:before {
+	content: "\ef84";
+}
+.MyX-appbararchive2:before {
+	content: "\ef85";
+}
+.MyX-appbararcadebutton2:before {
+	content: "\ef86";
+}
+.MyX-appbarapp2:before {
+	content: "\ef87";
+}
+.MyX-appbarappremove2:before {
+	content: "\ef88";
+}
+.MyX-appbarappplus2:before {
+	content: "\ef89";
+}
+.MyX-appbarappminus2:before {
+	content: "\ef8a";
+}
+.MyX-appbarappfavorite2:before {
+	content: "\ef8b";
+}
+.MyX-appbaranchor2:before {
+	content: "\ef8c";
+}
+.MyX-appbaralignright2:before {
+	content: "\ef8d";
+}
+.MyX-appbaralignleft2:before {
+	content: "\ef8e";
+}
+.MyX-appbaralignjustify2:before {
+	content: "\ef8f";
+}
+.MyX-appbaraligncenter2:before {
+	content: "\ef90";
+}
+.MyX-appbaralien2:before {
+	content: "\ef91";
+}
+.MyX-appbaralert2:before {
+	content: "\ef92";
+}
+.MyX-appbaradobespeedgrade2:before {
+	content: "\ef93";
+}
+.MyX-appbaradobepremierpro2:before {
+	content: "\ef94";
+}
+.MyX-appbaradobeprelude2:before {
+	content: "\ef95";
+}
+.MyX-appbaradobephotoshop2:before {
+	content: "\ef96";
+}
+.MyX-appbaradobelightroom2:before {
+	content: "\ef97";
+}
+.MyX-appbaradobeindesign2:before {
+	content: "\ef98";
+}
+.MyX-appbaradobeillustrator2:before {
+	content: "\ef99";
+}
+.MyX-appbaradobeflashbuilder2:before {
+	content: "\ef9a";
+}
+.MyX-appbaradobeflash2:before {
+	content: "\ef9b";
+}
+.MyX-appbaradobefireworks2:before {
+	content: "\ef9c";
+}
+.MyX-appbaradobeencore2:before {
+	content: "\ef9d";
+}
+.MyX-appbaradobedreamweaver2:before {
+	content: "\ef9e";
+}
+.MyX-appbaradobebridge2:before {
+	content: "\ef9f";
+}
+.MyX-appbaradobeaudition2:before {
+	content: "\efa0";
+}
+.MyX-appbaradobeaftereffects2:before {
+	content: "\efa1";
+}
+.MyX-appbaradobeacrobat2:before {
+	content: "\efa2";
+}
+.MyX-appbaradd2:before {
+	content: "\efa3";
+}
+.MyX-appbaracorn2:before {
+	content: "\efa4";
+}

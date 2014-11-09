@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'msyhbd';
+  src: url('#{$myx-module-style-path}/fonts/msyh.eot');
+  src: url('#{$myx-module-style-path}/fonts/msyh.eot?#iefix') format('embedded-opentype'),
+        url('#{$myx-module-style-path}/fonts/msyhbd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'msyh';
+  src: url('#{$myx-module-style-path}/fonts/msyh.eot');
+  src: url('#{$myx-module-style-path}/fonts/msyh.eot?#iefix') format('embedded-opentype'),
+        url('#{$myx-module-style-path}/fonts/msyh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
