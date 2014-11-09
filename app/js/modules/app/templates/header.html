@@ -5,10 +5,8 @@
         <li ng-repeat="menus in menuGroups" class="header--menu--item">
             <span ng-if="!menus.subMenus || !menus.subMenus.length" myx-fast-click ng-click="redirectToPage(menus)">{{ menus.name }}</span>
             <div ng-if="menus.subMenus && menus.subMenus.length" myx-fast-click
-                 ng-mouseover="menus.isOpen=true"
-                 ng-mouseleave="menus.isOpen=false"
-                 ng-click="menus.isOpen=!menus.isOpen"
-                 ng-init="menus.isOpen = false">{{ menus.name }}
+                 ng-mouseover="menus.isOpen=true" ng-mouseleave="menus.isOpen=false"
+                 ng-init="menus.isOpen = false" class="header--menu--item__name">{{ menus.name }}
                 <ul ng-show="menus.isOpen" class="header--menu--item__submenu">
                     <li ng-repeat="subMenu in menus.subMenus" class="header--menu--item__submenu--item" ng-class="{selected: subMenu.selected}" myx-fast-click ng-click="menus.isOpen=!menus.isOpen;redirectToPage(subMenu)">
                         {{ subMenu.name }}

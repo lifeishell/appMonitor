@@ -21,7 +21,7 @@ define(function(){
 
         this.setUser = function(user) {
             this.user = user;
-            user.on('login:success', updateSession);
+            //user.on('login:success', updateSession);
         };
     }
 });

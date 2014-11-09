@@ -13,7 +13,7 @@ define(function() {
             $scope.fgAuth.isWaiting = false;
             if (SessionUser.isLoggedIn()) {
                 var redirectPath = sessionStorage.getItem("redirectPath");
-                if (!redirectPath || redirectPath === "/authentication/login") {
+                if (!redirectPath || redirectPath === "/login") {
                     redirectPath = "/dashboard";
                 }
                 $location.path(redirectPath);
@@ -49,7 +49,7 @@ define(function() {
                 })
                 .finally(function() {
                     $scope.trigger('loading:done');
-                    $location.path('authentication/login');
+                    $location.path('login');
                 });
         };
 
@@ -66,34 +66,24 @@ define(function() {
                     name: gettext('Cancel'),
                     'class': 'btn',
                     callback: function() {
-                        $location.path('authentication/login');
+                        $location.path('/login');
                     }
                 }], null, true
             );
         };
 
-        if ($location.path() === '/authentication/forgot-password') {
+        if ($location.path() === '/forgot-password') {
             $scope.resetPasswordDialog();
-        }
-
-        function sucessDialog() {
-            DialogService.showDialog(
-                gettext('Please check your email'),
-                gettext("We've sent you an email that will allow you to reset your password quickly and easily. Please check your email now."), [{
-                    name: 'Ok',
-                    class: 'btn-primary'
-                }]
-            );
         }
 
         function failedDialog() {
             DialogService.showDialog(
-                gettext('Password Reset Failed'),
-                gettext('Password reset failed. Please check your email address and try again.'), [{
+                'Password Reset Failed',
+                'Password reset failed. Please check your email address and try again.', [{
                     name: 'Ok',
                     class: 'btn-primary',
                     callback: function() {
-                        $location.path('authentication/login');
+                        $location.path('login');
                     }
                 }]
             );

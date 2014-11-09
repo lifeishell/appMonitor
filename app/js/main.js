@@ -59,7 +59,7 @@ define([
                         // On unauthorized error, redirect to login
                         case 401:
                             sessionStorage.setItem("redirectPath", $location.path());
-                            $location.path('authentication/login');
+                            $location.path('login');
                             break;
                         default:
                             // need to handle general error later.

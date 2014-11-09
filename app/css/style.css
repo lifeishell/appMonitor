@@ -16177,7 +16177,7 @@ To show invalid state, add class "invalid"
       font-size: 27px; }
     .page-tile-box__content__date {
       margin: 0;
-      color: #ffcd9c;
+      color: #ccc;
       text-align: center;
       font-size: 12px; }
     .page-tile-box__content--image {
@@ -19475,17 +19475,21 @@ MyX - DASHBOARD LOCATIONS
   display: inline-block;
   font-size: 16px;
   color: white;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-bottom: 0; }
   .header--menu--item {
     float: left;
     width: 120px;
     position: relative; }
+    .header--menu--item__name {
+      padding-bottom: 10px; }
     .header--menu--item__submenu {
       width: 120px;
       background-color: white;
-      border: 1px solid grey;
+      border: 1px solid #ccc;
       position: absolute;
-      left: 40px; }
+      left: 30px;
+      top: 30px; }
       .header--menu--item__submenu--item {
         padding: 5px 10px;
         color: #494949; }

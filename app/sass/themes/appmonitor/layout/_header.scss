@@ -33,6 +33,7 @@
   font-size: 16px;
   color: $white;
   white-space: nowrap;
+  margin-bottom: 0;
 
   @extend .text-center;
 
@@ -41,12 +42,17 @@
     width: 120px;
     position: relative;
 
+    &__name {
+      padding-bottom: 10px;
+    }
+
     &__submenu {
       width: 120px;
       background-color: $white;
-      border: 1px solid $gray;
+      border: 1px solid $lighterGray;
       position: absolute;
-      left: 40px;
+      left: 30px;
+      top: 30px;
 
       &--item {
         padding: 5px 10px;
