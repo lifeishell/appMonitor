@@ -1,5 +1,4 @@
-$font-primary: "msyh", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-secondary: "msyhbd", "SegoeUIRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 $color-stars: $blue-primary !default;
 
@@ -10,19 +9,10 @@ MyX - Fonts
 	font-family: $font-primary;
 }
 .font-bold {
-	font-family: $font-secondary !important;
+	font-family: $font-primary !important;
+    font-weight: bold;
 }
 
-@mixin fontface() {
-  font-family: $font-primary
-
-  strong {
-    font-family: $font-secondary;
-  }
-  span {
-    font-family: $font-primary;
-  }
-}
 /* ==========================================================================
 MyX - Typography
 ========================================================================== */

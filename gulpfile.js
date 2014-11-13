@@ -58,24 +58,20 @@ gulp.task('copy', ['clean'], function() {
 });
 
 gulp.task('sass', ['clean'], function() {
-    gulp.src([
-        'app/sass/style.scss'
-    ])
-        .pipe(sass({
-            'style': 'compressed'
-        }))
-        .pipe(replace('/bower_components/myx-module-style/fonts', '/fonts'))
+    function nocache(){
+        gulp.src('app/js/tmpl_nocache.css')
+            .pipe(tmpl({
+                appmonitor_version: BUILD_VERSION
+            }))
+            .pipe(rename('nocache.css'))
+            .pipe(gulp.dest('build/'))
+    }
+    return gulp.src(['app/sass/style.scss'])
+        .pipe(sass({'style': 'compressed'}))
         .pipe(prefix("last 1 version", "> 1%"))
         .pipe(rename('styles.css'))
         .pipe(gulp.dest('build/' + BUILD_VERSION))
-
-    .pipe(gulp.src('assets/templates/tmpl_nocache.css'))
-        .pipe(tmpl({
-            appmonitor_version: BUILD_VERSION
-        }))
-        .pipe(rename('nocache.css'))
-        .pipe(gulp.dest('build/'))
-        .pipe(connect.reload());
+        .on('end', nocache);
 });
 
 gulp.task('sass:dev', ['clean'], function() {
@@ -83,7 +79,6 @@ gulp.task('sass:dev', ['clean'], function() {
         'app/sass/style.scss'
     ])
         .pipe(sass())
-        .pipe(replace('/bower_components/myx-module-style/fonts', '/fonts'))
         .pipe(prefix("last 1 version", "> 1%"))
         .pipe(rename('style.css'))
         .pipe(gulp.dest('app/css'))
@@ -100,14 +95,14 @@ gulp.task('compilejs', ['clean', 'copy', 'templates', 'jshint'], function() {
         s.pipe(clean());
     }
 
-    return rjs({
-        out: 'require.config.js',
-        baseUrl: 'app/js/',
-        name: 'require.config',
-        mainConfigFile: 'app/js/require.config.js'
-    })
+    return gulp.src('app/bower_components/almond/almond.js')
         .pipe(gulp.dest('build'))
-        .pipe(gulp.src('app/bower_components/almond/almond.js'))
+        .pipe(rjs({
+            out: 'require.config.js',
+            baseUrl: 'app/js/',
+            name: 'require.config',
+            mainConfigFile: 'app/js/require.config.js'
+        }))
         .pipe(gulp.dest('build'))
         .on('end', almond);
 });
