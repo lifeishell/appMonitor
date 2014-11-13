@@ -1,4 +1,4 @@
-.view-login {
+.page-login {
     #content, #main-display {
         display: block;
         padding: 0;
@@ -7,6 +7,10 @@
 
     #header {
         display: none;
+    }
+
+    .current {
+      height: 100%;
     }
 
     body {
@@ -24,7 +28,7 @@
     background-image: -ms-linear-gradient(top, #ffffff 0%, $background-primary 100%);
     padding: 10% 40px 40px 40px;
     height: 100%;
-    display: table-cell;
+    display: block;
 
     h2{
         font-size: 4em;
@@ -82,11 +86,21 @@
     margin-top: 5px;
 }
 
+.fg-btn--forgot-pw {
+  @extend .login__content__reset-password;
+}
+
+.fg-loginform-submit__waiting {
+  @extend .icon-spin;     //font-awesome
+  @extend .icon-spinner;  //font-awesome
+}
+
+
 /* opposite rule not used unless needed
 @media only screen and (orientation : landscape), (min-width: 940px) {}
 */
 @media only screen and (orientation : portrait), (max-width: 940px) {
-    .view-login{
+    .page-login{
         .current{
             width: 100%;
         }
