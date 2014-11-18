@@ -1,0 +1,43 @@
+.metro {
+  position: relative;
+  height: 30px;
+}
+
+.active-section {
+  width: 95%;
+  position: absolute;
+  left: 5%;
+
+  &__item {
+    @extend .text-center;
+    background-color: $navbar-default-toggle-hover-bg;
+    width: 130px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 5px;
+    border-right: 1px solid $navbar-default-link-active-color;
+    float:left;
+    display: inline-block;
+
+    &.is-select {
+      background-color: $navbar-default-bg;
+    }
+
+    &.is-first {
+      border-left: 1px solid $navbar-default-link-active-color;
+    }
+
+    &:hover {
+      background-color: $navbar-default-bg;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+.section {
+  border-top: 1px solid $navbar-default-link-active-color;
+  width: 100%;
+}

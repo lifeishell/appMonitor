@@ -1,0 +1,168 @@
+/* ==========================================================================
+MyX - Header
+========================================================================== */
+#header {
+  background-color: $background-primary;
+  width: 100%;
+  padding: 0 15px;
+
+  z-index: z(myx-header);
+}
+
+#header--wrap {
+  margin: 0;
+}
+
+/* ==========================================================================
+MyX - Header Title
+========================================================================== */
+.header--title {
+  color: $color-primary;
+
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 26px;
+  margin-bottom: 15px;
+
+  & a {
+    @extend .font-bold;
+  }
+}
+
+/* ==========================================================================
+MyX - Header User
+========================================================================== */
+.header--user {
+  @extend .myx-table-cell;
+  @extend .text-right;
+
+  white-space: nowrap;
+}
+
+.header--user__infos {
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 32px;
+  vertical-align: bottom;
+  display: inline-block;
+
+  .user__infos--headline {
+    font-size: 18px;
+    display: block;
+  }
+  .user__infos--subline {
+    font-size: 13px;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.header--user__picture {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+
+  img {
+    height: 100%;
+  }
+  .badge {
+    display: block;
+    height: 24px;
+    min-width: 24px;
+
+    border-radius: 100%;
+    box-shadow: 0 0 4px #fff;
+    line-height: 18px;
+    text-align: center;
+
+    position: absolute;
+    right: -17px;
+  }
+  .badge--count {
+    @extend .badge;
+    @include label-variant($label-danger-bg);
+    top: -5px;
+    font-size: 10px;
+  }
+  .badge--config {
+    @extend .badge;
+    @include label-variant($label-warning-bg);
+    bottom: -5px;
+
+    > i {
+      font-size: 24px;
+      position: absolute;
+      left: 50%;
+      margin-left: -12px;
+      margin-top: -12px;
+      top: 50%;
+    }
+  }
+}
+
+.header--user {
+  display: inline-block;
+  width: 240px;
+  margin-top: 10px;
+
+  white-space: nowrap;
+
+  &__infos {
+    color: $white;
+  }
+}
+
+.header--menu {
+  display: inline-block;
+  font-size: 16px;
+  color: $white;
+  white-space: nowrap;
+  margin-bottom: 0;
+
+  @extend .text-center;
+
+  &--item {
+    float: left;
+    width: 90px;
+    position: relative;
+
+    &__name {
+      padding-bottom: 10px;
+    }
+
+    &__submenu {
+
+      z-index: z(myx-header-submenu);
+
+      width: 120px;
+      background-color: $white;
+      border: 1px solid $lighterGray;
+      position: absolute;
+      left: 10px;
+      top: 30px;
+
+      &--item {
+        padding: 5px 10px;
+        color: $text-primary;
+
+        &:hover {
+          padding: 4px 9px;
+          background-color: $background-secondary;
+          border: 1px solid $color-primary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #header {
+    width: 1024px;
+  }
+}
