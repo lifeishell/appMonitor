@@ -2,12 +2,16 @@ define([
     'angular',
     './controllers/AppCtrl',
     './controllers/HeaderCtrl',
-    './controllers/DashboardCtrl'
+    './controllers/DashboardCtrl',
+
+    './services/SectionsService'
 ], function (
     angular,
     AppCtrl,
     HeaderCtrl,
-    DashboardCtrl
+    DashboardCtrl,
+
+    SectionsService
 ) {
     var module = angular.module('appMonitor.app', ['appMonitor.config', 'restangular']);
 
@@ -15,6 +19,10 @@ define([
         AppCtrl: AppCtrl,
         HeaderCtrl: HeaderCtrl,
         DashboardCtrl: DashboardCtrl
+    });
+
+    module.factory({
+        SectionsService: SectionsService
     });
 
     module.run(['$rootScope', '$location',

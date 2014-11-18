@@ -1,10 +1,11 @@
 <div class="metro">
-  <ul>
-	  <li ng-repeat="section in activeSections" ng-class="{'is-select': activeSection.id === section.id}">
-		  <span ng-click="changeSection(section)">{{ section.name }}</span>
-		  <span ng-click="closeSection(section)"><i class="MyX-appbarclose"></i></span>
+  <ul scroll-menu class="active-section">
+	  <li ng-repeat="section in activeSections" ng-class="{'is-select': activeSection.item.id === section.id, 'is-first': $index === 0}" class="active-section__item">
+		  <span ng-hide="activeSection.item.id === section.id"><span myx-fast-click ng-click="changeSection(section)">{{ section.name }}</span></span>
+		  <span ng-show="activeSection.item.id === section.id">{{ section.name }}</span>
+		  <span myx-fast-click ng-click="closeSection(section)" ng-if="!section.default" class="pull-right"><i class="icon-close icon-smaller"></i></span>
 	  </li>
   </ul>
 </div>
 <div loading-icon ng-show="showLoading()"></div>
-<div ng-include="activeSection.templateUrl" ng-class="section.cssClass" ng-show="!showLoading()" /></div>
+<div ng-include="activeSection.item.templateUrl" ng-class="activeSection.item.cssClass" class="section" ng-show="!showLoading()" /></div>

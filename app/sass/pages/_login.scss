@@ -10,22 +10,13 @@
     }
 
     .current {
+      background: url("../img/login_bg.jpg");
       height: 100%;
-    }
-
-    body {
-        background-image: url("../img/login.jpg");
-        background-position: 120px top;
-        -ms-background-position-x: left;
-        -ms-background-position-y: top;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
 
 .login {
-    background: linear-gradient(to bottom, #ffffff, $background-primary);
-    background-image: -ms-linear-gradient(top, #ffffff 0%, $background-primary 100%);
+    background: url("../img/login_input.png") no-repeat center;
     padding: 10% 40px 40px 40px;
     height: 100%;
     display: block;
@@ -66,7 +57,7 @@
 }
 
 .login__content__form-container {
-    margin-top: 100px;
+    margin-top: 60%;
 }
 
 .login__content__server-config {

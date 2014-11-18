@@ -4,6 +4,7 @@
   "dependencies": {
     "bootstrap-sass": "3.0.0",
     "jquery": "~2",
+    "jquery.ui": "latest",
     "almond": "~0.2.9",
     "moment": "2.5.0",
     "restangular": "~1.2.2",

@@ -12,7 +12,7 @@ define(function() {
     function loadingIcon() {
         return {
             link: function postLink(scope, element) {
-                element.addClass('myx-common-spin-container').html('<div></div>');
+                element.addClass('common-spin-container').html('<div></div>');
             }
         };
     }

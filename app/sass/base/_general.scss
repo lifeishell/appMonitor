@@ -6,6 +6,7 @@ body,
 .st-content-inner,
 .app-container,
 #main-display,
+.appMonitor,
 #content {
     height: 100%;
 }
@@ -76,15 +77,6 @@ ul, ol {
 
 // ----------------------------------------
 
-.metro {
-    display: table-row;
-}
-
-.wagon {
-    display: table-cell;
-    height: 100%;
-    vertical-align: top;
-}
 .block-1x {
     margin-right: 33px;
 }

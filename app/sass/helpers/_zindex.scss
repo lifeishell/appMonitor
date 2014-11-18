@@ -2,8 +2,9 @@
 // items to the left have lower z-index, items to the right have higher z-index
 $z-index-list:
   'myx-header',
+  'myx-header-submenu',
   'myx-modal',
-  'myx-common-spin-container';
+  'common-spin-container';
 
 @function z($element) {
   $z-index: index($z-index-list, $element)*10;
