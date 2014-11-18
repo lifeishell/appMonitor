@@ -15,6 +15,7 @@ require.config({
         angularOnce: '../bower_components/angular-once/once',
         restangular: '../bower_components/restangular/src/restangular',
         async: '../bower_components/requirejs-plugins/src/async',
+        d3: '../bower_components/d3/d3',
         // Cached templates
         template: './template'
     },
