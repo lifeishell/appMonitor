@@ -5,6 +5,7 @@ define([
     './directives/parseInt',
     './directives/closeWhenOutsideClick',
     './directives/loadingIcon',
+    './directives/resizable',
 
     './services/DialogService'
 ], function (
@@ -14,6 +15,7 @@ define([
     myxParseInt,
     myxCloseWhenOutsideClick,
     loadingIcon,
+    resizable,
     DialogService
 ) {
     var module = angular.module('appMonitor.common', []);
@@ -23,6 +25,7 @@ define([
         myxFastClick: fastclick,
         myxParseInt: myxParseInt,
         myxCloseWhenOutsideClick: myxCloseWhenOutsideClick,
+        resizable: resizable,
         DialogService: DialogService,
         loadingIcon: loadingIcon
     });
