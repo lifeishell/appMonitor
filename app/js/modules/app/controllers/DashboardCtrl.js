@@ -28,6 +28,14 @@ define(function() {
             SectionsService.closeActiveSection(section);
         };
 
+        $scope.scrollValue = {
+            scrollable: false,
+            scrollableLeft: false,
+            scrollableRight: false,
+            scrollSectionLeft: function(){},
+            scrollSectionRight: function(){}
+        };
+
         $scope.showLoading = function(){
             return loading || $scope.topScope.isLoading();
         };

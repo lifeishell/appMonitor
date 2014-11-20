@@ -5,6 +5,7 @@ MyX - Header
   background-color: $background-primary;
   width: 100%;
   padding: 0 15px;
+  height: 10%;
 
   z-index: z(myx-header);
 }
@@ -140,7 +141,7 @@ MyX - Header User
 
       z-index: z(myx-header-submenu);
 
-      width: 120px;
+      width: 140px;
       background-color: $white;
       border: 1px solid $lighterGray;
       position: absolute;

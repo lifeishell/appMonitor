@@ -1,17 +1,46 @@
 .metro {
   position: relative;
   height: 30px;
+  width: 100%;
+
+  .scroll-btn {
+    position: absolute;
+      right: -1px;
+      top: 0;
+      bottom: 0;
+    width:30px;
+    height:30px;
+    background-color: #ffffff;
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+.scrollable {
+  position: absolute;
+    left: 5%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  width: 95%;
+  overflow: hidden;
+}
+
+.scrollable--actual {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .active-section {
-  width: 95%;
-  position: absolute;
-  left: 5%;
 
   &__item {
     @extend .text-center;
     background-color: $navbar-default-toggle-hover-bg;
-    width: 130px;
+    width: 150px;
     line-height: 30px;
     height: 30px;
     padding: 0 5px;

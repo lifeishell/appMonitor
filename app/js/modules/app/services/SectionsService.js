@@ -15,7 +15,7 @@ define(function(){
             return flatternedSections;
         }
         return {
-            activeSections: flatternSection(),
+            activeSections: [],
             activeSection: {},
             initActiveSection: function(){
                 var self = this;
@@ -24,7 +24,7 @@ define(function(){
                         self.activeSections = _.filter(flatternSection(), localStorage.getItem(sessionStorage.getItem('username') + '-activeSections'));
                         self.activeSection = _.filter(flatternSection(), {isActive: localStorage.getItem(sessionStorage.getItem('username') + '-activeSection')})[0];
                     } else  {
-                        //self.activeSections.push(_.filter(flatternSection(), 'default')[0]);
+                        self.activeSections.push(_.filter(flatternSection(), 'default')[0]);
                         self.activeSection.item = _.filter(flatternSection(), 'default')[0];
                     }
                 }
@@ -41,8 +41,8 @@ define(function(){
                 _.remove(self.activeSections, function(activeSection){
                     return activeSection.id === section.id;
                 });
-                if(self.activeSection.id === section.id){
-                    self.activeSection = self.activeSections[0];
+                if(self.activeSection.item.id === section.id){
+                    self.activeSection.item = self.activeSections[0];
                 }
             },
             setActiveSection: function(section){
