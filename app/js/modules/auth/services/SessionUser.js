@@ -10,7 +10,7 @@ define(function(){
     function SessionUser(RA, $window, $q, HttpSession) {
         var self = this;
         HttpSession.setUser(this);
-        this.promise = RA.one('authentication/login').get().then(onLogin);
+        this.promise = RA.one('sid').get().then(onLogin);
 
         function onLogin(userInfo) {
             _.extend(self, userInfo);

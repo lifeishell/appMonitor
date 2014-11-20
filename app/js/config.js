@@ -17,7 +17,8 @@ define([
                     {
                         name: '首页',
                         id: 'main',
-                        templateUrl: 'js/modules/app/templates/main.html'
+                        default: true,
+                        templateUrl: 'js/modules/main/templates/main.html'
                     },
                     {
                         name: '管理',
@@ -97,8 +98,8 @@ define([
                 ]
             }
         ])
-        .constant('API_HOST', '')
-        .constant('API_URL', '')
+        .constant('API_HOST', 'http://localhost:63342')
+        .constant('API_URL', '/smp/api/')
         .constant('EDIT_SECTIONS', []);
 
 

@@ -15,9 +15,12 @@ require.config({
         angularOnce: '../bower_components/angular-once/once',
         restangular: '../bower_components/restangular/src/restangular',
         async: '../bower_components/requirejs-plugins/src/async',
+        'jquery.ui.core': '../bower_components/jquery.ui/ui/core',
+        'jquery.ui.resizeable': '../bower_components/jquery.ui/ui/resizable',
         d3: '../bower_components/d3/d3',
         // Cached templates
-        template: './template'
+        template: './template',
+        eventEmitter: '../bower_components/eventEmitter/EventEmitter'
     },
     // Ensure that the dependencies are loaded in the right order
     shim: {
@@ -48,6 +51,12 @@ require.config({
         },
         restangular: {
             deps: ['angular', 'lodash']
+        },
+        'jquery.ui.core': {
+            deps: ['jquery']
+        },
+        'jquery.ui.resizeable': {
+            deps: ['jquery']
         },
         angularAnimate: {
             deps: ['angular']

@@ -1,7 +1,7 @@
 define(function() {
-    return ['$scope', '$rootScope', '$location', 'Restangular', DashboardCtrl];
+    return ['$scope', '$rootScope', '$location', 'SectionsService', DashboardCtrl];
 
-    function DashboardCtrl($scope, $rootScope, $location, Restangular) {
+    function DashboardCtrl($scope, $rootScope, $location, SectionsService) {
 
         var loading = true;
 
@@ -12,14 +12,21 @@ define(function() {
         };
 
         $scope.changeSection = function(section){
-            $scope.activeSection = section;
+            SectionsService.setActiveSection(section);
         };
 
         function initDashboard(){
-            $scope.sctiveSection = $scope.sctiveSection || {};
+            SectionsService.initActiveSection();
+            $scope.activeSections = SectionsService.activeSections;
+            $scope.activeSection = SectionsService.activeSection;
+            loading = false;
         }
 
         initDashboard();
+
+        $scope.closeSection = function(section){
+            SectionsService.closeActiveSection(section);
+        };
 
         $scope.showLoading = function(){
             return loading || $scope.topScope.isLoading();

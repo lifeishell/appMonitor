@@ -2,26 +2,28 @@
 MyX - Header
 ========================================================================== */
 #header {
+  background-color: $background-primary;
   width: 100%;
-  padding: 0 45px;
+  padding: 0 15px;
 
-  position: absolute;
-  top: 0;
-  left:0;
   z-index: z(myx-header);
 }
 
 #header--wrap {
-  margin: 28px 0 22px;
+  margin: 0;
 }
 
 /* ==========================================================================
 MyX - Header Title
 ========================================================================== */
 .header--title {
-  @extend .myx-table-cell;
   color: $color-primary;
-  font-size: 46px;
+
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 26px;
+  margin-bottom: 15px;
+
   & a {
     @extend .font-bold;
   }
@@ -40,7 +42,7 @@ MyX - Header User
 .header--user__infos {
   text-align: right;
   text-transform: uppercase;
-  line-height: 24px;
+  line-height: 32px;
   vertical-align: bottom;
   display: inline-block;
 
@@ -104,29 +106,10 @@ MyX - Header User
   }
 }
 
-
-#header {
-  background-color: $background-primary;
-}
-
-#header--wrap {
-  margin: 0;
-}
-
-.header--title {
-  width: 240px;
-  display: inline-block;
-  color: $color-primary;
-  vertical-align: bottom;
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
 .header--user {
   display: inline-block;
   width: 240px;
   margin-top: 10px;
-  @extend .text-right;
 
   white-space: nowrap;
 
@@ -146,7 +129,7 @@ MyX - Header User
 
   &--item {
     float: left;
-    width: 120px;
+    width: 90px;
     position: relative;
 
     &__name {
@@ -154,11 +137,14 @@ MyX - Header User
     }
 
     &__submenu {
+
+      z-index: z(myx-header-submenu);
+
       width: 120px;
       background-color: $white;
       border: 1px solid $lighterGray;
       position: absolute;
-      left: 30px;
+      left: 10px;
       top: 30px;
 
       &--item {
@@ -172,5 +158,11 @@ MyX - Header User
         }
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  #header {
+    width: 1024px;
   }
 }

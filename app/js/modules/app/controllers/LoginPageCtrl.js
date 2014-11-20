@@ -1,7 +1,7 @@
 define(function() {
-    return ['SessionUser', '$scope', '$location', 'Restangular', DialogService, LoginPageCtrl];
+    return ['SessionUser', '$scope', '$location', 'Restangular', 'SectionsService', LoginPageCtrl];
 
-    function LoginPageCtrl(SessionUser, $scope, $location, Restangular, DialogService) {
+    function LoginPageCtrl(SessionUser, $scope, $location, Restangular, SectionsService) {
         $scope.invalidCredentials = false;
 
         $scope.fgAuth = {};
@@ -16,6 +16,8 @@ define(function() {
                 if (!redirectPath || redirectPath === "/login") {
                     redirectPath = "/dashboard";
                 }
+                //init sections
+                SectionsService.initActiveSection();
                 $location.path(redirectPath);
             }
         });

@@ -5,6 +5,7 @@ define([
     './directives/parseInt',
     './directives/closeWhenOutsideClick',
     './directives/loadingIcon',
+    './directives/scrollMenu',
     './directives/resizable',
 
     './services/DialogService'
@@ -15,6 +16,7 @@ define([
     myxParseInt,
     myxCloseWhenOutsideClick,
     loadingIcon,
+    scrollMenu,
     resizable,
     DialogService
 ) {
@@ -27,6 +29,7 @@ define([
         myxCloseWhenOutsideClick: myxCloseWhenOutsideClick,
         resizable: resizable,
         DialogService: DialogService,
+        scrollMenu: scrollMenu,
         loadingIcon: loadingIcon
     });
 });
