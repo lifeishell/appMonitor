@@ -52,6 +52,12 @@ require.config({
         restangular: {
             deps: ['angular', 'lodash']
         },
+        'jquery.ui.core': {
+            deps: ['jquery']
+        },
+        'jquery.ui.resizeable': {
+            deps: ['jquery']
+        },
         angularAnimate: {
             deps: ['angular']
         },
