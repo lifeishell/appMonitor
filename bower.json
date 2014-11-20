@@ -3,6 +3,7 @@
   "version": "0.1",
   "dependencies": {
     "bootstrap-sass": "3.0.0",
+    "d3": "~3.4.13",
     "jquery": "~2",
     "jquery.ui": "latest",
     "almond": "~0.2.9",

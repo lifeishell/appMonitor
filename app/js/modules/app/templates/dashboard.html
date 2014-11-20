@@ -7,5 +7,8 @@
 	  </li>
   </ul>
 </div>
-<div loading-icon ng-show="showLoading()"></div>
-<div ng-include="activeSection.item.templateUrl" ng-class="activeSection.item.cssClass" class="section" ng-show="!showLoading()" /></div>
+<div class="mainboard">
+	<div loading-icon ng-show="showLoading()"></div>
+	<div ng-include="activeSection.templateUrl" ng-class="section.cssClass" ng-show="!showLoading()" /></div>
+	<div ng-include="js/modules/warning/templates/panel.html" class="warning-panel"></div>
+</div>
