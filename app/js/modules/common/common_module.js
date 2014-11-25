@@ -1,5 +1,6 @@
 define([
     'angular',
+
     './directives/pattern',
     './directives/fastclick',
     './directives/parseInt',

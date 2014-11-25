@@ -83,6 +83,7 @@ define([
                     {
                         name: '系统用户',
                         id: 'system-user',
+                        cssClass: 'system',
                         templateUrl: 'js/modules/system/templates/user.html'
                     },
                     {

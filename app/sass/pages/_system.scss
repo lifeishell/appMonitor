@@ -1,0 +1,16 @@
+.system {
+  widht: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.search-user {
+  padding: 20px;
+
+  h4 {
+    color: $background-primary;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+}

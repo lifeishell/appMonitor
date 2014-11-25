@@ -1,6 +1,51 @@
-<div ng-controller="SystemUserCtrl">
-    <div ui-layout="{flow: 'column', dividerSize: 5}">
-        <div ui-layout-container min-size="10px"></div>
-        <div ui-layout-container min-size="80%"></div>
+<div ng-controller="SystemUserCtrl" ui-layout="{flow: 'column', dividerSize: 5}">
+    <div ui-layout-container min-size="10px" size="33%">
+        <div class="search-user">
+            <h4><i class="icon-search"></i>查询</h4>
+            <div class="form-group">
+                <label for="search-username">用户名</label>
+                <input class="form-control" ng-model="search.username" name="search-username" id="search-username" />
+            </div>
+            <div class="form-group">
+                <label for="search-role">角色</label>
+                <input class="form-control" id="search-role" name="search-role" ng-model="search.role" />
+            </div>
+            <div class="form-group">
+                <label for="search-realname">姓名</label>
+                <input class="form-control" id="search-realname" name="search-realname" ng-model="search.realname" />
+            </div>
+        </div>
+    </div>
+    <div ui-layout-container min-size="66%" size="66%">
+        <div class="action-bar">
+            <span myx-fast-click ng-click="addUser()"><i class="icon-plus text-primary"></i>增加</span>
+            <span myx-fast-click ng-click="deleteUser()"><i class="icon-minus text-primary"></i>删除</span>
+        </div>
+        <ul class="group-list">
+            <li class="group-list__header">
+                <span class="col-xs-1">
+                    <input ng-model="selectAll" type="checkbox" class="label-checkbox" />
+                </span>
+                <span class="col-xs-2">用户名</span>
+                <span class="col-xs-1">角色</span>
+                <span class="col-xs-2">权限</span>
+                <span class="col-xs-1">姓名</span>
+                <span class="col-xs-1">部门</span>
+                <span class="col-xs-2">职务</span>
+                <span class="col-xs-2">联系方式</span>
+            </li>
+            <li class="group-list__item" ng-repeat="user in userList | filter:search ">
+                <span class="col-xs-1">
+                    <input ng-model="user.selected" type="checkbox" class="label-checkbox" />
+                </span>
+                <span class="col-xs-2" myx-fast-click ng-click="editUser(user)">用户名</span>
+                <span class="col-xs-1">角色</span>
+                <span class="col-xs-2">权限</span>
+                <span class="col-xs-1">姓名</span>
+                <span class="col-xs-1">部门</span>
+                <span class="col-xs-2">职务</span>
+                <span class="col-xs-2">联系方式</span>
+            </li>
+        </ul>
     </div>
 </div>

@@ -39,7 +39,7 @@ define(function(){
                 };
                 credentials = c;
             }
-            var promise = RA.all('authentication/login').post({}, credentials);
+            var promise = RA.all('login').post({}, credentials);
             this.promise = promise.then(onLogin);
             return promise;
         };
@@ -49,27 +49,8 @@ define(function(){
          * @return {promise}
          */
         this.logout = function() {
-            return RA.one('authentication/logout').get().then(function() {
+            return RA.one('logout').get().then(function() {
                 $window.location.reload();
-            });
-        };
-
-        /**
-         * Checks if the user with given username / email is a registered user
-         * of FairGarage.
-         * @param  {string} username A username or email to be tested
-         * @return {boolean}
-         */
-        this.userExists = function(username) {
-            if (!username) {
-                var d = $q.defer();
-                d.resolve(false);
-                return d.promise;
-            }
-            return RA.one('authentication/login').get({
-                username: username
-            }).then(function(user) {
-                return user.password;
             });
         };
     }
