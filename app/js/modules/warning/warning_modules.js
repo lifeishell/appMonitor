@@ -5,7 +5,7 @@ define([
     angular,
     WarningPanelCtrl
 ){
-    var module = angular.module('appmonitor.warning', []);
+    var module = angular.module('appMonitor.warning', []);
 
     module.controller({
         WarningPanelCtrl: WarningPanelCtrl
