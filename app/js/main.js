@@ -1,9 +1,11 @@
 define([
     'angular',
+    'ui.layout',
     'config',
     'modules/common/common_module',
     'modules/app/app_module',
     'modules/auth/auth_module',
+    'modules/system/system_module',
     'template'
 ], function(angular) {
     // add template support for building process
@@ -16,6 +18,7 @@ define([
     // Declare app level module which depends on filters, and services
     angular.module('appMonitor', [
         'ngRoute',
+        'ui.layout',
         'restangular',
         //'ngAnimate',
         'ngSanitize',
@@ -23,6 +26,7 @@ define([
         'appMonitor.common',
         'appMonitor.app',
         'appMonitor.auth',
+        'appMonitor.system',
         'template'
     ])
         .config(['$routeProvider', 'API_HOST', 'API_URL', 'RestangularProvider',

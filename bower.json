@@ -19,6 +19,7 @@
     "fastclick": "~0.6.11",
     "angular-animate": "~1.2.10-build.2178",
     "angular-once": "~0.1.5",
+    "angular-ui-layout": "latest",
     "angular-chosen-localytics": "~1.0.5",
     "chosen": "https://github.com/harvesthq/chosen.git",
     "requirejs-plugins": "latest",

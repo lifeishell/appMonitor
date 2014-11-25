@@ -15,6 +15,8 @@ define(function() {
             loading = false;
         }
 
+        $scope.activeSection = SectionsService.activeSection;
+
         initDashboard();
 
         $scope.showLoading = function(){

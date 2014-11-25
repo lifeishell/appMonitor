@@ -1,0 +1,13 @@
+.mainboard {
+  .form-group {
+    label {
+      font-weight: bold;
+      width: 20%;
+    }
+  }
+  .form-control {
+    display: inline-block;
+    box-shadow: inherit;
+    width: 75%;
+  }
+}
