@@ -20,7 +20,7 @@ define([
 ) {
     var htmlElement = ['<div ng-controller="AppCtrl" ng-class="\'page-\'+page.type" class="app-container" id="appMonitor-app">'];
     htmlElement.push('<div id="header" ng-include src="\'js/modules/app/templates/header.html\'" ng-show="page.type===\'edit\'"></div>');
-    htmlElement.push('<div class="metro" scroll-tab></div>');
+    htmlElement.push('<div class="metro" scroll-tab ng-show="page.type===\'edit\'"></div>');
     htmlElement.push('<div id="content" class="content">');
     htmlElement.push('<div class="current" ng-view></div>');
     htmlElement.push('</div>');

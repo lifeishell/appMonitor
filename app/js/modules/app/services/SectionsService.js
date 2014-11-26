@@ -17,6 +17,7 @@ define(function(){
         return {
             activeSections: [],
             activeSection: {},
+            flatternSection: flatternSection(),
             initActiveSection: function(){
                 var self = this;
                 if(!self.activeSections.length || !self.activeSection){
@@ -42,13 +43,7 @@ define(function(){
                     return activeSection.id === section.id;
                 });
                 if(self.activeSection.item.id === section.id){
-                    self.activeSection.item = self.activeSections[0];
-                }
-            },
-            setActiveSection: function(section){
-                var self = this;
-                if(self.activeSection.item.id !== section.id){
-                    self.activeSection.item = section;
+                    self.activeSection.item = self.activeSections[self.activeSections.length-1];
                 }
             }
         };

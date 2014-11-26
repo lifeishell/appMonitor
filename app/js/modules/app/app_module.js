@@ -24,13 +24,4 @@ define([
     module.factory({
         SectionsService: SectionsService
     });
-
-    module.run(['$rootScope', '$location',
-        function($rootScope, $location) {
-            // on every change of route check if user is logged in
-            $rootScope.$on('$routeChangeStart', function(event, next, current) {
-
-            });
-        }
-    ]);
 });

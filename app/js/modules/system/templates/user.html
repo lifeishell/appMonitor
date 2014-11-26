@@ -17,11 +17,11 @@
         </div>
     </div>
     <div ui-layout-container min-size="67%" size="73%">
-        <div class="action-bar">
-            <span myx-fast-click ng-click="addUser()"><i class="icon-plus"></i>增加</span>
-            <span myx-fast-click ng-click="deleteUser()" ng-show="selectedUsers()"><i class="icon-minus"></i>删除</span>
-        </div>
         <ul class="group-list">
+            <li class="group-list__actions">
+                <span myx-fast-click ng-click="addUser()"><i class="icon-plus"></i>增加</span>
+                <span myx-fast-click ng-click="deleteUser()" ng-show="selectedUsers()"><i class="icon-minus"></i>删除</span>
+            </li>
             <li class="group-list__header">
                 <span class="col-xs-1">
                     <label class="label_checkbox">

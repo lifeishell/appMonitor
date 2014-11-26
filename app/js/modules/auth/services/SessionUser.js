@@ -7,10 +7,8 @@ define(function(){
         });
     }
 
-    function SessionUser(RA, $window, $q, HttpSession) {
+    function SessionUser(RA, $location) {
         var self = this;
-        HttpSession.setUser(this);
-        this.promise = RA.one('sid').get().then(onLogin);
 
         function onLogin(userInfo) {
             _.extend(self, userInfo);
@@ -39,7 +37,7 @@ define(function(){
                 };
                 credentials = c;
             }
-            var promise = RA.all('login').post({}, credentials);
+            var promise = RA.all('login').post(credentials);
             this.promise = promise.then(onLogin);
             return promise;
         };
@@ -50,10 +48,13 @@ define(function(){
          */
         this.logout = function() {
             return RA.one('logout').get().then(function() {
-                $window.location.reload();
+
+            })
+            .finally(function(){
+                $location.path('/login');
             });
         };
     }
 
-    return ['Restangular', '$window', '$q', 'HttpSession', SessionUser];
+    return ['Restangular', '$location', SessionUser];
 });
