@@ -21,10 +21,10 @@
   -webkit-justify-content: center;
   justify-content: center;
 
-  background-color: #ffffff;
+  background-color: #999;
   right: auto;
   position: absolute;
-  z-index: 1010;
+  z-index: z(ui-splitbar);
 }
 
 .ui-layout-row > .ui-splitbar{

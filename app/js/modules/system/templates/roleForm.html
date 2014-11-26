@@ -1,0 +1,34 @@
+<form name="outerScope.userForm" novalidate="novalidate">
+    <div class="flyint-term__form">
+        <div class="panel-size-2x text-center">
+            <div class="form-group">
+                <label for="search-username">用户名</label>
+                <input class="form-control" ng-model="outerScope.editUser.username" name="search-username" id="search-username" required/>
+            </div>
+            <div class="form-group">
+                <label for="search-password">密码</label>
+                <input class="form-control" type="password" ng-model="outerScope.editUser.password" name="search-password" id="search-password" required/>
+            </div>
+            <div class="form-group">
+                <label for="search-email">邮箱</label>
+                <input class="form-control" type="email" ng-model="outerScope.editUser.email" name="search-email" id="search-email" required/>
+            </div>
+            <div class="form-group">
+                <label for="search-desc">描述</label>
+                <input class="form-control" ng-model="outerScope.editUser.desc" name="search-desc" id="search-desc" required/>
+            </div>
+            <div class="form-group">
+                <label for="search-role_pk">角色</label>
+                <select class="form-control" ng-model="outerScope.editUser.role_pk" name="search-role_pk" id="search-role_pk"
+                        ng-options=" role.pk as role.name for role in outerScope.roleChoice" required>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="flying-term__footer">
+        <div class="pull-right">
+            <button class="btn-primary btn" ng-click="outerScope.saveUser()">保存</button>
+            <button class="btn-default btn" ng-click="outerScope.resetForm()">还原</button>
+        </div>
+    </div>
+</form>

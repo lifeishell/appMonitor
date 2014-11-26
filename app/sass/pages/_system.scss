@@ -5,12 +5,61 @@
   position: relative;
 }
 
-.search-user {
+.search-area {
   padding: 20px;
 
   h4 {
     color: $background-primary;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+  }
+}
+
+.action-bar {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  color: $gray;
+  border-bottom: 1px solid #ccc;
+
+  i {
+    color: $background-primary;
+    font-size: 16px;
+  }
+}
+
+.group-list {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.group-list__header {
+  color: $gray;
+  height: 30px;
+  line-height: 30px;
+  background: linear-gradient(#f9f9f9, #9ebad3);
+
+  i {
+    color: $background-primary;
+    font-size:12px;
+  }
+}
+
+.group-list__item {
+  height: 30px;
+  padding: 5px 0;
+
+  &:hover {
+    padding: 4px 0;
+    background-color: $background-secondary;
+    border: 1px solid $color-primary;
+  }
+
+  &.is-selected {
+    padding: 4px 0;
+    background-color: $background-secondary;
+    border: 1px solid $color-primary;
   }
 }

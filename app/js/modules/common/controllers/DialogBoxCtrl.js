@@ -1,5 +1,5 @@
 define(function() {
-    function dialogBoxCtrl($scope) {
+    function DialogBoxCtrl($scope) {
         $scope.param = {};
         $scope.callback = function(button, param) {
             if (typeof(button.callback) === 'function') {
@@ -9,5 +9,5 @@ define(function() {
         };
     }
 
-    return ['$scope', dialogBoxCtrl];
+    return ['$scope', DialogBoxCtrl];
 });

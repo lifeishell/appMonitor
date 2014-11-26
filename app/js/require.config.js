@@ -18,7 +18,6 @@ require.config({
         'jquery.ui.core': '../bower_components/jquery.ui/ui/core',
         'jquery.ui.resizeable': '../bower_components/jquery.ui/ui/resizable',
         d3: '../bower_components/d3/d3',
-        'ui.layout': '../bower_components/angular-ui-layout/ui-layout',
         // Cached templates
         template: './template',
         eventEmitter: '../bower_components/eventEmitter/EventEmitter'
@@ -51,7 +50,7 @@ require.config({
             deps: ['angular']
         },
         restangular: {
-            deps: ['angular', 'lodash']
+            deps: ['angular', 'lodash', 'globalEventEmitter']
         },
         'jquery.ui.core': {
             deps: ['jquery']
@@ -60,9 +59,6 @@ require.config({
             deps: ['jquery']
         },
         angularAnimate: {
-            deps: ['angular']
-        },
-        'ui.layout': {
             deps: ['angular']
         },
         template: {

@@ -3,13 +3,17 @@ define([
 
     './controllers/SystemUserCtrl',
     './controllers/SystemRoleCtrl',
-    './controllers/SystemConfigurationCtrl'
+    './controllers/SystemConfigurationCtrl',
+
+    './services/SystemRoleService'
 ], function(
     angular,
 
     SystemUserCtrl,
     SystemRoleCtrl,
-    SystemConfigurationCtrl
+    SystemConfigurationCtrl,
+
+    SystemRoleService
 ){
     var module = angular.module('appMonitor.system', []);
 
@@ -17,5 +21,9 @@ define([
         SystemUserCtrl: SystemUserCtrl,
         SystemRoleCtrl: SystemRoleCtrl,
         SystemConfigurationCtrl: SystemConfigurationCtrl
+    });
+
+    module.factory({
+        SystemRoleService: SystemRoleService
     });
 });
