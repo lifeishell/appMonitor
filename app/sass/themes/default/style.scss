@@ -9,4 +9,33 @@
 @import "../../screen/screen";
 @import "../../layout/layout";
 @import "../../components/components";
-@import "../../vendors/vendors";
+@import "../../pages/pages";
+
+@media (max-width: 1024px) {
+  html,
+  body,
+  .st-container,
+  .st-pusher,
+  .st-content,
+  .st-content-inner,
+  .app-container,
+  #main-display,
+  .appMonitor,
+  #content {
+    width: 1024px;
+  }
+}
+
+@media (max-height: 720px) {
+  html,
+  body,
+  .st-container,
+  .st-pusher,
+  .st-content,
+  .st-content-inner,
+  .app-container,
+  #main-display,
+  .appMonitor {
+    height: 720px;
+  }
+}

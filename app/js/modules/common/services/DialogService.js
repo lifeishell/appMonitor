@@ -36,11 +36,11 @@ define(function() {
             // });
             showConfirm: function(title, message, yesCallback, noCallback) {
                 this.showDialog(title, message, [{
-                    name: 'Yes',
+                    name: '是',
                     'class': 'btn-primary',
                     callback: yesCallback
                 }, {
-                    name: 'No',
+                    name: '否',
                     'class': 'btn-default',
                     callback: noCallback
                 }]);
@@ -48,11 +48,11 @@ define(function() {
 
             showPrompt: function(title, message, input, yesCallback, noCallback) {
                 this.showDialog(title, message, [{
-                    name: 'Submit',
+                    name: '提交',
                     'class': 'btn-primary',
                     callback: yesCallback
                 }, {
-                    name: 'Cancel',
+                    name: '取消',
                     'class': 'btn-default',
                     callback: noCallback
                 }], 
@@ -61,7 +61,7 @@ define(function() {
 
             // refer showConfirm
             showDialog: function(title, message, buttons, radioButtons, input) {
-                var templateUrl = 'templates/myxDialogBox.html';
+                var templateUrl = 'js/modules/common/templates/myxDialogBox.html';
 
                 var scope = $rootScope.$new();
                 scope.title = title;

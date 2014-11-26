@@ -1,12 +1,16 @@
 define(function() {
-    return ['$scope', '$location', 'MENU_GROUPS', 'Restangular', HeaderCtrl];
+    return ['$scope', '$location', 'MENU_GROUPS', 'SessionUser', HeaderCtrl];
 
-    function HeaderCtrl($scope, $location, menuGroups, Restangular) {
+    function HeaderCtrl($scope, $location, menuGroups, SessionUser) {
         $scope.logout = function(){
-            $location.path('/login');
+            SessionUser.logout();
         };
 
         $scope.menuGroups = menuGroups;
+
+        $scope.addSection = function(section){
+            $location.path('/'+ section.id);
+        };
     }
 
 });

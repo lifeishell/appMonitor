@@ -38,28 +38,62 @@ This element acts as full-screen overlay, which is suitable for terms & conditio
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: $bg-flying-term;
-	padding: 4%;
     z-index: z(myx-overlay);
-		
+
+	&--container {
+	  $color-rgba: rgba(red(#ccc), green(#ccc), blue(#ccc), .6);
+
+	  position: relative;
+	  background: #fff;
+	  width: 80%;
+	  max-width: 720px;
+	  min-width: 450px;
+	  padding: 10px;
+	  margin: 0 auto;
+	  margin-top: 200px;
+	  border: 1px solid #ccc;
+	  @include box-shadow(inset 0 2px 2px rgba(0,0,0,.075), 0 0 8px $color-rgba);
+
+	  label {
+		font-weight: bold;
+		width: 60px;
+	  }
+
+	  .form-control {
+		display: inline-block;
+		width: 200px;
+	  }
+
+	  .ng-invalid {
+		border-color: $brand-danger;
+	  }
+
+	  .flying-term__form {
+		display: block;
+		padding-bottom: 20px;
+	  }
+	}
+
 	h1 {
-		display: table-row;
-		font-size: 46px;
+		display: block;
+	  	width: 100%;
+	  	height: 30px;
+	  	border-bottom: 1px solid #ccc;
+		font-size: 18px;
+	  	color: $background-primary;
 		
 		> i {
 			color: $gray;
-			display: inline-block;
-			font-size: 30px;
-			padding-right: 8px
+		  	position: absolute;
+		  	right: -5px;
+		    top: -5px;
 		}
 	}
 
 	&--content {
 		position: relative;
-		height: 90%;
 		margin: 2% auto 0;
 		display: table;
-		width: 89%;
 		font-size: $fz-flying-term-content;
 
 		p {
@@ -67,11 +101,12 @@ This element acts as full-screen overlay, which is suitable for terms & conditio
 			color: $fc-flying-term-content;
 		}
 	}
-	
-	.flying-term__text {
-		height: 100%;
-		padding: 10px 0 20px;
-	}
+
+  .flying-term__text {
+	height: 100%;
+	padding: 10px 0 20px;
+  }
+
 	.flying-term__footer {
 		@include clearfix();
 		margin: 30px 0 10px;
@@ -79,48 +114,6 @@ This element acts as full-screen overlay, which is suitable for terms & conditio
 		.flying-term__footer__item {
 			width: 40%;
 		}
-	}
-	.myx-content-list__item {
-		padding: 0;
-		margin-bottom: 30px;
-		border-bottom: 0 none;
-		font-size: $fz-flying-term-content;
-		color: $fc-flying-term-content;
-
-        // add bottom margin to last item
-		&:last-child {
-			margin-bottom: 200px;
-		}
-        // remove margin set above from nested lists
-        .myx-content-list__item:last-child{
-            margin-bottom: 30px;
-        }
-		
-		strong {
-			font-family: $font-secondary;
-		}
-		&--title {
-			font-family: $font-secondary;
-			padding: 0;
-			margin-bottom: 15px;
-			&:last-child {
-				margin: 0;
-			}
-		}
-	}
-	.scrollable {
-		padding-bottom: 10%;
-		
-		&:before {
-			background: linear-gradient(rgba(243,243,243,1) 0%, rgba(243, 243, 243, 0) 100%);
-		}
-		&:after {
-			background: linear-gradient(rgba(243,243,243,0) 0%, rgba(243, 243, 243, 1) 100%);
-			bottom: 0;
-		}
-	}
-	.signatureparent {
-		background: transparent;
 	}
 }
 

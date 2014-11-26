@@ -1,6 +1,18 @@
 AppMonitor
 
-run
-    # gulp watch
+install node.js
 
-to init project
+run
+    # npm install
+
+run
+    # bower install
+
+run
+    # gulp
+
+And look into the build folder
+
+work tracking here:
+
+(AppMonitor Board)[https://trello.com/b/aIXebwlI/appmonitor]

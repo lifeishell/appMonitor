@@ -1,4 +1,4 @@
-.view-login {
+.page-login {
     #content, #main-display {
         display: block;
         padding: 0;
@@ -9,22 +9,17 @@
         display: none;
     }
 
-    body {
-        background-image: url("../img/login.jpg");
-        background-position: 120px top;
-        -ms-background-position-x: left;
-        -ms-background-position-y: top;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .current {
+      background: url("../img/login_bg.jpg");
+      height: 100%;
     }
 }
 
 .login {
-    background: linear-gradient(to bottom, #ffffff, $background-primary);
-    background-image: -ms-linear-gradient(top, #ffffff 0%, $background-primary 100%);
+    background: url("../img/login_input.png") no-repeat center;
     padding: 10% 40px 40px 40px;
     height: 100%;
-    display: table-cell;
+    display: block;
 
     h2{
         font-size: 4em;
@@ -62,7 +57,7 @@
 }
 
 .login__content__form-container {
-    margin-top: 100px;
+    margin-top: 60%;
 }
 
 .login__content__server-config {
@@ -82,11 +77,21 @@
     margin-top: 5px;
 }
 
+.fg-btn--forgot-pw {
+  @extend .login__content__reset-password;
+}
+
+.fg-loginform-submit__waiting {
+  @extend .icon-spin;     //font-awesome
+  @extend .icon-spinner;  //font-awesome
+}
+
+
 /* opposite rule not used unless needed
 @media only screen and (orientation : landscape), (min-width: 940px) {}
 */
 @media only screen and (orientation : portrait), (max-width: 940px) {
-    .view-login{
+    .page-login{
         .current{
             width: 100%;
         }

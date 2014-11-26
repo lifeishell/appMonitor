@@ -1,24 +1,12 @@
 // smart z-index management based on: http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
 // items to the left have lower z-index, items to the right have higher z-index
 $z-index-list:
-  'calendar-corner-text',
-  'signature',
-  'status-dot-circle-round',
-  'status-dot-circle',
-  'myx-layout--central',
-  'myx-select',
-  'myx-select-dropdown',
-  'myx-marker',
-  'myx-progress-bar',
-  'myx-progress-line',
-  'st-pusher',
+  'ui-splitbar',
   'myx-header',
-  'myx-scrollable-gradient',
+  'myx-header-submenu',
   'myx-overlay',
-  'myx-bottom-bar',
   'myx-modal',
-  'myx-common-spin-container',
-  'sort-layer';
+  'common-spin-container';
 
 @function z($element) {
   $z-index: index($z-index-list, $element)*10;

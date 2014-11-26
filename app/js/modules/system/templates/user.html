@@ -1,0 +1,66 @@
+<div ng-controller="SystemUserCtrl" ui-layout="{flow: 'column', dividerSize: 5}">
+    <div ui-layout-container min-size="10px" size="27%">
+        <div class="search-area">
+            <h4><i class="icon-search"></i>查询</h4>
+            <div class="form-group">
+                <label for="search-username">用户名</label>
+                <input class="form-control" ng-model="search.username" name="search-username" id="search-username" />
+            </div>
+            <div class="form-group">
+                <label for="search-email">邮箱</label>
+                <input class="form-control" id="search-email" name="search-email" ng-model="search.email" />
+            </div>
+            <div class="form-group">
+                <label for="search-role">角色</label>
+                <input class="form-control" id="search-role" name="search-role" ng-model="search.role_name" />
+            </div>
+        </div>
+    </div>
+    <div ui-layout-container min-size="67%" size="73%">
+        <ul class="group-list">
+            <li class="group-list__actions">
+                <span myx-fast-click ng-click="addUser()"><i class="icon-plus"></i>增加</span>
+                <span myx-fast-click ng-click="deleteUser()" ng-show="selectedUsers()"><i class="icon-minus"></i>删除</span>
+            </li>
+            <li class="group-list__header">
+                <span class="col-xs-1">
+                    <label class="label_checkbox">
+                        <input ng-model="selectAll" type="checkbox" ng-click="toggleSelectAll()"/>
+                        全选
+                    </label>
+                </span>
+                <span class="col-xs-2" ng-click="orderBy('username')" myx-fast-click="">用户名
+                    <i ng-show="order.field==='username'&& order.reverse" class="icon-arrow-up"></i>
+                    <i ng-show="order.field==='username'&& !order.reverse" class="icon-arrow-down"></i>
+                </span>
+                <span class="col-xs-2" ng-click="orderBy('role_name')" myx-fast-click="">角色
+                    <i ng-show="order.field==='role_name'&& order.reverse" class="icon-arrow-up"></i>
+                    <i ng-show="order.field==='role_name'&& !order.reverse" class="icon-arrow-down"></i>
+                </span>
+                <span class="col-xs-2" ng-click="orderBy('email')" myx-fast-click="">邮箱
+                    <i ng-show="order.field==='email'&& order.reverse" class="icon-arrow-up"></i>
+                    <i ng-show="order.field==='email'&& !order.reverse" class="icon-arrow-down"></i>
+                </span>
+                <span class="col-xs-2" ng-click="orderBy('desc')" myx-fast-click="">描述
+                    <i ng-show="order.field==='desc'&& order.reverse" class="icon-arrow-up"></i>
+                    <i ng-show="order.field==='desc'&& !order.reverse" class="icon-arrow-down"></i>
+                </span>
+                <span class="col-xs-2" ng-click="orderBy('last_login')" myx-fast-click="">上次登录时间
+                    <i ng-show="order.field==='last_login'&& order.reverse" class="icon-arrow-up"></i>
+                    <i ng-show="order.field==='last_login'&& !order.reverse" class="icon-arrow-down"></i>
+                </span>
+            </li>
+            <li class="group-list__item" ng-repeat="user in userList | filter:search | orderBy:order.field:order.reverse"
+                ng-class="{'is-selected': user.selected}" ng-click="user.selected = !user.selected">
+                <span class="col-xs-1">
+                    <input ng-model="user.selected" type="checkbox" class="label-checkbox" ng-click="$event.stopPropagation();"/>
+                </span>
+                <span class="col-xs-2" myx-fast-click ng-click="modifyUser($event, user)">{{user.username}}</span>
+                <span class="col-xs-2">{{user.role_name}}</span>
+                <span class="col-xs-2">{{user.email}}</span>
+                <span class="col-xs-2">{{user.desc}}</span>
+                <span class="col-xs-2">{{user.last_login | date: 'yyyy-MM-dd'}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

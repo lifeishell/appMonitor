@@ -1,0 +1,15 @@
+<div class="scrollable">
+    <div class="scrollable--actual">
+        <ul class="active-section">
+            <li ng-repeat="section in activeSections" ng-class="{'is-select': activeSection.item.id === section.id, 'is-first': $index === 0}" id="'{tab-' + section.id}" class="active-section__item">
+                <span ng-hide="activeSection.item.id === section.id"><span myx-fast-click ng-click="changeSection(section)">{{ section.name }}</span></span>
+                <span ng-show="activeSection.item.id === section.id">{{ section.name }}</span>
+                <span myx-fast-click ng-click="closeSection(section)" ng-if="!section.default" class="pull-right"><i class="icon-close icon-smaller"></i></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="scroll-btn" ng-show="scrollable">
+    <span myx-fast-click ng-show="scrollable&&scrollableLeft" ng-click="scrollSectionLeft()"><i class="icon-arrow-left"></i></span>
+    <span myx-fast-click ng-show="scrollable&&scrollableRight" ng-click="scrollSectionRight()"><i class="icon-arrow-right"></i></span>
+</div>

@@ -7,10 +7,8 @@ define(function(){
         });
     }
 
-    function SessionUser(RA, $window, $q, HttpSession) {
+    function SessionUser(RA, $location) {
         var self = this;
-        HttpSession.setUser(this);
-        this.promise = RA.one('authentication/login').get().then(onLogin);
 
         function onLogin(userInfo) {
             _.extend(self, userInfo);
@@ -39,7 +37,7 @@ define(function(){
                 };
                 credentials = c;
             }
-            var promise = RA.all('authentication/login').post({}, credentials);
+            var promise = RA.all('login').post(credentials);
             this.promise = promise.then(onLogin);
             return promise;
         };
@@ -49,30 +47,14 @@ define(function(){
          * @return {promise}
          */
         this.logout = function() {
-            return RA.one('authentication/logout').get().then(function() {
-                $window.location.reload();
-            });
-        };
+            return RA.one('logout').get().then(function() {
 
-        /**
-         * Checks if the user with given username / email is a registered user
-         * of FairGarage.
-         * @param  {string} username A username or email to be tested
-         * @return {boolean}
-         */
-        this.userExists = function(username) {
-            if (!username) {
-                var d = $q.defer();
-                d.resolve(false);
-                return d.promise;
-            }
-            return RA.one('authentication/login').get({
-                username: username
-            }).then(function(user) {
-                return user.password;
+            })
+            .finally(function(){
+                $location.path('/login');
             });
         };
     }
 
-    return ['Restangular', '$window', '$q', 'HttpSession', SessionUser];
+    return ['Restangular', '$location', SessionUser];
 });

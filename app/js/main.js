@@ -4,6 +4,8 @@ define([
     'modules/common/common_module',
     'modules/app/app_module',
     'modules/auth/auth_module',
+    'modules/mainpage/mainpage_module',
+    'modules/system/system_module',
     'template'
 ], function(angular) {
     // add template support for building process
@@ -23,17 +25,19 @@ define([
         'appMonitor.common',
         'appMonitor.app',
         'appMonitor.auth',
+        'appMonitor.mainpage',
+        'appMonitor.system',
         'template'
     ])
         .config(['$routeProvider', 'API_HOST', 'API_URL', 'RestangularProvider',
             function($routeProvider, API_HOST, API_URL, RAProvider) {
                 $routeProvider
                     .when('/login', {
-                        templateUrl: 'js/modules/app/templates/login.html',
-                        controller: 'DashboardCtrl',
+                        templateUrl: 'js/modules/auth/templates/login.html',
+                        controller: 'LoginPageCtrl',
                         pageType: 'login'
                     })
-                    .when('/dashboard', {
+                    .when('/:sectionId', {
                         templateUrl: 'js/modules/app/templates/dashboard.html',
                         controller: 'DashboardCtrl',
                         pageType: 'edit'
@@ -59,7 +63,7 @@ define([
                         // On unauthorized error, redirect to login
                         case 401:
                             sessionStorage.setItem("redirectPath", $location.path());
-                            $location.path('authentication/login');
+                            $location.path('login');
                             break;
                         default:
                             // need to handle general error later.

@@ -6,13 +6,14 @@
 }
 
 @mixin fontface() {
-	font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $font-primary;
 	
 	strong {
-		font-family: "Segoe UI", "SegoeUIRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: $font-primary;
+        font-weight: bold;
 	}
 	span {
-		font-family: "Segoe UI", "SegoeUILight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: $font-primary;
 	}
 }
 
@@ -21,7 +22,7 @@
 Mixin to use a background image primarily for SVG
 ```
 .login__content__logo{
-	@include background-image("#{$myx-module-style-path}/assets/lincoln/myservice/lincoln-myservice.svg", 250px, 94px);
+	@include background-image("#{$appmonitor-font-path}/appmonitor.svg", 250px, 94px);
 }
 ```
 */

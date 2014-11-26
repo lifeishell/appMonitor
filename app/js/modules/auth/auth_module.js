@@ -1,33 +1,21 @@
 define([
     'angular',
-    './controllers/LoginFormCtrl',
+    './controllers/LoginPageCtrl',
 
-    './services/HttpSession',
     './services/SessionUser'
 ], function (
     angular,
-    LoginFormCtrl,
+    LoginPageCtrl,
 
-    HttpSession,
     SessionUser
 ) {
     var module = angular.module('appMonitor.auth', ['appMonitor.config', 'restangular']);
 
     module.controller({
-        LoginFormCtrl: LoginFormCtrl
+        LoginPageCtrl: LoginPageCtrl
     });
 
     module.service({
-        HttpSession: HttpSession,
         SessionUser: SessionUser
     });
-
-    module.run(['$rootScope', '$location',
-        function($rootScope, $location) {
-            // on every change of route check if user is logged in
-            $rootScope.$on('$routeChangeStart', function(event, next, current) {
-
-            });
-        }
-    ]);
 });
