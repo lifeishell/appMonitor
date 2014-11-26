@@ -7,10 +7,8 @@ define(function(){
         });
     }
 
-    function SessionUser(RA, $window, $q, HttpSession) {
+    function SessionUser(RA, $window, $q) {
         var self = this;
-        HttpSession.setUser(this);
-        this.promise = RA.one('sid').get().then(onLogin);
 
         function onLogin(userInfo) {
             _.extend(self, userInfo);
@@ -39,7 +37,7 @@ define(function(){
                 };
                 credentials = c;
             }
-            var promise = RA.all('login').post({}, credentials);
+            var promise = RA.all('login').post(credentials);
             this.promise = promise.then(onLogin);
             return promise;
         };
@@ -55,5 +53,5 @@ define(function(){
         };
     }
 
-    return ['Restangular', '$window', '$q', 'HttpSession', SessionUser];
+    return ['Restangular', '$window', '$q', SessionUser];
 });

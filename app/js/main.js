@@ -33,8 +33,8 @@ define([
             function($routeProvider, API_HOST, API_URL, RAProvider) {
                 $routeProvider
                     .when('/login', {
-                        templateUrl: 'js/modules/app/templates/login.html',
-                        controller: 'DashboardCtrl',
+                        templateUrl: 'js/modules/auth/templates/login.html',
+                        controller: 'LoginPageCtrl',
                         pageType: 'login'
                     })
                     .when('/:sectionId', {
