@@ -8,7 +8,14 @@
   }
 }
 
-.action-bar {
+.group-list {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.group-list__actions {
   padding: 0 10px;
   height: 30px;
   line-height: 30px;
@@ -19,13 +26,6 @@
     color: $background-primary;
     font-size: 16px;
   }
-}
-
-.group-list {
-  background-color: #fff;
-  height: 96%;
-  width: 100%;
-  margin: 0;
 }
 
 .group-list__header {

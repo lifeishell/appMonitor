@@ -35,7 +35,7 @@ define(function() {
                 );
                 $scope.isWaiting = false;
             }
-            return SessionUser.login(this.credentials).then(undefined, error);
+            return SessionUser.login($scope.credentials).then(undefined, error);
         };
     }
 });

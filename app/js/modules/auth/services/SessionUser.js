@@ -7,7 +7,7 @@ define(function(){
         });
     }
 
-    function SessionUser(RA, $window, $q) {
+    function SessionUser(RA, $location) {
         var self = this;
 
         function onLogin(userInfo) {
@@ -48,10 +48,13 @@ define(function(){
          */
         this.logout = function() {
             return RA.one('logout').get().then(function() {
-                $window.location.reload();
+
+            })
+            .finally(function(){
+                $location.path('/login');
             });
         };
     }
 
-    return ['Restangular', '$window', '$q', SessionUser];
+    return ['Restangular', '$location', SessionUser];
 });

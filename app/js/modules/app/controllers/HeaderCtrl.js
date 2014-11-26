@@ -1,9 +1,9 @@
 define(function() {
-    return ['$scope', '$location', 'MENU_GROUPS', HeaderCtrl];
+    return ['$scope', '$location', 'MENU_GROUPS', 'SessionUser', HeaderCtrl];
 
-    function HeaderCtrl($scope, $location, menuGroups) {
+    function HeaderCtrl($scope, $location, menuGroups, SessionUser) {
         $scope.logout = function(){
-            $location.path('/login');
+            SessionUser.logout();
         };
 
         $scope.menuGroups = menuGroups;

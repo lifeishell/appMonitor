@@ -42,11 +42,11 @@ define(function() {
             DialogService.showDialog(
                 (typeof(title) === 'undefined' || title === null) ? '保存失败' : title, (typeof(description) === 'undefined' || description === null) ? '请稍后重试，如果问题依旧，请联系系统管理员' : description, [{
                     name: '重新发送？',
-                    class: 'btn-default',
+                    class: 'btn-primary',
                     callback: (typeof(retryCallback) === 'undefined') ? $scope.saveChanges : retryCallback
                 }, {
                     name: '关闭',
-                    class: 'btn-primary'
+                    class: 'btn-default'
                 }]
             );
         };
