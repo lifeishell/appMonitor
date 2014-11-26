@@ -1,7 +1,7 @@
 define(function() {
-    return ['$scope', 'SectionsService', 'DialogService', DashboardCtrl];
+    return ['$scope', '$routeParams', 'SectionsService', 'DialogService', DashboardCtrl];
 
-    function DashboardCtrl($scope, SectionsService, DialogService) {
+    function DashboardCtrl($scope, $routeParams, SectionsService, DialogService) {
 
         var loading = true;
 
@@ -15,6 +15,11 @@ define(function() {
             loading = false;
         }
 
+        var routeSection = _.filter(SectionsService.flatternSection, {id: $routeParams.sectionId});
+
+        if(routeSection.length){
+            SectionsService.addActiveSection(routeSection[0]);
+        }
         $scope.activeSection = SectionsService.activeSection;
 
         initDashboard();

@@ -1,7 +1,7 @@
 define(function() {
-    return ['$scope', '$location', 'MENU_GROUPS', 'SectionsService', HeaderCtrl];
+    return ['$scope', '$location', 'MENU_GROUPS', HeaderCtrl];
 
-    function HeaderCtrl($scope, $location, menuGroups, SectionsService) {
+    function HeaderCtrl($scope, $location, menuGroups) {
         $scope.logout = function(){
             $location.path('/login');
         };
@@ -9,7 +9,7 @@ define(function() {
         $scope.menuGroups = menuGroups;
 
         $scope.addSection = function(section){
-            SectionsService.addActiveSection(section);
+            $location.path('/'+ section.id);
         };
     }
 

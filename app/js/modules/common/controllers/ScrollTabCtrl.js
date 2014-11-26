@@ -8,7 +8,7 @@ define(function(){
         $scope.activeSection = SectionsService.activeSection;
 
         $scope.changeSection = function(section){
-            SectionsService.setActiveSection(section);
+            $location.path('/' + section.id);
         };
 
         $scope.closeSection = function(section){

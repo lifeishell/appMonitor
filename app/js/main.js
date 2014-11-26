@@ -37,7 +37,7 @@ define([
                         controller: 'DashboardCtrl',
                         pageType: 'login'
                     })
-                    .when('/dashboard', {
+                    .when('/:sectionId', {
                         templateUrl: 'js/modules/app/templates/dashboard.html',
                         controller: 'DashboardCtrl',
                         pageType: 'edit'
