@@ -1,7 +1,7 @@
 define(function(){
-    return ['$scope', '$interval', 'SectionsService', ScrollTabCtrl];
+    return ['$scope', '$location', 'SectionsService', ScrollTabCtrl];
 
-    function ScrollTabCtrl($scope, $interval, SectionsService){
+    function ScrollTabCtrl($scope, $location, SectionsService){
 
         var sectionsPerPage = Math.ceil($(window).width()/5);
         $scope.activeSections = SectionsService.activeSections;
@@ -26,34 +26,18 @@ define(function(){
         });
 
         $scope.scrollSectionLeft = function(){
-            var realWidth = 150 * SectionsService.activeSections.length;
-            var left = 0;
-            var step = 100;
-            var intervalPromise = $interval(
-                function() {
-                    if(realWidth - $(window).width() - ((left+1)*step) < 0){
-                        $interval.cancel(intervalPromise);
-                    }
-                    $('.scrollable--actual').scrollLeft(realWidth - $(window).width() - ((left+1)*step));
-                    left ++;
-                }, 100);
+            $('.scrollable--actual').stop().animate({
+                scrollLeft: 0
+            }, 500);
             $scope.scrollableRight = true;
             $scope.scrollableLeft = false;
         };
 
         $scope.scrollSectionRight = function(){
-
             var realWidth = 150 * SectionsService.activeSections.length;
-            var left = 0;
-            var step = 100;
-            var intervalPromise = $interval(
-                function() {
-                    if(((left+1)*step) > (realWidth + 500 - $(window).width())){
-                        $interval.cancel(intervalPromise);
-                    }
-                    $('.scrollable--actual').scrollLeft((left+1)*step);
-                    left ++;
-                }, 100);
+            $('.scrollable--actual').stop().animate({
+                scrollLeft: realWidth
+            }, 500);
             $scope.scrollableRight = false;
             $scope.scrollableLeft = true;
         };

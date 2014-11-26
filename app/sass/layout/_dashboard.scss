@@ -2,8 +2,8 @@
   position: relative;
   height: 30px;
   width: 100%;
-  
-  border-bottom: 1px solid $navbar-default-link-active-color;
+  background-color: #ddd;
+  border-bottom: 1px solid #ccc;
 
   .scroll-btn {
     position: absolute;
@@ -40,29 +40,33 @@
 
   &__item {
     @extend .text-center;
-    background-color: $navbar-default-toggle-hover-bg;
+    background-color: #e6e6e6;
     width: 150px;
     line-height: 30px;
     height: 30px;
     padding: 0 5px;
-    border-right: 1px solid $navbar-default-link-active-color;
+    border-right: 1px solid #ccc;
     float:left;
     display: inline-block;
 
     &.is-select {
-      background-color: $navbar-default-bg;
+      background-color: #f8f8f8;
     }
 
     &.is-first {
-      border-left: 1px solid $navbar-default-link-active-color;
+      border-left: 1px solid #ccc;
     }
 
     &:hover {
-      background-color: $navbar-default-bg;
+      background-color: #f8f8f8;
     }
 
     span {
       font-size: 16px;
+    }
+
+    i {
+      color: #aaa;
     }
   }
 }

@@ -1,6 +1,8 @@
 define([
     'angular',
 
+    './controllers/DialogBoxCtrl',
+
     './directives/pattern',
     './directives/fastclick',
     './directives/parseInt',
@@ -9,9 +11,11 @@ define([
     './directives/scrollTab',
     './directives/resizable',
 
-    './services/DialogService'
+    './services/DialogService',
+    './services/OverlayService'
 ], function (
     angular,
+    DialogBoxCtrl,
     pattern,
     fastclick,
     myxParseInt,
@@ -19,9 +23,14 @@ define([
     loadingIcon,
     scrollTab,
     resizable,
-    DialogService
+    DialogService,
+    OverlayService
 ) {
     var module = angular.module('appMonitor.common', []);
+
+    module.controller({
+        DialogBoxCtrl: DialogBoxCtrl
+    });
 
     module.directive({
         myxPattern: pattern,
@@ -29,8 +38,12 @@ define([
         myxParseInt: myxParseInt,
         myxCloseWhenOutsideClick: myxCloseWhenOutsideClick,
         resizable: resizable,
-        DialogService: DialogService,
         scrollTab: scrollTab,
         loadingIcon: loadingIcon
+    });
+
+    module.factory({
+        DialogService: DialogService,
+        OverlayService: OverlayService
     });
 });

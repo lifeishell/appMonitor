@@ -7,6 +7,7 @@ require.config({
         moment: '../bower_components/moment/moment',
         fastclick: '../bower_components/fastclick/lib/fastclick',
         angular: '../bower_components/angular/angular',
+        'ui.layout': '../bower_components/angular-ui-layout/ui-layout',
         angularRoute: '../bower_components/angular-route/angular-route',
         angularMocks: '../bower_components/angular-mocks/angular-mocks',
         angularCookies: '../bower_components/angular-cookies/angular-cookies',
@@ -18,7 +19,6 @@ require.config({
         'jquery.ui.core': '../bower_components/jquery.ui/ui/core',
         'jquery.ui.resizeable': '../bower_components/jquery.ui/ui/resizable',
         d3: '../bower_components/d3/d3',
-        'ui.layout': '../bower_components/angular-ui-layout/ui-layout',
         // Cached templates
         template: './template',
         eventEmitter: '../bower_components/eventEmitter/EventEmitter'
@@ -33,6 +33,9 @@ require.config({
         },
         angular: {
             exports: 'angular'
+        },
+        'ui.layout': {
+            deps: ['angular']
         },
         angularRoute: {
             deps: ['angular']
@@ -51,7 +54,7 @@ require.config({
             deps: ['angular']
         },
         restangular: {
-            deps: ['angular', 'lodash']
+            deps: ['angular', 'lodash', 'globalEventEmitter']
         },
         'jquery.ui.core': {
             deps: ['jquery']
@@ -60,9 +63,6 @@ require.config({
             deps: ['jquery']
         },
         angularAnimate: {
-            deps: ['angular']
-        },
-        'ui.layout': {
             deps: ['angular']
         },
         template: {

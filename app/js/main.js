@@ -5,6 +5,7 @@ define([
     'modules/common/common_module',
     'modules/app/app_module',
     'modules/auth/auth_module',
+    'modules/mainpage/mainpage_module',
     'modules/system/system_module',
     'template'
 ], function(angular) {
@@ -26,6 +27,7 @@ define([
         'appMonitor.common',
         'appMonitor.app',
         'appMonitor.auth',
+        'appMonitor.mainpage',
         'appMonitor.system',
         'template'
     ])

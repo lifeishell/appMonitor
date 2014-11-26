@@ -1,8 +1,10 @@
 // smart z-index management based on: http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
 // items to the left have lower z-index, items to the right have higher z-index
 $z-index-list:
+  'ui-splitbar',
   'myx-header',
   'myx-header-submenu',
+  'myx-overlay',
   'myx-modal',
   'common-spin-container';
 

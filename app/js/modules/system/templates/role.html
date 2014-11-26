@@ -1,2 +1,39 @@
-<div ng-controller="SystemRoleCtrl">
+<div ng-controller="SystemRoleCtrl" ui-layout="{flow: 'column', dividerSize: 5}">
+    <div ui-layout-container min-size="10px" size="27%">
+        <div class="search-area">
+            <h4><i class="icon-search"></i>查询</h4>
+            <div class="form-group">
+                <label for="search-name">角色</label>
+                <input class="form-control" id="search-name" name="search-name" ng-model="search.name" />
+            </div>
+        </div>
+    </div>
+    <div ui-layout-container min-size="67%" size="73%">
+        <div class="action-bar">
+            <span myx-fast-click ng-click="addRole()"><i class="icon-plus"></i>增加</span>
+            <span myx-fast-click ng-click="deleteRole()"><i class="icon-minus"></i>删除</span>
+        </div>
+        <ul class="group-list">
+            <li class="group-list__header">
+                <span class="col-xs-1">
+                    <label class="label_checkbox">
+                        <input ng-model="selectAll" type="checkbox" ng-click="selectAll()"/>
+                        全选
+                    </label>
+                </span>
+                <span class="col-xs-2">编号</span>
+                <span class="col-xs-1">角色</span>
+                <span class="col-xs-5">描述</span>
+            </li>
+            <li class="group-list__item" ng-repeat="role in roleList | filter:search "
+                ng-class="{'is-selected': role.selected}" ng-click="role.selected = !role.selected">
+                <span class="col-xs-1">
+                    <input ng-model="role.selected" type="checkbox" class="label-checkbox" />
+                </span>
+                <span class="col-xs-2" myx-fast-click ng-click="$event.preventDefault();editRole(role)">{{role.pk}}</span>
+                <span class="col-xs-1">{{role.name}}</span>
+                <span class="col-xs-5">{{role.desc}}</span>
+            </li>
+        </ul>
+    </div>
 </div>

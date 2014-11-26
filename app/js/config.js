@@ -18,7 +18,7 @@ define([
                         name: '首页',
                         id: 'main',
                         default: true,
-                        templateUrl: 'js/modules/main/templates/main.html'
+                        templateUrl: 'js/modules/mainpage/templates/mainPage.html'
                     },
                     {
                         name: '管理',
@@ -89,11 +89,13 @@ define([
                     {
                         name: '系统角色',
                         id: 'system-role',
+                        cssClass: 'system',
                         templateUrl: 'js/modules/system/templates/role.html'
                     },
                     {
                         name: '系统设置',
                         id: 'system-configure',
+                        cssClass: 'system',
                         templateUrl: 'js/modules/system/configure.html'
                     }
                 ]
