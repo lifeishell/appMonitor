@@ -1,6 +1,5 @@
 define([
     'angular',
-    'ui.layout',
     'config',
     'modules/common/common_module',
     'modules/app/app_module',
@@ -19,7 +18,6 @@ define([
     // Declare app level module which depends on filters, and services
     angular.module('appMonitor', [
         'ngRoute',
-        'ui.layout',
         'restangular',
         //'ngAnimate',
         'ngSanitize',

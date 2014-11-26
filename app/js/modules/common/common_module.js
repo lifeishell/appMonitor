@@ -2,6 +2,7 @@ define([
     'angular',
 
     './controllers/DialogBoxCtrl',
+    './controllers/uiLayoutCtrl',
 
     './directives/pattern',
     './directives/fastclick',
@@ -10,12 +11,18 @@ define([
     './directives/loadingIcon',
     './directives/scrollTab',
     './directives/resizable',
+    './directives/uiLayout',
+    './directives/uiLayoutContainer',
+    './directives/uiSplitbar',
 
     './services/DialogService',
-    './services/OverlayService'
+    './services/OverlayService',
+    './services/LayoutContainer'
 ], function (
     angular,
     DialogBoxCtrl,
+    uiLayoutCtrl,
+
     pattern,
     fastclick,
     myxParseInt,
@@ -23,13 +30,25 @@ define([
     loadingIcon,
     scrollTab,
     resizable,
+    uiLayout,
+    uiLayoutContainer,
+    uiSplitbar,
+
     DialogService,
-    OverlayService
+    OverlayService,
+    LayoutContainer
 ) {
     var module = angular.module('appMonitor.common', []);
 
+    module.factory({
+        DialogService: DialogService,
+        OverlayService: OverlayService,
+        LayoutContainer: LayoutContainer
+    });
+
     module.controller({
-        DialogBoxCtrl: DialogBoxCtrl
+        DialogBoxCtrl: DialogBoxCtrl,
+        uiLayoutCtrl: uiLayoutCtrl
     });
 
     module.directive({
@@ -39,11 +58,9 @@ define([
         myxCloseWhenOutsideClick: myxCloseWhenOutsideClick,
         resizable: resizable,
         scrollTab: scrollTab,
-        loadingIcon: loadingIcon
-    });
-
-    module.factory({
-        DialogService: DialogService,
-        OverlayService: OverlayService
+        loadingIcon: loadingIcon,
+        uiLayout: uiLayout,
+        uiLayoutContainer: uiLayoutContainer,
+        uiSplitbar: uiSplitbar
     });
 });

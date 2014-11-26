@@ -30,7 +30,8 @@ define(function(){
             OverlayService.show();
         };
 
-        $scope.editUser = function(user){
+        $scope.modifyUser = function($event, user){
+            $event.stopPropagation();
             $scope.editUser = user;
             storedUser = angular.copy(user);
             OverlayService.setContent('修改用户', 'js/modules/system/templates/userForm.html');

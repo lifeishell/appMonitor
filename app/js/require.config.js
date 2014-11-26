@@ -7,7 +7,6 @@ require.config({
         moment: '../bower_components/moment/moment',
         fastclick: '../bower_components/fastclick/lib/fastclick',
         angular: '../bower_components/angular/angular',
-        'ui.layout': '../bower_components/angular-ui-layout/ui-layout',
         angularRoute: '../bower_components/angular-route/angular-route',
         angularMocks: '../bower_components/angular-mocks/angular-mocks',
         angularCookies: '../bower_components/angular-cookies/angular-cookies',
@@ -33,9 +32,6 @@ require.config({
         },
         angular: {
             exports: 'angular'
-        },
-        'ui.layout': {
-            deps: ['angular']
         },
         angularRoute: {
             deps: ['angular']
