@@ -1,27 +1,34 @@
 <form name="outerScope.roleForm" novalidate="novalidate">
     <div class="flyint-term__form">
-        <div class="panel-size-2x text-center">
+        <div class="panel-size-1x text-center">
             <div class="form-group">
-                <label for="search-username">用户名</label>
-                <input class="form-control" ng-model="outerScope.editRole.username" name="search-username" id="search-username" required/>
-            </div>
-            <div class="form-group">
-                <label for="search-password">密码</label>
-                <input class="form-control" type="password" ng-model="outerScope.editRole.password" name="search-password" id="search-password" required/>
-            </div>
-            <div class="form-group">
-                <label for="search-email">邮箱</label>
-                <input class="form-control" type="email" ng-model="outerScope.editRole.email" name="search-email" id="search-email" required/>
+                <label for="search-name">角色名</label>
+                <input class="form-control" ng-model="outerScope.editRole.name" name="search-name" id="search-name" required/>
             </div>
             <div class="form-group">
                 <label for="search-desc">描述</label>
                 <input class="form-control" ng-model="outerScope.editRole.desc" name="search-desc" id="search-desc" required/>
             </div>
             <div class="form-group">
-                <label for="search-role_pk">角色</label>
-                <select class="form-control" ng-model="outerScope.editRole.role_pk" name="search-role_pk" id="search-role_pk"
-                        ng-options=" role.pk as role.name for role in outerScope.roleChoice" required>
-                </select>
+                <label>权限</label>
+                <div class="myx-select" close-when-outside-click show-property="dropdown">
+                    <div myx-fast-click ng-init="dropdown=false" ng-click="dropdown=!dropdown" class="form-control"><i class="icon-menu2 icon-large text-primary"></i>&nbsp;选择角色权限</div>
+                    <ul ng-hide="!dropdown" class="dropdown">
+                        <li ng-class="{'feature-group': outerScope.isGroup(feature)}" ng-click="outerScope.updateFeatures(feature)"
+                                ng-repeat="feature in outerScope.flaternedFeatureList" myx-fast-click>{{ feature.group }}{{ feature.name }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel-size-1x text-center">
+            <div class="form-group">
+            <ul class="form-feature">
+                <li ng-repeat="feature in outerScope.editRole.features">
+                    <input type="text" class="form-control" value="{{ feature.desc }}" disabled>
+                    <button class="form-control form-brand-btn-remove" myx-fast-click ng-click="outerScope.removeFeature(feature)"><i class="icon-close icon-smaller"></i></button>
+                </li>
+            </ul>
             </div>
         </div>
     </div>

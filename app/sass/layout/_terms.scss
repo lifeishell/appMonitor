@@ -68,6 +68,14 @@ This element acts as full-screen overlay, which is suitable for terms & conditio
 		}
 	  }
 
+	  .form-feature {
+		max-height: 300px;
+		min-height: 150px;
+		overflow-y: scroll;
+		input { width: 70%; }
+		button { width: 19%; }
+	  }
+
 	  .flying-term__form {
 		display: block;
 		padding-bottom: 20px;
@@ -115,6 +123,46 @@ This element acts as full-screen overlay, which is suitable for terms & conditio
 			width: 40%;
 		}
 	}
+}
+
+.myx-select {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  z-index: z(myx-select);
+
+  .dropdown {
+	overflow-y: scroll;
+	width: 100%;
+	max-height: 250px;
+	padding: 0px !important;
+	border: 1px solid #b8b8b8;
+	position: absolute;
+	top: 36px;
+	z-index: z(myx-select-dropdown);
+	background-color: white;
+  }
+
+  .dropdown li {
+	display: block;
+	width: 200px;
+	height: 30px;
+	padding: 1px 12px !important;
+
+	&.feature-group {
+	  text-align: left;
+	  font-weight: bold;
+	  border-top: 1px solid #b8b8b8;
+	  border-bottom: 1px solid #b8b8b8;
+	  background-color: #f8f8f8;
+	}
+
+	&:hover {
+	  padding: 0 12px;
+	  background-color: $background-secondary;
+	  border: 1px solid $color-primary;
+	}
+  }
 }
 
 .link-terms {

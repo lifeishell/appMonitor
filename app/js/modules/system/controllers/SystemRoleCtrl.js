@@ -1,7 +1,7 @@
 define(function(){
-    return ['$scope', 'Restangular', 'DialogService', SystemRoleCtrl];
+    return ['$scope', 'Restangular', 'DialogService', 'OverlayService', 'SystemRoleService', SystemRoleCtrl];
 
-    function SystemRoleCtrl($scope, Restangular, DialogService){
+    function SystemRoleCtrl($scope, Restangular, DialogService, OverlayService, SystemRoleService){
         var loading = true;
         var storedRole = null;
 
@@ -9,9 +9,46 @@ define(function(){
             return {
                 pk: null,
                 name: null,
-                desc: null
+                desc: null,
+                features: []
             };
         }
+
+        function flaternFeatureList(){
+            var featureList = [];
+            _.each($scope.featureList, function(group){
+                featureList.push({group: group.group});
+                featureList = featureList.concat(group.features);
+            });
+            return featureList;
+        }
+
+        $scope.isGroup = function(feature){
+            return feature.group;
+        };
+
+        SystemRoleService.getFeatures().then(function success(data){
+            $scope.featureList = data;
+            $scope.flaternedFeatureList = flaternFeatureList();
+        },
+        function fairlure(errorResponse){
+        });
+
+        $scope.updateFeatures = function(feature){
+            $scope.selectedFeature = feature;
+            if($scope.isGroup(feature)){
+                var group = _.filter($scope.featureList, {group: feature.group})[0];
+                $scope.editRole.features = $scope.editRole.features.concat(group.features);
+            } else {
+                if(!_.any($scope.editRole.features, {pk: feature.pk})){
+                    $scope.editRole.features = $scope.editRole.features.concat(_.filter($scope.flaternedFeatureList, {pk: parseFloat(feature.pk)}));
+                }
+            }
+        };
+
+        $scope.removeFeature = function(feature){
+            _.remove($scope.editRole.features, {pk: feature.pk});
+        };
 
         $scope.deleteRole = function(){
             DialogService.showConfirm(
@@ -46,12 +83,12 @@ define(function(){
 
         $scope.modifyRole = function($event, role){
             $event.stopPropagation();
-            $scope.editRole = role;
-            storedRole= angular.copy(role);
+            $scope.editRole = angular.copy(role);
+            storedRole = angular.copy(role);
             OverlayService.setContent('修改角色', 'js/modules/system/templates/roleForm.html');
             OverlayService.setOuterScope($scope);
 
-            OverlayService.show($scope.cleanStoredRole());
+            OverlayService.show($scope.cleanStoredRole);
         };
 
         $scope.cleanStoredRole = function(){
@@ -73,7 +110,7 @@ define(function(){
                 return false;
             }
             loading = true;
-            Restangular.one('system/role', 'merge').post({}).then(function success(data){
+            Restangular.one('system/role', 'merge').post('', $scope.editRole).then(function success(data){
 
             },
             function failure(errorResponse){
@@ -103,36 +140,47 @@ define(function(){
             $scope.roleList = [{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: [{pk:1,name:'feature1',desc: 'aaa1'}]
             },{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: []
             },{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: []
             },{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: [{pk:1,name:'feature1',desc: 'aaa1'},{pk:4,name:'feature4',desc: 'aaa7'},{pk:6,name:'feature6',desc: 'aaa8'}]
             },{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: []
             },{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: [{pk:4,name:'feature4',desc: 'aaa7'},{pk:6,name:'feature6',desc: 'aaa8'}]
             },{
                 pk: 1,
                 name: 'aaa',
-                desc: 'desc'
+                desc: 'desc',
+                features: []
             },
             ];
         }
 
         initRolelist();
+
+        $scope.selectedRoles =  function() {
+            return _.any($scope.roleList, {selected: true});
+        };
 
         /*
          * handle page order
