@@ -33,8 +33,8 @@ define(function(){
         opts.sizes = opts.sizes || [];
         opts.maxSizes = opts.maxSizes || [];
         opts.minSizes = opts.minSizes || [];
-        opts.dividerSize = opts.dividerSize || 10;
-        //default divider size set to 10
+        opts.dividerSize = opts.dividerSize || 5;
+        //default divider size set to 5
         opts.collapsed = opts.collapsed || [];
         ctrl.opts = opts;
         $scope.updateDisplay = function () {

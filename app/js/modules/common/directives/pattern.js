@@ -14,9 +14,9 @@ define(function() {
     //
     // Predefined patterns: datetime, phone number, phone number or empty field, post code (German only)
 
-    return [pattern];
+    return [myxPattern];
 
-    function pattern() {
+    function myxPattern() {
         return {
             restrict: 'A',
             require: '?ngModel',
@@ -39,7 +39,7 @@ define(function() {
                         break;
                     case 'phone-number-empty':
                         isValid = function(value) {
-                            var isPhoneNumber = /^([\+][0-9]{1,3}[ \.\-])?([\(]{1}[0-9]{1,6}[\)])?([0-9 \.\-\/]{3,20})((x|ext|extension)[ ]?[0-9]{1,4})?$/.test(value);
+                            var isPhoneNumber = /^(\+?(86)?)(\s?-?)(((13|15|18)[0-9])(\d{4})(\d{4}))$/.test(value);
                             var isEmpty = /^$/.test(value);
                             return (isPhoneNumber || isEmpty);
                         };
@@ -69,6 +69,13 @@ define(function() {
                             var isEmpty = /^$/.test(value);
                             var isURL = /^(https?:\/\/)([\da-z\.-]+)\.([a-z\.]{2,6})([/\w\.-]*)*\/?$/.test(value);
                             return isEmpty || isURL;
+                        };
+                        break;
+                    case 'ip-address':
+                        isValid = function(value){
+                            var isEmpty = /^$/.test(value);
+                            var isIpAddress = /^(([01]?\d?\d|2[0-4]\d|25[0-5])\.){3}([01]?\d?\d|2[0-4]\d|25[0-5])\/(\d{1}|[0-2]{1}\d{1}|3[0-2])$/.test(value);
+                            return isEmpty || isIpAddress;
                         };
                         break;
                     case 'email-address':

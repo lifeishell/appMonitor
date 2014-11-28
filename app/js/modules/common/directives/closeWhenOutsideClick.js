@@ -1,17 +1,17 @@
 define(function(){
     'use strict';
 
-    // @name myx-close-when-outside-click
+    // @name close-when-outside-click
     //
     // @description
     // Close the element when click outside the element
     //
     // @example
-    // <div myx-close-when-outside-click show-property="openResults">
+    // <div close-when-outside-click show-property="openResults">
     //   <select chosen ng-model="selectedCompany" ng-show="openResulte" ng-options="company as company for company in companies"></select>
     // </div>
 
-    function myxCloseWhenOutsideClick($document) {
+    function closeWhenOutsideClick($document) {
         return {
             restrict: 'A',
             scope: {
@@ -29,5 +29,5 @@ define(function(){
         };
     }
 
-    return ['$document', myxCloseWhenOutsideClick];
+    return ['$document', closeWhenOutsideClick];
 });

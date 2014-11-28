@@ -23,10 +23,10 @@ define([
     DialogBoxCtrl,
     uiLayoutCtrl,
 
-    pattern,
+    myxPattern,
     fastclick,
     myxParseInt,
-    myxCloseWhenOutsideClick,
+    closeWhenOutsideClick,
     loadingIcon,
     scrollTab,
     resizable,
@@ -52,10 +52,10 @@ define([
     });
 
     module.directive({
-        myxPattern: pattern,
+        myxPattern: myxPattern,
         myxFastClick: fastclick,
         myxParseInt: myxParseInt,
-        myxCloseWhenOutsideClick: myxCloseWhenOutsideClick,
+        closeWhenOutsideClick: closeWhenOutsideClick,
         resizable: resizable,
         scrollTab: scrollTab,
         loadingIcon: loadingIcon,

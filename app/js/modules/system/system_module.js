@@ -3,7 +3,7 @@ define([
 
     './controllers/SystemUserCtrl',
     './controllers/SystemRoleCtrl',
-    './controllers/SystemConfigurationCtrl',
+    './controllers/SystemConfigureCtrl',
 
     './services/SystemRoleService'
 ], function(
@@ -11,7 +11,7 @@ define([
 
     SystemUserCtrl,
     SystemRoleCtrl,
-    SystemConfigurationCtrl,
+    SystemConfigureCtrl,
 
     SystemRoleService
 ){
@@ -20,7 +20,7 @@ define([
     module.controller({
         SystemUserCtrl: SystemUserCtrl,
         SystemRoleCtrl: SystemRoleCtrl,
-        SystemConfigurationCtrl: SystemConfigurationCtrl
+        SystemConfigureCtrl: SystemConfigureCtrl
     });
 
     module.factory({

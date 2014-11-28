@@ -1,0 +1,136 @@
+<div ng-controller="SystemConfigureCtrl" class="system-configure">
+    <form name="configForm" novalidate="novalidate">
+        <div class="col-xs-6">
+            <h4><i class="icon-envelope icon-large"></i>&nbsp;邮件设置</h4>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-smtp_host">Host地址</label>
+                    <input class="form-control" ng-model="editConfig.smtp_host" placeholder="0.0.0.0" name="config-smtp_host" id="config-smtp_host" myx-pattern="ip-address" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-smtp_port">端口</label>
+                    <input type="number" min="0" max="65535" class="form-control" ng-model="editConfig.smtp_port" placeholder="25"  name="config-smtp_port" id="config-smtp_port" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-smtp_username">用户名</label>
+                    <input class="form-control" ng-model="editConfig.smtp_username" placeholder="admin"  name="config-smtp_username" id="config-smtp_username" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-smtp_password">密码</label>
+                    <input class="form-control" type="password" ng-model="editConfig.smtp_password" placeholder="******"  name="config-smtp_password" id="config-smtp_password" required/>
+                </div>
+            </div>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-smtp_from_email">发送地址</label>
+                    <input class="form-control" ng-model="editConfig.smtp_from_email" placeholder="example@example.com" myx-pattern="email-address" name="config-smtp_from_email" id="config-smtp_from_email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-smtp_use_tls">tls协议</label>
+                        <input class="form-control" ng-model="editConfig.smtp_use_tls" type="checkbox" name="config-smtp_use_tls" id="config-smtp_use_tls"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <h4><i class="icon-address-book icon-large"></i>&nbsp;短信设置</h4>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-sms_ip">Host Ip</label>
+                    <input class="form-control" ng-model="editConfig.sms_ip" placeholder="0.0.0.0"  name="config-sms_ip" id="config-sms_ip" myx-pattern="ip-address" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-sms_port">端口</label>
+                    <input type="number" min="0" max="65535" class="form-control" ng-model="editConfig.sms_port"  placeholder="443" name="config-sms_port" id="config-sms_port" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-sms_user_name">用户名</label>
+                    <input class="form-control" ng-model="editConfig.sms_user_name" placeholder="admin"  name="config-sms_user_name" id="config-sms_user_name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-sms_password">密码</label>
+                    <input class="form-control" type="password" ng-model="editConfig.sms_password" placeholder="******"  name="config-sms_password" id="config-sms_password" required/>
+                </div>
+            </div>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-sms_from_number">发送地址</label>
+                    <input class="form-control" ng-model="editConfig.sms_from_number" placeholder="10086" name="config-sms_from_number" id="config-sms_from_number" required/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6 clear-both">
+            <h4><i class="icon-key2 icon-large"></i>&nbsp;密码安全设置</h4>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-password_validation_min_lower">小写字母</label>
+                    <input type="number" min="0" class="form-control" ng-model="editConfig.password_validation_min_lower"
+                           placeholder="0" name="config-password_validation_min_lower" id="config-password_validation_min_lower" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-password_validation_min_upper">大写字母</label>
+                    <input type="number" min="0"  class="form-control" ng-model="editConfig.password_validation_min_upper"
+                           placeholder="0" name="config-password_validation_min_upper" id="config-password_validation_min_upper" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-password_validation_min_special">特殊字符</label>
+                    <input type="number" min="0"  class="form-control" ng-model="editConfig.password_validation_min_special"
+                           placeholder="0" name="config-password_validation_min_special" id="config-password_validation_min_special" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-password_validation_min_number">数字</label>
+                    <input type="number" ng-min="0"  class="form-control" ng-model="editConfig.password_validation_min_number"
+                           placeholder="0" name="config-password_validation_min_number" id="config-password_validation_min_number" required/>
+                </div>
+            </div>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-password_validation_min_length">长度</label>
+                    <input type="number" min="0"  class="form-control" ng-model="editConfig.password_validation_min_length"
+                           placeholder="0" name="config-password_validation_min_length" id="config-password_validation_min_length" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-login_fail_times">失败次数</label>
+                    <input type="number" min="0"  class="form-control" ng-model="editConfig.login_fail_times"
+                           placeholder="0" name="config-login_fail_times" id="config-login_fail_times" required/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <h4><i class="icon-wrench icon-large"></i>&nbsp;其他设置</h4>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-log_max_days">日志时间</label>
+                    <input placeholder="0" type="number" class="form-control" ng-model="editConfig.log_max_days" name="config-log_max_days" id="config-log_max_days" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-monitor_max_days">监控时间</label>
+                    <input placeholder="0" type="number" class="form-control" ng-model="editConfig.monitor_max_days" name="config-monitor_max_days" id="config-monitor_max_days" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-alarm_max_days">告警时间</label>
+                    <input placeholder="0" type="number" class="form-control" ng-model="editConfig.alarm_max_days" name="config-alarm_max_days" id="config-alarm_max_days" required/>
+                </div>
+                <div class="form-group">
+                    <label for="config-notify_time_from">通知开始时间</label>
+                    <input class="form-control" ng-model="editConfig.notify_time_from" type="time" name="config-notify_time_from" id="config-notify_time_from" required/>
+                </div>
+            </div>
+            <div class="panel-size-1x text-center">
+                <div class="form-group">
+                    <label for="config-notify_time_to">通知结束时间</label>
+                    <input class="form-control" ng-model="editConfig.notify_time_to" type="time" name="config-notify_time_to" id="config-notify_time_to" required/>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: fixed; bottom: 10px; right: 10px;">
+            <div class="pull-right">
+                <button class="btn-primary btn" ng-click="saveConfig()">保存</button>
+                <button class="btn-default btn" ng-click="resetForm()">还原</button>
+            </div>
+        </div>
+    </form>
+</div>

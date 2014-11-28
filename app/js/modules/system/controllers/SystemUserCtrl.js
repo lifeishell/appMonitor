@@ -84,6 +84,7 @@ define(function(){
             })
             .finally(function(){
                 loading=false;
+                OverlayService.hide();
             });
         };
 
