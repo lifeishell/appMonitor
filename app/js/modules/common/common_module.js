@@ -23,7 +23,7 @@ define([
     DialogBoxCtrl,
     uiLayoutCtrl,
 
-    pattern,
+    myxPattern,
     fastclick,
     myxParseInt,
     closeWhenOutsideClick,
@@ -52,7 +52,7 @@ define([
     });
 
     module.directive({
-        myxPattern: pattern,
+        myxPattern: myxPattern,
         myxFastClick: fastclick,
         myxParseInt: myxParseInt,
         closeWhenOutsideClick: closeWhenOutsideClick,

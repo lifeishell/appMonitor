@@ -38,7 +38,11 @@ define(function(){
             $scope.selectedFeature = feature;
             if($scope.isGroup(feature)){
                 var group = _.filter($scope.featureList, {group: feature.group})[0];
-                $scope.editRole.features = $scope.editRole.features.concat(group.features);
+                _.each(group.features, function(groupFeatures){
+                    if(!_.any($scope.editRole.features, {pk: groupFeatures.pk})){
+                        $scope.editRole.features = $scope.editRole.features.concat(_.filter($scope.flaternedFeatureList, {pk: parseFloat(groupFeatures.pk)}));
+                    }
+                });
             } else {
                 if(!_.any($scope.editRole.features, {pk: feature.pk})){
                     $scope.editRole.features = $scope.editRole.features.concat(_.filter($scope.flaternedFeatureList, {pk: parseFloat(feature.pk)}));
@@ -121,6 +125,7 @@ define(function(){
             })
             .finally(function(){
                loading = false;
+                OverlayService.hide();
             });
         };
 

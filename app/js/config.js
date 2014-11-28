@@ -96,7 +96,7 @@ define([
                         name: '系统设置',
                         id: 'system-configure',
                         cssClass: 'system',
-                        templateUrl: 'js/modules/system/configure.html'
+                        templateUrl: 'js/modules/system/templates/configure.html'
                     }
                 ]
             }
