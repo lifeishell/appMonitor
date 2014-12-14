@@ -34,7 +34,7 @@ define(function(){
                             $scope.currentPage = page;
                         }
                         if(isCountByServer){
-                            $scope.queryFn.apply({page: $scope.currentPage, count: $scope.count});
+                            $scope.queryFn.apply({page: $scope.currentPage, count: $scope.countPerPage});
                         } else {
                             $scope.returnQuery = $scope.beforeQuery.slice(($scope.currentPage - 1) * $scope.countPerPage,
                                 $scope.currentPage * $scope.countPerPage - 1);
