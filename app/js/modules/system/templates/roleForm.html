@@ -12,7 +12,7 @@
             <div class="form-group">
                 <label>权限</label>
                 <div class="myx-select" close-when-outside-click show-property="dropdown">
-                    <div myx-fast-click ng-init="dropdown=false" ng-click="dropdown=!dropdown" class="form-control"><i class="icon-menu2 icon-large text-primary"></i>&nbsp;选择角色权限</div>
+                    <div myx-fast-click ng-init="dropdown=false" ng-click="dropdown=!dropdown" class="form-control selected-value"><i class="icon-menu2 icon-large text-primary"></i>&nbsp;选择角色权限</div>
                     <ul ng-hide="!dropdown" class="dropdown">
                         <li ng-class="{'feature-group': outerScope.isGroup(feature)}" ng-click="outerScope.updateFeatures(feature)"
                                 ng-repeat="feature in outerScope.flaternedFeatureList" myx-fast-click>{{ feature.group }}{{ feature.name }}

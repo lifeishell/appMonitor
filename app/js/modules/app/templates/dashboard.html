@@ -1,5 +1,6 @@
 <div class="mainboard">
 	<div loading-icon ng-show="showLoading()"></div>
 	<div ng-include="activeSection.item.templateUrl" ng-class="activeSection.item.cssClass" ng-show="!showLoading()" /></div>
-	<div ng-include="js/modules/warning/templates/panel.html" class="warning-panel"></div>
 </div>
+
+<div ng-include="warningPanel" class="warning-panel"></div>

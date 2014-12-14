@@ -14,6 +14,7 @@ define([
     './directives/uiLayout',
     './directives/uiLayoutContainer',
     './directives/uiSplitbar',
+    './directives/pagination',
 
     './services/DialogService',
     './services/OverlayService',
@@ -33,6 +34,7 @@ define([
     uiLayout,
     uiLayoutContainer,
     uiSplitbar,
+    pagination,
 
     DialogService,
     OverlayService,
@@ -61,6 +63,7 @@ define([
         loadingIcon: loadingIcon,
         uiLayout: uiLayout,
         uiLayoutContainer: uiLayoutContainer,
-        uiSplitbar: uiSplitbar
+        uiSplitbar: uiSplitbar,
+        pagination: pagination
     });
 });

@@ -3,7 +3,7 @@ define(function(){
 
     function ScrollTabCtrl($scope, $location, SectionsService){
 
-        var sectionsPerPage = Math.ceil($(window).width()/5);
+        var sectionsPerPage = Math.floor(($(window).width()-$('.scrollable').offset().left)/150);
         $scope.activeSections = SectionsService.activeSections;
         $scope.activeSection = SectionsService.activeSection;
 
@@ -16,12 +16,15 @@ define(function(){
         };
 
         $scope.$watch(function(){
-            return SectionsService.activeSections.length;
+            return SectionsService.activeSection.item;
         },
         function(newValue, oldValue){
             $scope.setRealWidth();
-            if(newValue > oldValue){
+            var sectionIndex = _.indexOf(SectionsService.activeSections, newValue);
+            if( sectionIndex >= sectionsPerPage){
                 $scope.scrollSectionRight();
+            } else {
+                $scope.scrollSectionLeft();
             }
         });
 
@@ -44,7 +47,7 @@ define(function(){
 
         $scope.setRealWidth = function() {
             var realWidth = 150 * SectionsService.activeSections.length;
-            sectionsPerPage = Math.ceil($(window).width()/5);
+            sectionsPerPage = Math.floor(($(window).width()-$('.scrollable').offset().left)/150);
             if ($(window).width() > realWidth){
                 $('.active-section').css('width', $(window).width() - $('.scrollable').offset().left + 'px');
                 $('.scrollable').css('padding-right', '0');

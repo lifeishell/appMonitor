@@ -1,11 +1,13 @@
 define(function() {
-    return ['$scope', '$routeParams', 'SectionsService', 'DialogService', DashboardCtrl];
+    return ['$scope', '$rootScope', '$routeParams', 'SectionsService', 'DialogService', DashboardCtrl];
 
-    function DashboardCtrl($scope, $routeParams, SectionsService, DialogService) {
+    function DashboardCtrl($scope, $rootScope, $routeParams, SectionsService, DialogService) {
 
         var loading = true;
 
         $scope.topScope = $scope;
+
+        $scope.warningPanel = 'js/modules/warning/templates/warningPanel.html';
 
         $scope.topScope.isLoading = function(){
             return false;
@@ -14,6 +16,8 @@ define(function() {
         function initDashboard(){
             loading = false;
         }
+
+        $rootScope.showGrlobleLoading = false;
 
         var routeSection = _.filter(SectionsService.flatternSection, {id: $routeParams.sectionId});
 
@@ -25,7 +29,7 @@ define(function() {
         initDashboard();
 
         $scope.showLoading = function(){
-            return loading || $scope.topScope.isLoading();
+            return loading || $scope.topScope.isLoading() || $rootScope.showGlobleLoading;
         };
 
         $scope.showSaveSuccessDialog = function(title, description, callback) {

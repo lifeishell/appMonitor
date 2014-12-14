@@ -131,6 +131,10 @@ This element acts as full-screen overlay, which is suitable for terms & conditio
   width: 200px;
   z-index: z(myx-select);
 
+  .selected-value {
+	@extend .text-left;
+  }
+
   .dropdown {
 	overflow-y: scroll;
 	width: 100%;

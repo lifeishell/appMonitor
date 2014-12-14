@@ -1,7 +1,10 @@
-define(function(){
-    return ['$scope', 'Restangular', 'DialogService', 'OverlayService', 'SystemRoleService', SystemRoleCtrl];
+define([
+    '../fixture'
+],
+function(fixture){
+    return ['$scope', '$filter', 'Restangular', 'DialogService', 'OverlayService', 'SystemRoleService', SystemRoleCtrl];
 
-    function SystemRoleCtrl($scope, Restangular, DialogService, OverlayService, SystemRoleService){
+    function SystemRoleCtrl($scope, $filter, Restangular, DialogService, OverlayService, SystemRoleService){
         var loading = true;
         var storedRole = null;
 
@@ -13,6 +16,8 @@ define(function(){
                 features: []
             };
         }
+
+        $scope.paginatorList = [];
 
         function flaternFeatureList(){
             var featureList = [];
@@ -61,7 +66,7 @@ define(function(){
                 function() {
                     loading = true;
                     Restangular.one('system/role', 'delete').post({}).then(function success(data){
-                            //TODO
+                            initRolelist();
                         },
                         function failure(errorResponse){
                             $scope.showSaveFailedDialog(
@@ -115,7 +120,7 @@ define(function(){
             }
             loading = true;
             Restangular.one('system/role', 'merge').post('', $scope.editRole).then(function success(data){
-
+                initRolelist();
             },
             function failure(errorResponse){
                 $scope.showSaveFailedDialog(
@@ -124,61 +129,25 @@ define(function(){
                 );
             })
             .finally(function(){
-               loading = false;
+                loading = false;
                 OverlayService.hide();
             });
         };
 
         function initRolelist(){
-            Restangular.one('system/role', 'list').post().then(function success(data){
-
-                },
-                function failure(errorResponse){
-                    $scope.showSaveFailedDialog(
-                        '角色加载失败',
-                        '角色列表读取失败'
-                    );
-                })
-                .finally(function(){
-                    loading = false;
-                });
-            $scope.roleList = [{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: [{pk:1,name:'feature1',desc: 'aaa1'}]
-            },{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: []
-            },{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: []
-            },{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: [{pk:1,name:'feature1',desc: 'aaa1'},{pk:4,name:'feature4',desc: 'aaa7'},{pk:6,name:'feature6',desc: 'aaa8'}]
-            },{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: []
-            },{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: [{pk:4,name:'feature4',desc: 'aaa7'},{pk:6,name:'feature6',desc: 'aaa8'}]
-            },{
-                pk: 1,
-                name: 'aaa',
-                desc: 'desc',
-                features: []
+            SystemRoleService.getRoles().then(function success(data){
+                $scope.roleList = data;
+                $scope.doSort();
             },
-            ];
+            function failure(errorResponse){
+                $scope.showSaveFailedDialog(
+                    '角色加载失败',
+                    '角色列表读取失败'
+                );
+            })
+            .finally(function(){
+                loading = false;
+            });
         }
 
         initRolelist();
@@ -204,8 +173,12 @@ define(function(){
                 $scope.order.reverse = false;
             }
             $scope.order.field = field;
+            $scope.doSort();
+        };
 
-            pagenation();
+        $scope.doSort = function(){
+            var searchedQuery = $filter('filter')($scope.roleList, $scope.search);
+            $scope.orderdAndStortedList = $filter('orderBy')(searchedQuery, $scope.order.field, $scope.order.reverse);
         };
 
         $scope.toggleSelectAll = function(){
