@@ -1,7 +1,10 @@
-define(function(){
-    return ['$scope', 'Restangular', 'DialogService', 'OverlayService', 'SystemRoleService', SystemUserCtrl];
+define([
+    '../fixture'
+    ],
+function(fixture){
+    return ['$scope', '$filter', 'Restangular', 'DialogService', 'OverlayService', 'SystemRoleService', SystemUserCtrl];
 
-    function SystemUserCtrl($scope, Restangular, DialogService, OverlayService, SystemRoleService){
+    function SystemUserCtrl($scope, $filter, Restangular, DialogService, OverlayService, SystemRoleService){
 
         var loading = true;
         var storedUser = null;
@@ -16,6 +19,7 @@ define(function(){
                 desc: null
             };
         }
+        $scope.paginatorList = [];
 
         SystemRoleService.getRoles().then(function(data){
            $scope.roleChoice = data;
@@ -53,7 +57,7 @@ define(function(){
                 function() {
                     loading = true;
                     Restangular.one('system/user', 'delete').post({}).then(function success(data){
-                        //TODO
+                        initUserlist();
                     },
                     function failure(errorResponse){
                         $scope.showSaveFailedDialog(
@@ -74,7 +78,7 @@ define(function(){
             }
             loading = true;
             Restangular.one('system/user', 'merge').post({}).then(function success(data){
-                //TODO
+                initUserlist();
             },
             function failure(errorReponse){
                 $scope.showSaveFailedDialog(
@@ -99,95 +103,20 @@ define(function(){
         function initUserlist(){
 
             Restangular.one('system/user', 'list').post().then(function success(data){
-                //TODO
+                $scope.userList = data;
+                $scope.doSort();
             },
             function failure(errorResponse){
                 $scope.showSaveFailedDialog(
                     '用户加载失败',
                     '用户列表读取失败'
                 );
+                $scope.userList = fixture.usersList;
+                $scope.doSort();
             })
             .finally(function(){
                 loading = false;
             });
-            $scope.userList = [{
-                pk: 1,
-                username: 'aaa',
-                password: 'bbb',
-                email: 'aaa@aaa.com',
-                role_name: 'roleA',
-                role_pk: 1,
-                desc: 'desc',
-                last_login: new Date(),
-                super_user: true
-            },
-            {
-                pk: 1,
-                username: 'aaa',
-                password: 'bbb',
-                email: 'aaa@aaa.com',
-                role_name: 'roleA',
-                role_pk: 2,
-                desc: 'desc',
-                last_login: new Date(),
-                super_user: true
-            },
-                {
-                    pk: 1,
-                    username: 'bbb',
-                    password: 'bbb',
-                    email: 'aaa@aaa.com',
-                    role_name: 'roleA',
-                    role_pk: 'c',
-                    desc: 'desc',
-                    last_login: new Date(),
-                    super_user: true
-                },
-                {
-                    pk: 1,
-                    username: 'ccc',
-                    password: 'bbb',
-                    email: 'aaa@aaa.com',
-                    role_name: 'roleA',
-                    role_pk: 1,
-                    desc: 'desc',
-                    last_login: new Date(),
-                    super_user: true
-                },
-                {
-                    pk: 1,
-                    username: 'ddd',
-                    password: 'bbb',
-                    email: 'aaa@aaa.com',
-                    role_name: 'roleA',
-                    role_pk: 1,
-                    desc: 'desc',
-                    last_login: new Date(),
-                    super_user: true
-                },
-                {
-                    pk: 1,
-                    username: 'aaa',
-                    password: 'bbb',
-                    email: 'aaa@aaa.com',
-                    role_name: 'roleA',
-                    role_pk: 1,
-                    desc: 'desc',
-                    last_login: new Date(),
-                    super_user: true
-                },
-                {
-                    pk: 1,
-                    username: 'aaa',
-                    password: 'bbb',
-                    email: 'aaa@aaa.com',
-                    role_name: 'roleA',
-                    role_pk: 2,
-                    desc: 'desc',
-                    last_login: new Date(),
-                    super_user: true
-                }
-            ];
         }
 
         /*
@@ -208,21 +137,13 @@ define(function(){
             }
             $scope.order.field = field;
 
-            pagenation();
+            $scope.doSort();
         };
 
-        pagenation(0, 15);
-
-        function pagenation(offset, limit) {
-            var param={offset: offset, limit: limit};
-
-            if(offset<0){
-                return;
-            }
-            if (offset==='') {
-                return;
-            }
-        }
+        $scope.doSort = function(){
+            var searchedQuery = $filter('filter')($scope.userList, $scope.search);
+            $scope.orderdAndStortedList = $filter('orderBy')(searchedQuery, $scope.order.field, $scope.order.reverse);
+        };
 
 
         initUserlist();

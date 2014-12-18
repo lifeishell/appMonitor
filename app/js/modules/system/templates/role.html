@@ -4,7 +4,7 @@
             <h4><i class="icon-search"></i>查询</h4>
             <div class="form-group">
                 <label for="search-name">角色</label>
-                <input class="form-control" id="search-name" name="search-name" ng-model="search.name" />
+                <input class="form-control" id="search-name" name="search-name" ng-model="search.name" ng-blur="doSort()"/>
             </div>
         </div>
     </div>
@@ -21,28 +21,31 @@
                         全选
                     </label>
                 </span>
-                <span class="col-xs-1" ng-click="orderBy('name')" myx-fast-click="">角色名
+                <span class="col-xs-2" ng-click="orderBy('name')" myx-fast-click="">角色名
                     <i ng-show="order.field==='name'&& order.reverse" class="icon-arrow-up"></i>
                     <i ng-show="order.field==='name'&& !order.reverse" class="icon-arrow-down"></i>
                 </span>
-                <span class="col-xs-2" ng-click="orderBy('desc')" myx-fast-click="">描述
+                <span class="col-xs-3" ng-click="orderBy('desc')" myx-fast-click="">描述
                     <i ng-show="order.field==='desc'&& order.reverse" class="icon-arrow-up"></i>
                     <i ng-show="order.field==='desc'&& !order.reverse" class="icon-arrow-down"></i>
                 </span>
-                <span class="col-xs-8" ng-click="orderBy('features')" myx-fast-click="">权限
+                <span class="col-xs-6" ng-click="orderBy('features')" myx-fast-click="">权限
                     <i ng-show="order.field==='features'&& order.reverse" class="icon-arrow-up"></i>
                     <i ng-show="order.field==='features'&& !order.reverse" class="icon-arrow-down"></i>
                 </span>
             </li>
-            <li class="group-list__item" ng-repeat="role in roleList | filter:search | orderBy:order.field:order.reverse"
-                ng-class="{'is-selected': role.selected}" ng-click="role.selected = !role.selected">
-                <span class="col-xs-1">
-                    <input ng-model="role.selected" type="checkbox" class="label-checkbox" ng-click="$event.stopPropagation();"/>
-                </span>
-                <span class="col-xs-1" myx-fast-click ng-click="modifyRole($event, role)">{{role.name}}</span>
-                <span class="col-xs-2">{{role.desc}}</span>
-                <span class="col-xs-8"><span ng-repeat="feature in role.features">&nbsp;<i class="icon-user"></i>&nbsp;{{ feature.desc }}</span></span>
-            </li>
+            <ul class="group-list__item--scrollable">
+                <li class="group-list__item" ng-repeat="role in paginatorList"
+                    ng-class="{'is-selected': role.selected}" ng-click="role.selected = !role.selected">
+                    <span class="col-xs-1">
+                        <input ng-model="role.selected" type="checkbox" class="label-checkbox" ng-click="$event.stopPropagation();"/>
+                    </span>
+                    <span class="col-xs-2" myx-fast-click ng-click="modifyRole($event, role)">{{role.name}}</span>
+                    <span class="col-xs-3">{{role.desc}}</span>
+                    <span class="col-xs-6"><span ng-repeat="feature in role.features">&nbsp;<i class="icon-user"></i>&nbsp;{{ feature.desc }}</span></span>
+                </li>
+            </ul>
+            <pagination before-query="orderdAndStortedList" return-query="paginatorList"></pagination>
         </ul>
     </div>
 </div>

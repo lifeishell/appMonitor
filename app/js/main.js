@@ -1,11 +1,13 @@
 define([
     'angular',
     'config',
+    '../bower_components/jquery.ui/ui/resizable',
     'modules/common/common_module',
     'modules/app/app_module',
     'modules/auth/auth_module',
     'modules/mainpage/mainpage_module',
     'modules/system/system_module',
+    'modules/warning/warning_module',
     'template'
 ], function(angular) {
     // add template support for building process
@@ -27,6 +29,7 @@ define([
         'appMonitor.auth',
         'appMonitor.mainpage',
         'appMonitor.system',
+        'appMonitor.warning',
         'template'
     ])
         .config(['$routeProvider', 'API_HOST', 'API_URL', 'RestangularProvider',

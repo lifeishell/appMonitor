@@ -1,0 +1,16 @@
+<div ng-controller="WarningPanelCtrl" class="warning-wrapper">
+    <div ng-click="showSummary=!showSummary" ng-hide="showSummary" myx-fast-click class="warning-summary">
+        <i class="icon-forward3"></i><span>告警(153)</span>
+    </div>
+    <div ng-show="showSummary" class="warning-detail">
+        <ul class="nav nav-tabs" ng-init="page='warning'">
+            <li><a ng-click="$event.stopPropagation();page='warning'" myx-fast-click>告警</a></li>
+            <li><a ng-click="$event.stopPropagation();page='diagnostic'" myx-fast-click>告警统计</a></li>
+        </ul>
+        <i class="icon-backward2" myx-fast-clic ng-click="showSummary=!showSummary" ></i>
+    </div>
+    <div ng-show="showSummary" resizable class="warning-content">
+        <div ng-show="page=='warning'">I'm warning</div>
+        <div ng-show="page=='diagnostic'">I'm diagnostic</div>
+    </div>
+</div>

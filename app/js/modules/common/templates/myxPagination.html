@@ -1,0 +1,19 @@
+<li class="group-list__pagination">
+    <span myx-fast-click ng-click="getPage(currentPage)"><i class="icon-loop2"></i>&nbsp;</span>
+    <span><select ng-model="countPerPage" ng-change="updateCount()" ng-options="option for option in pageCounterChoice"/>&nbsp;</span>
+    <!-- first page -->
+    <span ng-show="currentPage !==1" myx-fast-click ng-click="getPage(firstPage)"><i class="icon-first"></i>&nbsp;</span>
+    <span ng-show="currentPage ===1" class="disabled"><i class="icon-first"></i>&nbsp;</span>
+    <!-- previous page -->
+    <span ng-show="currentPage !==1" myx-fast-click ng-click="getPage(currentPage-1)"><i class="icon-backward2"></i>&nbsp;</span>
+    <span ng-show="currentPage ===1" class="disabled"><i class="icon-backward2"></i>&nbsp;</span>
+    <span><input ng-hide="lastPage===1" ng-model="currentPage" ng-blur="getPage()" ng-min="1" type="number" />
+        <span class="disabled" ng-show="lastPage===1">{{ currentPage }}</span>&nbsp;</span>
+    <!-- next page -->
+    <span ng-show="currentPage !== lastPage" myx-fast-click ng-click="getPage(currentPage+1)"><i class="icon-forward3"></i>&nbsp;</span>
+    <span ng-show="currentPage === lastPage" class="disabled"><i class="icon-forward3"></i>&nbsp;</span>
+    <!-- last page -->
+    <span ng-show="currentPage !== lastPage" myx-fast-click ng-click="getPage(lastPage)"><i class="icon-last"></i>&nbsp;</span>
+    <span ng-show="currentPage === lastPage" class="disabled"><i class="icon-last"></i>&nbsp;</span>
+    <span>共 {{ lastPage }} 页，{{ totalCount }} 条数据</span>
+</li>
