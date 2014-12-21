@@ -111,12 +111,13 @@ function(fixture){
                     '用户加载失败',
                     '用户列表读取失败'
                 );
-                $scope.userList = fixture.usersList;
-                $scope.doSort();
             })
             .finally(function(){
                 loading = false;
             });
+            //todo remove
+            $scope.userList = fixture.usersList;
+            $scope.doSort();
         }
 
         /*

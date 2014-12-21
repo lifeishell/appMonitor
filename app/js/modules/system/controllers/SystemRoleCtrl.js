@@ -133,6 +133,7 @@ function(fixture){
                 OverlayService.hide();
             });
         };
+        $scope.orderdAndStortedList = [];
 
         function initRolelist(){
             SystemRoleService.getRoles().then(function success(data){

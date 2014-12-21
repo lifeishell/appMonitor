@@ -42,9 +42,6 @@ define(function(){
                 _.remove(self.activeSections, function(activeSection){
                     return activeSection.id === section.id;
                 });
-                if(self.activeSection.item.id === section.id){
-                    self.activeSection.item = self.activeSections[self.activeSections.length-1];
-                }
             }
         };
     }
