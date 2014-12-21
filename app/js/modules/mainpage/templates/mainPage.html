@@ -1,1 +1,12 @@
-<div ng-controller="MainPageCtrl"></div>
+<div ng-controller="MainPageCtrl" ui-layout="{flow: 'column'}">
+    <div ui-layout-container min-size="10px" size="27%">
+
+    </div>
+    <div ui-layout-container min-size="67%" size="73%">
+        <div ui-layout>
+            <myx-network-map ui-layout-container min-size="20%" size="70%" ng-transclude id="network">
+            </myx-network-map>
+            <div ui-layout-container min-size="10px" size="30%"></div>
+        </div>
+    </div>
+</div>

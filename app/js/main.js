@@ -5,7 +5,7 @@ define([
     'modules/common/common_module',
     'modules/app/app_module',
     'modules/auth/auth_module',
-    'modules/mainpage/mainpage_module',
+    'modules/mainPage/mainPage_module',
     'modules/system/system_module',
     'modules/warning/warning_module',
     'template'
@@ -27,7 +27,7 @@ define([
         'appMonitor.common',
         'appMonitor.app',
         'appMonitor.auth',
-        'appMonitor.mainpage',
+        'appMonitor.mainPage',
         'appMonitor.system',
         'appMonitor.warning',
         'template'
