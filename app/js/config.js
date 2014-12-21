@@ -16,9 +16,10 @@ define([
                 subMenus: [
                     {
                         name: '首页',
-                        id: 'main',
+                        id: 'main-page',
+                        cssClass: 'main-page',
                         default: true,
-                        templateUrl: 'js/modules/mainpage/templates/mainPage.html'
+                        templateUrl: 'js/modules/mainPage/templates/mainPage.html'
                     },
                     {
                         name: '管理',
