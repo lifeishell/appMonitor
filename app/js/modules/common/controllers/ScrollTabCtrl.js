@@ -13,6 +13,7 @@ define(function(){
 
         $scope.closeSection = function(section){
             SectionsService.closeActiveSection(section);
+            $location.path('/' + SectionsService.activeSections[SectionsService.activeSections.length-1].id);
         };
 
         $scope.$watch(function(){

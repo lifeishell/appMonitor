@@ -38,7 +38,6 @@ define(function(){
         opts.collapsed = opts.collapsed || [];
         ctrl.opts = opts;
         $scope.updateDisplay = function () {
-            console.log(ctrl.containers);
             ctrl.updateDisplay();
         };
         function draw() {
