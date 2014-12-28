@@ -20,11 +20,16 @@ function(d3, fixture){
                 };
                 var graph = fixture.graph;
 
+                var y = d3.scale.ordinal()
+                    .domain(d3.range(10))
+                    .rangePoints([0, 100 * 10], 1);
+
                 var color = d3.scale.category20();
 
                 // d3 behivor
                 var force = d3.layout.force()
-                    .charge(-200)
+                    .charge(-1000)
+                    .gravity(0.2)
                     .linkDistance(200)
                     .size([$('#network').width(), $('#network').height()]);
 
@@ -50,6 +55,14 @@ function(d3, fixture){
 
                 var container = svg.append("g");
 
+                var link = container.append("g")
+                    .attr("class", "links")
+                    .selectAll(".link")
+                    .data(graph.links)
+                    .enter().append("line")
+                    .attr("class", "link")
+                    .style("stroke-width", 5);
+
                 var node = container.append("g")
                     .attr("class", "nodes")
                     .selectAll(".node")
@@ -60,38 +73,65 @@ function(d3, fixture){
                     .attr("cy", function(d) { return d.y; })
                     .call(drag);
 
-                node.append("circle")
-                    .attr("r", function(d) { return d.rating/10 * 2+ 12; })
-                    .style("fill", function(d) { return color(1/d.rating); });
-
-                node.append("text")
-                    .attr('class', 'icons')
-                    .attr('text-anchor', 'left')
-                    .attr('dominant-baseline', 'central')
-                    .attr('font-family', 'appmonitor')
-                    .attr('font-size', '2em')
-                    .text(function(d){ return iconMapping[d.type] + ' ' + d.serviceName; });
-
-                var link = container.append("g")
-                    .attr("class", "links")
-                    .selectAll(".link")
-                    .data(graph.links)
-                    .enter().append("line")
-                    .attr("class", "link")
-                    .style("stroke-width", function(d) { return Math.sqrt(d.value); });
-
                 force.nodes(graph.nodes)
                     .links(graph.links)
                     .start();
 
+                node.append("text")
+                    .attr('class', function(d){ return d.status.name; })
+                    .attr('font-family', 'appmonitor')
+                    .attr('font-size', '5em')
+                    .attr('transform', "translate(" + -30 + "," + 20 + ")")
+                    .text(function(d){ return iconMapping[d.type]; });
 
-                force.on("tick", function() {
+                var statusPanel = node.append('g')
+                    .attr('transform', "translate(" + 40 + "," + -40 + ")");
+
+                statusPanel.append("circle")
+                    .attr("r", function(d) {
+                        if(d.status.name === 'warning' || d.status.name === 'alarm'){
+                            return 15;
+                        } else {
+                            return 0;
+                        }
+                    })
+                    .style("fill", function(d) {
+                        switch(d.status.name){
+                            case 'warning':
+                                return color(1/60);
+                                break;
+                            case 'alarm':
+                                return color(1/100);
+                                break;
+                            case 'running':
+                                return color(1/5);
+                                break;
+                            case 'inactive':
+                                return color(1/2);
+                                break;
+                        }
+                    });
+
+                statusPanel.append("text")
+                    .attr('transform', "translate(" + -10 + "," + 0 + ")")
+                    .attr('font-size', '12px')
+                    .attr('dominant-baseline', 'central')
+                    .text(function(d){ return d.status.number; });
+
+                force.on("tick", function(e) {
+                    _.each(graph.nodes, function(o) {
+                        o.y += (y(o.position.toString().slice(0, 1)) - o.y) * e.alpha;
+                        o.x += (y(o.position.toString().slice(1)) - o.x) * e.alpha;
+                    });
                     link.attr("x1", function(d) { return d.source.x; })
                         .attr("y1", function(d) { return d.source.y; })
                         .attr("x2", function(d) { return d.target.x; })
                         .attr("y2", function(d) { return d.target.y; });
 
-                    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+                    node
+                        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+                        .attr('x', function(d) { return d.x; })
+                        .attr('y', function(d) { return d.y; });
                 });
 
                 var linkedByIndex = {};
@@ -117,19 +157,11 @@ function(d3, fixture){
                     });
 
                     d3.select(this).classed("node-active", true);
-                    d3.select(this).select("circle").transition()
-                        .duration(750)
-                        .attr("r", (d.rating/10 * 2+ 12)*1.5);
                 })
 
                     .on("mouseout", function(d){
-
                         node.classed("node-active", false);
                         link.classed("link-active", false);
-
-                        d3.select(this).select("circle").transition()
-                            .duration(750)
-                            .attr("r", d.rating/10 * 2+ 12);
                     });
 
 

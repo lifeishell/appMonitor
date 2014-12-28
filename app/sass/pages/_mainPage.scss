@@ -14,11 +14,7 @@
   .node {
     stroke: #fff;
     stroke-width: 1.5px;
-  }
-
-  .icons {
-    fill: #ffffff;
-    stroke-opacity: 0;
+    z-index: 10;
   }
 
   .node-active{
@@ -26,9 +22,37 @@
     stroke-width: 1.5px;
   }
 
+  %icon-style {
+    stroke-opacity: .3;
+    stroke-color: #666;
+    stroke-width: 0.5px;
+  }
+
+  .alarm {
+    fill: red;
+  }
+
+  .warning {
+    fill: #f60;
+  }
+
+  .running {
+    fill: green;
+  }
+
+  .inactive {
+    fill: #ccc;
+  }
+
+  .cloud {
+    fill: $background-primary;
+  }
+
+
   .link {
     stroke: $background-primary;
     stroke-opacity: .3;
+    z-index: 1;
   }
 
   .link-active {

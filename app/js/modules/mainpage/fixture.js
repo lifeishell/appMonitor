@@ -2,21 +2,21 @@ define(function(){
     return {
         graph: {
             nodes:[
-                {"name":"0","rating":90,serviceName:'Cloud',type:'cloud'},
-                {"name":"1","rating":80,serviceName:'Server A',type:'server'},
-                {"name":"2","rating":70,serviceName:'Apache',type:'apache'},
-                {"name":"3","rating":70,serviceName:'MySQL',type:'mysql'},
-                {"name":"4","rating":60,serviceName:'OA1',type:'php'},
-                {"name":"5","rating":80,serviceName:'Server B',type:'server'},
-                {"name":"6","rating":70,serviceName:'Tomcat',type:'tomcat'}
+                {"name":"0", position:10, serviceName:'Cloud', type:'cloud', status: {name:'cloud'}},
+                {"name":"1", position:20, serviceName:'Server A', type:'server', status: {name: 'warning', number: 200}},
+                {"name":"2", position:30, serviceName:'Apache', type:'apache', status: {name: 'running'}},
+                {"name":"3", position:31, serviceName:'MySQL', type:'mysql', status: {name: 'inactive'}},
+                {"name":"4", position:40, serviceName:'OA1', type:'php', status: {name: 'alarm', number: 180}},
+                {"name":"5", position:21, serviceName:'Server B', type:'server', status: {name: 'running'}},
+                {"name":"6", position:32, serviceName:'Tomcat', type:'tomcat', status: {name: 'running'}}
             ],
             links:[
-                {"source":0,"target":1,"value":6},
-                {"source":0,"target":5,"value":6},
-                {"source":1,"target":2,"value":6},
-                {"source":1,"target":3,"value":6},
-                {"source":2,"target":4,"value":6},
-                {"source":5,"target":6,"value":6}
+                {"source":0,"target":1},
+                {"source":0,"target":5},
+                {"source":1,"target":2},
+                {"source":1,"target":3},
+                {"source":2,"target":4},
+                {"source":5,"target":6}
             ]
         }
     };
